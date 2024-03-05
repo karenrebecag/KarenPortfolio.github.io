@@ -30,6 +30,7 @@
 
 
 
+
 <!-- Google Fonts ---------------------------------------------------------------------------------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +39,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Josefin+Sans&family=Orbitron:wght@600&family=Poppins:wght@200&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
     <script src="/Pages/scriptEffects.js"></script>
+    <script src="path/to/parallax.js"></script>
+
+
 <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <!-- AOS JS -->
@@ -236,17 +240,7 @@ div{
 <!--NavBar-->
 
 <!-- Notification Bar -->
-<div id="notification-bar" class="alert-primary fixed-bottom mb-0 d-flex justify-content-between align-items-center" role="alert" style="display: none;">
-  <div class="d-flex flex-grow-1 justify-content-center align-items-center">
-    <text class="degradado" style="font-size: 1.2em;">On a Rush? </text> <text style="align-items: center;">| Go to the point with my resume!</text>
-    <a href="your-resume-link.pdf" >
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </a>
-  </div>
-  <button type="button" class="close" onclick="closeNotificationBar()" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
- </div>
- 
+
  
 
 <header id="miHeader" >
@@ -384,7 +378,7 @@ div{
 <video  autoplay muted loop class="background-video" id="background-video">
 <source src="https://video.wixstatic.com/video/11062b_7e61ffd6dbb040ee8b0e4dc604e8fd4e/1080p/mp4/file.mp4" type="video/mp4">
 </video>
-                                       
+
 <!--Main Section Banner---------------------------------------------------------------------------------------------------------------->
 <section  style="margin-top: 2%;"  data-aos="fade-up" id="top" class="main-banner-fadeout" >
 <div  class="container-fluid main-banner ">
@@ -392,7 +386,7 @@ div{
 
 
 <div class="row">
-  <div class="col-12 d-flex justify-content-center">
+  <div data-depth="0.2" class="col-12 d-flex justify-content-center">
     <img width="450" style="  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
     border-radius: 100%;" class=" karen-ortiz-footer"  src="https://static.wixstatic.com/media/bc0394_8744966d3971432ca187a38276218858~mv2.png" alt="Foto de karen">
   </div>
@@ -400,7 +394,7 @@ div{
 
 
 <div class="row py-5">
-  <div class="col-12 d-flex justify-content-center">
+  <div data-depth="0.6" class="col-12 d-flex justify-content-center">
     <img width="600" class=" karen-ortiz-footer " src="https://static.wixstatic.com/media/bc0394_2d1b6d30ba384fb8ab9a96a57ba743c2~mv2.gif" alt="Foto de karen">
   </div>
 
@@ -409,7 +403,7 @@ div{
 
 <!-- Video Background -->
 <section>
-<div class="container text-center">
+<div data-depth="0.10"  class="container text-center">
   <div class="row">
     <div class="banner col">
       <div class="video_background"  >
@@ -422,7 +416,7 @@ div{
  </div>
 
 </section>
-  
+
 <!--Enterprises Strip-->
 <section>
 <div class="container-fluid bg-black p-2" style="margin-top: -4em;">
@@ -1413,107 +1407,9 @@ window.location.href = 'indexmain.html#Reviews';
 <script src="/Scripts/main.js"></script>
 <script src="/Scripts/header.js"></script>
 <script src="/Scripts/fadeout.js"></script>
+<script src="/Scripts/darkmode.js"></script>
 </div>
 
-<!--Header-->
-<script>
-
-document.addEventListener('DOMContentLoaded', (event) => {
-// Verifica si la URL actual es indexmain.html
-if (window.location.href.indexOf('indexmain.html') > -1) {
-  // Selecciona el enlace con el ID y cambia los estilos
-  var generalNavLink = document.getElementById('generalNavLink');
-  if (generalNavLink) {
-    generalNavLink.style.backgroundColor = '#C777E3';
-    generalNavLink.style.borderRadius = '1em 1em 0 0';
-    generalNavLink.style.color= 'white';
-   
-  }
-}
-});
-
-</script>
-
-<!--Dark Mode-->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const themeSwitch = document.getElementById('theme-switch');
-    const body = document.body;
-    const headerLogo = document.getElementById('main-logo'); // Logo del encabezado
-    const footerLogo = document.getElementById('main-logo-footer'); // Logo del pie de página
-  
-    // URLs de las imágenes para el modo oscuro y claro
-    const darkLogoUrl = 'https://static.wixstatic.com/media/bc0394_efe1b60cb88b4f3d9b7f2c97ab803fc7~mv2.png'; // Modo oscuro
-    const lightLogoUrl = 'https://static.wixstatic.com/media/bc0394_b88b6004d88349ef8f879aef69854826~mv2.png'; // Modo claro
-  
-    let animationExecuted = false; // Controla si la animación se ha ejecutado
-  
-    // Función para cambiar el tema y actualizar los logos
-    function changeTheme(darkMode) {
-        if (!animationExecuted) {
-            body.style.transition = 'opacity 0.5s ease-out';
-            body.style.opacity = '0';
-            animationExecuted = true; // Marca que la animación se ha ejecutado
-        }
-  
-        setTimeout(() => {
-            if (darkMode) {
-                // Actualiza las rutas según la nueva estructura de directorios
-                document.getElementById('theme-stylesheet').setAttribute('href', '/Styles/dark.css');
-                document.getElementById('mainpage-stylesheet').setAttribute('href', '/Styles/mainpage-dark.css');
-                localStorage.setItem('theme', 'dark');
-                headerLogo.src = darkLogoUrl; // Cambia la imagen del logo del encabezado al modo oscuro
-                footerLogo.src = darkLogoUrl; // Cambia la imagen del logo del pie de página al modo oscuro
-            } else {
-                // Actualiza las rutas según la nueva estructura de directorios
-                document.getElementById('theme-stylesheet').setAttribute('href', '/Styles/styles.css');
-                document.getElementById('mainpage-stylesheet').setAttribute('href', '/Styles/mainpage.css');
-                localStorage.setItem('theme', 'light');
-                headerLogo.src = lightLogoUrl; // Cambia la imagen del logo del encabezado al modo claro
-                footerLogo.src = lightLogoUrl; // Cambia la imagen del logo del pie de página al modo claro
-            }
-  
-            if (animationExecuted) {
-                setTimeout(() => {
-                    body.style.opacity = '1';
-                }, 100);
-            }
-        }, animationExecuted ? 500 : 0);
-    }
-  
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        themeSwitch.checked = true;
-        changeTheme(true);
-    } else {
-        // Asegura que los logos estén correctos si el tema claro está activo
-        headerLogo.src = lightLogoUrl;
-        footerLogo.src = lightLogoUrl;
-    }
-  
-    themeSwitch.addEventListener('change', function() {
-        changeTheme(this.checked);
-    });
-  });
-  </script>
-  
-
-
-
-<!--Notification Bar-->
-<script>
-  // Check if the notification was previously closed
-if (!localStorage.getItem('notificationClosed')) {
-  document.getElementById('notification-bar').style.display = 'block';
-}
-
-function closeNotificationBar() {
-  document.getElementById('notification-bar').style.display = 'none';
-  // Save the state to localStorage
-  localStorage.setItem('notificationClosed', 'true');
-}
-
-</script>
 
 
 
