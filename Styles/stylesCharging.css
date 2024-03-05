@@ -1,0 +1,59 @@
+/* Añade esto a tu archivo CSS */
+.loading-screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con un poco de transparencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1; /* Asegúrate de que esté por encima de todo lo demás */
+  }
+  
+  .loader {
+    border: 5px solid #f3f3f3; /* Color de fondo del borde */
+    border-top: 5px solid #9f279f; /* Color del borde (azul en este caso) */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .cuadrop {
+    height: 350px;
+    width: 400px;
+    overflow: hidden;
+    margin-right: 2%;
+    border-radius: 5px;
+  }
+  
+  /*Card Bottom Text Container */
+  .image-containerp {
+    position: relative;
+    width: 38%;
+    height: 38%;
+    overflow: hidden;
+    padding: 1%;
+    border-radius: 5px;
+  }
+  .image-containerp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s; /* transición suave al aplicar el filtro */
+    filter: grayscale(100%); /* convertir la imagen en blanco y negro */
+  }
+  .image-containerp:hover img {
+    filter: grayscale(0); 
+    transform: scale(1.05); /* Aplicar escala al hacer hover */
+    transition: transform 0.3s ease-in-out;
+  }
+  .image-containerp img:not(:hover) {
+    transition: transform 0.3s ease-in-out; /* Transición suave al revertir el efecto de escala */
+  }

@@ -1,0 +1,657 @@
+/* Button Costumers */
+/* Note that you only needs to edit the config to customize the button! */
+.logo-header-main{
+  height: 60px;
+  width: 60px;
+  opacity: 0.9;
+  
+}
+.plusButton {
+    /* Config start */
+    --plus_sideLength: 1.8rem;
+    --plus_topRightTriangleSideLength: 0.9rem;
+    /* Config end */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: var(--plus_sideLength);
+    border-radius: 5px;
+    height: var(--plus_sideLength);
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  .plusButton::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-width: 0 var(--plus_topRightTriangleSideLength) var(--plus_topRightTriangleSideLength) 0;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+  }
+  
+  .plusButton:hover {
+    cursor: pointer;
+  }
+  
+  .plusButton:hover::before {
+    --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+  }
+  
+  .plusButton:focus-visible::before {
+    --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+  }
+  
+  .plusButton>.plusIcon {
+    fill: white;
+    width: calc(var(--plus_sideLength) * 0.7);
+    height: calc(var(--plus_sideLength) * 0.7);
+    z-index: 1;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+  }
+  
+  .plusButton:hover>.plusIcon {
+    fill: black;
+    transform: rotate(180deg);
+  }
+  
+  .plusButton:focus-visible>.plusIcon {
+    fill: black;
+    transform: rotate(180deg);
+  }
+  
+  /* Degradado Letras */
+  .degradado {
+    font-size: 3em;
+    font-weight: bold;
+    background-image: linear-gradient(to right,#3460BA, #B18EC2, #7E8CD6, #7F6BCF,#B774E0);
+    -webkit-background-clip: text; /* Para navegadores WebKit (Chrome, Safari, etc.) */
+    background-clip: text; /* Para navegadores estándar */
+    color: transparent; /* Oculta el color del texto */
+  }
+  
+  .data-logo{
+    fill:none;
+    stroke:#000000;
+    stroke-width:2.50658;
+    stroke-linecap:round;
+    stroke-linejoin:round
+  }
+  
+  .data-logo:hover{
+    fill:none;
+    stroke:#ffffff;
+    stroke-width:2.50658;
+    stroke-linecap:round;
+    stroke-linejoin:round
+  }
+  
+  
+  /* Projects Cards */
+  #Reviews {
+    background-color: black;
+  }
+  .cardProjects {
+      width: 300px;
+      background: rgb(255, 255, 255);
+      color: black;
+      box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
+  
+      position: relative;
+      border-radius:1.5em;
+      padding: 2em;
+      transition: transform 0.4s ease;
+      margin-bottom: 1em;
+      padding: 2em;  }
+    
+    .cardProjects .card-contentProjects {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 5em;
+      height: 100%;
+      transition: transform 0.8s ease-out;
+    }
+    
+    .cardProjects .card-topProjects, .cardProjects .card-bottomProjects {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .cardProjects .card-topProjects p, .cardProjects .card-topProjects .card-titleProjects, .cardProjects .card-bottomProjects p, .cardProjects .card-bottomProjects .card-titleProjects {
+      margin: 0;
+    }
+    
+    .cardProjects .card-titleProjects {
+      font-weight: bold;
+    }
+    
+    .cardProjects .card-topProjects p, .cardProjects .card-bottomProjects p {
+      font-weight: 600;
+    }
+    
+    .cardProjects .card-bottomProjects {
+      align-items: flex-end;
+    }
+    
+    .cardProjects .card-imageProjects {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: grid;
+      place-items: center;
+      pointer-events: none;
+    }
+    
+    .cardProjects .card-imageProjects svg {
+      width: 4em;
+      height: 4em;
+      transition: transform 0.4s ease;
+    }
+    
+    .cardProjects:hover {
+      cursor: pointer;
+      transform: scale(0.97);
+      background-color: hsla(0, 0%, 7%, 0.918);
+
+    }   
+    
+    .cardProjects:hover .card-contentProjects {
+      transform: scale(0.96);
+    }
+    
+    .cardProjects:hover  svg {
+      transform: scale(1.10);
+      fill: white;
+      stroke: rgb(255, 255, 255);
+    }
+    .cardProjects:hover  path {
+      fill: white;
+      stroke: rgb(0, 0, 0);
+    }
+  
+    .cardProjects:hover p {
+  color: white;
+    }
+    .cardProjects:hover span {
+      color: white;
+        }
+    
+    
+    .cardProjects:active {
+      transform: scale(0.9);
+    }
+    
+  
+  /* Tools Tags */ 
+  .e-card {
+      margin: 70px auto;
+      background: transparent;
+      box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+      position: relative;
+      width: 280px;
+      height: 280px;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.5s ease; /* Añade transición suave */
+  
+    }
+  
+  
+    
+    .wave {
+      position: absolute;
+      width: 540px;
+      height: 700px;
+      opacity: 0.9;
+      left: 0;
+      top: 0;
+      margin-left: -50%;
+      margin-top: -70%;
+      background: linear-gradient(744deg,#000000,#000000fe,#0F2740);
+    }
+    
+    .icon {
+      width: 3em;
+      margin-top: -1em;
+      padding-bottom: 1em;
+    }
+    
+    .infotop {
+      text-align: center;
+      font-size: 20px;
+      position: absolute;
+      top: 2em;
+      left: 0;
+      right: 0;
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      font-family: poppins;
+    }
+    
+    .name {
+      font-size: 17px;
+      font-weight: 100;
+      font-family: poppins;
+      position: relative;
+      top: 1em;
+      color: black;
+      background: linear-gradient(744deg,#275EB5,#C777E3);
+      color: white;
+      margin-bottom: 0.5em;
+      transition: transform 0.5s ease; /* Añade transición suave */
+  
+    }
+  
+    .e-card:hover {
+      transform: scale(1.02); /* Escala la tarjeta */
+    }
+    
+    .name:hover {
+      transform: scale(1.09); /* Escala cada elemento .name independientemente */
+    }
+    
+    .wave:nth-child(2),
+    .wave:nth-child(3) {
+      top: 210px;
+    }
+    
+    .playing .wave {
+      border-radius: 40%;
+      animation: wave 3000ms infinite linear;
+    }
+    
+    .wave {
+      border-radius: 40%;
+      animation: wave 55s infinite linear;
+    }
+    
+    .playing .wave:nth-child(2) {
+      animation-duration: 4000ms;
+    }
+    
+    .wave:nth-child(2) {
+      animation-duration: 50s;
+    }
+    
+    .playing .wave:nth-child(3) {
+      animation-duration: 5000ms;
+    }
+    
+    .wave:nth-child(3) {
+      animation-duration: 45s;
+    }
+    
+    @keyframes wave {
+      0% {
+        transform: rotate(0deg);
+      }
+    
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  
+  
+    /* Recommendation Cards */
+ 
+    
+    .card-person {
+      width: 300px;
+      height: 300px;
+      transition: all 0.2s;
+      position: relative;
+      cursor: pointer;
+      transition: 0.3s ease-in;
+    }
+    
+    .card-inner-person {
+      width: inherit;
+      height: inherit;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(10px);
+      border-radius: 8px;
+    }
+    
+    .card-person:hover {
+      transform: scale(1.02);
+    }
+    
+    .circle-person {
+      width: 100px;
+      height: 100px;
+      background: repeating-linear-gradient(48deg, #3123ae43 0%, #b774e034 100%);
+      border-radius: 35% 30% 75% 30% / 49% 30% 70% 51%;
+      position: absolute;
+      animation: move-up6 2s ease-in infinite alternate-reverse;
+    }
+    
+    .circle-person:nth-child(1) {
+      top: -25px;
+      left: -25px;
+    }
+    
+    .circle-person:nth-child(2) {
+      bottom: -25px;
+      right: -25px;
+      animation-name: move-down1;
+    }
+    
+    @keyframes move-up6 {
+      to {
+        transform: translateY(-20px);
+      }
+    }
+    
+    @keyframes move-down1 {
+      to {
+        transform: translateY(20px);
+      }
+    }
+    
+  
+  /*   Bubbles */
+  
+  .bubble {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba (255, 255, 255, 0.25);
+    animation: animate_4010 8s ease-in-out infinite;
+  }
+  
+  .bubble:nth-child(2) {
+    position: relative;
+    zoom: 0.45;
+    left: -10px;
+    top: -100px;
+    animation-delay: -4s;
+  }
+  
+  .bubble:nth-child(3) {
+    position: relative;
+    zoom: 0.45;
+    right: -80px;
+    top: -300px;
+    animation-delay: -6s;
+  }
+  
+  .bubble:nth-child(4) {
+    position: relative;
+    zoom: 0.35;
+    left: -120px;
+    bottom: -200px;
+    animation-delay: -3s;
+  }
+  
+  .bubble:nth-child(5) {
+    position: relative;
+    zoom: 0.5;
+    left: 0px;
+    top: 200px;
+    animation-delay: -5s;
+  }
+  
+  @keyframes animate_4010 {
+    0%,100% {
+      transform: translateY(-20px);
+    }
+  
+    50% {
+      transform: translateY(20px);
+    }
+  }
+  
+  .bubble::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 10;
+    filter: blur(2px);
+  }
+  
+  .bubble::after {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fffcffed;
+    z-index: 10;
+    filter: blur(2px);
+  }
+  
+  .bubble span {
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .bubble span:nth-child(1) {
+    inset: 10px;
+    border-left: 15px solid #92739d;
+    filter: blur(8px);
+  }
+  
+  .bubble span:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid #cc8de9;
+    filter: blur(8px);
+  }
+  
+  .bubble span:nth-child(3) {
+    inset: 10px;
+    border-top: 15px solid #ddcde5;
+    filter: blur(8px);
+  }
+  
+  .bubble span:nth-child(4) {
+    inset: 30px;
+    border-left: 15px solid #e4c4fb;
+    filter: blur(12px);
+  }
+  
+  .bubble span:nth-child(5) {
+    inset: 10px;
+    border-bottom: 10px solid #c824ff6d;
+    filter: blur(8px);
+    transform: rotate(330deg);
+  }
+  
+  
+  /* blur gradient */
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .svg {
+    position: absolute;
+    width: 400px;
+    fill: none;
+  }
+  
+  .svg:nth-child(2) {
+    filter: blur(40px);
+  }
+  
+  .svg path {
+    d: path("M0,25 C150,110 150, -60 300,25");
+    stroke: #db94ff;
+    stroke-width: 50;
+    stroke-linecap: round;
+    transform: translate(50px,50%);
+    animation: animate 2s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      stroke: #cf60ff;
+      stroke:#db94ff;
+      d: path("M0,25 C150,110 150, -60 300,25");
+    }
+  
+    50% {
+      stroke: #9a70ad;
+      stroke: #cf60ff;
+      d: path("M0,25 C160,-50 140, 110 300,25");
+    }
+  }
+  
+  /* Triangulo Separador */
+  .section-diagonal {
+    background-color: #fcfeff; 
+  }
+  
+  .diagonal-split {
+    position: relative;
+    height: 50px; 
+    background-color: #ffffff; 
+  }
+  
+  .diagonal-split::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000; 
+    clip-path: polygon(100% 0, 0 100%, 100% 150%);
+  }
+  
+  .section-diagonal2 {
+    background-color: #fcfeff; 
+  }
+  
+  .diagonal-split2 {
+    position: relative;
+    height: 90px; 
+    background-color: #000000; 
+  }
+  
+  .diagonal-split2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff; 
+    clip-path: polygon(100% 0, 0 100%, 100% 180%);
+  }
+  
+  .section-diagonal3 {
+    background-color: #fcfeff; 
+  }
+  
+  .diagonal-split3 {
+    position: relative;
+    height: 90px; 
+    background-color: #f8f9fa; 
+  }
+  
+  .diagonal-split3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255 0.8);
+    clip-path: polygon(100% 0, 0 100%, 100% 180%);
+  }
+  
+  /* Cubo */
+  
+  .texts_play {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  
+  .text-1_play {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  .text-2_play {
+    font-weight: 600;
+  }
+  .blue-div{
+   background-color: #161616 ; 
+   height: 186px; 
+   border-radius: 80px 80px 0 0;
+   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  
+  /* Helpful Answers */
+  /* Estilos generales para centrar el acordeón y ajustar su ancho */
+  
+  
+  .accordion {
+    width: 80%; /* Ajusta este valor según prefieras */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes internos también estén redondeados */
+    transition: 0.5s ease-in;
+    font-family: Raleway;
+    font-size: 1.3em;
+   position: relative;
+   left: 8em;
+  }
+  .accordion-button{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    stroke: 1px white;
+  }
+  
+  /* Estilo para el encabezado del acordeón cuando está activo */
+  .accordion-button:not(.collapsed) {
+    background: linear-gradient(744deg,#275db52b,#c677e346);
+    color: rgb(0, 0, 0); /* Texto blanco para contraste */
+  }
+
+  .accordion-body{
+    background-color: rgb(30, 30, 30);
+    color: white;  }
+  
+  /* Opcional: Puedes ajustar también los estilos para cuando el botón no está colapsado */
+  .accordion-button {
+    border-radius: 15px; /* Bordes redondeados para los botones */
+  }
+  
+  .accordion-button:hover {
+    background: linear-gradient(744deg,#275db52b,#c677e346);
+    color: rgb(35, 21, 21); /* Texto blanco para contraste */
+  }
+  
+  /* Ajustes para asegurar que el acordeón y su contenido estén centrados */
+  .accordion-item {
+    margin-bottom: 2px; /* Espacio entre elementos del acordeón, ajusta según necesidad */
+  }
+  

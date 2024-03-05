@@ -1,0 +1,205 @@
+/* Base Styles */
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 0.5rem auto #4d90fe;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem -0.5rem; /* Margen reducido */
+    padding-bottom: 3rem;
+
+}
+
+.gallery-item {
+    position: relative;
+    margin: 0.5rem; /* Margen reducido */
+    color: #fff;
+    cursor: pointer;
+    width: 35em;
+    height: 35em;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  border-radius: 25px;
+  z-index: 1;
+
+}
+
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: ani 8s linear infinite;
+    border: none;
+
+}
+@keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+
+  .gallery-item:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    z-index: -1;
+    background: linear-gradient(100deg,#dfb3f4b5, #a648cb97, #ffeb3b91, rgb(207, 24, 220));
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+  }
+  
+  .gallery-item:hover::before {
+    filter: blur(20px);
+  }
+  
+  .gallery-item:active {
+    background: linear-gradient(32deg, #dfb3f4, #A648CB, #ffeb3b, rgb(207, 24, 220));
+  }
+  
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.gallery-item-likes {
+    margin-right: 2.2rem;
+}
+
+.gallery-item-type {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.fa-clone,
+.fa-comment {
+    transform: rotateY(180deg);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(70%);
+    transition: transform 0.3s ease, filter 0.1s ease; /* Agrega el filtro aquí con una duración de 0.1s */
+
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.02); /* Escala ajustada */
+
+    filter: grayscale(0%);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 40rem) {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery-item {
+        flex: 1 0 calc(100% / 3 - 1rem); /* Margen reducido y tres imágenes por fila */
+    }
+}
+
+@media screen and (min-width: 40.1rem) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem; /* Margen reducido entre imágenes */
+    }
+
+    .gallery-item {
+        margin: 0.5rem; /* Margen reducido */
+    }
+}
+
+/* ... Aquí irían otros estilos y media queries que tengas ... */
+
+/* ... tus estilos existentes ... */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.481);
+    opacity: 0; /* Inicia con el modal transparente */
+    transition: opacity 0.5s linear; /* Suaviza la aparición del modal */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 2px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    opacity: 0; /* Inicia con la imagen transparente */
+    transition: opacity 0.5s linear; /* Suaviza la aparición de la imagen */
+    
+  }
+  

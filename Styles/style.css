@@ -1,0 +1,1180 @@
+/* This style's sheet is connected to all the escential files for Karen Rebeca Ortiz's Portfolio.Es  It's indispensable for it's main purpose
+and correct functionality------*/
+
+/* Enterprises  */
+h6{
+  font-family: raleway;
+  margin-top: 1em;
+  font-style: inherit;
+}
+.enterprises-img{
+   border-radius: 10px;
+   width: 12em;
+   height: 10em;
+   transition: ease-in;
+}
+.enterprises-img:hover{
+transform: scale(1.05);
+}
+
+.slider-infinite {
+  background: rgba(255, 255, 255, 0);
+  height: 200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+.slider-infinite::before,
+.slider-infinite::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,rgba(255,255,255,0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider-infinite::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider-infinite::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track-infinite {
+  animation: scroll-infinite 40s linear infinite;
+  display: flex;
+  width: calc(250px * 10); /* Ajuste para 5 elementos duplicados */
+}
+
+.slide-infinite {
+  height: 100px;
+  width: 250px;
+}
+
+@keyframes scroll-infinite {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 5)); } /* Ajuste para el desplazamiento de 5 elementos */
+}
+
+
+/* Header pic */
+
+.mini_pic{
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.uppercase-text {
+  text-transform: uppercase;
+}
+
+.card_header_social {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3em 3em 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 17px;
+  gap: 20px;
+  box-shadow: 10px 0px 2px rgba(0, 0, 0, 0.035);
+ 
+}
+
+
+
+/* for all social containers */
+.socialContainer_header_social {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* Instagram */
+.containerOne_header_social:hover {
+  background-color: #dfb3f4;
+  transition-duration: .3s;
+}
+
+/* Twitter */
+.containerTwo_header_social:hover {
+  background-color: #dfb3f4;
+  transition-duration: .3s;
+}
+
+/* LinkedIn */
+.containerThree_header_social:hover {
+  background-color: #dfb3f4;
+  transition-duration: .3s;
+}
+
+/* WhatsApp */
+.containerFour_header_social:hover {
+  background-color: #dfb3f4;
+  transition-duration: .3s;
+}
+
+.socialContainer_header_social:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg_header_social {
+  width: 17px;
+}
+
+.socialSvg_header_social path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer_header_social:hover .socialSvg_header_social {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.img_shadow{
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+h1{
+font-family: 'Raleway', sans-serif;
+ font-size: 2.4em;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+  margin: 0 10em 2em 10em;
+  
+ }
+ .h1-2{
+  font-family: 'Raleway', sans-serif;
+   font-size: 2.4em;
+   padding: 0%;
+  }
+  
+  .p-2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4em;
+    padding: 0%;  } 
+ b{
+  color: #A648CB;
+ }
+
+ .h6{
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.5em;
+ 
+ }
+
+.margin-1{
+  margin: 0 4em 0 4em;
+  
+}
+.hov{
+  transition: transform 0.5s ease; /* Añade transición suave */
+
+}
+
+.hov:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease; /* Añade suavidad a la transformación */
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: rgba(117, 117, 117, 0.086) 0px 2px 10px 0px;
+
+
+}
+
+.general_padding{
+  padding: 0 30em 0 30em;
+}
+
+
+/* Estilos para el menú colapsable */
+.navbar-nav .dropdown-menu {
+  border-radius: 0.5rem; /* Bordes redondeados para el menú */
+}
+
+/* Cambia el fondo y color del texto de los elementos del menú al hacer hover */
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .dropdown-menu .dropdown-item:focus {
+  background-color: rgba(249, 177, 245, 0.245); /* Fondo rosa */
+  color: hsl(0, 0%, 47%); /* Letras grises */
+  font-size: 1.08em; /* Texto ligeramente más grande */
+}
+
+/* Cambios en la animación del dropdown para que aparezca más rápido */
+.dropdown-menu {
+  transition: visibility 0.1s linear, opacity 0.1s linear; /* Aparición más rápida */
+}
+
+/* Para mostrar el menú colapsable al pasar el mouse */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Muestra el menú */
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+                              /*>>Index.html // Main Page (Header, Footer & "General, Blog, Tools, Reviews, Contact" anchors */
+/*   Extra        */
+.button-io {
+  padding: 13px 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0;
+  background-color: #ffff;
+  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  color: black;
+}
+
+.button-io:hover {
+  letter-spacing: 3px;
+  background-color: hsla(0, 0%, 0%, 0.944);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgba(127, 127, 127, 0.509) 0px 7px 29px 0px;
+  text-decoration: none;
+}
+
+.button-io:active {
+  letter-spacing: 3px;
+  background-color: #dfb3f4;
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(207, 24, 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+
+
+.github-button {
+  display: grid;
+  place-items: center;
+  background: #e3edf7;
+  padding: 1.4em;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	      -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.github-button {
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+	      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+	      -0.5px -0.5px 0px rgba(255,255,255,1),
+	      0.5px 0.5px 0px rgba(0,0,0,0.15),
+	      0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
+  transform: translateY(0.5em);
+}
+
+.github-button svg {
+  transition: transform 0.5s;
+}
+
+.github-button:hover svg {
+  transform: scale(0.9);
+  fill: #333333;
+}
+
+
+.input__container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.664);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 5px;
+  border-radius: 25px;
+  width: 30em;
+  transition: transform 400ms;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  
+}
+
+.shadow__input {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(30px);
+  border-radius: 20px;
+  background-color: #f9d2f8;
+  background-image: radial-gradient(at 85% 51%, rgb(229, 229, 209) 0px, transparent 50%),
+    radial-gradient(at 74% 68%, hsla(235,69%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 64% 79%, hsla(284,72%,73%,1) 0px, transparent 50%),
+    radial-gradient(at 75% 16%, hsla(283,60%,72%,1) 0px, transparent 50%),
+    radial-gradient(at 90% 65%, hsla(153,70%,64%,1) 0px, transparent 50%),
+    radial-gradient(at 91% 83%, hsla(283,74%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 72% 91%, hsla(213,75%,75%,1) 0px, transparent 50%);
+}
+
+.input__button__shadow {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: transform 400ms, background 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.input__button__shadow:hover {
+  background: rgba(255, 255, 255, 0.411);
+}
+
+.input__search {
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding: 8px;
+  position: relative;
+}
+
+
+
+/* General Styles---------------------------------------------------------------------------------------------------------------*/
+
+/* Estilo para el cursor predeterminado */
+  /* Establece la sección para posicionar relativamente los elementos internos */
+  .section-with-video {
+    position: relative;
+    width: 100%; /* O el ancho de tu elección */
+    height: 500px; /* O la altura de tu elección */
+    overflow: hidden; /* Evita que el video desborde la sección */
+  }
+
+  /* Estilo para el video de fondo */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 12%;
+    object-fit: cover; /* Asegura que el video cubra toda la sección */
+    z-index: -1; /* Coloca el video detrás de otros contenidos */
+    opacity: 0.12; /* Valor entre 0 y 1 */
+  }
+
+.bigHover {
+  transition: transform 0.3s ease-in-out; /* Suaviza la transición */
+}
+
+.bigHover:hover {
+  transform: scale(1.10); /* Aumenta el tamaño en un 25% al pasar el cursor */
+}
+
+.skillTag{
+  padding: 12px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: auto;
+  border: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+.skillTag:hover {
+  letter-spacing: 3px;
+  background-color: rgba(173, 216, 230, 0.5);
+  color: hsl(0, 0%, 0%);
+  box-shadow: rgb(200, 233, 232) 0px 7px 29px 0px;
+}
+
+.skillTag:active {
+  letter-spacing: 3px;
+  background-color: hsl(288, 78%, 41%);
+  color: hsl(0, 0%, 0%);
+  box-shadow: rgb(255, 82, 223) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: all 100ms ease; 
+}
+
+
+
+
+
+/* CSS para transiciones suaves en el menú desplegable */
+.nav-item .dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+
+
+
+
+.nav-item .dropdown-menu:hover {
+  display: block;
+  opacity: 1;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.texto-negro {
+  color: black;
+}
+
+
+/* Barra de navegacion -------------------------------------------------------------------------------------------------------------------*/
+.logo-header-main{
+  height: 60px;
+  width: 60px;
+  opacity: 0.7;
+}
+
+.logo-header-main:hover {
+  transform: scale(1.05) 
+}
+
+.logo-header-main:not(:hover) {
+  transform: scale(1) 
+}
+/* Main Header style*/
+header{
+  position: fixed;
+  background-color: white;
+  opacity: 1;
+  width: 100%;
+  height: 2.5em;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+ 
+}
+.navbar {
+  background-color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  font-family: 'Raleway', sans-serif;
+  justify-content: space-between;
+
+
+
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between; 
+  display: inline;
+  width: 100%;
+  
+}
+
+/* Estilos para el dropdown de Portfolio */
+.nav-item.dropdown:hover .dropdown-menu { 
+  display: block; /* Asegura que el menú desplegable se muestre al pasar el ratón */
+}
+
+/*  Toggle Breakdown  */
+.dropdown-toggle{
+  background-color: black;
+  color: white;
+  border-radius: 12px 12px 0 0;
+  transition: all 0.3s ease; /* Transición suave para efectos de hover */
+
+}
+
+/* Hide Header on scrolling */
+#miHeader.hidden {
+  transform: translateY(-100%);
+}
+
+/* Hide Header Elements when Scrolling */
+#miHeader.hidden nav {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+
+/* Dropdown Menu */
+
+.dropdown-menu {
+  position: absolute; /* Posicionamiento absoluto para controlar la ubicación */
+  top: 100%; /* Posiciona el menú desplegable justo debajo del elemento Portfolio */
+  left: 0; /* Alinea el menú desplegable con el lado izquierdo del elemento Portfolio */
+  background-color: #ffffff; /* Color de fondo oscuro para el menú desplegable */
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Sombra sutil para el menú desplegable */
+
+}
+
+.dropdown-item {
+  color: rgb(0, 0, 0); /* Color del texto para los elementos del menú desplegable */
+  padding: 10px;
+  transition: all 0.3s ease; /* Transición suave para efectos de hover */
+
+}
+
+.dropdown-item:not(:hover) {
+  filter: blur(1px); /* Aplica desenfoque a los elementos que no están siendo seleccionados */
+  transition: filter 0.3s ease; /* Transición suave del desenfoque */
+}
+
+.dropdown-item:hover {
+  filter: blur(0); /* Remueve el desenfoque del elemento sobre el que se pasa el ratón */
+  background-color: #1A1F24; /* Cambio de color de fondo al pasar el ratón */
+  border-radius: 4px; /* Bordes redondeados para el elemento seleccionado */
+  
+}
+
+/* Asegura que el menú desplegable se muestre al pasar el ratón sobre el elemento Portfolio */
+.nav-item.dropdown:hover .dropdown-toggle {
+  background-color: #000000; /* Cambio de color de fondo para el toggle al pasar el ratón */
+  transform: scale(1.05);
+  color: white; /* Asegura que el texto sea blanco para mejor contraste */
+
+}
+
+
+/*CV Download Button on Header*/
+.cv{
+    height:50px;
+    width:80px;
+    overflow: hidden;
+    margin-right: 2%;
+    transition: transform 0.3s;
+  
+  }
+  .cv img {
+    width: 100%;
+    display: block;
+  }
+  .cv:hover{
+    transform: scale(1.05);
+  }
+
+
+/*General Fonts---------------------------------------------------------------------------------------------------------------*/
+
+/*Small*/
+.font{
+font-family: 'Raleway', sans-serif;
+font-size: 12px;
+color: #0a0a23;
+}
+
+/*Big*/
+.font2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #0a0a23;
+  font-style: inherit;
+  }
+.nav-sp{
+  margin-right: 20px;
+}
+.container-fluid{
+  padding: 0%;
+}
+
+/* Seccion Banner Hero -------------------------------------------------------------------------------------------------------*/
+
+.video_background{
+  opacity: 0.05;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 98%; /* Ajusta al tamaño deseado, por ejemplo, 90% para que sea más pequeño */
+  margin-top: 1em;
+  height: 85%; /* Ajusta al tamaño deseado, por ejemplo, 90% para que sea más pequeño */
+  border-radius: 50px 50px 0 0; /* Bordes redondeados, ajusta al valor que prefieras */
+  box-shadow: 8px -8px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* Asegura que el video no se desborde de los bordes redondeados */
+
+}
+/* Banner Size*/
+.main-banner-fadeout {
+  opacity: 1;
+  height: 78em;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/*Background Banner Video*/
+.background-video{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* Main Cartoon Pic*/
+.foto-principal{
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  
+}
+.foto-principal img {
+  width: 100%;
+  display: block;
+}
+
+.foto-principal:hover{
+  transform: scale(1.05);
+}
+
+/* Hey I'm Karen Rebeca Gif*/
+.foto-secundaria{
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.foto-secundaria img{
+  width: 100%;
+  display: block;
+}
+.foto-secundaria:hover {
+  transform: scale(1.05);
+}
+
+/* Enterprises Strip-------------------------------------------------------------------------------------------------------*/
+
+.franja-empresas{
+  background-color: black;
+  text-align: center;
+  
+}
+
+.franja-empresas2{
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+/* About Me-------------------------------------------------------------------------------------------------------*/
+
+.image-container2 {
+  text-align: center; /* Centra las imágenes */
+}
+
+.image-container2 img {
+  /* Tamaño más grande para las imágenes */
+  width: 100%; /* Ajusta la imagen al contenedor */
+  max-width: 300px; /* O define un tamaño máximo */
+  
+  /* Blanco y negro por defecto */
+  filter: grayscale(100%);
+  
+  /* Transición suave para transform y filter */
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Reglas cuando se hace hover sobre la imagen */
+.image-container2 img:hover {
+
+  
+  /* Vuelve al color original */
+  filter: grayscale(0%);}
+
+
+  .image-container3{
+    width: 15em;
+    height: 19em;
+  }
+  .image-container3 img{
+    width: 15em;
+    height: 19em;
+    filter: grayscale(100);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    padding: 5%;
+
+  }
+  .image-container3 img:hover{
+    filter: grayscale(0);
+  }
+
+.hover-zoom {
+
+  
+  /* Blanco y negro por defecto */
+  filter: grayscale(100%);
+  
+  /* Transición suave para transform y filter */
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Reglas cuando se hace hover sobre la imagen */
+.hover-zoom:hover {
+  /* Vuelve al color original */
+  filter: grayscale(0%);
+}
+
+/* Section Background*/
+.custom-iframe-size {
+  width: 100%; /* Ancho al 100% del contenedor padre */
+  max-width: 300px; /* Nuevo ancho máximo más pequeño */
+  height: 300px; /* Altura ajustada al nuevo tamaño */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+  background-color: white;
+  height: 400px;
+  
+    
+  }
+  /* Font Styles*/
+.about-me-text {
+    text-align: center;
+    padding: 20%;
+      
+    }
+.about_button{
+      height: 100%;
+      width: 15%;
+      cursor: pointer;
+      opacity: 0.7; /* Opacidad por defecto */
+      transition: opacity 0.3s ease; /* Agrega una transición suave */
+}
+    
+.about_button:hover {
+      opacity: 1; /* Ajusta la opacidad al pasar el mouse */
+}
+    
+  
+
+  /* General <Hr> Styles -------------------------------------------------------------------------------------------------------*/
+.separador{
+  background-image: linear-gradient(to right,#3460BA, #B18EC2, #7E8CD6, #7F6BCF,#B774E0);
+  height: 1px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+
+
+
+/* Cards----------------------------------------------------------------------------------*/
+.cuadro2{
+  overflow: hidden;
+  transition: transform 0.3s;
+ margin-right: 0.1%;
+
+}
+.cuadro2 img {
+  display: block;
+ 
+  
+}
+.cuadro2:hover{
+  transform: scale(1.05);
+}
+
+/* Pic Container */
+.image-container {
+  position: relative;
+  text-align: center;
+  width: 15%;
+  height: 20%;
+  overflow: hidden;
+}
+/* Black & White Filter to transition*/
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s; /* transición suave al aplicar el filtro */
+  filter: grayscale(100%); /* convertir la imagen en blanco y negro */
+}
+/* Hover to Color and Reverse*/
+.image-container:hover img {
+  filter: grayscale(0); 
+
+}
+
+
+.gif_contact{
+height: 90px;
+width: 500px;
+margin-left: -240px;
+}
+
+/*Footer----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Footer General Styles*/
+.foot{
+  background-color: rgb(255, 255, 255 0.8);
+  height: 160px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.foot p {
+  line-height: 0;
+}
+
+.foot_buttons{
+  text-decoration: none;
+  color: #1b1b32;
+  cursor: pointer;
+  
+
+}
+.border-bottom-black {
+  border-bottom: 1px solid black; /* Establece el borde de un píxel de grosor y de color negro */
+}
+/* Media Buttons*/
+.social-icons {
+  display: flex;
+  justify-content: left; /* Centra los íconos horizontalmente */
+  gap: -20px; /* Espacio entre los íconos */
+  position: relative;
+  margin: -10px;
+  
+}
+.social-icons img {
+  width: 32px; /* Ajusta el tamaño de los íconos */
+  height: auto;
+}
+/* Karen Ortiz Right Drawed pic*/
+.karen-ortiz-footer  {
+  
+  display: block;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.karen-ortiz-footer:hover{
+  transform: scale(1.03);
+}
+
+
+/* Hedgehog Gif*/
+.hedgy{
+width: 11%;
+height: auto;
+margin-bottom: 2px black;
+}
+/*Hedgehog Magin*/
+.margin-top{
+  margin-top: 1px black;
+}
+
+
+
+                                        /*>>Indexp.html // Header (with different sections), Footer & Portfolio Section  */
+
+
+/* Cards port----------------------------------------------------------------------------------*/
+/* Clase para aplicar el efecto blanco y negro con el nombre actualizado */
+.gris-mockups {
+  /* Aplica el filtro de blanco y negro */
+  filter: grayscale(100%);
+  padding: 1%;
+  border-radius: 5px;
+  /* Transición suave para el filtro y transformación */
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+/* Clase para cuando el mouse esté sobre la imagen con el nombre actualizado */
+.gris-mockups:hover {
+  /* Remueve el filtro de blanco y negro para que la imagen tenga color */
+  filter: grayscale(0%);
+  /* Aumenta el tamaño de la imagen en un 5% */
+  transform: scale(1.005);
+}
+/* Owl Carousel-----*/
+.owl-carousel {
+  width: 100%; /* O un ancho específico en píxeles, si lo prefieres */
+  max-width: 1900px; /* O el máximo ancho que desees */
+  
+}
+
+/* Establece una altura específica para los elementos del carrusel (items) */
+.owl-carousel .item {
+  height: 120%; /* Ajusta esto a la altura deseada */
+}
+
+/* Asegúrate de que las imágenes se escalen correctamente dentro de los elementos */
+.owl-carousel .item img {
+  width: 100%;
+  height: auto; /* Esto mantendrá la proporción de aspecto de las imágenes */
+  object-fit: cover; /* Esto recortará las imágenes para ajustarlas al contenedor si es necesario */
+
+  /*Main Banner Video*/
+.myportfolio_video{
+  z-index: -1;
+
+}
+
+/*Fade-in Effect for cards*/
+.fade-in{
+  opacity: 0;
+  transition: opacity 2.5s ease; /* Agrega una transición para suavizar el fade-in */
+}
+/*Card Size*/
+.cuadrop {
+  height: 350px;
+  width: 400px;
+  overflow: hidden;
+  margin-right: 2%;
+  border-radius: 5px;
+}
+
+/*Card Bottom Text Container */
+.image-containerp {
+  position: relative;
+  width: 48%;
+  height: 48%;
+  overflow: hidden;
+  padding: 1%;
+  border-radius: 5px;
+}
+.image-containerp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s; /* transición suave al aplicar el filtro */
+  filter: grayscale(100%); /* convertir la imagen en blanco y negro */
+}
+.image-containerp:hover img {
+  filter: grayscale(0); 
+  transform: scale(1.05); /* Aplicar escala al hacer hover */
+  transition: transform 0.3s ease-in-out;
+}
+.image-containerp img:not(:hover) {
+  transition: transform 0.3s ease-in-out; /* Transición suave al revertir el efecto de escala */
+}
+
+
+/*Card Bottom Expand Size Hover & Color Effect */
+.overlay {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  top: 97%;
+  width: 100%;
+  height: 7%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.3s, opacity 0.3s;
+  pointer-events: none; /* Permitir eventos a la imagen debajo */
+}
+.overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none; /* Permitir eventos a la imagen debajo */
+}
+.image-containerp:hover .overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+}
+.image-containerp:hover .overlay-content {
+  opacity: 1;
+}
+
+
+
+/*Museum,Hypatia Section Cards */
+.cuadromuseo {
+  height: 350px;
+  width: 400px;
+  overflow: hidden;
+  left: 12%;
+}
+.image-containermuseo {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  overflow: hidden;
+  padding: 1%;
+  
+}
+.image-containermuseo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s; /* transición suave al aplicar el filtro */
+  filter: grayscale(100%); /* convertir la imagen en blanco y negro */
+}
+.image-containermuseo:hover img {
+  filter: grayscale(0); 
+  transform: scale(1.05); /* Aplicar escala al hacer hover */
+  transition: transform 0.3s ease-in-out;
+}
+.image-containermuseo img:not(:hover) {
+  transition: transform 0.3s ease-in-out; /* Transición suave al revertir el efecto de escala */
+}
+
+/*"Check it's Website Here"*/
+.buttonp {
+  max-width: 20%;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.7; /* Opacidad por defecto */
+  transition: opacity 0.3s ease; /* Agrega una transición suave */
+}
+.buttonp:hover {
+  opacity: 1; /* Ajusta la opacidad al pasar el mouse */
+}
+
+                                             /*>>Indexme.html // About Section*/
+
+/* Tiny real pic*/
+.karen_ortiz{
+  height: 90px;
+  width: 100px;
+  top: 105px;
+  right: 750px;
+  box-shadow: #0a0a23 ;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.karen_ortiz img {
+  width: 100%;
+  display: block;
+}
+.karen_ortiz:hover{
+  transform: scale(1.05);
+}
+
+/* Fade In Text*/
+.fade-in-text{
+  opacity: 0.8;
+  transition: opacity 0.2s ease; /* Agrega una transición para suavizar el fade-in */
+}
+
+/* Class for a general soft hover, forgot to change its name, sorry. U can find it on Nav Bar Elements and some footer and contact elements on the main page*/
+.karen-ortiz-footer2  {
+  
+  display: block;
+  overflow: hidden;
+  transition: transform 0.1s;
+}
+.karen-ortiz-footer2:hover{
+  transform: scale(1.03);
+}
+
+
+.text-fixed-size {
+  font-size: 16px; /* Tamaño de texto fijo en píxeles */
+}
+.container_text {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+
+}
+
+
+
+
+
+/* Responsive Extra */
+
+
+/*logoheader logo del header  */ 
+/* Foto caricatura img1 */
+/* hola soy karen ortiz img2 */
+/* Background banner banner */
+/* empresas img4 */
+/* h1 de about me h1 */
+/* text de about me text */
+/* p de about me p */
+/* learn more about me  / ab */
+/* last projects  / img5 */
+/* tools / img6 */
+/* contact animation / img7 */
+}
+

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Head---------------------------------------------------------------------------------------------------------------->
+<head>
+<!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="author" content="Karen Ortiz">
+    <meta name="description" content="Karen Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Title ---------------------------------------------------------------------------------------------------------------->
+    <title>Portfolio | Contemporary Guitarist & Composer </title>
+<!-- Favicon ---------------------------------------------------------------------------------------------------------------->
+    <link rel="icon" type="image/x-icon" href="https://static.wixstatic.com/media/bc0394_b20119a0a04d470ba1a7a821e8f161ac~mv2.png/v1/fill/w_58,h_58,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bc0394_b20119a0a04d470ba1a7a821e8f161ac~mv2.png">
+<!-- Bootstrap ---------------------------------------------------------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- Bootstrap Icons ---------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<!-- CSS Links ---------------------------------------------------------------------------------------------------------------->
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .image-hover-effect {
+          transition: transform 0.3s, opacity 0.3s; /* Smooth transition for transform and opacity */
+          border-radius: 10px;
+          box-shadow:0px 0px 10px 8px rgba(95, 95, 95, 0.1);
+        }
+    
+        .image-hover-effect:hover {
+          transform: scale(1.02); /* Scale image to 105% */
+          opacity: 0.5; /* Reduce opacity to 90% */
+        }
+        .purple-separator {
+  height: 1px;
+  background-color: rgb(202, 2, 202);
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+  opacity: 60%;
+}
+      </style>
+<!-- Google Fonts ---------------------------------------------------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Josefin+Sans&family=Orbitron:wght@600&family=Poppins:wght@200&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+    <script src="scriptEffects.js"></script>
+
+    <!--Owl Caroussel-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="owl.js"></script>
+<script src="scriptEffects.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  </head>
+
+<!--Body---------------------------------------------------------------------------------------------------------------->
+<body>
+<!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)-->
+
+
+<!--Main logo-->
+          <img src="https://static.wixstatic.com/media/bc0394_2c077e63e56f4ea9b3e31ba9ed303ab9~mv2.gif" height="20px" width="100px" alt="Logo de la página web" class="logoheader">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+
+<!--NavBar-->
+<header id="miHeader" ">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="indexmain.html">
+
+<!--Main logo-->
+          <img src="https://static.wixstatic.com/media/bc0394_2c077e63e56f4ea9b3e31ba9ed303ab9~mv2.gif" height="20px" width="100px" alt="Logo de la página web" class="logoheader karen-ortiz-footer">
+          </a>
+        
+<!--NavBar Items -->        
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+<!--NavBar Items -->        
+            <li class="nav-item"></li>
+              <li class="nav-item">
+                  <button id="downloadCvButton" class="button-io" style="padding: 0 10px 0 10px; font-size: medium;">
+
+                        <span>Get my CV here &#x1F5DE;</span>
+
+                  </button>
+                </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-sp karen-ortiz-footer2" href="indexmain.html">General</a>
+                  </li>
+                      <li class="nav-item">
+                        <a class="nav-link nav-sp karen-ortiz-footer2" href="indexme.html">About</a>
+                      </li>
+                          <li class="nav-item">
+                            <a class="nav-link nav-sp karen-ortiz-footer2" href="indexmusic.html">Music</a>
+                          </li>
+                              <li class="nav-item">
+                                <a class="nav-link nav-sp karen-ortiz-footer2" href="indexmain.html#tools">Tools</a>
+                              </li>
+                                  <!-- Ítem de Portfolio con subsecciones -->
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle karen-ortiz-footer2" href="indexp.html" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Portfolio
+                                    </a>
+
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                                          <li><a class="dropdown-item" href="indexp.html">ZOEK & Webcrafters</a></li>
+                                          <li><a class="dropdown-item" href="indexuin.html">UINCLUB</a></li>
+                                          <li><a class="dropdown-item" href="indexcico.html">CicoSpace</a></li>
+                                          <li><a class="dropdown-item" href="indexmu.html">Science Museum</a></li>
+                                          <li><a class="dropdown-item" href="indexhy.html">Hypatia Magazine</a></li>
+                                        </ul>
+                                  </li>
+
+                              <li class="nav-item">
+                                <a class="nav-link nav-sp karen-ortiz-footer2" href="indexmain.html#reviews">Reviews</a>
+                              </li>
+                          <li class="nav-item">
+                            <a class="nav-link nav-sp karen-ortiz-footer2" href="indexhow.html#contact">Contact</a>
+                          </li>
+              </ul>
+ </nav>
+</header>
+                                              
+  <!-- Video de Fondo -->
+  <video autoplay muted loop class="background-video">
+    <source src="https://video.wixstatic.com/video/11062b_7e61ffd6dbb040ee8b0e4dc604e8fd4e/1080p/mp4/file.mp4" type="video/mp4">
+  </video>
+  
+
+
+
+<!-- More About Me Section---------------------------------------------------------------------------------------------->
+<section style="margin-top: 8%">
+  <div class="container ">
+    <div  class="row ">
+      <div  class="col-md-4 mx-auto">
+        <div class="about-me-image">
+          <!-- Asegúrate de reemplazar 'image-src.jpg' con la ruta real de tu imagen -->
+          <img data-aos="fade-left" style="margin-top:5%;
+          border-radius: 15px 0 15px 0;
+          box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2); " src="https://static.wixstatic.com/media/bc0394_75f5d47140d1445cbe9739299a75f89f~mv2.jpg" class="img-fluid" alt="IA Image">
+        </div>
+      </div>
+      <!-- Columna de texto a la izquierda -->
+      <div  class=" col-md-6">
+        <div >
+          <h1 style="font-family: 'Raleway', sans-serif;" class="h1 fade-in-text">About Me:</h1>
+          <p class="text-break h4" style="font-family: 'Raleway', sans-serif; color:#A648CB;">
+            I'm Mexican, and live in Cuernavaca, Morelos, and I was born here too. I studied Computer Systems Engineering & Contemporary Music.
+          </p>
+          <p class="text-break h4" style="font-family: 'Raleway', sans-serif;">
+           I have extensive experience directing string ensembles, choral groups, fusion projects; transcribing, teaching, arranging, and performing fusion jazz, progressive metal, and contemporary music. 
+          </p>
+          <p class="text-break h4" style="font-family: 'Raleway', sans-serif; color:#A648CB;">
+            This work has allowed me to gain recognition in Morelos and collaborate on educational and research projects, thanks to my passion for composition, music theory, leadership, technology, and various methodologies that allow my work to unfold between functionality, purpose, and above all, art.
+          </p>
+          
+          <p style="font-family: 'Raleway', sans-serif;" class="h4">
+            As a Composer, I have a passion for crafting stunning and engaging experiences in the musical realm. With a strong background in art principles and a keen eye for aesthetics, I specialize progressive & contemporary music, captivating technical, and innovative aspects between many musical strategies. I thrive on staying up-to-date with the latest design trends and technologies to deliver cutting-edge solutions that not only meet client objectives but also leave a lasting impact on every student.
+          </p>
+        </div>
+      </div>
+
+      <!-- Columna de imagen a la derecha -->
+
+    </div>
+  </div>
+</section>
+
+
+<div style="margin-top: 3%;" class="purple-separator"></div>
+
+<div  style="text-align: center; margin-top: 2%;">
+    
+  <span class="skillTag">Contemporary Composition &#x1F3BC;</span> <!-- 🎼 -->
+  <span class="skillTag">Guitarist &#x1F3B8;</span> <!-- 🎸 -->
+  <span class="skillTag">Transcription &#x270F;</span> <!-- ✏️ -->
+  <span class="skillTag">Theory and Pedagogy &#x1F4D0;</span> <!-- 📐-->
+  <span class="skillTag">Music Production &#x1F3A7;</span> <!-- 🎧 -->
+</div>
+
+<section style="margin-top: 8%">
+    <div class="container ">
+      <div  class="row ">
+        <!-- Columna de texto a la izquierda -->
+        <div  class=" col-md-6">
+          <div>
+            <video autoplay muted loop>
+                <source src="https://photos.app.goo.gl/8ej63S7iP91bfxcDA" type="video/mp4">
+              </video>
+          </div>
+        </div>
+  
+        <!-- Columna de imagen a la derecha -->
+        <div  class="col-md-4 mx-auto">
+          <div class="about-me-image">
+            <!-- Asegúrate de reemplazar 'image-src.jpg' con la ruta real de tu imagen -->
+            <img data-aos="fade-left" style="margin-top:5%;
+            border-radius: 15px 0 15px 0;
+            box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2); " src="https://static.wixstatic.com/media/bc0394_b0089a7153dd4536a9245cf5b3658f3c~mv2.png" class="img-fluid" alt="IA Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section>
+ <h1 style="font-family: 'Raleway', sans-serif;" class="h1">Some Recent Projects.</h1>
+<div class="container">
+  <div class="row">
+    <!-- Primer grupo de dos imágenes -->
+    <div class="col-md-3 mx-auto">
+      <a href="#" class="btn image-hover-effect-music" role="button">
+        <img src="https://static.wixstatic.com/media/bc0394_8601235b770d46cf94057933cd29ef83~mv2.jpg" class="img-fluid image-hover-effect" alt="All i Need Transcription">
+      </a>
+      <a href="#" class="btn image-hover-effect-music" role="button">
+        <img src="https://static.wixstatic.com/media/bc0394_edcb9a2c852048daaea528a2dde618ce~mv2.jpg" class="img-fluid image-hover-effect" alt="As Transcription">
+      </a>
+    </div>
+    
+    <!-- Segundo grupo de dos imágenes -->
+    <div class="col-md-3 mx-auto">
+        <a href="#" class="btn " role="button">
+          <img src="https://static.wixstatic.com/media/bc0394_74a11f104d1f4a7a91126535cb174721~mv2.jpg" class="img-fluid image-hover-effect" alt="Baby Transcription">
+        </a>
+        <a href="#" class="btn " role="button">
+          <img src="https://static.wixstatic.com/media/bc0394_f7eb97ef0a664f91b34a68ba7e22b36e~mv2.jpg" class="img-fluid image-hover-effect" alt="Overjoyed Transcription">
+        </a>
+      </div>
+      
+      <!-- Tercer grupo de dos imágenes -->
+      <div class="col-md-3 mx-auto">
+        <a href="#" class="btn " role="button">
+          <img src="https://static.wixstatic.com/media/bc0394_328ebc581d474e87bbfed0b2835da3e7~mv2.jpg" class="img-fluid image-hover-effect" alt="Scoreser's Apprentice Transcription">
+        </a>
+        <a href="#" class="btn " role="button">
+          <img src="https://static.wixstatic.com/media/bc0394_c32b5496b52148369ef177e9d53e8ebc~mv2.jpg" class="img-fluid image-hover-effect" alt="Don't Speak 60's Style Transcription">
+        </a>
+      </div>
+    </section>+
+<!-- My Work as a science divulgator---------------------------------------------------------------------------------------------->
+
+<section style="margin-top: 8%">
+  <div class="container">
+    <div class="row">
+      <!-- Columna izquierda para imágenes -->
+      <div  class="col-md-2 cuadro2 image-container ">
+        <img src="https://static.wixstatic.com/media/bc0394_4c19275b959042e39e13c8e790e17c36~mv2.jpg" alt="nao1" loading="lazy" class="fade-in" style="width:100%; margin-bottom:20px;border-radius: 15px 0 0 0;">
+        <img src="https://static.wixstatic.com/media/bc0394_a7ced6290def4cbd8d23a4dcd96152e6~mv2.jpg" alt="nao2" loading="lazy" class="fade-in" style="width:100%; margin-bottom:20px;">
+        <img src="https://static.wixstatic.com/media/bc0394_fce8c06d53df479f899b2be5bb55012e~mv2.jpg" alt="nao3" loading="lazy" class="fade-in" style="width:100%; margin-bottom:20px;">
+         </div>
+
+      <div class="col-md-2 cuadro2 image-container">
+
+        <img src="https://static.wixstatic.com/media/bc0394_94b9b5dd4b35417c98d0c0a2570097ed~mv2.jpg" alt="nao4" loading="lazy" class="fade-in" style="width:100%; margin-bottom:20px;">
+        <img src="https://static.wixstatic.com/media/bc0394_d0fd93080d64484d941a31d62155cf8e~mv2.jpg" alt="nao5" loading="lazy" class="fade-in" style="width:100%; margin-bottom:20px;">
+        <img src="https://static.wixstatic.com/media/bc0394_45c00e45a4334be4842e60cf079926ba~mv2.jpg" alt="nao6" loading="lazy" class="fade-in" style="width:100%; margin-bottom:20px;margin-bottom:20px;border-radius: 0 0 15px 0;">
+      </div>
+
+      <!-- Columna derecha para texto -->
+      <div class="col-lg-7">
+        <div>
+          <h1 style="font-family: 'Raleway', sans-serif;" class="h1">My Work as a Science Divulgator.</h1>
+          <p style="font-family: 'Raleway', sans-serif;" class="h4">
+            This is my permanent job. I love to talk about science and technology. I've worked with the Science & Technology Council of the State of Morelos to bring science to the most remote places in the state.
+          </p>
+          <p class="text-break h4" style="font-family: 'Raleway', sans-serif; color:#A648CB;">
+            I've worked especially with NAO. It's a robot used for education and health sector mostly. I'm in charge of programming using Python and C++.
+          </p>
+          <p class="text-break h4" style="font-family: 'Raleway', sans-serif;">
+            Science trailer has visited several municipalities where we talk about 3D Printing, Space Science, Robotics, Programming, VR, etc to the public in general and children, from 3 years to adults. Also, we have visited several universities around the state talking about robotics, programming, and Artificial Intelligence. Universities like the Universidad Politécnica del Estado de Morelos, Universidad Autónoma del Estado de Morelos have participated with Science Trailer to bring science to universities. Most recently I started to give NAO Programming capacitaciones to the Artificial Intelligence Faculty of the Universidad Autónoma del Estado de Morelos.
+            <br><br>
+          </p>
+          <p class="text-break h4" style="font-family: 'Raleway', sans-serif; color:#A648CB;">
+            I Really love this job.<br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--badges-->
+<section data-aos="fade-up" style="margin-top: 8%">
+  <h1 style="font-family: 'Raleway', sans-serif;margin-bottom: 2%;" class="h1">My Certifications:</h1>
+  <div class="container">
+    <div class="row" style="display: flex; justify-content: center;">
+      <div class="col-md-2" style="margin-right: 1%;">
+        <img src="https://static.wixstatic.com/media/bc0394_58b4c39ccc264fd1bbe7e11ce8b79c85~mv2.png" alt="Data Scientist Bedu" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+        <img src="https://static.wixstatic.com/media/bc0394_12c7a7327fe4443c9089001357f667e9~mv2.png" alt="iOS Dev" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+        <img src="https://static.wixstatic.com/media/bc0394_d676a82bfc37402c961027b15b078691~mv2.png" alt="IA Fundamentals" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;margin-bottom:20px;border-radius: 0 0 15px 0;">
+        <img src="https://static.wixstatic.com/media/bc0394_83f77a3b00314a15b0d14904d71286c0~mv2.png" alt="Data Engineer" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+        <img src="https://static.wixstatic.com/media/bc0394_06943963da34441abf76528853dc2994~mv2.png" alt="IA for Programmers" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;margin-bottom:20px;border-radius: 0 0 15px 0;">
+        <img src="https://static.wixstatic.com/media/bc0394_a5cd7b68012146a49ef4b2722872e837~mv2.png" alt="Large Language Models" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;margin-bottom:20px;border-radius: 0 0 15px 0;">
+      </div>
+      <div class="col-md-2" style="margin-right: 1%;">
+      <img src="https://static.wixstatic.com/media/bc0394_14de77b886ba453da087ab7ef59b91ca~mv2.png" alt="Google Cloud Platform" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+      <img src="https://static.wixstatic.com/media/bc0394_2f97714b470044d0aac589c9b9f329c5~mv2.png" alt="Microsoft Azure" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+      <img src="https://static.wixstatic.com/media/bc0394_76621f4ed2004cc1b8ce43a393c300d1~mv2.png" alt="Amazon Web Services" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;margin-bottom:20px;border-radius: 0 0 15px 0;">
+      <img src="https://static.wixstatic.com/media/bc0394_75295692319d4ae992565f9cb2d87b7e~mv2.jpg" alt="Cloud Digital Leader" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+      <img src="https://static.wixstatic.com/media/bc0394_16287bac86044636b83c327adec4eda8~mv2.png" alt="C# & .NET Backend" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;margin-bottom:20px;border-radius: 0 0 15px 0;">
+      <img src="https://static.wixstatic.com/media/bc0394_87bdb169596c437cb3957f8043baea91~mv2.png" alt="Fullstack Wordpress" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+
+    </div>
+    <div class="col-md-2" style="margin-right: 1%;">
+      <img src="https://static.wixstatic.com/media/bc0394_ce85156539144262845c955b5d877747~mv2.png" alt="Web Development HTML + CSS" loading="lazy" class="fade-in hover-zoom" style="width:100%; margin-bottom:40px;">
+      <img src="https://static.wixstatic.com/media/bc0394_12c7a7327fe4443c9089001357f667e9~mv2.png" alt="iOS Development" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+      <img src="https://static.wixstatic.com/media/bc0394_4f57959771e44108b702c919f032420c~mv2.png" alt="Deep HTML + CSS" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;margin-bottom:20px;border-radius: 0 0 15px 0;">
+      <img src="https://static.wixstatic.com/media/bc0394_cdd3d82a1fa6471cb9474b1dee3d7ddb~mv2.png" alt="Deep Javascript" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+      <img src="https://static.wixstatic.com/media/bc0394_ef815b5af0c646f283781d4a3ff4f94d~mv2.png" alt="Fullstack Javascript" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;margin-bottom:20px;border-radius: 0 0 15px 0;">
+      <img src="https://static.wixstatic.com/media/bc0394_d85f1880a0064407992c2ab3418c8c9b~mv2.png" alt="Velo Developer" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+    </div>
+          <div class="col-md-2" style="margin-right: 1%;">
+        <img src="https://static.wixstatic.com/media/bc0394_dfa5fb480d064e838437855c051de77c~mv2.png" alt="C1 English" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+        <img src="https://static.wixstatic.com/media/bc0394_2ca998bac70444e6a164f4a3bd1ce1d6~mv2.png" alt="Complementary English" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+        <img src="https://static.wixstatic.com/media/bc0394_74374d225f3e44f4b5e26a79b8851a92~mv2.png" alt="Gender Diversity" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;margin-bottom:20px;border-radius: 0 0 15px 0;">
+        <img src="https://static.wixstatic.com/media/bc0394_658f1fcfeff44193a807c17793f8f673~mv2.png" alt="Oratory & Communitation" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;">
+        <img src="https://static.wixstatic.com/media/bc0394_c818c5f46bf44832b003aabadd40b6be~mv2.png" alt="Leadership" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:20px;margin-bottom:40px;border-radius: 0 0 15px 0;">
+        <img src="https://static.wixstatic.com/media/bc0394_ac6f909488d34e5e9f59e488692e9954~mv2.png" alt="Community Managment" loading="lazy" class="fade-in hover-zoom karen-ortiz-footer" style="width:100%; margin-bottom:40px;margin-bottom:20px;border-radius: 0 0 15px 0;">
+      </div>
+    </div>
+
+
+                                              <hr style="color: white;"><!--Section Separator --> 
+                                              <hr style="color: white;"><!--Section Separator --> 
+                                              <hr style="color: white;"><!--Section Separator --> 
+                                             <div class="separador"></div> <!--purple hr--->
+                                             <hr style="color: white;"><!--Section Separator -->  
+
+<!-- Certifications video
+<section id="top">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h1 style="font-family: 'Raleway', sans-serif; " class="h1">Check my Certifications: </h1>
+         Video Background 
+        <div>
+          <video id="videoElement" autoplay muted class="w-100 img-fluid"> 
+            <source src="https://video.wixstatic.com/video/bc0394_c130ad729ae3452db705da6bca43a76a/1080p/mp4/file.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      </div>
+  </div>
+  ------------------------------------------------------------------------------------------->
+</section>
+
+                                              <div class="separador"></div> <!--purple hr--->
+
+                                             <!--Divulgator-->
+<section id="Divulgator">
+
+  <div class="container text-center about-me-text" style="padding: 3%;">
+    <div class="row-g-2">
+
+      <div class="col-xs">
+        
+      </div>
+
+
+ 
+                                            <hr style="color: white;"><!--Section Separator -->  
+                                            <hr style="color: white;"><!--Section Separator -->  
+                                            <hr style="color: white;"><!--Section Separator -->  
+                                            
+                                            <section>
+                                              <!-- Blog Cards-->
+ 
+
+                                              <br>
+                                              <br>
+                                              </section>
+                                              <!--Owl Section--> 
+
+
+<section >
+  <div class="container">
+    <div class="row-g-6 " style="display: flex; justify-content: center;">
+      <div class="col-4  image-container2">
+        <img src="https://static.wixstatic.com/media/bc0394_c387d3d1ee2c4610a9643037b0973ba9~mv2.jpg" style="border-radius: 10px 0 0 0; margin-bottom: 15%;" alt="hedgy1" loading="lazy" >
+        <img src="https://static.wixstatic.com/media/bc0394_c28841c8932a4b64bda6d55f168d0e18~mv2.jpg" style="border-radius: 0 0 0 10px;" alt="hedgy2" loading="lazy">
+      </div>
+      <div class="col-4 image-container2">
+        <img src="https://static.wixstatic.com/media/bc0394_823ae02bfe084996a085d6810f7502d4~mv2.jpg" style="border-radius: 0 10px 0 0; margin-bottom: 2%;" alt="hedgy3" loading="lazy">
+        <img src="https://static.wixstatic.com/media/bc0394_760b207c428341b5ad2ad7e55e1f6295~mv2.jpg" style="border-radius: 0 0 10px 0;" alt="hedgy4" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Favorite Albums----------------------------------------------------------------------------------------------->
+<div class="container text-center about-me-text" style="padding: 9%;">
+  <div class="row-g-2">
+
+    <div class="col-xs">
+      
+    </div>
+    
+                                           
+                                            <hr style="color: white;"><!--Section Separator-->
+    <div class="col-xl">
+      <h1 style="font-family: 'Raleway', sans-serif;" class="h1" >My favorite music albums: </h1>
+<!--Tittle-->                              
+
+
+
+                                              <hr style="color: white;"><!--Section Separator -->   
+                                                    
+<!--Owl Section--> 
+<!--Album Cards-->
+
+<section id="albumCards">
+  <div class="container" style="z-index: 0;"">
+    <div class="owl-carousel owl-theme "">
+     
+      <div class="item">
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:380px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/tr/album/periphery-v-djent-is-not-a-genre/1656947312"></iframe>
+        <div class="overlay-content font">DJent is not a Genre'</div>
+      </div>
+
+      <div class="item">
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:380px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/fauna/1650860109"></iframe>
+        <div class="overlay-content font">Fauna'</div>
+      </div>
+
+      <div class="item">
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:380px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/to-pimp-a-butterfly/1440828886"></iframe>
+        <div class="overlay-content font">To to Pimp a Butterfly'</div>
+      </div>
+
+      <div class="item">
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:380px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/sempiternal-deluxe/598951818"></iframe>
+        <div class="overlay-content font">Sempiternal'</div>
+      </div>
+
+      <div class="item">
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:380px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/terraformer/1618539649"></iframe>
+        <div class="overlay-content font">Terraformer'</div>
+      </div>
+
+      <div class="item">
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:380px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/mx/album/am/663097964"></iframe>
+        <div class="overlay-content font">AM'</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+                                              <div class="separador" style="margin-top: 5%;"></div> <!--purple hr--->
+                                              <hr style="color: white;"><!--Section Separator -->  
+
+          <!---Some Hedgehog Pics----------------------------------------------------------------------------------------------------------->
+<section id="Hedgehog">
+<div class="container" style="z-index: 0;"">
+  <div class="owl-carousel owl-theme "">
+   
+    <div class="item">
+      <img src="https://static.wixstatic.com/media/bc0394_c387d3d1ee2c4610a9643037b0973ba9~mv2.jpg" alt="hedgy1" loading="lazy" class="fade-in-text">
+      <div class="overlay-content font">Happy & Sittin'</div>
+    </div>
+
+    <div class="item">
+      <img src="https://static.wixstatic.com/media/bc0394_c28841c8932a4b64bda6d55f168d0e18~mv2.jpg" alt="hedgy2" loading="lazy" class="fade-in-text">
+      <div class="overlay-content font">Chillin'</div>
+    </div>
+
+    <div class="item">
+      <img src="https://static.wixstatic.com/media/bc0394_823ae02bfe084996a085d6810f7502d4~mv2.jpg" alt="hedgy3" loading="lazy" class="fade-in-text">
+      <div class="overlay-content font">IDK what to write here. Hey?'</div>
+    </div>
+
+    <div class="item">
+      <img src="https://static.wixstatic.com/media/bc0394_760b207c428341b5ad2ad7e55e1f6295~mv2.jpg" alt="hedgy4" loading="lazy" class="fade-in-text">
+      <div class="overlay-content font">Angry bc adopted her'</div>
+    </div>
+
+
+  </section>
+                                  
+<section>
+  <div class="about-me-text" style="padding: 0%;">
+    <h1 style="font-family: 'Raleway', sans-serif;" class="karen-ortiz-footer2 h3"> Thank u So Much for exploring my page! Leave me a Message if it's Something i Can Help you With 🤓.
+    </h1>
+  </div>
+</section>
+  
+                
+<hr style="color: white;"><!--Section Separator --> 
+<hr style="color: white;"><!--Section Separator --> 
+
+<!--Footer---------------------------------------------------------------------------------------------------------------->
+<footer class="foot"> 
+<section>
+<!--logo-->
+      <div class="container text-start">
+        <div class="row align-items-start">
+          <div class="col-2" style="position: relative; left: -4px;">
+            <img  src="https://static.wixstatic.com/media/bc0394_2c077e63e56f4ea9b3e31ba9ed303ab9~mv2.gif" height="23px" width="120px" alt="Logo de la página web" >
+          </div>
+          <div class="col">
+            
+          </div>
+          <div class="col">
+            
+          </div>
+        </div>
+      </div>
+<!--left footer's columns-->
+<div class="container text-start">
+   <div class="row align-items-start">
+      <div class="col">
+            <h6> <b>Address </b></h6>
+            <p>Cuernavaca,</p>
+            <p>Morelos, México </p>
+            <h6> <b>   Contact </b></h6>
+            <p>   karen.ortizg@yahoo.com</p>
+            <p>   Over this webpage's chat</p>
+    </div>
+          
+    <div class="col search-col">
+            <p></p>
+            <p></p>
+            <p>Search:</p>
+            <a href="indexmain.html#top" style="font-style: inherit;" class="foot_buttons">Top</a><br>
+            <a href="indexmain.html#about" style="font-style: inherit;" class="foot_buttons">About</a><br>
+            <a href="indexmain.html#tools" class=" foot_buttons">Tools</a><br>
+            <a href="indexp.html" class=" foot_buttons">Portfolio</a><br>
+            <a href="indexmain.html#reviews" class=" foot_buttons">Reviews</a><br>
+            <a href="indexhow.html#contact" class=" foot_buttons">Contact</a><br>
+      </div>
+          
+      <div class="col text-end karen-ortiz-footer pic_foot">
+        <img src="https://static.wixstatic.com/media/bc0394_24f8010bd4b941658c505b94d842ac27~mv2.png" height="120px" width="120px" style="border-radius: 80px;">
+            
+      </div>
+        
+      </div>
+      </div>
+
+      <!--social icons-->
+      <div class="container text-start soc_foot">
+        <div class="row align-items-start">
+          <div class="col-12">
+            <div class="social-icons">
+              <a href="https://www.webcraftersdesigns.com/" target="_blank"><img src="https://static.wixstatic.com/media/bc0394_599d382fa41a46d9851b1635cd22a820~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bc0394_599d382fa41a46d9851b1635cd22a820~mv2.png" alt="webcrafters" style="padding:25%;"></a>
+              <a href="https://www.instagram.com/karenrebeca.og/?hl=es" target="_blank"><img src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" alt="instagram" style="padding:25%"></a>
+              <a href="https://www.linkedin.com/in/karen-rebeca-ort%C3%ADz-b5a860282/" target="_blank"><img src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6ea5b4a88f0b4f91945b40499aa0af00.png" alt="linkedin" style="padding:25%"></a>
+              <a href="https://github.com/karenrebecag" target="_blank"><img src="https://static.wixstatic.com/media/11062b_138b4018ea8244fcb5137cb0e98361f3~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_138b4018ea8244fcb5137cb0e98361f3~mv2.png" alt="github" style="padding:25%"></a>
+              <a href="https://discord.gg/YPfNs76n" target="_blank"><img src="https://static.wixstatic.com/media/11062b_f642c87820384bd6b2a7c95d10b73a22~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_f642c87820384bd6b2a7c95d10b73a22~mv2.png"  alt="discord" style="padding:25%"></a>
+    
+
+              
+              <div class="container text-center">
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    
+                  </div>
+                  <div class="col">
+                    
+                  </div>
+                  <div class="col">
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  
+                </div>
+              </div>
+                <div class="col">
+                
+                </div>
+             </div>
+                   <div class="col">
+              
+                   </div>
+            
+                      <div class="col">
+                        
+                      </div>
+                        <div class="col">
+                          
+                        </div>
+                </div>
+                <div class="col">
+                  
+                </div>
+              </div>
+              <div class="col">
+                
+              </div>
+            </div>
+            <div class="col">
+              
+            </div>
+                </div>
+              </div>
+
+
+</section>
+                      <hr style="color: white;"><!--Section Separator -->
+</div>
+<section>
+<!--hedgehog-->
+             
+                    <img src="https://static.wixstatic.com/media/bc0394_34c638f1286d4574895a6185059d2a38~mv2.gif" alt="hedgy" class="hedgy"> 
+                    
+<!--legend-->
+                  <text style="font-size: 12px; text-align: center; " >
+                    © 2023 Karen Ortiz /  Designed and programmed by me:)
+                  </text>
+                  
+                 
+                </div>
+              </div>
+
+</section>     
+  
+
+</footer>
+
+
+<!--additionals js links (Whatsapp API & JS Files)-->
+<div>
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-d89d577e-e2bd-47c3-95a3-2ce640379e7b" data-elfsight-app-lazy></div>
+
+<!--whatsapp-->
+<div class="elfsight-app-4102a6a5-5954-48c4-b02f-7f2059bcfb0d" data-elfsight-app-lazy></div>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="main.js"></script>
+<script src="header.js"></script>
+<script src="fadeout.js"></script>
+</div>
+<script>
+  AOS.init();
+</script>
+<script>
+  // JavaScript para hacer que la imagen siga al cursor
+  document.addEventListener('mousemove', function(e) {
+      var follower = document.getElementById('follower');
+      // Puedes ajustar 'left' y 'top' para posicionar la imagen exactamente donde la deseas.
+      follower.style.left = e.pageX + 'px';
+      follower.style.top = e.pageY + 'px';
+  });
+  </script>
+<script>
+  document.getElementById('downloadCvButton').addEventListener('click', function() {
+      window.open('https://bc039413-b629-4485-81f6-45112da50757.usrfiles.com/ugd/bc0394_199aaf04412a41fda293ff8be9502807.pdf', '_blank');
+  });
+  </script>
+<script>
+  // Seleccionar todas las etiquetas con la clase 'skillTag'
+var skillTags = document.querySelectorAll('.skillTag');
+
+// Función para cambiar el estilo de la etiqueta
+function changeStyleOnHover(event) {
+event.target.style.backgroundColor = 'rgba(173, 216, 230, 0.5)';
+
+event.target.style.transform = 'scale(1.1)'; // Hacer que la etiqueta sea un poco más grande
+}
+
+function resetStyle(event) {
+event.target.style.backgroundColor = ''; // Restablecer el color de fondo
+event.target.style.transform = ''; // Restablecer la transformación
+}
+
+// Asignar eventos a cada etiqueta
+skillTags.forEach(function(tag) {
+tag.addEventListener('mouseenter', changeStyleOnHover);
+tag.addEventListener('mouseleave', resetStyle);
+});
+
+// Function to update the position of the tags based on the cursor's position
+function gravitateTowardsCursor(event) {
+const skillTags = document.querySelectorAll('.skillTag');
+
+skillTags.forEach(tag => {
+const tagRect = tag.getBoundingClientRect();
+const tagCenterX = tagRect.left + tagRect.width / 2;
+const tagCenterY = tagRect.top + tagRect.height / 2;
+
+const distanceX = tagCenterX - event.clientX;
+const distanceY = tagCenterY - event.clientY;
+const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY); // Pythagorean theorem
+
+// The maximum distance at which the effect occurs
+const maxDistance = 150;
+
+// If the cursor is within maxDistance, move the tag
+if (distance < maxDistance) {
+  const force = (1 - distance / maxDistance) * 10; // Calculate "gravitational force"
+  const moveX = -force * (distanceX / distance);
+  const moveY = -force * (distanceY / distance);
+  
+  // Apply the movement to the tag's transform property
+  tag.style.transform = `translate(${moveX}px, ${moveY}px)`;
+} else {
+  // Reset the position if the cursor is too far away
+  tag.style.transform = 'translate(0, 0)';
+}
+});
+}
+
+// Listen for mouse movement on the entire document
+document.addEventListener('mousemove', gravitateTowardsCursor);
+// Función para calcular la distancia entre dos puntos
+function getDistance(x1, y1, x2, y2) {
+let xDist = x1 - x2;
+let yDist = y1 - y2;
+return Math.sqrt((xDist * xDist) + (yDist * yDist));
+}
+
+// Función para mover una imagen hacia el cursor
+function moveTowardsCursor(event, imageElement, strength) {
+const imgRect = imageElement.getBoundingClientRect();
+const imgCenterX = imgRect.left + imgRect.width / 2;
+const imgCenterY = imgRect.top + imgRect.height / 2;
+
+const distance = getDistance(imgCenterX, imgCenterY, event.clientX, event.clientY);
+
+// Cuanto más cerca esté el cursor, más fuerte será el efecto
+if (distance < 600) { // Puedes ajustar este valor para cambiar el rango de la "gravedad"
+    const deltaX = (event.clientX - imgCenterX) / strength;
+    const deltaY = (event.clientY - imgCenterY) / strength;
+
+    imageElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+} else {
+    // Resetea la posición si el cursor está demasiado lejos
+    imageElement.style.transform = 'translate(0px, 0px)';
+}
+}
+
+document.addEventListener('mousemove', function(event) {
+const images = document.querySelectorAll('.karen-ortiz-footer');
+
+images.forEach((image) => {
+    moveTowardsCursor(event, image, 20); // El segundo argumento es la "fuerza" de la gravedad
+});
+});
+
+</script>
+
+                                                  <script>
+
+                                                    // Función para calcular la distancia entre dos puntos
+                                                    function getDistance(x1, y1, x2, y2) {
+                                                    let xDist = x1 - x2;
+                                                    let yDist = y1 - y2;
+                                                    return Math.sqrt((xDist * xDist) + (yDist * yDist));
+                                                    }
+
+                                                    // Función para mover una imagen hacia el cursor
+                                                    function moveTowardsCursor(event, imageElement, strength) {
+                                                    const imgRect = imageElement.getBoundingClientRect();
+                                                    const imgCenterX = imgRect.left + imgRect.width / 2;
+                                                    const imgCenterY = imgRect.top + imgRect.height / 2;
+
+                                                    const distance = getDistance(imgCenterX, imgCenterY, event.clientX, event.clientY);
+
+                                                    // Cuanto más cerca esté el cursor, más fuerte será el efecto
+                                                    if (distance < 600) { // Puedes ajustar este valor para cambiar el rango de la "gravedad"
+                                                        const deltaX = (event.clientX - imgCenterX) / strength;
+                                                        const deltaY = (event.clientY - imgCenterY) / strength;
+
+                                                        imageElement.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+                                                    } else {
+                                                        // Resetea la posición si el cursor está demasiado lejos
+                                                        imageElement.style.transform = 'translate(0px, 0px)';
+                                                    }
+                                                    }
+
+                                                    document.addEventListener('mousemove', function(event) {
+                                                    const images = document.querySelectorAll('.karen-ortiz-footer');
+
+                                                    images.forEach((image) => {
+                                                        moveTowardsCursor(event, image, 20); // El segundo argumento es la "fuerza" de la gravedad
+                                                    });
+                                                    });
+                                                </script>
+</body>
+</html>
+
+  

@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Head---------------------------------------------------------------------------------------------------------------->
+<head>
+<!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="author" content="Karen Ortiz">
+    <meta name="description" content="Karen Rebeca Ortiz">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Title ---------------------------------------------------------------------------------------------------------------->
+    <title>Karen Ortiz | UX Designer & Programmer </title>
+<!-- Favicon ---------------------------------------------------------------------------------------------------------------->
+    <link rel="icon" type="image/x-icon" href="https://static.wixstatic.com/media/bc0394_1047cedca14c4ed9b1a7aa4d87f8d8a9~mv2.png">
+<!-- Bootstrap ---------------------------------------------------------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons ---------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<!-- CSS Links ---------------------------------------------------------------------------------------------------------------->
+    <link href="/Styles/style.css" rel="stylesheet">
+    <link href="/Styles/responsive.css" rel="stylesheet">
+    <link href=/Styles/mainpage.css" rel="stylesheet">
+  <link href="/Styles/toggle.css" rel="stylesheet">
+
+<!-- Enlace a la hoja de estilo predeterminada (modo claro) -->
+<link rel="stylesheet" id="theme-stylesheet" href="/Styles/style.css">
+<link rel="stylesheet" id="mainpage-stylesheet" href="/Styles/mainpage.css">
+
+
+
+<!-- Google Fonts ---------------------------------------------------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Josefin+Sans&family=Orbitron:wght@600&family=Poppins:wght@200&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+    <script src="/Pages/scriptEffects.js"></script>
+<!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- AOS JS -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+    <!--Scrollbar-->
+    <style>
+      /* Estilo del scrollbar completo */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+    height: 5px;
+}
+
+/* Estilo del track del scrollbar (la parte que "contiene" al thumb) */
+::-webkit-scrollbar-track {
+    background: #ebdfdf; /* Color de fondo del track del scrollbar */
+}
+
+/* Estilo del thumb del scrollbar (la parte que se mueve/arrastra) */
+::-webkit-scrollbar-thumb {
+    background-color: black; /* Color del thumb del scrollbar */
+    border-radius: 4px; /* Borde redondeado del thumb */
+    border: 3px solid #f0f0f0; /* Borde opcional para el thumb */
+}
+
+    </style>
+<!-- Media Queries -->
+    <div >
+        <style>
+@media (max-width: 1400px) {
+.e-card{
+  width: 80%;
+
+}
+.cardProjects{
+  height: 90%;
+  width: 80%;
+}
+.container{
+  max-width: 100%;
+}
+.navbar{
+  max-width: 100%;
+}
+div{
+  max-width: 100%;
+}
+.general_padding{
+        padding: 0 0 0 0;
+    }
+.logo-header-main{
+  display: none;
+}
+
+
+  
+}
+
+@media (max-width: 1050px) {
+.e-card{
+  width: 80%;
+
+}
+.cardProjects{
+  height: 90%;
+  width: 700%;
+}
+.container{
+  max-width: 100%;
+}
+
+#downloadCvButton, .main-logo{
+  display: none;
+}
+
+
+
+  
+}
+@media (max-width: 992px) {
+
+
+#miHeader{
+  min-width: 100%;
+}
+.navbar-nav {
+    flex-direction: row; /* Asegura que los elementos se alineen horizontalmente */
+    justify-content: flex-start; /* Alinea los elementos al final del contenedor */
+    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
+  }
+
+  .nav-item {
+    margin-right: 5px; /* Espaciado entre los elementos nav-item */
+  }
+
+  .navbar-collapse {
+    flex-basis: auto; /* Asegura que el contenedor de collapse se ajuste al contenido */
+  }
+
+  .card_header_social {
+    display: flex; /* Asegura que los elementos sociales también se alineen horizontalmente */
+    justify-content: flex-end; /* Alinea los elementos sociales al final */
+    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
+    margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
+  }
+
+}
+
+      @media (max-width: 820px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column; /* Alinea los contenedores en vertical */
+    align-items: start; /* Centra los contenedores horizontalmente */
+  }
+
+  .navbar-nav {
+    flex-direction: row; /* Asegura que los nav-items estén en línea */
+    justify-content: flex-start; /* Centra los nav-items horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+    width: 100%; /* Los nav-items ocuparán todo el ancho */
+  }
+
+  .nav-item {
+    margin: 5px; /* Espaciado alrededor de cada nav-item */
+  }
+
+  .card_header_social {
+    display: flex;
+    justify-content: center; /* Centra los elementos sociales horizontalmente */
+    width: 100%; /* Los elementos sociales ocuparán todo el ancho */
+    margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+
+  }
+}
+
+
+      #downloadCvButton{
+        display: none;
+      }
+      .video_background{
+          display: none;
+      }
+
+      .brilliant-solutions{
+        font-size: 2em;
+      }
+      .brilliant-solutions-text{
+        font-size: 1.em;
+      }
+
+  
+
+      @media (max-width: 768px) {
+
+      }
+      #typewriter{
+        display: none;
+      }
+
+    @media (max-width: 430px) {
+      .mini_pic{
+        display: none;
+      }
+
+
+
+      }
+      p{
+        margin: 0%;
+        font-size: 12px;
+      }
+
+    
+    .message-input{
+      position: absolute;
+      left: 13em;
+      width: 100%;
+      
+    } 
+  
+        </style>
+
+    </div>
+
+</head>
+
+<!--Body---------------------------------------------------------------------------------------------------------------->
+
+
+<!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)-->
+
+<!--NavBar-->
+
+<!-- Notification Bar -->
+<div id="notification-bar" class="alert-primary fixed-bottom mb-0 d-flex justify-content-between align-items-center" role="alert" style="display: none;">
+  <div class="d-flex flex-grow-1 justify-content-center align-items-center">
+    <text class="degradado" style="font-size: 1.2em;">On a Rush? </text> <text style="align-items: center;">| Go to the point with my resume!</text>
+    <a href="your-resume-link.pdf" >
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </a>
+  </div>
+  <button type="button" class="close" onclick="closeNotificationBar()" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+ </div>
+ 
+ 
+
+<header id="miHeader" >
+
+  <nav class="navbar navbar-expand-md navbar-light" >
+  <!--Navbar Toggler-->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar-toggler">
+
+  <!--Navbar Container-->
+
+    <div class="container-fluid">
+      <div class="row">
+    
+       <!-- Center Column for Main Logo -->
+       <div class="col-md-4 d-flex justify-content-center">
+        <a class="navbar-brand" href="/Pages/indexmain.html">
+          <img id="main-logo" class="logo-header-main hov" src="https://static.wixstatic.com/media/bc0394_b88b6004d88349ef8f879aef69854826~mv2.png">
+        </a>
+      </div>
+  
+
+        <!-- Left Column for NavBar Items -->
+        <div class="col-md-4 d-flex align-items-center justify-content-end">
+          <ul class="navbar-nav mr-auto">
+            <!-- Get my Cv -->
+            <li class="nav-item mx-2">
+              <a href="https://bc039413-b629-4485-81f6-45112da50757.usrfiles.com/ugd/bc0394_199aaf04412a41fda293ff8be9502807.pdf" target="_blank">
+                <button id="downloadCvButton" class="button-io">
+                  <span>Get my CV here &#x1F5DE;</span>
+                </button>
+              </a>
+            </li>
+            <!-- General -->
+            <li class="nav-item mx-2">
+              <a class="nav-link nav-sp karen-ortiz-footer2 hov" id="generalNavLink" href="indexmain.html#about">General</a>
+            </li>
+            <!-- Projects -->
+            <li class="nav-item dropdown mx-2">
+              <a class="nav-link dropdown-toggle" href="indexp.html" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                <li><a class="dropdown-item" href="indexp.html">ZOEK & Webcrafters</a></li>
+                <li><a class="dropdown-item " href="indexuin.html">UINCLUB</a></li>
+                <li><a class="dropdown-item " href="indexcico.html">CicoSpace</a></li>
+                <li><a class="dropdown-item " href="indexmu.html">Science Museum</a></li>
+                <li><a class="dropdown-item " href="indexhy.html">Hypatia Magazine</a></li>
+              </ul>
+            </li>
+            <!-- About -->
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="indexme.html">About</a>
+            </li>
+            <!-- Contact -->
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="indexhow.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+    
+ 
+        <!-- Right Column for Social Links -->
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <!-- Social Links -->
+          <div class="card_header_social mx-5" >
+
+            <img class="mini_pic" data-aos="fade-left" style="
+            height: 3em;
+            border-radius: 50%;" 
+            src="https://static.wixstatic.com/media/bc0394_b0089a7153dd4536a9245cf5b3658f3c~mv2.png">
+
+            <a class="socialContainer_header_social containerOne_header_social" href="https://www.instagram.com/karenrebeca.og/?hl=es" target="_blank">
+              <svg class="socialSvg_header_social twitterSvg_header_social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+            </svg>
+            </a>
+
+            <a class="socialContainer_header_social containerTwo_header_social" href="mailto:karenrortizg@gmail.com">
+                  <svg class="socialSvg_header_social twitterSvg_header_social" fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                  viewBox="0 0 378.632 378.632" xml:space="preserve">
+                <path d="M377.406,160.981c-5.083-48.911-31.093-92.52-73.184-122.854C259.004,5.538,200.457-6.936,147.603,4.807
+                  C97.354,15.971,53.256,48.312,26.571,93.491C-0.122,138.731-7.098,192.982,7.436,242.39c7.832,26.66,21.729,51.712,40.15,72.51
+                  c18.594,20.972,41.904,37.722,67.472,48.459c23.579,9.888,48.628,14.797,73.653,14.797c34.128-0.001,68.115-9.121,97.949-27.098
+                  l-21.092-35.081c-40.578,24.451-90.887,28.029-134.652,9.66c-40.283-16.96-71.759-52.383-84.211-94.761
+                  c-11.336-38.595-5.846-81.093,15.125-116.586c20.922-35.467,55.426-60.801,94.622-69.533c41.644-9.225,87.948,0.669,123.857,26.566
+                  c32.502,23.394,52.497,56.769,56.363,93.907c2.515,23.979,0.31,42.891-6.526,56.226c-14.487,28.192-35.526,28.36-43.873,27.132
+                  c-0.283-0.041-0.476-0.082-0.65-0.117c-2.396-3.709-2.091-17.489-1.974-23.473c0.044-2.332,0.084-4.572,0.084-6.664v-112.06h-31.349
+                  c-3.998-3.278-8.225-6.251-12.674-8.921c-17.076-10.159-36.858-15.552-57.255-15.552c-29.078,0-56.408,10.597-76.896,29.824
+                  c-32.537,30.543-42.63,80.689-24.551,122.023c8.578,19.62,23.065,35.901,41.876,47.066c17.611,10.434,38.182,15.972,59.47,15.972
+                  c24.394,0,46.819-6.735,64.858-19.492c1.915-1.342,3.813-2.79,5.626-4.233c6.431,8.805,15.811,14.4,27.464,16.114
+                  c16.149,2.408,32.299-0.259,46.784-7.668c16.453-8.419,29.715-22.311,39.439-41.271C377.209,219.346,380.778,193.46,377.406,160.981
+                  z M242.33,224.538c-0.891,1.283-2.229,2.907-2.961,3.803c-0.599,0.778-1.151,1.46-1.643,2.073
+                  c-3.868,4.982-8.597,9.48-14.113,13.374c-11.26,7.943-25.152,11.964-41.257,11.964c-28.968,0-53.462-14.75-63.846-38.544
+                  c-11.258-25.69-5.071-56.854,15.035-75.692c12.7-11.95,30.538-18.784,48.911-18.784c13.028,0,25.56,3.375,36.268,9.788
+                  c6.831,4.072,12.861,9.337,17.9,15.719c0.497,0.613,1.082,1.322,1.724,2.094c0.952,1.135,2.812,3.438,3.981,5.092V224.538z"/>
+                </svg>
+            </a>
+              
+            <a class="socialContainer_header_social containerOne_header_social" href="https://www.linkedin.com/in/karen-rebeca-ortiz-gonz%C3%A1lez-b5a860282/" target="_blank">
+              <svg class="socialSvg_header_social linkdinSvg_header_social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                <path d="M48,8H16c-4.418,0-8,3.582-8,8v32c0,4.418,3.582,8,8,8h32c4.418,0,8-3.582,8-8V16C56,11.582,52.418,8,48,8z M24,47h-5V27h5 V47z M24.029,23.009C23.382,23.669,22.538,24,21.5,24c-1.026,0-1.865-0.341-2.519-1.023S18,21.458,18,20.468 c0-1.02,0.327-1.852,0.981-2.498C19.635,17.323,20.474,17,21.5,17c1.038,0,1.882,0.323,2.529,0.969 C24.676,18.615,25,19.448,25,20.468C25,21.502,24.676,22.349,24.029,23.009z M47,47h-5V35.887C42,32.788,40.214,31,38,31 c-1.067,0-2.274,0.648-2.965,1.469S34,34.331,34,35.594V47h-5V27h5v3.164h0.078c1.472-2.435,3.613-3.644,6.426-3.652 C44.5,26.5,47,29.5,47,34.754V47z"></path>
+                </svg>
+            </a>
+
+            <a class="socialContainer_header_social containerFour_header_social" href="https://github.com/karenrebecag" target="_blank">
+                    <svg class="socialSvg_header_social whatsappSvg_header_social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+                </svg>
+            </a>
+
+            <label class="switch">
+              <input type="checkbox" id="theme-switch">
+              <span class="slider"></span>
+            </label>
+
+
+            </div>
+        </div>
+    
+      </div>
+    </div>
+    
+
+
+      
+  </div>
+
+  </nav>
+</header>
+
+<video  autoplay muted loop class="background-video" id="background-video">
+<source src="https://video.wixstatic.com/video/11062b_7e61ffd6dbb040ee8b0e4dc604e8fd4e/1080p/mp4/file.mp4" type="video/mp4">
+</video>
+                                       
+<!--Main Section Banner---------------------------------------------------------------------------------------------------------------->
+<section  style="margin-top: 2%;"  data-aos="fade-up" id="top" class="main-banner-fadeout" >
+<div  class="container-fluid main-banner ">
+
+
+
+<div class="row">
+  <div class="col-12 d-flex justify-content-center">
+    <img width="450" style="  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
+    border-radius: 100%;" class=" karen-ortiz-footer"  src="https://static.wixstatic.com/media/bc0394_8744966d3971432ca187a38276218858~mv2.png" alt="Foto de karen">
+  </div>
+</div>
+
+
+<div class="row py-5">
+  <div class="col-12 d-flex justify-content-center">
+    <img width="600" class=" karen-ortiz-footer " src="https://static.wixstatic.com/media/bc0394_2d1b6d30ba384fb8ab9a96a57ba743c2~mv2.gif" alt="Foto de karen">
+  </div>
+
+</div>
+</section>
+
+<!-- Video Background -->
+<section>
+<div class="container text-center">
+  <div class="row">
+    <div class="banner col">
+      <div class="video_background"  >
+        <video id="videoElement myVideoSlow" autoplay muted loop class="w-100"
+         src="https://video.wixstatic.com/video/11062b_8c1a1d3bf5b847ab9ba65fa800b72f95/1080p/mp4/file.mp4" class="img3" type="video/mp4">
+        </video>
+      </div>
+    </div>
+   </div>
+ </div>
+
+</section>
+  
+<!--Enterprises Strip-->
+<section>
+<div class="container-fluid bg-black p-2" style="margin-top: -4em;">
+
+<div class="row">
+  <div class="col-12 justify-content-center d-flex mx-auto">
+    <img src="https://static.wixstatic.com/media/bc0394_2c5767796ef84a1ca012170bf3004128~mv2.png" style="max-width: 50%;" alt="Empresas">
+  </div>
+</div>
+<!-- Segunda fila con párrafo y enlace -->
+<div class="row justify-content-center mt-3">
+  <div class="col-12  d-flex justify-content-center"> 
+    <div style="color: white; font-size: 0.8em; display: flex; align-items: center; margin-bottom: 1em;">
+      <span>Trusted by ambitious teams.</span>
+      <div tabindex="0" class="plusButton" style="margin-left: 10px;" id="plusButton">
+        <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+          <g mask="url(#mask0_21_345)">
+            <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+</div>
+
+</section>
+
+   
+
+<!-- About me-->
+<section id="about" >
+<div data-aos="fade-up " class="row py-5" >
+  <div class="col-12 d-flex justify-content-center">
+    <h1 class="degradado">Let me introduce myself.</h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div  class=" col-12 d-flex justify-content-center text-center general_padding"  >
+        
+        <p style="font-size: 1.3em;">
+          I am an accomplished <b> engineer, programmer, and UX/designer </b> with foundation in web programming. <b>Based in Cuernavaca, Mexico</b> 
+          , I have immersed myself in the world of web development, constantly with creativity and innovation.
+          My journey in the realm of web programming has been amazing for me. I specialize in front-end web development, proficient in the most common frameworks and languages to craft visually appealing and user-friendly interfaces.
+          My expertise extends to working with popular technologies like HTML, CSS, JavaScript, and various frontend libraries and frameworks. I am driven by a passion for creating seamless, responsive web experiences that captivate users and enhance their interactions with digital platforms.
+          Also have a strong foundation in backend development, where I leverage SQL and PHP to build robust, data-driven web applications. This allows me to create comprehensive and dynamic websites that not only look great but also function seamlessly, offering users a great experience.
+          I founded an online web agency called 
+       <b> Webcrafters </b>
+        . Through it, i've successfully merged my technical expertise with my passion for design, and i've met amazing and talented people who has worked with me to deliever digital solutions for a diverse clientele. With a focus on understanding the unique identity and purpose of each project, I have been able to deliver tailored web solutions that make a lasting impact.
+          I'm over the road, and i've achived notable recognition within the industry. I attribute my success to my leadership skills, as well as my ability to collaborate effectively with digital design teams for UX/UI, digital marketing for SEO, photography, and business administration.
+        </p>
+        
+      </div>
+    </div>
+
+
+  </div>
+</div>
+</section>
+
+<div id="gooey">
+
+</div>
+
+
+<!-- Blog Cards-->
+<section id="blog">
+<div class="container" data-aos="fade-up ">
+  <div class="col-12 d-flex justify-content-center">
+  </div>
+  <!--Primera Fila-->
+  <div class="row py-2">
+  <!-- Duplicar este bloque para tener 6 elementos en total -->
+  <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <a href="indexp.html" style="text-decoration: none;">
+  <div class="cardProjects mx-auto">
+      <div class="card-contentProjects">
+          <div class="card-topProjects">
+              <span class="card-titleProjects">01.</span>
+              <p>Project Manager.</p>
+          </div>
+          <div class="card-bottomProjects">
+              <p>WebCrafters</p>
+              
+              <svg width="32" viewBox="0 -960 960 960" height="32" xmlns="http://www.w3.org/2000/svg">
+                <path fill="black" d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
+            </svg>            </div>
+      </div>
+      <div class="card-imageProjects">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15 14V17.6C15 18.4401 15 18.8601 14.8365 19.181C14.6927 19.4632 14.4632 19.6927 14.181 19.8365C13.8601 20 13.4401 20 12.6 20H7.40001C6.55994 20 6.1399 20 5.81903 19.8365C5.53679 19.6927 5.30731 19.4632 5.1635 19.181C5.00001 18.8601 5.00001 18.4401 5.00001 17.6V10M19 10V20M5.00001 16H15M5.55778 4.88446L3.5789 8.84223C3.38722 9.22559 3.29138 9.41727 3.3144 9.57308C3.3345 9.70914 3.40976 9.8309 3.52246 9.90973C3.65153 10 3.86583 10 4.29444 10H19.7056C20.1342 10 20.3485 10 20.4776 9.90973C20.5903 9.8309 20.6655 9.70914 20.6856 9.57308C20.7086 9.41727 20.6128 9.22559 20.4211 8.84223L18.4422 4.88446C18.2817 4.5634 18.2014 4.40287 18.0817 4.28558C17.9758 4.18187 17.8482 4.10299 17.7081 4.05465C17.5496 4 17.3701 4 17.0112 4H6.98887C6.62991 4 6.45043 4 6.29198 4.05465C6.15185 4.10299 6.02422 4.18187 5.91833 4.28558C5.79858 4.40287 5.71832 4.5634 5.55778 4.88446Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>        </div>
+  </div>
+    </a>
+</div>
+
+  <!-- Replicar el bloque anterior 5 veces más -->
+  <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <a href="indexmu.html" style="text-decoration: none;">
+
+  <div class="cardProjects mx-auto">
+      <div class="card-contentProjects">
+          <div class="card-topProjects">
+              <span class="card-titleProjects">02.</span>
+              <p>FrontEnd Developer & UX.</p>
+          </div>
+          <div class="card-bottomProjects">
+              <p>Science Museum of Morelos</p>
+              <svg width="32" viewBox="0 -960 960 960" height="32" xmlns="http://www.w3.org/2000/svg">
+                <path fill="black" d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
+            </svg>
+          </div>
+      </div>
+      <div class="card-imageProjects">
+        <svg fill="#black" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M489.92,377.6c-60.557,0-91.318-6.733-121.065-13.244C339.823,358.003,312.403,352,256,352s-83.823,6.003-112.855,12.356 C113.398,370.867,82.637,377.6,22.08,377.6c-1.184,0-2.358-0.041-3.524-0.105C56.492,433.838,148.5,473.6,256,473.6 s199.508-39.762,237.444-96.105C492.278,377.559,491.104,377.6,489.92,377.6z"></path> </g> </g> <g> <g> <path d="M179.2,38.4c-42.415,0-76.8,34.385-76.8,76.8c0,42.415,34.385,76.8,76.8,76.8c42.415,0,76.8-34.385,76.8-76.8 C256,72.785,221.615,38.4,179.2,38.4z M198.4,140.8H160V89.6h38.4V140.8z"></path> </g> </g> <g> <g> <path d="M332.8,38.4c-42.415,0-76.8,34.385-76.8,76.8c0,42.415,34.385,76.8,76.8,76.8s76.8-34.385,76.8-76.8 C409.6,72.785,375.215,38.4,332.8,38.4z M352,140.8h-38.4V89.6H352V140.8z"></path> </g> </g> <g> <g> <path d="M412.402,198.397c-20.7,19.813-48.754,32.003-79.602,32.003c-29.48,0-56.403-11.136-76.8-29.414 c-20.397,18.278-47.32,29.414-76.8,29.414c-30.849,0-58.903-12.189-79.601-32.004C39.017,226.488,0,270.509,0,320 c0,10.588,9.905,19.2,22.08,19.2c56.403,0,83.823-6.002,112.855-12.356C164.682,320.333,195.443,313.6,256,313.6 c60.557,0,91.318,6.733,121.065,13.244c29.032,6.354,56.452,12.356,112.855,12.356c12.175,0,22.08-8.612,22.08-19.2 C512,270.509,472.983,226.488,412.402,198.397z M236.8,294.4h-38.4V256h38.4V294.4z M313.6,294.4h-38.4V256h38.4V294.4z"></path> </g> </g> </g></svg>    </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<a href="indexp.html" style="text-decoration: none;">
+  <div class="cardProjects mx-auto">
+    <div class="card-contentProjects">
+        <div class="card-topProjects">
+            <span class="card-titleProjects">03.</span>
+            <p>Project Manager.</p>
+            
+        </div>
+        <div class="card-bottomProjects">
+            <p>ZOEK Marketing California</p>
+            <svg width="32" viewBox="0 -960 960 960" height="32" xmlns="http://www.w3.org/2000/svg">
+              <path fill="black" d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
+          </svg>
+                    </div>
+    </div>
+    <div class="card-imageProjects">
+      <svg fill="#black" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM368 744c0 4.4-3.6 8-8 8h-80c-4.4 0-8-3.6-8-8V280c0-4.4 3.6-8 8-8h80c4.4 0 8 3.6 8 8v464zm192-280c0 4.4-3.6 8-8 8h-80c-4.4 0-8-3.6-8-8V280c0-4.4 3.6-8 8-8h80c4.4 0 8 3.6 8 8v184zm192 72c0 4.4-3.6 8-8 8h-80c-4.4 0-8-3.6-8-8V280c0-4.4 3.6-8 8-8h80c4.4 0 8 3.6 8 8v256z"></path> </g></svg>  </div>
+  </div>
+</a>
+
+  
+  </div>
+
+  <div class="col-xl-3  col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <a href="indexcico.html" style="text-decoration: none;">
+  <div class="cardProjects mx-auto">
+      <div class="card-contentProjects">
+          <div class="card-topProjects">
+              <span class="card-titleProjects">04.</span>
+              <p>UI & Digital Designer.</p>
+          </div>
+          <div class="card-bottomProjects">
+              <p>CicoSpace</p>
+              <svg width="32" viewBox="0 -960 960 960" height="32" xmlns="http://www.w3.org/2000/svg">
+                <path fill="black" d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
+            </svg>              </div>
+      </div>
+      <div class="card-imageProjects">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 3V7M15 3V6M4 10H20M12 21C10.2337 21 8.91561 19.3737 9.28133 17.6457L9.34332 17.3528C9.56076 16.3254 9.04388 15.2832 8.09439 14.8346L5.9897 13.8401C4.77487 13.2661 4 12.043 4 10.6994V4.63149C4 3.73044 4.73044 3 5.63149 3H18.3685C19.2696 3 20 3.73044 20 4.63149V10.6994C20 12.043 19.2251 13.2661 18.0103 13.8401L15.9056 14.8346C14.9561 15.2832 14.4392 16.3254 14.6567 17.3528L14.7187 17.6457C15.0844 19.3737 13.7663 21 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>         </div>
+  </div>
+    </a>
+</div>
+  
+  </div>
+
+
+
+  <div class="row">
+
+    <!-- Replicar el bloque anterior 5 veces más -->
+    <div class="col-xl-3 col-lg-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <a href="indexhy.html" style="text-decoration: none;">
+    <div class="cardProjects mx-auto">
+        <div class="card-contentProjects">
+            <div class="card-topProjects">
+                <span class="card-titleProjects">05.</span>
+                <p>FrontEnd Developer, Ilustrator & UX.</p>
+            </div>
+            <div class="card-bottomProjects">
+                <p>Hypatia Magazine of Morelos</p>
+                <svg width="32" viewBox="0 -960 960 960" height="32" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="black" d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
+              </svg>
+            </div>
+        </div>
+        <div class="card-imageProjects">
+          <svg fill="#000000" height="100px" width="10px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226.696 226.696" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M197.328,23.988h-16.475V7.5c0-2.205-0.97-4.297-2.652-5.723c-1.682-1.425-3.908-2.038-6.08-1.675L28.136,24.09 c-3.617,0.603-6.268,3.731-6.268,7.398v187.708c0,4.142,3.358,7.5,7.5,7.5h167.959c4.143,0,7.5-3.358,7.5-7.5V31.488 C204.828,27.346,201.47,23.988,197.328,23.988z M36.869,37.842l128.984-21.489v172.513L36.869,210.344V37.842z M189.828,211.696 h-69.757l54.514-9.078c3.617-0.602,6.269-3.731,6.269-7.398V38.988h8.975V211.696z"></path> <path d="M138.954,50.003l-77.484,12c-4.093,0.634-6.897,4.466-6.264,8.559c0.574,3.705,3.767,6.353,7.402,6.353 c0.381,0,0.769-0.029,1.157-0.089l77.483-12c4.094-0.634,6.898-4.466,6.265-8.56C146.879,52.174,143.048,49.369,138.954,50.003z"></path> </g> </g></svg>          </div>
+    </div>
+      </a>
+    </div>
+
+<div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+  <a href="indexuin.html" style="text-decoration: none;">
+
+    <div class="cardProjects mx-auto">
+      <div class="card-contentProjects">
+          <div class="card-topProjects">
+              <span class="card-titleProjects">06.</span>
+              <p>UX / UI Designer.</p>
+          </div>
+          <div class="card-bottomProjects">
+              <p>UinClub</p>
+              <svg width="32" viewBox="0 -960 960 960" height="32" xmlns="http://www.w3.org/2000/svg">
+                <path fill="black" d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
+            </svg>
+          </div>
+      </div>
+      <div class="card-imageProjects">
+        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 42.605 42.605" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M42.605,16.958c0-1.082-1.08-1.956-2.41-1.956H22.48L13.738,3.816c0,0-0.468,0.367-1.047,0.818 c-0.577,0.453-0.383,1.669,0.435,2.718l5.981,7.65H2.409C1.078,15.001,0,15.875,0,16.958v1.955h42.605 C42.605,18.914,42.605,18.04,42.605,16.958z"></path> <path d="M33.648,38.79c2.66,0,4.817-2.159,4.817-4.815l2.408-13.05H6.549c-2.66,0-4.817,2.157-4.817,4.817L4.14,38.79H33.648z M29.73,26.345c0-1.33,0.967-2.41,2.158-2.41h2.159v8.834c0,1.33-0.967,2.408-2.159,2.408H29.73V26.345z M22.203,26.345 c0-1.33,0.968-2.41,2.158-2.41h2.16v8.834c0,1.33-0.967,2.408-2.16,2.408h-2.158V26.345z M14.677,26.345 c0-1.33,0.967-2.41,2.158-2.41h2.159v8.834c0,1.33-0.967,2.408-2.159,2.408h-2.158V26.345z M7.149,26.345 c0-1.33,0.967-2.41,2.159-2.41h2.158v8.834c0,1.33-0.967,2.408-2.158,2.408H7.149V26.345z"></path> </g> </g></svg>  </div>
+
+    </div>
+  </a>
+</div>
+
+<div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <a href="indexme.html#divulgator" style="text-decoration: none;">
+  <div class="cardProjects mx-auto">
+    <div class="card-contentProjects">
+        <div class="card-topProjects">
+            <span class="card-titleProjects">07.</span>
+            <p>Science Divulgator</p>
+        </div>
+        <div class="card-bottomProjects">
+            <p>Science's Trailer of Morelos</p>
+            <svg width="32" viewBox="0 -960 960 960" height="32" xmlns="http://www.w3.org/2000/svg">
+              <path fill="black" d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
+          </svg>
+        </div>
+    </div>
+    <div class="card-imageProjects">
+      <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" "><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M9,15a1,1,0,1,0,1,1A1,1,0,0,0,9,15ZM2,14a1,1,0,0,0-1,1v2a1,1,0,0,0,2,0V15A1,1,0,0,0,2,14Zm20,0a1,1,0,0,0-1,1v2a1,1,0,0,0,2,0V15A1,1,0,0,0,22,14ZM17,7H13V5.72A2,2,0,0,0,14,4a2,2,0,0,0-4,0,2,2,0,0,0,1,1.72V7H7a3,3,0,0,0-3,3v9a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V10A3,3,0,0,0,17,7ZM13.72,9l-.5,2H10.78l-.5-2ZM18,19a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V10A1,1,0,0,1,7,9H8.22L9,12.24A1,1,0,0,0,10,13h4a1,1,0,0,0,1-.76L15.78,9H17a1,1,0,0,1,1,1Zm-3-4a1,1,0,1,0,1,1A1,1,0,0,0,15,15Z"></path></g></svg>  </div>
+  </div>
+</a>
+</div>
+
+<div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <a href="indexme.html#divulgator" style="text-decoration: none;">
+  <div class="cardProjects mx-auto">
+    <div class="card-contentProjects">
+        <div class="card-topProjects">
+            <span class="card-titleProjects">08.</span>
+            <p>Data Science</p>
+        </div>
+        <div class="card-bottomProjects">
+            <p>Project for BEDU</p>
+            <svg width="32" viewBox="0 -960 960 960" height="32" xmlns="http://www.w3.org/2000/svg">
+              <path fill="black" d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
+          </svg>
+        </div>
+    </div>
+    <div class="card-imageProjects">
+      <svg class="data-logo" viewBox="0 0 50.8 50.8" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g style="display:inline"> <path d="M7.854 33.546 16 22.893l7.52 16.293 6.267-27.572 3.76 8.773 5.64-6.893 3.76 8.146" ></path> </g> </g></svg>  </div>
+  </div>
+</a>
+</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="slider-infinite">
+    <div class="slide-track-infinite">
+      <!-- Repetir estos cinco elementos dos veces para el efecto infinito -->
+      <div class="slide-infinite">
+        <div class="enterprises-card">
+          <img class="enterprises-img" src="https://static.wixstatic.com/media/bc0394_58fe5e6983274f38b882953070113798~mv2.png" alt="UX Design">
+          <div class="card-footer">
+            <h6 >UX Design</h6>
+          </div>
+        </div>
+      </div>
+      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" /></div>
+      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" /></div>
+      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" /></div>
+      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" /></div>
+      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" /></div>
+      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" /></div>
+      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" /></div>
+      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" /></div>
+      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" /></div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+<div class="row">
+  <div class="col-12 d-flex justify-content-center text-center py-4">
+    <a href="indexme.html" class="button-io">Read More about me</a>
+  </div>
+</div>
+</section>
+
+
+<div class="separador" style="margin-top: 50px;"></div> <!--purple hr--->
+
+<!-- It's All About Style-->
+<section data-aos="fade-up" style="margin-bottom: 12em; margin-top: 7em;">
+<div class="container" >
+<div class="row">
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex ">
+    <!-- Contenido de la primera columna -->
+    <div style="position: relative ;left: 8em;" >
+    <h1 class="degradado">It's All About Style.</h1>
+    <p style="font-size: 1.3em;">As a Front-End Developer, my passion and dedication extend beyond simply writing code; they reach every pixel and every interaction that creates an unforgettable experience for the user. My focus has always been on designing and implementing solutions that are not only functional but also visually appealing, skillfully blending art and technology to create websites and applications that speak for themselves.
+
+      Since the beginning of my career, I have understood the importance of working closely with teams from all areas related to web design, including UX/UI Designers, Customer Experience (CX) specialists, and of course, the development team. This multidisciplinary collaboration has allowed me to delve into every aspect of the development process, ensuring that every design decision is made with a deep understanding of its technical implications and its impact on the user experience.
+      
+      My philosophy revolves around the user. I firmly believe that a digital product should be intuitive, accessible, and easy to use, without sacrificing its aesthetic beauty. Therefore, I dedicate a considerable portion of my time to researching the latest trends in design and development, as well as best practices in UX/UI, to ensure that my projects not only meet current standards but surpass them.
+      
+      Aesthetics and functionality go hand in hand in my work. I pay special attention to details, from typography and color palette to interactivity and animation, always seeking that perfect balance that captures the essence of the brand and enhances user interaction. My goal is to create experiences that are not only visually pleasing but also consistent and memorable.
+      
+      
+      
+      
+      </p>
+    </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex ">
+    <!-- Contenido de la segunda columna -->
+    <div style="position: relative ;left: 30em;">
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div data-aos="fade-up">
+
+<div class="section-diagonal triangle"></div>
+<div class="diagonal-split triangle"></div>
+<div class="section triangle"></div>
+
+<div class="container-fluid bg-black">
+<div class="row py-5">
+  <div class="col-4 d-flex justify-content-end">
+    <!-- Contenido de la primera columna -->
+    <div class="cube-loader">
+      <div class="cube-top"></div>
+      <svg class="svg">
+        <path class="path"></path>
+     </svg>
+     <svg>
+        <path></path>
+     </svg>
+  
+  
+    </div>   
+   </div>
+  <div class="col-8">
+    <!-- Contenido de la segunda columna -->
+    <h1 class="degradado">But... the backend?</h1>
+    <p style="color: white;font-size: 1.3em;" class="py-5">In my role as a web developer, I have expanded my experience beyond front-end to delve into the fascinating world of back-end, a natural evolution given my passion for building complete and dynamic web solutions. Working hand in hand with multidisciplinary teams has been key in this journey, allowing me to acquire skills in languages such as PHP, Python, and JavaScript applied to the back-end. This collaboration has been essential for my professional development, providing me with a comprehensive understanding of web application construction.
+
+      Through the integration of back-end into my projects, I have been able to elevate the interactivity and dynamism of web pages to a new level. Learning both relational and non-relational databases has been a cornerstone in this process, enabling me to design and manage data efficiently to create personalized user experiences rich in functionality. My experience with these technologies has allowed me not only to store and manipulate data effectively but also to understand the importance of security and performance in web development.
+      
+      Applying this knowledge in the back-end has enriched my approach to web project development, enabling me to deliver comprehensive solutions that encompass both visual presentation and underlying business logic. This holistic approach ensures that websites are not only visually appealing but also robust, scalable, and secure, thus meeting the complex needs of users and business objectives.</p>
+  </div>
+</div>
+</div>
+
+<div class="section-diagonal2 triangle"></div>
+<div class="diagonal-split2 triangle"></div>
+<div class="section2 triangle"></div>
+</div>
+</section>
+
+
+
+
+
+<!--Skills-->
+<section id="tools">
+
+
+<div  class="container" style="margin-bottom: 8em;" >
+
+  <div data-aos="zoom-out-up" class="row" style="margin-bottom: -8em;">
+
+    <div class="col-md-6 ">
+      <h1 class="degradado py-5" >What about Visuals?</h1>
+      <p style="font-size: 1.3em;" >My day-to-day is a fusion of creativity and technology. I adeptly handle a wide range of tools and technologies that allow me to bring my ideas from initial concept to seamless implementation. My arsenal includes fundamental languages like HTML5, CSS3, and JavaScript, as well as cutting-edge frameworks and preprocessors such as Bootstrap, Tailwind CSS, SCSS, React.js, and Astro. These tools are my brushes and canvases, with which I paint web experiences that are not only visually appealing but also intuitive and accessible.
+
+        Onver my creative proces, my ability to design user experiences (UX) and user interfaces (UI). I use Figma to bring my design visions to life, allowing me to collaborate in real-time with teams of any size. Dreamweaver, Sketch, and other tools like Jitter and Animate are essential for prototyping and animating my ideas, ensuring that every transition and interaction is as smooth as imagined. For more complex visual effects, I turn to After Effects, where my creativity knows few bounds.
+        
+        I don't stop at traditional design; I also delve into the world of digital design and video editing with Photoshop, Illustrator, InDesign, Lightroom, and Final Cut Pro X, tools that extend my creative capabilities beyond the web. Figma and Canva are indispensable for quickly creating attractive designs, while Firefly illuminates my path to innovative solutions.
+        
+        The No-Code revolution has been a game-changer for me. Platforms like Wix Studio, Webflow, WordPress with Elementor, Shopify, and more allow me to turn ideas into reality without a single line of code, greatly expanding my ability to deliver quick and efficient solutions to my clients.</p>
+
+
+      
+      
+    </div>
+
+    <div class="col-md-6 " >
+      <div class="row">
+        <!-- Sub-columna 1 -->
+        <div class="col-md-6">
+          <div class="e-card playing">
+            <div class="image"></div>
+            
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  
+          
+                  <div class="infotop">Front Technologies
+  
+                  <div class="name">HTML5</div>
+                  <div class="name">CSS</div>
+                  <div class="name">Javascript</div>
+                  <div class="name">Bootstrap, Tailwind, SCSS</div>
+                  <div class="name">React.JS & Astro</div>
+            </div>
+          </div>
+
+       
+        </div>
+        <!-- Sub-columna 2 -->
+        <div class="col-md-6">
+          <div class="e-card playing">
+            <div class="image"></div>
+            
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  
+          
+                  <div class="infotop">UX/UI Technologies
+        
+                  <div class="name">Figma</div>
+                  <div class="name">Dreamweaver</div>
+                  <div class="name">Sketch</div>
+                  <div class="name">Jitter, Animate</div>
+                  <div class="name">After Effects</div>
+            </div>
+          </div>
+        </div>
+        <!-- Sub-columna 3 -->
+        <div class="col-md-6">
+          <div class="e-card playing">
+            <div class="image"></div>
+            
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  
+          
+                  <div class="infotop">No-Code
+        
+                  <div class="name">Wix Studio</div>
+                  <div class="name">Webflow</div>
+                  <div class="name">Wordpress, Elementor</div>
+                  <div class="name">Shopify</div>
+            </div>
+          </div>
+        </div>
+        <!-- Sub-columna 4 -->
+        <div class="col-md-6">
+          <div class="e-card playing">
+            <div class="image"></div>
+            
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  
+          
+                  <div class="infotop">Digital Design 
+    
+                  <div class="name">Ps, Ai, Id, Lr</div>
+                  <div class="name">Final Cut Pro X</div>
+                  <div class="name">Figma</div>
+                  <div class="name">Canva</div>
+                  <div class="name">Firefly</div>
+            </div>
+      </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+  <div data-aos="zoom-out-up" class="row" ">
+    <div class="col-md-6">
+      <div class="row">
+          <!-- Sub-columna 1 -->
+          <div class="col-md-6">
+              <div class="e-card playing">
+                  <div class="image"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="infotop">Back Technologies
+                      <div class="name">Python & Node.JS</div>
+                      <div class="name">PHP & Laravel</div>
+                      <div class="name">MySQL, Apache Server</div>
+                      <div class="name">MongoDB</div>
+                  </div>
+              </div>
+          </div>
+          <!-- Sub-columna 2 -->
+          <div class="col-md-6">
+              <div class="e-card playing">
+                  <div class="image"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="infotop">Data Science
+                      <div class="name">Python</div>
+                      <div class="name">Google Colab & Jupyter NB</div>
+                      <div class="name">Pandas, NumPy, Seaborn & Matplot</div>
+                      <div class="name">Mistral & GPT-4</div>
+                  </div>
+              </div>
+          </div>
+          <!-- Sub-columna 3 -->
+          <div class="col-md-6">
+              <div class="e-card playing">
+                  <div class="image"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="infotop">CMS
+                      <div class="name">DataStudio</div>
+                      <div class="name">Google Analytics</div>
+                      <div class="name">Meta Studio</div>
+                      <div class="name">HubSpot</div>
+                  </div>
+              </div>
+          </div>
+          <!-- Sub-columna 4 -->
+          <div class="col-md-6">
+              <div class="e-card playing">
+                  <div class="image"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+                  <div class="infotop">IA Technologies
+                      <div class="name">GPT-4 & Dall-E</div>
+                      <div class="name">MidJourney</div>
+                      <div class="name">Stable Diffusion</div>
+                      <div class="name">Claude, Llama, Mistral</div>
+                      <div class="name">Firefly</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+
+    <div class="col-md-6 p">
+      <h1 class="degradado py-5" >More skills, better results.</h1>
+      <p style="font-size: 1.3em;" class="py-5">As a developer and data scientist, my world revolves around data exploration and analysis to uncover hidden patterns and gain valuable insights that can transform strategies and decisions. My technical focus is based on a deep knowledge of Python and Node.js for backend development, complemented by PHP and Laravel for building robust web applications. I use MySQL and Apache Server for relational database management and web hosting, while MongoDB is my choice for projects requiring a flexible and scalable NoSQL database.
+
+        At the core of my professional practice lies my passion for data science, where Python is my lingua franca. Tools like Google Colab and Jupyter Notebooks are essential in my daily work, allowing me to write and execute code in an interactive environment that facilitates experimentation and learning. Pandas, NumPy, Seaborn, and Matplotlib are pillars in my data analysis, helping me manipulate data and visualize complex relationships with ease.
+        
+        Furthermore, I am at the forefront of artificial intelligence, employing GPT-4 to generate creative content and analyze text at an unprecedented scale and depth. DALL-E, MidJourney, and Stable Diffusion expand my creativity, allowing me to generate stunning images from textual descriptions, while Claude, Llama, and Mistral are tools I use for specific natural language processing tasks and content generation.
+        
+        Managing CMS like DataStudio and Google Analytics is a crucial part of my workflow, allowing me to monitor and analyze web performance, while Meta Studio and HubSpot are indispensable tools for digital marketing and automation, facilitating customer relationship management and campaign optimization.
+        
+        In the field of AI, my expertise extends beyond text and image generation; I also explore the possibilities of Firefly, an emerging tool that promises to revolutionize how we interact with AI technology, offering me new ways to integrate artificial intelligence into my projects.
+        
+        
+        
+        
+        </p>
+
+    </div>
+  </div>
+  </div>
+</div>
+
+</section>
+
+
+
+<div class="separador" style="margin-bottom: 2em;"></div> <!--purple hr--->
+
+
+<!--Contact Strip -->
+<section data-aos="fade-up" id="blueDiv" style="margin-top: 2%;">
+<!-- Sección Izq / Texto-->
+<div class="container contenedorPrincipal">
+  <div class="row">
+    <!-- Contenedor Principal Azul -->
+    <div class="col-xs-12 col-sm-12 col-md-12 blue-div d-flex align-items-center">
+      <!-- Subcolumna para el Texto -->
+      <div class="col-xl-7 col-lg-7 col-md-5 col-sm-12 col-xs-12 mx-5 px-5">
+        <h2 class="brilliant-solutions degradado">Brilliant Solutions &#x1F600;.</h2>
+        <p class="brilliant-solutions-text" style="color: white;">Send me a message if I can support you with anything, or write to me in the WhatsApp chat of this page.</p>
+      </div>
+
+      <!-- Subcolumna para el Input, dentro de un contenedor más grande con clase blue-hov (si se desea) -->
+      <div class="col-xl-5 col-lg-5 col-md-7 col-sm-12 col-xs-12 d-flex justify-content-start align-items-start mx-5">
+        <div class="input__container "> <!-- Agrega aquí la clase blue-hov si es necesario -->
+          <div class="shadow__input"></div>
+          <button class="input__button__shadow">
+            <svg fill="white" height="25" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 495.003 495.003" xml:space="preserve">
+              <g id="XMLID_51_">
+                <path id="XMLID_53_" d="M164.711,456.687c0,2.966,1.647,5.686,4.266,7.072c2.617,1.385,5.799,1.207,8.245-0.468l55.09-37.616
+                  l-67.6-32.22V456.687z"/>
+                <path id="XMLID_52_" d="M492.431,32.443c-1.513-1.395-3.466-2.125-5.44-2.125c-1.19,0-2.377,0.264-3.5,0.816L7.905,264.422
+                  c-4.861,2.389-7.937,7.353-7.904,12.783c0.033,5.423,3.161,10.353,8.057,12.689l125.342,59.724l250.62-205.99L164.455,364.414
+                  l156.145,74.4c1.918,0.919,4.012,1.376,6.084,1.376c1.768,0,3.519-0.322,5.186-0.977c3.637-1.438,6.527-4.318,7.97-7.956
+                  L494.436,41.257C495.66,38.188,494.862,34.679,492.431,32.443z"/>
+              </g>
+            </svg>
+          </button>
+          <input type="email" name="email" class="input__search" placeholder="Type your email here and i'll contact you">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+</section>
+
+
+<!--Reviews -->
+
+        <section data-aos="fade-up" id="reviews" class=" py-5" style="margin-bottom: 5em;">
+
+
+          <div class="container mx-auto">
+
+
+                <!-- Fila para el texto de encabezado -->
+                <div class="row">
+                  <div class="col-12 mb-4 ">
+                    <h2 class="degradado" style="text-align: center;">Reviews</h2>
+                    <p class="text-center " style="font-size: 1.3em;">Some people is talking about me!</p>
+                  </div>
+            </div>
+          
+            <div class="container py-4">
+              <div class="row">
+                <div class="col py-5">
+                  <div class="card-person mx-auto">
+                    <div class="circle-person"></div>
+                    <div class="circle-person"></div>
+                    <div class="card-inner-person" style="text-align: center;">
+                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_1cae80af4ec9414a83bf192989ec848a~mv2.png" alt="">
+                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
+                      <p class="degradado" style="font-size: 1.6em;">René Chavez</p>
+                      <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col py-5">
+                  <div class="card-person mx-auto">
+                    <div class="circle-person"></div>
+                    <div class="circle-person"></div>
+                    <div class="card-inner-person" style="text-align: center;">
+                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_3b192bf49db44e89aab2c43e011f5c72~mv2.png" alt="">
+                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Amazing web designer, very creative and compromised. Thanks!"</h4>
+                      <p class="degradado" style="font-size: 1.6em;">Aaron Knipp</p>
+                      <p style="font-size: 1em;">Cicospace CEO & Founder</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col py-5">
+                  <div class="card-person mx-auto">
+                    <div class="circle-person"></div>
+                    <div class="circle-person"></div>
+                    <div class="card-inner-person" style="text-align: center;">
+                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_cb9580bfb88f44ad89c3a481b9a787c0~mv2.png" alt="">
+                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen Rebeca has demostrated notable commitment in the course, standing out for the development of high-quiality projects that reflect solid knowledge in the frontend field!"</h4>
+                      <p class="degradado" style="font-size: 1.6em;">Ana Villanueva</p>
+                      <p style="font-size: 1em;">Tecnolochicas Pro Dev Teacher</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row" style="margin-top: 7em;">
+                <div class="col py-5">
+                  <div class="card-person mx-auto">
+                    <div class="circle-person"></div>
+                    <div class="circle-person"></div>
+                    <div class="card-inner-person" style="text-align: center;">
+                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_0ae1889f4ded4481a281bd53c4ea6160~mv2.png" alt="">
+                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen has stood out for her excellent work, discipline and perseverance. She's always on board to learn new things. Versatile and organized. It really makes easier to work with her."</h4>
+                      <p class="degradado" style="font-size: 1.6em;">Dr. Honnor Da Silva</p>
+                      <p style="font-size: 1em;">TECO TV's Director</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col py-5">
+                  <div class="card-person mx-auto">
+                    <div class="circle-person"></div>
+                    <div class="circle-person"></div>
+                    <div class="card-inner-person" style="text-align: center;">
+                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_94b3479d32b64d348809cad7934b3868~mv2.png" alt="">
+                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen Rebeca has proven to be an excellent worker, committed and responsible. She has always expressed concern about improving, training and updating her knowledge. That's why i suggest this recomendation with confidence that will be up to te task."</h4>
+                      <p class="degradado" style="font-size: 1.6em;">Ignacio Calderón</p>
+                      <p style="font-size: 1em;">USA & México Human Resources Director at ZOEK Marketing</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col py-5">
+                  <div class="card-person mx-auto">
+                    <div class="circle-person"></div>
+                    <div class="circle-person"></div>
+                    <div class="card-inner-person" style="text-align: center;">
+                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_56ff540d61e146f79233f773e7c4680b~mv2.png" alt="">
+                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Very responsable woman, a lot of creativity and interest."</h4>
+                      <p class="degradado" style="font-size: 1.6em;">Carla Denisse Romero Vázquez</p>
+                      <p style="font-size: 1em;">Freelance Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+
+
+     
+        </section>
+
+
+        <!--Helpful Answers---------------------------------------------------------------------------------------------------------------->
+        <section data-aos="fade-up" id="HelpfulAnswers" style="margin-bottom: 10em;">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 py-5 ">
+
+                <h1 class="text-center">Helpful Answers</h1>
+                <p class="text-center">Start building fast, beautiful and modern looking websites in no time</p>
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">               
+                  Do i have a university degree?"
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Not yet. I'm still waiting to get it, but i ended my university career almost a year ago</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What is my master's degree about?"
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">At this moment, i'm studying a master degree in Development and Direction of Software Engineering.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Where i'm from?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">I'm from  Cuernavaca, Morelos, México. Very nearly to Mexico's City.</div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+
+      <div class="separador" style="margin-bottom: 2em;"></div> <!--purple hr--->
+
+
+          
+
+
+
+
+
+<!--Footer---------------------------------------------------------------------------------------------------------------->
+<footer class="foot mx-5 general_padding"> 
+<section>
+  
+<!--logo-->
+    <div class="container text-start">
+        <div class="row align-items-start">
+            <div  data-aos="fade-up " class="col-2" style="position: relative; left: -4px;">
+              <a class="navbar-brand" href="indexmain.html">
+
+                            <img id="main-logo-footer"  class="logo-header-main hov" src="https://static.wixstatic.com/media/bc0394_2c077e63e56f4ea9b3e31ba9ed303ab9~mv2.gif"
+                             width="60%" alt="Logo de la página web" >
+                            </a>          
+            </div>
+        </div>
+    </div>
+          
+
+<!--left footer's columns-->
+      <div class="container text-start">
+   <div class="row align-items-start">
+      <div class="col py-5">
+            <h6> <b>Address</b> </h6>
+            <h6>Cuernavaca,</h6>
+            <h6>Morelos, México </h6>
+            <h6> <b>   Contact </b> </h6>
+            <h6>   karen.ortizg@yahoo.com</h6>
+            <h6>   Over this webpage's chat</h6>
+      </div>
+
+   <div class="col search-col my-4">
+            <p></p>
+            <p></p>
+            <h6>Search:</h6>
+            <a href="/Pages/indexmain.html#top" style="font-style: inherit;" class="foot_buttons">Top</a><br>
+            <a href="/Pages/indexmain.html#about" style="font-style: inherit;" class="foot_buttons">About</a><br>
+            <a href="/Pages/indexmain.html#tools" class=" foot_buttons">Tools</a><br>
+            <a href="/Pages/indexp.html" class=" foot_buttons">Portfolio</a><br>
+            <a href="/Pages/indexmain.html#reviews" class=" foot_buttons">Reviews</a><br>
+            <a href="/Pages/indexhow.html#contact" class=" foot_buttons">Contact</a><br>
+            
+    </div>
+          
+        <div class="col text-end karen-ortiz-footer pic_foot">
+          <img id="videoElement" src="https://static.wixstatic.com/media/bc0394_24f8010bd4b941658c505b94d842ac27~mv2.png" height="120px" width="120px" style="border-radius: 80px;">
+        </div>
+        
+    </div>
+      </div>
+
+      <!--social icons-->
+          <div  class="container text-start soc_foot" style="margin-top: -25px;">
+            <div class="row align-items-start">
+              <div class="col-12">
+                <div class="social-icons">
+                  <a href="https://www.webcraftersdesigns.com/" target="_blank"><img src="https://static.wixstatic.com/media/bc0394_599d382fa41a46d9851b1635cd22a820~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bc0394_599d382fa41a46d9851b1635cd22a820~mv2.png" alt="webcrafters" style="padding:25%;"></a>
+                  <a href="https://www.instagram.com/karenrebeca.og/?hl=es" target="_blank"><img src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" alt="instagram" style="padding:25%"></a>
+                  <a href="https://www.linkedin.com/in/karen-rebeca-ort%C3%ADz-b5a860282/" target="_blank"><img src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6ea5b4a88f0b4f91945b40499aa0af00.png" alt="linkedin" style="padding:25%"></a>
+                  <a href="https://github.com/karenrebecag" target="_blank"><img src="https://static.wixstatic.com/media/11062b_138b4018ea8244fcb5137cb0e98361f3~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_138b4018ea8244fcb5137cb0e98361f3~mv2.png" alt="github" style="padding:25%"></a>
+                  <a href="https://discord.gg/YPfNs76n" target="_blank"><img src="https://static.wixstatic.com/media/11062b_f642c87820384bd6b2a7c95d10b73a22~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_f642c87820384bd6b2a7c95d10b73a22~mv2.png"  alt="discord" style="padding:25%"></a>
+                    
+                    <div class="container text-center">
+                      <div class="row align-items-center">
+
+                      <div class="col-12"></div>
+                  
+                      <div class="col"></div>
+                      <div class="col"></div>
+                  </div>
+                      <div class="col"></div>
+                </div>
+                      <div class="col"></div>
+              </div>
+                      <div class="col"></div>
+            
+                      <div class="col"></div>
+                      <div class="col"></div>
+                
+                      <div class="col"></div>
+                      <div class="col"></div>
+            
+                      <div class="col"></div>
+    
+
+                      <hr style="color: white;"><!--Section Separator -->
+<!--hedgehog-->
+  <section id="hegehog-gif"> 
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <img id="videoElement" src="https://static.wixstatic.com/media/bc0394_34c638f1286d4574895a6185059d2a38~mv2.gif" alt="hedgy" class="hedgy">            
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          © 2023 Karen Ortiz /  Designed and programmed by me:)
+        </div>
+      </div>
+    </div>
+  
+  <div class="row mt-3 mx-auto justify-content-center">
+    <div class="col-auto">
+      <a href="/Pages/indexhow.html" style="text-decoration: none;">
+        <button id="how_button" class="button-io" style="font-size: medium; width: 280px; padding: 0 10px 0 10px; margin-bottom: 2em;">
+          <span>How did I make this webpage? &#x1F680;</span>
+        </button>
+      </a>
+    </div>
+  </div>
+  
+  </section>
+</footer>
+
+
+<!--additionals js links (Whatsapp API & JS Files)-->
+<div>
+<script>// Función para cargar el script de Elfsight
+  function loadElfsightScript() {
+    var script = document.createElement('script');
+    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.setAttribute('data-use-service-core', '');
+    script.defer = true;
+    document.head.appendChild(script);
+  
+    // Asegúrate de que el script se haya cargado antes de inicializar cualquier widget
+    script.onload = function() {
+      // Aquí puedes activar cualquier función específica tras la carga del script,
+      // pero recuerda que los widgets de Elfsight se inicializarán automáticamente
+      // si has colocado el marcado HTML correspondiente en tu página.
+    };
+  }
+  
+  // Verifica el ancho de la pantalla al cargar la página
+  if (window.innerWidth > 1400) {
+    loadElfsightScript();
+  }
+  
+  // Opcional: Puedes manejar cambios en el tamaño de la ventana si es necesario
+  window.addEventListener('resize', function() {
+    // Aquí, deberías tener en cuenta no cargar el script múltiples veces
+    // o manejar la desactivación del widget si la ventana se redimensiona a un tamaño no deseado,
+    // aunque esto puede ser más complejo y depender de la API específica de Elfsight y tus necesidades.
+  });
+  </script>
+</div>
+<!--Iniciate AOS-->
+<script>
+AOS.init();
+</script>
+
+<script>
+// Obtén el elemento SVG por su id
+const plusButton = document.getElementById('plusButton');
+
+// Agrega un controlador de eventos de clic al elemento SVG
+plusButton.addEventListener('click', function() {
+// Redirige a la página indexmain.html#Reviews
+window.location.href = 'indexmain.html#Reviews';
+});
+
+</script>
+<!--whatsapp-->
+
+
+<script src="/Scripts/main.js"></script>
+<script src="/Scripts/header.js"></script>
+<script src="/Scripts/fadeout.js"></script>
+</div>
+
+<!--Header-->
+<script>
+
+document.addEventListener('DOMContentLoaded', (event) => {
+// Verifica si la URL actual es indexmain.html
+if (window.location.href.indexOf('indexmain.html') > -1) {
+  // Selecciona el enlace con el ID y cambia los estilos
+  var generalNavLink = document.getElementById('generalNavLink');
+  if (generalNavLink) {
+    generalNavLink.style.backgroundColor = '#C777E3';
+    generalNavLink.style.borderRadius = '1em 1em 0 0';
+    generalNavLink.style.color= 'white';
+   
+  }
+}
+});
+
+</script>
+
+<!--Dark Mode-->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const themeSwitch = document.getElementById('theme-switch');
+    const body = document.body;
+    const headerLogo = document.getElementById('main-logo'); // Logo del encabezado
+    const footerLogo = document.getElementById('main-logo-footer'); // Logo del pie de página
+  
+    // URLs de las imágenes para el modo oscuro y claro
+    const darkLogoUrl = 'https://static.wixstatic.com/media/bc0394_efe1b60cb88b4f3d9b7f2c97ab803fc7~mv2.png'; // Modo oscuro
+    const lightLogoUrl = 'https://static.wixstatic.com/media/bc0394_b88b6004d88349ef8f879aef69854826~mv2.png'; // Modo claro
+  
+    let animationExecuted = false; // Controla si la animación se ha ejecutado
+  
+    // Función para cambiar el tema y actualizar los logos
+    function changeTheme(darkMode) {
+        if (!animationExecuted) {
+            body.style.transition = 'opacity 0.5s ease-out';
+            body.style.opacity = '0';
+            animationExecuted = true; // Marca que la animación se ha ejecutado
+        }
+  
+        setTimeout(() => {
+            if (darkMode) {
+                // Actualiza las rutas según la nueva estructura de directorios
+                document.getElementById('theme-stylesheet').setAttribute('href', '/Styles/dark.css');
+                document.getElementById('mainpage-stylesheet').setAttribute('href', '/Styles/mainpage-dark.css');
+                localStorage.setItem('theme', 'dark');
+                headerLogo.src = darkLogoUrl; // Cambia la imagen del logo del encabezado al modo oscuro
+                footerLogo.src = darkLogoUrl; // Cambia la imagen del logo del pie de página al modo oscuro
+            } else {
+                // Actualiza las rutas según la nueva estructura de directorios
+                document.getElementById('theme-stylesheet').setAttribute('href', '/Styles/styles.css');
+                document.getElementById('mainpage-stylesheet').setAttribute('href', '/Styles/mainpage.css');
+                localStorage.setItem('theme', 'light');
+                headerLogo.src = lightLogoUrl; // Cambia la imagen del logo del encabezado al modo claro
+                footerLogo.src = lightLogoUrl; // Cambia la imagen del logo del pie de página al modo claro
+            }
+  
+            if (animationExecuted) {
+                setTimeout(() => {
+                    body.style.opacity = '1';
+                }, 100);
+            }
+        }, animationExecuted ? 500 : 0);
+    }
+  
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        themeSwitch.checked = true;
+        changeTheme(true);
+    } else {
+        // Asegura que los logos estén correctos si el tema claro está activo
+        headerLogo.src = lightLogoUrl;
+        footerLogo.src = lightLogoUrl;
+    }
+  
+    themeSwitch.addEventListener('change', function() {
+        changeTheme(this.checked);
+    });
+  });
+  </script>
+  
+
+
+
+<!--Notification Bar-->
+<script>
+  // Check if the notification was previously closed
+if (!localStorage.getItem('notificationClosed')) {
+  document.getElementById('notification-bar').style.display = 'block';
+}
+
+function closeNotificationBar() {
+  document.getElementById('notification-bar').style.display = 'none';
+  // Save the state to localStorage
+  localStorage.setItem('notificationClosed', 'true');
+}
+
+</script>
+
+
+
+</body>
+</html>

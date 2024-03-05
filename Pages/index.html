@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="/Styles/stylesCharging.css">
+
+</head>
+<body>
+
+<!-- Loading Screen-->
+<section class="loading-screen">
+        <div >
+            <video autoplay muted style="
+                position: absolute ;
+                top: 25%; 
+                left:40%; 
+                height: 20%;
+                width: 20%;
+                opacity: 100%;" 
+                > 
+              <source src="https://video.wixstatic.com/video/bc0394_4906fda8072c47948f117e1307d700bb/1080p/mp4/file.mp4" type="video/mp4" > </video>
+         </div>
+</section>
+
+<!-- Rounded Loader -->
+<div id="loadingScreen" class="loading-screen">
+    <div class="loader"></div>
+</div>
+
+<!-- Vanishing JS Effect -->
+<script>
+    window.addEventListener('load', function() {
+        // Iniciar la transición de desvanecimiento
+        var loadingScreen = document.getElementById('loadingScreen');
+        loadingScreen.style.transition = 'opacity 5s ease';
+        loadingScreen.style.opacity = '0';
+    
+        // Después de la transición, redirigimos al usuario a 'index.html'
+        setTimeout(function() {
+            window.location.href = 'indexmain.html';
+        }, 4500); // Coincide con la duración de la transición
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+body {
+    overflow-x: hidden;
+  }
+
+  @media (max-width: 768px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+      width: 100%;
+      max-width: none;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .background-video{
+        display: none;
+    }
+  }
+  
+
+  @media screen and (max-width: 576px) {
+  
+    .background-video {
+      display: none;
+  
+  
+  }
+  
+  }

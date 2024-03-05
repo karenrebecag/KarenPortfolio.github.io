@@ -1,0 +1,197 @@
+#gooey {
+  height: 32vw;
+  width: 32vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #a514bc4b, #e9b7f0);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: -1000;
+
+  top: 90%;
+  left: 25%;
+  filter: blur(20px);
+  animation-name: gooey;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey {
+  from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+
+/* Establece colores y estilos generales para el modo oscuro */
+body {
+    background-color: #000000; /* Color de fondo oscuro */
+    color: #E0E0E0; /* Color de texto claro */
+  }
+.background-video{
+  display: none ;
+}
+.triangle{
+  display: none;
+}
+
+.logo-header-main{
+  height: 80%;
+}
+
+.card_header_social {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(14, 14, 14); /* Fondo claro */
+  border-radius: 3em 3em 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 17px;
+  gap: 20px;
+  box-shadow: 10px 0px 2px rgba(0, 0, 0, 0.035); /* Sombra para modo claro */
+}
+
+.socialContainer_header_social {
+  background-color: rgb(220, 220, 220); /* Fondo más claro para iconos sociales */
+}
+
+.socialSvg_header_social path {
+  fill: rgb(0, 0, 0); /* Color de los íconos para mayor contraste */
+}
+
+/* Ajustes para el hover de los contenedores sociales en modo claro */
+.containerOne_header_social:hover,
+.containerTwo_header_social:hover,
+.containerThree_header_social:hover,
+.containerFour_header_social:hover {
+  background-color: #121212; /* Fondo oscuro para contraste al hacer hover */
+}
+
+.socialContainer_header_social:hover .socialSvg_header_social path {
+  fill: #ffffff; /* Íconos blancos al hacer hover para contraste */
+}
+
+/* Ajustes adicionales para el header en modo claro */
+header {
+  background-color: rgb(255, 255, 255); /* Fondo claro para el header */
+  color: rgb(255, 255, 255); /* Color de texto oscuro para contraste */
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0); /* Fondo ligeramente diferente para la barra de navegación */
+ 
+
+}
+.nav-item a{
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #1f1f1f; /* Fondo claro para menú desplegable */
+  color: black; /* Texto oscuro para items del menú */
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Color de fondo al hacer hover sobre items del menú */
+}
+
+.foot p {
+  line-height: 0;
+  color: white;
+}
+.foot_buttons{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.social-icons img {
+  width: 32px; /* Ajusta el tamaño de los íconos */
+  height: auto;
+  filter: invert(100);
+}
+
+
+.button-io {
+  padding: 13px 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0;
+  background-color: #121212;
+  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+
+.button-io:hover {
+  letter-spacing: 3px;
+  background: linear-gradient(744deg,#275EB5,#C777E3);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.button-io:active {
+  letter-spacing: 3px;
+  background-color: #dfb3f4;
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(247, 135, 255) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+
+
+/* Portfolio */ 
+.myportfolio_video{
+  display: none;
+}
+
+
+/* Skilltags */
+
+.skillTag{
+  padding: 12px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: auto;
+  border: 0;
+  background-color: rgb(29, 29, 29);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.skillTag:hover {
+  letter-spacing: 3px;
+  background-color: rgba(219, 77, 255, 0.583);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
+}
+
+.skillTag:active {
+  letter-spacing: 3px;
+  background-color: hsl(288, 78%, 41%);
+  color: hsl(0, 0%, 0%);
+  box-shadow: rgb(255, 82, 223) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: all 100ms ease; 
+}

@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Head---------------------------------------------------------------------------------------------------------------->
+<head>
+<!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="author" content="Karen Ortiz">
+    <meta name="description" content="Karen Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Title ---------------------------------------------------------------------------------------------------------------->
+    <title> Karen Ortiz | Documentation </title>
+    <link rel="stylesheet" href="/build/styles.css">
+<!-- Favicon ---------------------------------------------------------------------------------------------------------------->
+    <link rel="icon" type="image/x-icon" href="https://static.wixstatic.com/media/bc0394_1047cedca14c4ed9b1a7aa4d87f8d8a9~mv2.png">
+<!-- Bootstrap ---------------------------------------------------------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- Bootstrap Icons ---------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<!-- CSS Links ---------------------------------------------------------------------------------------------------------------->
+    <link href="style.css" rel="stylesheet">
+    <link href="indexhow.css" rel="stylesheet">
+    <link href="toggle.css" rel="stylesheet">
+
+
+    <!-- Enlace a la hoja de estilo predeterminada (modo claro) -->
+<link rel="stylesheet" id="theme-stylesheet" href="styles.css">
+<link rel="stylesheet" id="mainpage-stylesheet" href="mainpage.css">
+<link rel="stylesheet" id="indexhow-stylesheet" href="indexhow.css">
+
+
+<!-- Google Fonts ---------------------------------------------------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Josefin+Sans&family=Orbitron:wght@600&family=Poppins:wght@200&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+
+
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+
+
+    <!--Scrollbar-->
+    <style>
+      /* Estilo del scrollbar completo */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+    height: 5px;
+}
+
+/* Estilo del track del scrollbar (la parte que "contiene" al thumb) */
+::-webkit-scrollbar-track {
+    background: #ebdfdf; /* Color de fondo del track del scrollbar */
+}
+
+/* Estilo del thumb del scrollbar (la parte que se mueve/arrastra) */
+::-webkit-scrollbar-thumb {
+    background-color: black; /* Color del thumb del scrollbar */
+    border-radius: 4px; /* Borde redondeado del thumb */
+    border: 3px solid #f0f0f0; /* Borde opcional para el thumb */
+}
+
+    </style>
+
+
+<style>
+    @media (max-width: 1400px) {
+
+.container{
+  max-width: 100%;
+}
+
+
+.general_padding{
+        padding: 0 0 0 0;
+    }
+.logo-header-main{
+  display: none;
+}}
+@media (max-width: 992px) {
+
+
+#miHeader{
+  min-width: 100%;
+}
+.navbar-nav {
+    flex-direction: row; /* Asegura que los elementos se alineen horizontalmente */
+    justify-content: flex-start; /* Alinea los elementos al final del contenedor */
+    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
+  }
+
+  .nav-item {
+    margin-right: 5px; /* Espaciado entre los elementos nav-item */
+  }
+
+  .navbar-collapse {
+    flex-basis: auto; /* Asegura que el contenedor de collapse se ajuste al contenido */
+  }
+
+  .card_header_social {
+    display: flex; /* Asegura que los elementos sociales también se alineen horizontalmente */
+    justify-content: flex-end; /* Alinea los elementos sociales al final */
+    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
+    margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
+  }
+
+}
+
+      @media (max-width: 820px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column; /* Alinea los contenedores en vertical */
+    align-items: start; /* Centra los contenedores horizontalmente */
+  }
+
+  .navbar-nav {
+    flex-direction: row; /* Asegura que los nav-items estén en línea */
+    justify-content: flex-start; /* Centra los nav-items horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+    width: 100%; /* Los nav-items ocuparán todo el ancho */
+  }
+
+  .nav-item {
+    margin: 5px; /* Espaciado alrededor de cada nav-item */
+  }
+
+  .card_header_social {
+    display: flex;
+    justify-content: center; /* Centra los elementos sociales horizontalmente */
+    width: 100%; /* Los elementos sociales ocuparán todo el ancho */
+    margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+
+  }
+}
+
+
+
+  @media (max-width: 820px) {
+      #downloadCvButton{
+        display: none;
+      }}
+
+  @media (max-width: 768px) {
+
+   
+    .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    width: 100%;
+    max-width: none;
+
+  }
+  p{
+    margin: 0%;
+  }
+  .owl-carousel{
+    max-width: 100%;
+  }
+
+}
+    </style>
+
+</head>
+
+<!--Body---------------------------------------------------------------------------------------------------------------->
+<body>
+<!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)----->
+
+<!--NavBar-->
+<header id="miHeader" >
+
+  <nav class="navbar navbar-expand-md navbar-light" >
+  <!--Navbar Toggler-->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar-toggler">
+
+  <!--Navbar Container-->
+  <div class="container-fluid">
+
+      <div class="row">
+
+          <!--Main logo-->
+          <div class="col-3 d-flex justify-content-end">
+            <a class="navbar-brand" href="indexmain.html">
+              <img id="main-logo" class="logo-header-main hov" src="https://static.wixstatic.com/media/bc0394_de07eb794d394e7b91fa5800d7ca03ea~mv2.png" 
+              alt="Logo de la página web"  >
+            </a>
+            
+          </div>    
+
+          <!--NavBar Items -->  
+          <div class="col-9 d-flex justify-content-end">      
+            <ul class="navbar-nav d-flex justify-content-end align-items-center uppercase-text">
+
+                <!--Get my Cv-->                    
+                <li class="nav-item mx-4">
+                <a href="https://bc039413-b629-4485-81f6-45112da50757.usrfiles.com/ugd/bc0394_199aaf04412a41fda293ff8be9502807.pdf" target="_blank">
+                <button id="downloadCvButton" class="button-io" style="padding: 0 10px 0 10px; font-size: medium;">
+
+                <span>Get my CV here &#x1F5DE;</span>
+
+                </button>
+                </a>
+                </li>
+                <!--General-->                    
+                <li class="nav-item ">
+                <a class="nav-link nav-sp karen-ortiz-footer2 hov" id="generalNavLink" href="indexmain.html#about">General</a>
+                </li>
+                <!--About-->                    
+                <li class="nav-item ">
+                <a class="nav-link nav-sp karen-ortiz-footer2 hov" href="indexme.html">About</a>
+                </li>
+                <!--Tools-->                    
+                <li class="nav-item">
+                  <a class="nav-link nav-sp karen-ortiz-footer2 hov " href="indexmain.html#tools">Tools</a>
+                </li>
+                <!-- Portfolio-->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle karen-ortiz-footer2" href="indexp.html" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Portfolio
+                  </a>
+
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                        <li><a class="dropdown-item " href="indexp.html">ZOEK & Webcrafters</a></li>
+                        <li><a class="dropdown-item " href="indexuin.html">UINCLUB</a></li>
+                        <li><a class="dropdown-item " href="indexcico.html">CicoSpace</a></li>
+                        <li><a class="dropdown-item " href="indexmu.html">Science Museum</a></li>
+                        <li><a class="dropdown-item " href="indexhy.html">Hypatia Magazine</a></li>
+                      </ul>
+                </li>
+
+                <!--Reviews-->                    
+                <li class="nav-item">
+                  <a class="nav-link nav-sp karen-ortiz-footer2 hov" href="indexmain.html#reviews">Reviews</a>
+                </li>
+
+                <!--Contact-->                    
+                <li class="nav-item">
+                <a class="nav-link nav-sp karen-ortiz-footer2 hov" href="indexhow.html#contact">Contact</a>
+                </li>
+            </ul>
+
+          <!--Derecha Redes-->
+              <div class="card_header_social mx-5" >
+
+              <img class="mini_pic" data-aos="fade-left" style="
+              height: 3em;
+              border-radius: 50%;" 
+              src="https://static.wixstatic.com/media/bc0394_b0089a7153dd4536a9245cf5b3658f3c~mv2.png">
+
+              <a class="socialContainer_header_social containerOne_header_social" href="https://www.instagram.com/karenrebeca.og/?hl=es" target="_blank">
+                <svg class="socialSvg_header_social twitterSvg_header_social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                  <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+              </svg>
+              </a>
+
+              <a class="socialContainer_header_social containerTwo_header_social" href="mailto:karenrortizg@gmail.com">
+                    <svg class="socialSvg_header_social twitterSvg_header_social" fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    viewBox="0 0 378.632 378.632" xml:space="preserve">
+                  <path d="M377.406,160.981c-5.083-48.911-31.093-92.52-73.184-122.854C259.004,5.538,200.457-6.936,147.603,4.807
+                    C97.354,15.971,53.256,48.312,26.571,93.491C-0.122,138.731-7.098,192.982,7.436,242.39c7.832,26.66,21.729,51.712,40.15,72.51
+                    c18.594,20.972,41.904,37.722,67.472,48.459c23.579,9.888,48.628,14.797,73.653,14.797c34.128-0.001,68.115-9.121,97.949-27.098
+                    l-21.092-35.081c-40.578,24.451-90.887,28.029-134.652,9.66c-40.283-16.96-71.759-52.383-84.211-94.761
+                    c-11.336-38.595-5.846-81.093,15.125-116.586c20.922-35.467,55.426-60.801,94.622-69.533c41.644-9.225,87.948,0.669,123.857,26.566
+                    c32.502,23.394,52.497,56.769,56.363,93.907c2.515,23.979,0.31,42.891-6.526,56.226c-14.487,28.192-35.526,28.36-43.873,27.132
+                    c-0.283-0.041-0.476-0.082-0.65-0.117c-2.396-3.709-2.091-17.489-1.974-23.473c0.044-2.332,0.084-4.572,0.084-6.664v-112.06h-31.349
+                    c-3.998-3.278-8.225-6.251-12.674-8.921c-17.076-10.159-36.858-15.552-57.255-15.552c-29.078,0-56.408,10.597-76.896,29.824
+                    c-32.537,30.543-42.63,80.689-24.551,122.023c8.578,19.62,23.065,35.901,41.876,47.066c17.611,10.434,38.182,15.972,59.47,15.972
+                    c24.394,0,46.819-6.735,64.858-19.492c1.915-1.342,3.813-2.79,5.626-4.233c6.431,8.805,15.811,14.4,27.464,16.114
+                    c16.149,2.408,32.299-0.259,46.784-7.668c16.453-8.419,29.715-22.311,39.439-41.271C377.209,219.346,380.778,193.46,377.406,160.981
+                    z M242.33,224.538c-0.891,1.283-2.229,2.907-2.961,3.803c-0.599,0.778-1.151,1.46-1.643,2.073
+                    c-3.868,4.982-8.597,9.48-14.113,13.374c-11.26,7.943-25.152,11.964-41.257,11.964c-28.968,0-53.462-14.75-63.846-38.544
+                    c-11.258-25.69-5.071-56.854,15.035-75.692c12.7-11.95,30.538-18.784,48.911-18.784c13.028,0,25.56,3.375,36.268,9.788
+                    c6.831,4.072,12.861,9.337,17.9,15.719c0.497,0.613,1.082,1.322,1.724,2.094c0.952,1.135,2.812,3.438,3.981,5.092V224.538z"/>
+                  </svg>
+              </a>
+                
+              <a class="socialContainer_header_social containerOne_header_social" href="https://www.linkedin.com/in/karen-rebeca-ortiz-gonz%C3%A1lez-b5a860282/" target="_blank">
+                <svg class="socialSvg_header_social linkdinSvg_header_social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                  <path d="M48,8H16c-4.418,0-8,3.582-8,8v32c0,4.418,3.582,8,8,8h32c4.418,0,8-3.582,8-8V16C56,11.582,52.418,8,48,8z M24,47h-5V27h5 V47z M24.029,23.009C23.382,23.669,22.538,24,21.5,24c-1.026,0-1.865-0.341-2.519-1.023S18,21.458,18,20.468 c0-1.02,0.327-1.852,0.981-2.498C19.635,17.323,20.474,17,21.5,17c1.038,0,1.882,0.323,2.529,0.969 C24.676,18.615,25,19.448,25,20.468C25,21.502,24.676,22.349,24.029,23.009z M47,47h-5V35.887C42,32.788,40.214,31,38,31 c-1.067,0-2.274,0.648-2.965,1.469S34,34.331,34,35.594V47h-5V27h5v3.164h0.078c1.472-2.435,3.613-3.644,6.426-3.652 C44.5,26.5,47,29.5,47,34.754V47z"></path>
+                  </svg>
+              </a>
+
+              <a class="socialContainer_header_social containerFour_header_social" href="https://github.com/karenrebecag" target="_blank">
+                      <svg class="socialSvg_header_social whatsappSvg_header_social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                      <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+                  </svg>
+              </a>
+
+              <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider"></span>
+              </label>
+
+
+              </div>
+
+          </div>
+
+      </div>
+      
+  </div>
+
+  </nav>
+</header>
+
+                                               <!-- Video de Fondo -->
+                                               <video autoplay muted loop class="background-video">
+                                                <source src="https://video.wixstatic.com/video/11062b_7e61ffd6dbb040ee8b0e4dc604e8fd4e/1080p/mp4/file.mp4" type="video/mp4">
+                                              </video>
+                                              
+
+
+
+
+
+<!-- How Did i Build this WebPage?-->
+<section id="about" style="margin-top: 15em;" >
+  <div data-aos="fade-up " class="row py-5" >
+    <div class="col-12 d-flex justify-content-center">
+      <h1 class="degradado">How did i build this webpage?</h1>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center text-center">
+          <p>
+            This webpage tooked me some time around 100 hours of work. I loved how it looks.  <b>  I invite you to check this webpage's files and hope yoy find it interesting. </b> 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- Buttons-->
+
+      <section>
+
+        <div class="container py-5">
+          <div class="row">
+            <!-- Columna 1 -->
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+              <a href="https://github.com/karenrebecag/UXportfolio.github.io" target="_blank">
+
+                <button id="button1">
+                  <svg width="60" height="60" viewBox="0 0 20 20">
+                    <image href="https://static.wixstatic.com/shapes/bc0394_2de15fe6abdb483d9a173b06a4d33eb9.svg" width="20" height="20" />
+                  </svg>  
+                  <span>Code</span>
+                </button>
+              </a>
+            </div>
+          <!-- Columna 2 -->
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <a href="https://www.figma.com/file/EawiN7wreZUW0XQnopxnef/Untitled?type=design&node-id=17%3A85&mode=design&t=ew0x0mVRQZMh9yMb-1" target="_blank">
+              <button id="button2">
+                <svg width="60" height="60" viewBox="0 0 20 20">
+                  <image href="https://static.wixstatic.com/shapes/bc0394_47ec0dfd0e8e40be9e17f5ee25cc27b2.svg" width="20" height="20" />
+                </svg>  
+                <span>Prototype</span>
+              </button>
+            </a>
+          </div>
+          <!-- Columna 3 -->
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <a href="https://drive.google.com/drive/folders/1SaB0WteS2SNTQDYFJu3gWXmmXZyf6YaZ?usp=sharing" target="_blank" >
+              <button id="button3">
+                <svg width="80" height="80" viewBox="0 0 20 20">
+                  <image href="https://static.wixstatic.com/shapes/bc0394_12c0e1ce0e3c493bb05639e755a07bf4.svg" width="20" height="20" />
+                </svg>  
+                <span>Design</span>
+              </button>
+            </a>      
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+
+<!-- SkillTags-->
+<section>
+  <div class="container-fluid py-5 " style="margin-top: 3em;">
+    <div class="row justify-content-center ">
+      <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
+        <span class="skillTag">Project Managment &#x1F469;</span> <!-- 👩🏻‍💼 -->
+      </div>
+      <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
+        <span class="skillTag">HTML, CSS, Tailwind, Bootstrap, Vanilla JS  &#x1F3A8;</span> <!-- 🎨 -->
+      </div>
+      <div class="col-sm-3 col-lg-1 text-center d-flex">
+        <span class="skillTag">Figma &#x270F;</span> <!-- ✏️ -->
+      </div>
+      <div class="col-sm-3 col-lg-1 text-center d-flex">
+        <span class="skillTag">Photoshop & Illustrator &#x1F5A5;</span> <!-- 🖥️ -->
+      </div>
+      <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
+        <span class="skillTag">Jitter & After Effects &#x1F9B4;</span> <!-- 🦴-->
+      </div>
+
+      <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
+        <span class="skillTag">VS Code &#x1F4D0;</span> <!-- 📐 -->
+      </div>
+
+
+      <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
+        <span class="skillTag">Owl Caroussel, AOS Animaitons &#x1F3D7;</span> <!-- 🏗️ -->
+      </div>
+
+
+
+
+
+<section id="how">
+  <div data-aos="fade-up" class="container-fluid py-5">
+    <div class="row">
+
+
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+
+              <h1 class="degradado" style="margin-left: 4.6em;">About Style</h1>
+              <p> <b>My favorite part about styling is the CSS one.</b>
+                First, i started choosing a color palette. I imagined one based on violet color, cause i love that color and would look amazing and elegant with just variations and white.
+                <b>All my images are made by AI for the backgrounds, used Dall-E and photoshop to add my designs and make it look more elegant and sophisticated.</b>
+                <br>My logos and some images (The footer's Cartoon for example) are made in Adobe Ilustrator, but everything else is made in Adobe Photoshop because i like it better. Every photo (except for the profile pic on "About Me" Section is organic, just tooked it and edited in Adobe Lightroom, but the ppic on the "About Me" Section is and edit with Ai that i just made to look more fancy).
+                When i had all the material, i started to make my mockup on Figma. Honestly i didn't used a lot, because at the beggining this was going to be just a tiny page to show some of my ilustrations, but when i figured out how big my project was becaming i started to make tiny sketches and save some prototyping time.
+                <b>That's why not of my project is on Figma, because i didn't made everything there. Used some Jitter tools (one of my favorite figma's plugins) to animiate some stuff and design the main page's skill's squares.</b> 
+                                </p>
+            </div>
+
+                <div class="col-xl-4"></div>
+
+            <div class="col-sm-6 col-md-6 col-lg-1 col-xl-2 py-5 d-flex mx-auto" >
+              <div  class="col-lg-2 d-flex justify-content-end">
+                <div class="about-me-image">
+                    <div class="card">
+                      <div class="paleta">
+                        <div class="circle">
+                          <div class="component">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="22"
+                              height="22"
+                              fill="currentColor"
+                              class="bi bi-palette"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                              ></path>
+                              <path
+                                d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="cores cor1">
+                          <div class="div1"><span class="func"></span></div>
+                          <div class="div2">
+                            <div class="component">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                fill="currentColor"
+                                class="bi bi-palette"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                ></path>
+                                <path
+                                  d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="nome">CEA9D9</div>
+                        </div>
+                        <div class="cores cor2">
+                          <div class="div3"></div>
+                          <div class="div4">
+                            <div class="component">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                fill="currentColor"
+                                class="bi bi-palette"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                ></path>
+                                <path
+                                  d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="nome">D789D9</div>
+                        </div>
+                        <div class="cores cor3">
+                          <div class="div5"></div>
+                          <div class="div6">
+                            <div class="component">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                fill="currentColor"
+                                class="bi bi-palette"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                ></path>
+                                <path
+                                  d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="nome">A836D9</div>
+                        </div>
+                        <div class="cores cor4">
+                          <div class="div7"></div>
+                          <div class="div8">
+                            <div class="component">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                fill="currentColor"
+                                class="bi bi-palette"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                ></path>
+                                <path
+                                  d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="nome">8F0BA0</div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <section class="loader" style="margin-top: 30%;">
+                      <div class="sliderbar" style="--i:0"></div>
+                      <div class="sliderbar" style="--i:1"></div>
+                      <div class="sliderbar" style="--i:2"></div>
+                      <div class="sliderbar" style="--i:3"></div>
+                    </section>
+        
+                </div>
+        
+              </div>
+            
+            </div>
+          </div>
+        </div>
+
+</section>
+
+<section id="terminal">
+  <div data-aos="fade-up" class="container-fluid py-5">
+    <div class="row">
+      <div class="col-sm-10 col-md-2 col-lg-2 col-xl-4 py-5 d-flex justify-content-end" >
+              <div class="container2">
+                <div class="terminal_toolbar">
+                  <div class="butt2">
+                    <button class="btn2 btn2-color"></button>
+                    <button class="btn2"></button>
+                    <button class="btn2"></button>
+                  </div>
+                  <p class="user">Karen_Ortiz@admin: ~</p>
+                  <div class="add_tab">+</div>
+                </div>
+                <div class="terminal_body">
+                  <div class="terminal_prompt">
+                    <span class="terminal_user">Karen_Ortiz@admin:</span>
+                    <span class="terminal_location">~</span>
+                    <span class="terminal_bling">$</span>
+                    <span class="terminal_cursor"></span>
+                  </div>
+                  <div class="terminal_output">
+                    <pre class="output_text">Hey! Thanks for Visiting my WebPage! :)</pre>
+                  </div>
+                  <div class="terminal_input">
+                    <input placeholder="It's Just CSS..." class="input_text" type="text" />
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+
+            <div class="col-md-10 col-lg-10 col-xl-8">
+
+              <h1 class="degradado" style="margin-left: 4.6em;">Nerdy Stuff</h1>
+              <p>
+                <b>As i said before, this was just a small project at the beggining, so started using a lot of GIF files for the animations, because i didn't planned to use a lot of javascript, but when the webpage became bigger it started to become slower because of the GIFs, so i had to replicate a lot of the animations with JS.</b>
+      
+                There's a library that saved my life for this project, i didn't know about it but GPT4 recommended it to me. It's called "Animations on Screen (AOS), it's an Angular based library wich allowed me to animate my fade in and fade out scroll animations just by importing the library and adding every id to my project."
+                
+                <b>For animations as this terminal, or a lot of interactive stuff i used pure CSS because that's the challenge about this page, if i wanna show you my skills i gotta use less to be more hahaha. The gravity effect in some pics as the main cartoon pic or the certification's section is made with vanilla JS, a function that allows me to detect the mouse and add a "gravity effect" moving on 0.25 the image over X & Y coordinates.</b>
+                
+                Also, added an "Observer", wich allows me to charge the gifs only when you're watching them, i loved it! BTW, all those videos are maded with Jitter.
+                
+                For the Whatsapp Chat, it's just an API that i found on the internet, it's called "Elfsight" and it helped me a lot. For the Caroussels used OWL Caroussel, wich is a JavaScript librery for simple and fast caroussels. Also got some CSS animations from universe.io and a lot of code automation with Copilot and GPT4.
+                
+                <b>My backend it's kinda tricky. I connected the only one input field on the "Contact" Section to PHP and insert that data into PhpmyAdmin using XAMPP. Honestly i don't really like it, but it works and was something relatively easy.
+                All my files are storaged on WIX hahah, why? because WIX UI is nice and cheap, also while i was working on ZOEK i learned to use it very well, so every < scr > is connected to wix. But please, this is not a Wix built page, i made it all by my own. You can check all my code for free on my GitHub! please check it out :)</b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+</section>
+
+
+
+<section id="contact">
+  <div data-aos="fade-up" class="container py-5">
+    <div class="row">
+      <div class= "col-sm-12 col-md-4 col-lg-4 col-xl-4 py-5 d-flex justify-content-end" >
+        <div class="parent2 ">
+          <div class="card2">
+              <div class="logo">
+                  <span class="circle circle1"></span>
+                  <span class="circle circle2"></span>
+                  <span class="circle circle3"></span>
+                  <span class="circle circle4"></span>
+                  <span class="circle circle5">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.667 31.69" class="svg">
+                          <path id="Path_6" data-name="Path 6" d="M12.827,1.628A1.561,1.561,0,0,1,14.31,0h2.964a1.561,1.561,0,0,1,1.483,1.628v11.9a9.252,9.252,0,0,1-2.432,6.852q-2.432,2.409-6.963,2.409T2.4,20.452Q0,18.094,0,13.669V1.628A1.561,1.561,0,0,1,1.483,0h2.98A1.561,1.561,0,0,1,5.947,1.628V13.191a5.635,5.635,0,0,0,.85,3.451,3.153,3.153,0,0,0,2.632,1.094,3.032,3.032,0,0,0,2.582-1.076,5.836,5.836,0,0,0,.816-3.486Z" transform="translate(0 0)"></path>
+                          <path id="Path_7" data-name="Path 7" d="M75.207,20.857a1.561,1.561,0,0,1-1.483,1.628h-2.98a1.561,1.561,0,0,1-1.483-1.628V1.628A1.561,1.561,0,0,1,70.743,0h2.98a1.561,1.561,0,0,1,1.483,1.628Z" transform="translate(-45.91 0)"></path>
+                          <path id="Path_8" data-name="Path 8" d="M0,80.018A1.561,1.561,0,0,1,1.483,78.39h26.7a1.561,1.561,0,0,1,1.483,1.628v2.006a1.561,1.561,0,0,1-1.483,1.628H1.483A1.561,1.561,0,0,1,0,82.025Z" transform="translate(0 -51.963)"></path>
+                        </svg>
+                  </span>
+      
+              </div>
+              <div class="glass"></div>
+              <div class="content">
+                <img src="https://static.wixstatic.com/media/bc0394_ac4899af43e944acb40bd34b3c2ea305~mv2.png" height="80px" width="90px" style="border-radius: 100px; margin-top: -60px;">
+                  <span class="title">Karen Rebeca Ortiz </span>
+                  <span style="margin-top: -2px;" class="text">UX/ UI Designer & Programmer</span>
+              </div>
+              <div class="bottom">
+                  
+                  <div class="social-buttons-container" >
+                    <a href="https://www.instagram.com/karenrebeca.og/?hl=es" target="_blank" rel="noopener noreferrer">
+                      <button class="social-button social-button1">
+                        <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="svg">
+                          <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                        </svg>
+                      </button>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/karen-rebeca-ortiz-gonz%C3%A1lez-b5a860282/" target="_blank" rel="noopener noreferrer">
+                            <button class="social-button social-button2">
+                              <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                <path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"></path>
+                              </svg>
+                            </button>
+                    </a>
+      
+                    <a href="https://discord.gg/YPfNs76n" target="_blank" rel="noopener noreferrer">
+                      <button class="social-button .social-button3">
+                          <svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                              <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path>
+                            </svg>
+                        </button>
+                      </a>
+                  </div>
+                  <div class="view-more">
+                      <button class="view-more-button">View more</button>
+                      <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                  </div>
+              </div>
+          </div>
+        </div>
+      
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8">
+
+              <h1 ">Contact Me:</h1>
+              <div class="form-container">
+                <form class="form">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text"id="email" name="email" required="">
+                  </div>
+                  <div class="form-group">
+                    <label for="textarea">How Can We Help You?</label>
+                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+                  </div>
+                  <button class="form-submit-btn" type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+                                              <div class="separador"></div> <!--purple hr--->
+                                              <hr style="color: white;"><!--Section Separator -->  
+
+<!--Footer---------------------------------------------------------------------------------------------------------------->
+<footer class="foot"> 
+  <section>
+    
+  <!--logo-->
+  <div class="container text-start">
+    <div class="row align-items-start">
+        <div  data-aos="fade-up " class="col-2" style="position: relative; left: -4px;">
+          <a class="navbar-brand" href="indexmain.html">
+
+                        <img id="main-logo-footer"  class="logo-header-main hov" src="https://static.wixstatic.com/media/bc0394_2c077e63e56f4ea9b3e31ba9ed303ab9~mv2.gif"
+                         width="60%" alt="Logo de la página web" >
+                        </a>          
+        </div>
+    </div>
+</div>
+      
+  <!--left footer's columns-->
+        <div class="container text-start">
+     <div class="row align-items-start">
+        <div class="col py-5">
+              <h6> <b>Address</b> </h6>
+              <h6>Cuernavaca,</h6>
+              <h6>Morelos, México </h6>
+              <h6> <b>   Contact </b> </h6>
+              <h6>   karen.ortizg@yahoo.com</h6>
+              <h6>   Over this webpage's chat</h6>
+        </div>
+  
+     <div class="col search-col my-4">
+              <p></p>
+              <p></p>
+              <h6>Search:</h6>
+              <a href="indexmain.html#top" style="font-style: inherit;" class="foot_buttons">Top</a><br>
+              <a href="indexmain.html#about" style="font-style: inherit;" class="foot_buttons">About</a><br>
+              <a href="indexmain.html#tools" class=" foot_buttons">Tools</a><br>
+              <a href="indexp.html" class=" foot_buttons">Portfolio</a><br>
+              <a href="indexmain.html#reviews" class=" foot_buttons">Reviews</a><br>
+              <a href="indexhow.html#contact" class=" foot_buttons">Contact</a><br>
+              
+      </div>
+            
+          <div class="col text-end karen-ortiz-footer pic_foot">
+            <img id="videoElement" src="https://static.wixstatic.com/media/bc0394_24f8010bd4b941658c505b94d842ac27~mv2.png" height="120px" width="120px" style="border-radius: 80px;">
+          </div>
+          
+      </div>
+        </div>
+  
+        <!--social icons-->
+            <div  class="container text-start soc_foot" style="margin-top: -25px;">
+              <div class="row align-items-start">
+                <div class="col-12">
+                  <div class="social-icons">
+                    <a href="https://www.webcraftersdesigns.com/" target="_blank"><img src="https://static.wixstatic.com/media/bc0394_599d382fa41a46d9851b1635cd22a820~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bc0394_599d382fa41a46d9851b1635cd22a820~mv2.png" alt="webcrafters" style="padding:25%;"></a>
+                    <a href="https://www.instagram.com/karenrebeca.og/?hl=es" target="_blank"><img src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" alt="instagram" style="padding:25%"></a>
+                    <a href="https://www.linkedin.com/in/karen-rebeca-ort%C3%ADz-b5a860282/" target="_blank"><img src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6ea5b4a88f0b4f91945b40499aa0af00.png" alt="linkedin" style="padding:25%"></a>
+                    <a href="https://github.com/karenrebecag" target="_blank"><img src="https://static.wixstatic.com/media/11062b_138b4018ea8244fcb5137cb0e98361f3~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_138b4018ea8244fcb5137cb0e98361f3~mv2.png" alt="github" style="padding:25%"></a>
+                    <a href="https://discord.gg/YPfNs76n" target="_blank"><img src="https://static.wixstatic.com/media/11062b_f642c87820384bd6b2a7c95d10b73a22~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_f642c87820384bd6b2a7c95d10b73a22~mv2.png"  alt="discord" style="padding:25%"></a>
+                      
+                      <div class="container text-center">
+                        <div class="row align-items-center">
+  
+                        <div class="col-12"></div>
+                    
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                        <div class="col"></div>
+                  </div>
+                        <div class="col"></div>
+                </div>
+                        <div class="col"></div>
+              
+                        <div class="col"></div>
+                        <div class="col"></div>
+                  
+                        <div class="col"></div>
+                        <div class="col"></div>
+              
+                        <div class="col"></div>
+      
+  
+                        <hr style="color: white;"><!--Section Separator -->
+  <!--hedgehog-->
+    <section id="hegehog-gif"> 
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <img id="videoElement" src="https://static.wixstatic.com/media/bc0394_34c638f1286d4574895a6185059d2a38~mv2.gif" alt="hedgy" class="hedgy">            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            © 2023 Karen Ortiz /  Designed and programmed by me:)
+          </div>
+        </div>
+      </div>
+    
+    <div class="row mt-3 mx-auto justify-content-center">
+      <div class="col-auto">
+        <a href="indexhow.html" style="text-decoration: none;">
+          <button id="how_button" class="button-io" style="font-size: medium; width: 280px; padding: 0 10px 0 10px;">
+            <span>How did I make this webpage? &#x1F680;</span>
+          </button>
+        </a>
+      </div>
+    </div>
+    
+    </section>
+  </footer>
+
+<!--Additional Links (WA, Script)---------------------------------------------------------------------------------------------------------------->
+<div>
+
+<!--additionals js links-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSx3QoSueVmw6diY7g4Rakt+Kjz2zK6N6Z9n4UEC2Hfn0U7K7Rje1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--whatsapp-->
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-d89d577e-e2bd-47c3-95a3-2ce640379e7b" data-elfsight-app-lazy></div>
+<!--linked script-->
+<script src="main.js"></script>
+<script src="mainjsport.js"></script>
+<script src="header.js"></script>
+
+<!--Typewriter-->
+<script>
+//Contact Section on the main page! 
+
+//This is the typewrite effect, it's on main->contact and it writes "Take Your Visuals to the Next Level. Message Me"
+let app = document.getElementById('typewriter2');
+const card2 = document.querySelector('.card2');
+
+let typewriter2 = new Typewriter2(app, {
+  loop: true,
+  delay: 75,
+ cursor: "<span style='color: #A648CB;'>|</span>",
+});
+ 
+typewriter2
+  .pauseFor(2500)
+  .typeString('<span style="color: #A648CB;">Contact Me</span>')
+  .pauseFor(50)
+  .deleteChars(50)
+  .start();
+
+  let slideIndex = 0;
+  showSlides();
+  
+  //Below Contact Section, carousel for the reviews section"
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("mySlides2");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 10000); // Cambiar imagen cada 2 segundos
+  };
+
+
+</script>
+
+<!--Initialize AOS-->
+<script>
+  AOS.init();
+</script>
+<!--Observer JS-->
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    var video = document.getElementById('myVideo');
+    video.playbackRate = 2.5;
+  });
+  // Crear la instancia de IntersectionObserver
+  let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          // Comprobar si el video está en el viewport
+          if(entry.isIntersecting) {
+              entry.target.play();
+          } else {
+              entry.target.pause();
+          }
+      });
+  }, { threshold: 0.5 }); // El threshold indica qué porcentaje del video debe estar en pantalla
+
+  // Iniciar la observación del video
+  let video = document.getElementById('videoElement');
+  observer.observe(video);
+ 
+</script>
+
+<!--Header Selector-->
+<script>
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+    // Verifica si la URL actual es indexmain.html
+    if (window.location.href.indexOf('indexhow.html') > -1) {
+      // Selecciona el enlace con el ID y cambia los estilos
+      var generalNavLink = document.getElementById('generalNavLink');
+      if (generalNavLink) {
+        generalNavLink.style.backgroundColor = 'rgb(228, 141, 223)';
+        generalNavLink.style.borderRadius = '1em 1em 0 0';
+        generalNavLink.style.color= 'white';
+       
+      }
+    }
+  });
+  
+  </script>
+
+<!--Dark Mode-->
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+    const themeSwitch = document.getElementById('theme-switch');
+    const body = document.body;
+    const headerLogo = document.getElementById('main-logo');
+    const footerLogo = document.getElementById('main-logo-footer');
+
+    // URLs de las imágenes para el modo oscuro y claro
+    const darkHeaderLogoUrl = 'https://static.wixstatic.com/media/bc0394_3f1276b69d6d4afbb8b01774689b7726~mv2.png';
+    const lightHeaderLogoUrl = 'https://static.wixstatic.com/media/bc0394_de07eb794d394e7b91fa5800d7ca03ea~mv2.png';
+    const darkFooterLogoUrl = 'https://static.wixstatic.com/media/bc0394_3f1276b69d6d4afbb8b01774689b7726~mv2.png';
+    const lightFooterLogoUrl = 'https://static.wixstatic.com/media/bc0394_de07eb794d394e7b91fa5800d7ca03ea~mv2.png';
+
+    // Función para aplicar el tema
+    function applyTheme(darkMode) {
+        if (darkMode) {
+            document.getElementById('theme-stylesheet').setAttribute('href', 'dark.css');
+            document.getElementById('mainpage-stylesheet').setAttribute('href', 'mainpage-dark.css');
+            document.getElementById('indexhow-stylesheet').setAttribute('href', 'indexhow-dark.css');
+            themeSwitch.checked = true;
+            headerLogo.src = darkHeaderLogoUrl;
+            footerLogo.src = darkFooterLogoUrl;
+        } else {
+            document.getElementById('theme-stylesheet').setAttribute('href', 'styles.css');
+            document.getElementById('mainpage-stylesheet').setAttribute('href', 'mainpage.css');
+            document.getElementById('indexhow-stylesheet').setAttribute('href', 'indexhow.css');
+            themeSwitch.checked = false;
+            headerLogo.src = lightHeaderLogoUrl;
+            footerLogo.src = lightFooterLogoUrl;
+        }
+
+        // Aplicar transición de opacidad para el cambio de tema
+        body.style.opacity = '0';
+        setTimeout(() => {
+            body.style.opacity = '1';
+        }, 50);
+    }
+
+    // Verificar la preferencia de tema guardada al cargar la página
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        applyTheme(savedTheme === 'dark');
+    }
+
+    // Escuchar el cambio en el switch y aplicar el tema correspondiente
+    themeSwitch.addEventListener('change', function() {
+        applyTheme(this.checked);
+        localStorage.setItem('theme', this.checked ? 'dark' : 'light');
+    });
+});
+
+
+</script>
+
+</div>                                         
+</body>
+</html>
+
+
+
+
+
