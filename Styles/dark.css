@@ -1,3 +1,11 @@
+#logo-header{
+  font-size: 1.2vw;
+  font-family: poppins;
+  font-weight: 500; 
+  position: relative; 
+  top: 1vw;
+  color: white;
+ }
 #gooey {
   height: 32vw;
   width: 32vw;
@@ -27,6 +35,70 @@ z-index: -1000;
   to {
       filter: blur(30px);
       transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+
+
+#gooey2 {
+  height: 32vw;
+  width: 32vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #02a1da70, #fbe1ff3a);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: -1000;
+
+  top: 25%;
+  left: 5%;
+  filter: blur(20px);
+  animation-name: gooey2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey2 {
+  from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+#gooey3 {
+  height: 40vw;
+  width:40vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #231aacc9, #c1c1c148);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: -1000;
+
+  top: 10%;
+  left: 60%;
+  filter: blur(70px);
+  animation-name: gooey3;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey3 {
+  from {
+    filter: blur(20px);
+    transform: translate(0, 0) skew(0); /* Empieza sin desplazamiento */
+  }
+  to {
+    filter: blur(30px);
+    transform: translate(20%, 0) skew(0); /* Se mueve hacia la derecha y no cambia verticalmente */
   }
 }
 

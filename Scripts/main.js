@@ -1,7 +1,4 @@
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('#main'),
-  smooth: true
-});
+
   
   //Below Contact Section, carousel for the reviews section"
 

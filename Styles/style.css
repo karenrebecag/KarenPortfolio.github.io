@@ -23,7 +23,7 @@ transform: scale(1.05);
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 60%;
 }
 
 .slider-infinite::before,
@@ -48,9 +48,10 @@ transform: scale(1.05);
 }
 
 .slide-track-infinite {
-  animation: scroll-infinite 40s linear infinite;
+  animation: scroll-infinite 30s linear infinite;
   display: flex;
   width: calc(250px * 10); /* Ajuste para 5 elementos duplicados */
+  align-items: center;
 }
 
 .slide-infinite {

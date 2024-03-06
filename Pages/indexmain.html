@@ -18,11 +18,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Bootstrap Icons ---------------------------------------------------------------------------------------------------------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!--Swiper JS-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  
 <!-- CSS Links ---------------------------------------------------------------------------------------------------------------->
     <link href="/Styles/style.css" rel="stylesheet">
     <link href="/Styles/responsive.css" rel="stylesheet">
     <link href=/Styles/mainpage.css" rel="stylesheet">
   <link href="/Styles/toggle.css" rel="stylesheet">
+
+  <link rel="stylesheet"  href="/Styles/extra.css">
 
 <!-- Enlace a la hoja de estilo predeterminada (modo claro) -->
 <link rel="stylesheet" id="theme-stylesheet" href="/Styles/style.css">
@@ -38,8 +48,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Josefin+Sans&family=Orbitron:wght@600&family=Poppins:wght@200&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
+
     <script src="/Pages/scriptEffects.js"></script>
-    <script src="path/to/parallax.js"></script>
+
+    
+
 
 
 <!-- AOS CSS -->
@@ -237,13 +253,13 @@ div{
 
 <!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)-->
 
-<!--NavBar-->
 
-<!-- Notification Bar -->
+<body>
 
- 
 
-<header id="miHeader" >
+<main data-scroll-container>
+  
+<header id="miHeader" data-scroll-section>
 
   <nav class="navbar navbar-expand-md navbar-light" >
   <!--Navbar Toggler-->
@@ -261,8 +277,7 @@ div{
        <!-- Center Column for Main Logo -->
        <div class="col-md-4 d-flex justify-content-center">
         <a class="navbar-brand" href="/Pages/indexmain.html">
-          <img id="main-logo" class="logo-header-main hov" src="https://static.wixstatic.com/media/bc0394_b88b6004d88349ef8f879aef69854826~mv2.png">
-        </a>
+          <h1 id="logo-header">Karen Ortiz</h1>        </a>
       </div>
   
 
@@ -375,39 +390,42 @@ div{
   </nav>
 </header>
 
-<video  autoplay muted loop class="background-video" id="background-video">
+<!--Video de Fondo general-->
+<video data-scroll-section data-scroll data-scroll-speed"5" autoplay muted loop class="background-video" id="background-video">
 <source src="https://video.wixstatic.com/video/11062b_7e61ffd6dbb040ee8b0e4dc604e8fd4e/1080p/mp4/file.mp4" type="video/mp4">
 </video>
 
 <!--Main Section Banner---------------------------------------------------------------------------------------------------------------->
-<section  style="margin-top: 2%;"  data-aos="fade-up" id="top" class="main-banner-fadeout" >
-<div  class="container-fluid main-banner ">
+<section data-scroll-section  style="margin-top: 2%;"  data-aos="fade-up" id="top" class="main-banner-fadeout" >
+<div data-scroll class="container-fluid main-banner ">
 
 
 
 <div class="row">
   <div data-depth="0.2" class="col-12 d-flex justify-content-center">
-    <img width="450" style="  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
+    <img data-scroll data-scroll-speed="2" width="450" style="  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
     border-radius: 100%;" class=" karen-ortiz-footer"  src="https://static.wixstatic.com/media/bc0394_8744966d3971432ca187a38276218858~mv2.png" alt="Foto de karen">
   </div>
 </div>
+<div id="gooey2"></div>
 
 
 <div class="row py-5">
   <div data-depth="0.6" class="col-12 d-flex justify-content-center">
-    <img width="600" class=" karen-ortiz-footer " src="https://static.wixstatic.com/media/bc0394_2d1b6d30ba384fb8ab9a96a57ba743c2~mv2.gif" alt="Foto de karen">
+    <img data-scroll data-scroll-speed="2" width="600" class=" karen-ortiz-footer " src="https://static.wixstatic.com/media/bc0394_2d1b6d30ba384fb8ab9a96a57ba743c2~mv2.gif" alt="Foto de karen">
   </div>
+  <div id="gooey3"></div>
 
 </div>
 </section>
 
 <!-- Video Background -->
-<section>
-<div data-depth="0.10"  class="container text-center">
+<section  data-scroll-section>
+<div data-scroll data-depth="0.10"  class="container text-center">
   <div class="row">
     <div class="banner col">
       <div class="video_background"  >
-        <video id="videoElement myVideoSlow" autoplay muted loop class="w-100"
+        <video data-scroll data-scroll-speed="5" id="videoElement myVideoSlow" autoplay muted loop class="w-100"
          src="https://video.wixstatic.com/video/11062b_8c1a1d3bf5b847ab9ba65fa800b72f95/1080p/mp4/file.mp4" class="img3" type="video/mp4">
         </video>
       </div>
@@ -418,27 +436,41 @@ div{
 </section>
 
 <!--Enterprises Strip-->
-<section>
-<div class="container-fluid bg-black p-2" style="margin-top: -4em;">
+<section data-scroll-section >
+<div data-scroll class="container-fluid bg-black p-2" >
 
 <div class="row">
-  <div class="col-12 justify-content-center d-flex mx-auto">
-    <img src="https://static.wixstatic.com/media/bc0394_2c5767796ef84a1ca012170bf3004128~mv2.png" style="max-width: 50%;" alt="Empresas">
+  <div class="slider-infinite">
+    <div class="slide-track-infinite">
+      <!-- Repetir estos cinco elementos dos veces para el efecto infinito -->
+
+      <div class="slide-infinite"><img src="https://static.wixstatic.com/media/bc0394_abc9e58b87784df7b4197aa9e2a235e2~mv2.png" height="100" width="100" alt="webcrafters" /></div>
+      <div class="slide-infinite"><img style="position: relative; top: 1.4vh;" src="https://static.wixstatic.com/media/bc0394_2927082480f545a280e1c10dae25e650~mv2.png" height="70" width="70" alt="uin" /></div>
+      <div class="slide-infinite"><img src="https://static.wixstatic.com/media/bc0394_04b7e9c03bd149a9b537e1984920d783~mv2.png" height="100"  alt="ccytem" /></div>
+      <div class="slide-infinite"><img src="https://static.wixstatic.com/media/bc0394_164e41e7a7694b58b4a38b24d561b364~mv2.png" height="100"  alt="muciencias" /></div>
+      <div class="slide-infinite"><img style="position: relative; top: 3.8vh;" src="https://static.wixstatic.com/media/bc0394_a2004a34460141e286866d3b576561aa~mv2.png" width="100"  alt="zoek" /></div>
+      <div class="slide-infinite"><img style="position: relative; top: 4vh;"src="https://static.wixstatic.com/media/bc0394_284f7fb0d1f3483ba2026a8d4597e874~mv2.png" width="100"  alt="cicospace" /></div>
+      <div class="slide-infinite"><img src="https://static.wixstatic.com/media/bc0394_ac61a38cac784e02aef645db432cd422~mv2.png" height="100" width="100" alt="trailer de la ciencia" /></div>
+      <div class="slide-infinite"><img style="position: relative; top: 2.3vh; right: 3vw;" src="https://static.wixstatic.com/media/bc0394_9ec41482f0744bd791a4d5a76b55fd0c~mv2.png" height="50"  alt="tecotv" /></div>
+      <div class="slide-infinite"><img style="position: relative; top: 3.2vh;" src="https://static.wixstatic.com/media/bc0394_978129d68994420aa90bb247d4f8de3f~mv2.png" height="40"  alt="ineel" /></div>
+
+
+    </div>
+    <div class="col-12  d-flex justify-content-center py-3"> 
+      <div style="color: white; font-size: 0.8em; display: flex; align-items: center; margin-bottom: 1em;">
+        <span data-scroll>Trusted by ambitious teams.</span>
+        <div tabindex="0" class="plusButton" style="margin-left: 10px;" id="plusButton">
+          <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <g mask="url(#mask0_21_345)">
+              <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+            </g>
+          </svg>
+        </div>
   </div>
 </div>
 <!-- Segunda fila con párrafo y enlace -->
-<div class="row justify-content-center mt-3">
-  <div class="col-12  d-flex justify-content-center"> 
-    <div style="color: white; font-size: 0.8em; display: flex; align-items: center; margin-bottom: 1em;">
-      <span>Trusted by ambitious teams.</span>
-      <div tabindex="0" class="plusButton" style="margin-left: 10px;" id="plusButton">
-        <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-          <g mask="url(#mask0_21_345)">
-            <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
-          </g>
-        </svg>
-      </div>
-    </div>
+
+
     
     
   </div>
@@ -450,17 +482,17 @@ div{
    
 
 <!-- About me-->
-<section id="about" >
-<div data-aos="fade-up " class="row py-5" >
+<section id="about" data-scroll-section  >
+<div data-scroll data-aos="fade-up " class="row py-5" >
   <div class="col-12 d-flex justify-content-center">
-    <h1 class="degradado">Let me introduce myself.</h1>
+    <h1 data-scroll class="degradado">Let me introduce myself.</h1>
   </div>
 
   <div class="container">
     <div class="row">
-      <div  class=" col-12 d-flex justify-content-center text-center general_padding"  >
+      <div data-scroll class=" col-12 d-flex justify-content-center text-center general_padding"  >
         
-        <p style="font-size: 1.3em;">
+        <p data-scroll style="font-size: 1.3em;">
           I am an accomplished <b> engineer, programmer, and UX/designer </b> with foundation in web programming. <b>Based in Cuernavaca, Mexico</b> 
           , I have immersed myself in the world of web development, constantly with creativity and innovation.
           My journey in the realm of web programming has been amazing for me. I specialize in front-end web development, proficient in the most common frameworks and languages to craft visually appealing and user-friendly interfaces.
@@ -477,32 +509,32 @@ div{
 
 
   </div>
+  <div id="gooey">
+  </div>
 </div>
 </section>
 
-<div id="gooey">
 
-</div>
 
 
 <!-- Blog Cards-->
-<section id="blog">
-<div class="container" data-aos="fade-up ">
+<section id="blog" data-scroll-section data-scroll>
+<div  data-scroll class="container" data-aos="fade-up ">
   <div class="col-12 d-flex justify-content-center">
   </div>
   <!--Primera Fila-->
   <div class="row py-2">
   <!-- Duplicar este bloque para tener 6 elementos en total -->
   <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-    <a href="indexp.html" style="text-decoration: none;">
+    <a data-scroll href="indexp.html" style="text-decoration: none;">
   <div class="cardProjects mx-auto">
       <div class="card-contentProjects">
           <div class="card-topProjects">
               <span class="card-titleProjects">01.</span>
-              <p>Project Manager.</p>
+              <p data-scroll>Project Manager.</p>
           </div>
           <div class="card-bottomProjects">
-              <p>WebCrafters</p>
+              <p data-scroll>WebCrafters</p>
               
               <svg width="32" viewBox="0 -960 960 960" height="32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="black" d="M226-160q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-414q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19ZM226-668q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Zm254 0q-28 0-47-19t-19-47q0-28 19-47t47-19q28 0 47 19t19 47q0 28-19 47t-47 19Z"></path>
@@ -676,31 +708,7 @@ div{
   </div>
 </div>
 
-<div class="row">
-  <div class="slider-infinite">
-    <div class="slide-track-infinite">
-      <!-- Repetir estos cinco elementos dos veces para el efecto infinito -->
-      <div class="slide-infinite">
-        <div class="enterprises-card">
-          <img class="enterprises-img" src="https://static.wixstatic.com/media/bc0394_58fe5e6983274f38b882953070113798~mv2.png" alt="UX Design">
-          <div class="card-footer">
-            <h6 >UX Design</h6>
-          </div>
-        </div>
-      </div>
-      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" /></div>
-      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" /></div>
-      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" /></div>
-      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" /></div>
-      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" /></div>
-      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" /></div>
-      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" /></div>
-      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" /></div>
-      <div class="slide-infinite"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" /></div>
-    </div>
-  </div>
-  
-</div>
+
 
 
 
@@ -713,11 +721,12 @@ div{
 </section>
 
 
+
 <div class="separador" style="margin-top: 50px;"></div> <!--purple hr--->
 
 <!-- It's All About Style-->
-<section data-aos="fade-up" style="margin-bottom: 12em; margin-top: 7em;">
-<div class="container" >
+<section data-scroll-section data-aos="fade-up" style="margin-bottom: 12em; margin-top: 7em;">
+<div data-scroll class="container" >
 <div class="row">
   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex ">
     <!-- Contenido de la primera columna -->
@@ -781,11 +790,10 @@ div{
 
 </div>
 </div>
-</div>
 </section>
 
-<section>
-<div data-aos="fade-up">
+<section data-scroll-section>
+<div data-scroll data-aos="fade-up">
 
 <div class="section-diagonal triangle"></div>
 <div class="diagonal-split triangle"></div>
@@ -826,14 +834,11 @@ div{
 </section>
 
 
-
-
-
 <!--Skills-->
-<section id="tools">
+<section data-scroll-section id="tools">
 
 
-<div  class="container" style="margin-bottom: 8em;" >
+<div data-scroll  class="container" style="margin-bottom: 8em;" >
 
   <div data-aos="zoom-out-up" class="row" style="margin-bottom: -8em;">
 
@@ -876,6 +881,9 @@ div{
 
        
         </div>
+
+        <div id="gooey4"></div>
+
         <!-- Sub-columna 2 -->
         <div class="col-md-6">
           <div class="e-card playing">
@@ -1040,9 +1048,9 @@ div{
 
 
 <!--Contact Strip -->
-<section data-aos="fade-up" id="blueDiv" style="margin-top: 2%;">
+<section data-scroll-section data-aos="fade-up" id="blueDiv" style="margin-top: 2%;">
 <!-- Sección Izq / Texto-->
-<div class="container contenedorPrincipal">
+<div data-scroll class="container contenedorPrincipal">
   <div class="row">
     <!-- Contenedor Principal Azul -->
     <div class="col-xs-12 col-sm-12 col-md-12 blue-div d-flex align-items-center">
@@ -1081,100 +1089,136 @@ div{
 
 <!--Reviews -->
 
-        <section data-aos="fade-up" id="reviews" class=" py-5" style="margin-bottom: 5em;">
+        <section data-scroll-section data-aos="fade-up" id="reviews" style="margin-top: 4vh;margin-bottom: 10vh;" >
 
 
-          <div class="container mx-auto">
 
-
-                <!-- Fila para el texto de encabezado -->
-                <div class="row">
-                  <div class="col-12 mb-4 ">
-                    <h2 class="degradado" style="text-align: center;">Reviews</h2>
-                    <p class="text-center " style="font-size: 1.3em;">Some people is talking about me!</p>
-                  </div>
-            </div>
-          
-            <div class="container py-4">
-              <div class="row">
-                <div class="col py-5">
-                  <div class="card-person mx-auto">
-                    <div class="circle-person"></div>
-                    <div class="circle-person"></div>
-                    <div class="card-inner-person" style="text-align: center;">
-                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_1cae80af4ec9414a83bf192989ec848a~mv2.png" alt="">
-                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
-                      <p class="degradado" style="font-size: 1.6em;">René Chavez</p>
-                      <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col py-5">
-                  <div class="card-person mx-auto">
-                    <div class="circle-person"></div>
-                    <div class="circle-person"></div>
-                    <div class="card-inner-person" style="text-align: center;">
-                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_3b192bf49db44e89aab2c43e011f5c72~mv2.png" alt="">
-                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Amazing web designer, very creative and compromised. Thanks!"</h4>
-                      <p class="degradado" style="font-size: 1.6em;">Aaron Knipp</p>
-                      <p style="font-size: 1em;">Cicospace CEO & Founder</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col py-5">
-                  <div class="card-person mx-auto">
-                    <div class="circle-person"></div>
-                    <div class="circle-person"></div>
-                    <div class="card-inner-person" style="text-align: center;">
-                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_cb9580bfb88f44ad89c3a481b9a787c0~mv2.png" alt="">
-                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen Rebeca has demostrated notable commitment in the course, standing out for the development of high-quiality projects that reflect solid knowledge in the frontend field!"</h4>
-                      <p class="degradado" style="font-size: 1.6em;">Ana Villanueva</p>
-                      <p style="font-size: 1em;">Tecnolochicas Pro Dev Teacher</p>
-                    </div>
-                  </div>
-                </div>
+          <div data-scroll id="page4">
+            <div id="page4">
+              <div class="col-12 mb-4 ">
+                <h2 class="degradado" style="text-align: center;">Reviews</h2>
+                <p class="text-center " style="font-size: 1.3em;">Some people is talking about me!</p>
               </div>
+              <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                      <!-- Tus slides van aquí -->
+                      <div class="swiper-slide">
+                        
+                        <div class="card-person mx-auto">
+                          <div class="circle-person"></div>
+                          <div class="circle-person"></div>
+                          <div class="card-inner-person" style="text-align: center;">
+                            <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_56ff540d61e146f79233f773e7c4680b~mv2.png" alt="">
+                            <h4 style="font-family: Raleway; font-size: 1.2em;">"Very responsable woman, a lot of creativity and interest."</h4>
+                            <p class="degradado" style="font-size: 1.6em;">Carla Denisse Romero Vázquez</p>
+                            <p style="font-size: 1em;">Freelance Client</p>
+                          </div>
+                        </div>
 
-              <div class="row" style="margin-top: 7em;">
-                <div class="col py-5">
-                  <div class="card-person mx-auto">
-                    <div class="circle-person"></div>
-                    <div class="circle-person"></div>
-                    <div class="card-inner-person" style="text-align: center;">
-                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_0ae1889f4ded4481a281bd53c4ea6160~mv2.png" alt="">
-                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen has stood out for her excellent work, discipline and perseverance. She's always on board to learn new things. Versatile and organized. It really makes easier to work with her."</h4>
-                      <p class="degradado" style="font-size: 1.6em;">Dr. Honnor Da Silva</p>
-                      <p style="font-size: 1em;">TECO TV's Director</p>
-                    </div>
+                      </div>
+                      <div class="swiper-slide">
+                        
+                        <div class="card-person mx-auto">
+                          <div class="circle-person"></div>
+                          <div class="circle-person"></div>
+                          <div class="card-inner-person" style="text-align: center;">
+                            <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_94b3479d32b64d348809cad7934b3868~mv2.png" alt="">
+                            <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen Rebeca has proven to be an excellent worker, committed and responsible. She has always expressed concern about improving, training and updating her knowledge. That's why i suggest this recomendation with confidence that will be up to te task."</h4>
+                            <p class="degradado" style="font-size: 1.6em;">Ignacio Calderón</p>
+                            <p style="font-size: 1em;">USA & México Human Resources Director at ZOEK Marketing</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide">
+                        
+                        <div class="card-person mx-auto">
+                          <div class="circle-person"></div>
+                          <div class="circle-person"></div>
+                          <div class="card-inner-person" style="text-align: center;">
+                            <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_0ae1889f4ded4481a281bd53c4ea6160~mv2.png" alt="">
+                            <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen has stood out for her excellent work, discipline and perseverance. She's always on board to learn new things. Versatile and organized. It really makes easier to work with her."</h4>
+                            <p class="degradado" style="font-size: 1.6em;">Dr. Honnor Da Silva</p>
+                            <p style="font-size: 1em;">TECO TV's Director</p>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="swiper-slide">
+                        
+                        <div class="card-person mx-auto">
+                          <div class="circle-person"></div>
+                          <div class="circle-person"></div>
+                          <div class="card-inner-person" style="text-align: center;">
+                            <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_cb9580bfb88f44ad89c3a481b9a787c0~mv2.png" alt="">
+                            <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen Rebeca has demostrated notable commitment in the course, standing out for the development of high-quiality projects that reflect solid knowledge in the frontend field!"</h4>
+                            <p class="degradado" style="font-size: 1.6em;">Ana Villanueva</p>
+                            <p style="font-size: 1em;">Tecnolochicas Pro Dev Teacher</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide">
+                        
+                        <div class="card-person mx-auto">
+                          <div class="circle-person"></div>
+                          <div class="circle-person"></div>
+                          <div class="card-inner-person" style="text-align: center;">
+                            <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_3b192bf49db44e89aab2c43e011f5c72~mv2.png" alt="">
+                            <h4 style="font-family: Raleway; font-size: 1.2em;">"Amazing web designer, very creative and compromised. Thanks!"</h4>
+                            <p class="degradado" style="font-size: 1.6em;">Aaron Knipp</p>
+                            <p style="font-size: 1em;">Cicospace CEO & Founder</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide">
+                        
+                        <div class="card-person mx-auto">
+                          <div class="circle-person"></div>
+                          <div class="circle-person"></div>
+                          <div class="card-inner-person" style="text-align: center;">
+                            <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_1cae80af4ec9414a83bf192989ec848a~mv2.png" alt="">
+                            <h4 style="font-family: Raleway; font-size: 1.2em;">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
+                            <p class="degradado" style="font-size: 1.6em;">René Chavez</p>
+                            <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide">
+                        
+                        <div class="card-person mx-auto">
+                          <div class="circle-person"></div>
+                          <div class="circle-person"></div>
+                          <div class="card-inner-person" style="text-align: center;">
+                            <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_1cae80af4ec9414a83bf192989ec848a~mv2.png" alt="">
+                            <h4 style="font-family: Raleway; font-size: 1.2em;">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
+                            <p class="degradado" style="font-size: 1.6em;">René Chavez</p>
+                            <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide">
+                        
+                        <div class="card-person mx-auto">
+                          <div class="circle-person"></div>
+                          <div class="circle-person"></div>
+                          <div class="card-inner-person" style="text-align: center;">
+                            <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_1cae80af4ec9414a83bf192989ec848a~mv2.png" alt="">
+                            <h4 style="font-family: Raleway; font-size: 1.2em;">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
+                            <p class="degradado" style="font-size: 1.6em;">René Chavez</p>
+                            <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- Añade más slides según sea necesario -->
                   </div>
-                </div>
-                <div class="col py-5">
-                  <div class="card-person mx-auto">
-                    <div class="circle-person"></div>
-                    <div class="circle-person"></div>
-                    <div class="card-inner-person" style="text-align: center;">
-                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_94b3479d32b64d348809cad7934b3868~mv2.png" alt="">
-                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen Rebeca has proven to be an excellent worker, committed and responsible. She has always expressed concern about improving, training and updating her knowledge. That's why i suggest this recomendation with confidence that will be up to te task."</h4>
-                      <p class="degradado" style="font-size: 1.6em;">Ignacio Calderón</p>
-                      <p style="font-size: 1em;">USA & México Human Resources Director at ZOEK Marketing</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col py-5">
-                  <div class="card-person mx-auto">
-                    <div class="circle-person"></div>
-                    <div class="circle-person"></div>
-                    <div class="card-inner-person" style="text-align: center;">
-                      <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_56ff540d61e146f79233f773e7c4680b~mv2.png" alt="">
-                      <h4 style="font-family: Raleway; font-size: 1.2em;">"Very responsable woman, a lot of creativity and interest."</h4>
-                      <p class="degradado" style="font-size: 1.6em;">Carla Denisse Romero Vázquez</p>
-                      <p style="font-size: 1em;">Freelance Client</p>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
-            
+          </div>
             
 
 
@@ -1182,9 +1226,10 @@ div{
         </section>
 
 
+
         <!--Helpful Answers---------------------------------------------------------------------------------------------------------------->
-        <section data-aos="fade-up" id="HelpfulAnswers" style="margin-bottom: 10em;">
-          <div class="container">
+        <section data-scroll-section data-aos="fade-up" id="HelpfulAnswers" style="margin-bottom: 10vh;">
+          <div data-scroll class="container">
             <div class="row">
               <div class="col-12 py-5 ">
 
@@ -1240,18 +1285,15 @@ div{
 
 
 <!--Footer---------------------------------------------------------------------------------------------------------------->
-<footer class="foot mx-5 general_padding"> 
-<section>
+<footer data-scroll-section class="foot mx-5 general_padding"> 
+<section data-scroll>
   
 <!--logo-->
     <div class="container text-start">
         <div class="row align-items-start">
             <div  data-aos="fade-up " class="col-2" style="position: relative; left: -4px;">
-              <a class="navbar-brand" href="indexmain.html">
-
-                            <img id="main-logo-footer"  class="logo-header-main hov" src="https://static.wixstatic.com/media/bc0394_2c077e63e56f4ea9b3e31ba9ed303ab9~mv2.gif"
-                             width="60%" alt="Logo de la página web" >
-                            </a>          
+                <a class="navbar-brand" href="/Pages/indexmain.html">
+                  <h1 id="logo-header">Karen Ortiz</h1>        </a>  
             </div>
         </div>
     </div>
@@ -1353,38 +1395,8 @@ div{
   </section>
 </footer>
 
+</main>
 
-<!--additionals js links (Whatsapp API & JS Files)-->
-<div>
-<script>// Función para cargar el script de Elfsight
-  function loadElfsightScript() {
-    var script = document.createElement('script');
-    script.src = 'https://static.elfsight.com/platform/platform.js';
-    script.setAttribute('data-use-service-core', '');
-    script.defer = true;
-    document.head.appendChild(script);
-  
-    // Asegúrate de que el script se haya cargado antes de inicializar cualquier widget
-    script.onload = function() {
-      // Aquí puedes activar cualquier función específica tras la carga del script,
-      // pero recuerda que los widgets de Elfsight se inicializarán automáticamente
-      // si has colocado el marcado HTML correspondiente en tu página.
-    };
-  }
-  
-  // Verifica el ancho de la pantalla al cargar la página
-  if (window.innerWidth > 1400) {
-    loadElfsightScript();
-  }
-  
-  // Opcional: Puedes manejar cambios en el tamaño de la ventana si es necesario
-  window.addEventListener('resize', function() {
-    // Aquí, deberías tener en cuenta no cargar el script múltiples veces
-    // o manejar la desactivación del widget si la ventana se redimensiona a un tamaño no deseado,
-    // aunque esto puede ser más complejo y depender de la API específica de Elfsight y tus necesidades.
-  });
-  </script>
-</div>
 <!--Iniciate AOS-->
 <script>
 AOS.init();
@@ -1408,9 +1420,33 @@ window.location.href = 'indexmain.html#Reviews';
 <script src="/Scripts/header.js"></script>
 <script src="/Scripts/fadeout.js"></script>
 <script src="/Scripts/darkmode.js"></script>
-</div>
 
 
+
+<!----Swiper---->
+<script>
+  var mySwiper = new Swiper('.mySwiper', {
+    // Parámetros opcionales
+    direction: 'horizontal', // Es la dirección por defecto, pero está bien ser explícito
+    loop: true, // Para que el slider sea infinito
+    slidesPerView: 'auto', // Muestra varios slides a la vez según el ancho del slider
+    spaceBetween: 30, // Espacio entre slides
+});
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+
+<!--Cursor-->
+<script src="/Scripts/cursor.js"></script>    
+
+
+
+<div class="custom-cursor" id="customCursor" style="color: white;"> < > </div>
 
 
 </body>

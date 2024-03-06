@@ -1,11 +1,14 @@
 /* Button Costumers */
 /* Note that you only needs to edit the config to customize the button! */
-.logo-header-main{
-  height: 60px;
-  width: 60px;
-  opacity: 0.9;
-  
-}
+#logo-header{
+  font-size: 1.2vw;
+  font-family: poppins;
+  font-weight: 500; 
+  position: relative; 
+  top: 1vw;
+  color: white;
+ }
+ 
 .plusButton {
     /* Config start */
     --plus_sideLength: 1.8rem;
@@ -312,6 +315,7 @@
       transition: all 0.2s;
       position: relative;
       cursor: pointer;
+      top: 4vh;
       transition: 0.3s ease-in;
     }
     

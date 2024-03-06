@@ -1,0 +1,55 @@
+
+
+#page4 {
+    height: 50vh;
+    width: 100%;
+    cursor: none;
+}
+
+/* Estilo base para el cursor personalizado */
+.custom-cursor {
+    pointer-events: none;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #7F6BCF,#B774E0);
+    transform: scale(0); /* Inicia desde cero para que no sea visible inicialmente */
+    transition: transform 0.5s ease; /* Transición suave de la transformación */
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+    font-size: 12px;
+    opacity: 0; /* Inicia con opacidad 0 para transiciones suaves */
+ 
+}
+  
+  /* Clase para animar el cursor a su tamaño normal */
+  .cursor-grow {
+    transform: scale(1); /* Escala normal */
+    opacity: 1; /* Hace el cursor totalmente visible */
+  }
+  
+  /* Clase para ocultar el cursor suavemente */
+  .cursor-shrink {
+    transform: scale(0); /* Reduce el cursor a cero */
+    opacity: 0; /* Hace el cursor completamente transparente */
+  }
+  
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 30%;
+    border-left: 1px solid #f0f0f0;
+}
+
+

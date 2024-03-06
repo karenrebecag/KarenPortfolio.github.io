@@ -1,3 +1,59 @@
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff8f8;
+  padding: 8vw 0;
+  position: relative;
+}
+
+#moving-text {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#moving-text::-webkit-scrollbar {
+  display: none;
+}
+
+.con {
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+
+#gola {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #db8be7;
+  margin: 1vw 2vw;
+}
+
+@keyframes move {
+  from {
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(-100%);
+  }
+}
+#logo-header{
+ font-size: 1.2vw;
+ font-family: poppins;
+ font-weight: 500; 
+ position: relative; 
+ top: 1vw;
+ color: black;
+}
+
+
 #gooey {
   height: 32vw;
   width: 32vw;
@@ -30,7 +86,99 @@ z-index: -1000;
   }
 }
 
+#gooey2 {
+  height: 32vw;
+  width: 32vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #ba08d570, #fbe1ff3a);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: -1000;
 
+  top: 25%;
+  left: 5%;
+  filter: blur(20px);
+  animation-name: gooey2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey2 {
+  from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+#gooey3 {
+  height: 40vw;
+  width:40vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #f9d3ffc9, #c1c1c148);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: -1000;
+
+  top: 10%;
+  left: 60%;
+  filter: blur(70px);
+  animation-name: gooey3;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey3 {
+  from {
+    filter: blur(20px);
+    transform: translate(0, 0) skew(0); /* Empieza sin desplazamiento */
+  }
+  to {
+    filter: blur(30px);
+    transform: translate(20%, 0) skew(0); /* Se mueve hacia la derecha y no cambia verticalmente */
+  }
+}
+
+
+#gooey4 {
+  height: 32vw;
+  width: 32vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #0838d570, #08fff33a);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: -1000;
+
+  top: 25%;
+  left: 35%;
+  filter: blur(20px);
+  animation-name: gooey4;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey4 {
+  from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
 /* Button Costumers */
 
 
@@ -339,6 +487,7 @@ color: white;
     height: 300px;
     transition: all 0.2s;
     position: relative;
+    top: 4vh;
     cursor: pointer;
     transition: 0.3s ease-in;
   }
