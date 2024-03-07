@@ -820,7 +820,7 @@ color: white;
   font-family: 'Raleway', sans-serif; /* Raleway font */
   font-size: 16px;
   color: #495057;
-  text-align: justify; /* Justify text */
+  text-align: center; /* Justify text */
 }
 
 /* Accordion item style */
@@ -869,7 +869,9 @@ color: white;
   text-align: left; /* Align text to the start */
   padding: 1rem 1.25rem;
 }
-
+.accordion-header, .accordion-body {
+  text-align: center;
+}
 
 
 /*  Dark Mode Alert  */ 

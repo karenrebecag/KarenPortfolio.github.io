@@ -1,8 +1,34 @@
-#certification-image {
- 
-    filter: invert(100%) grayscale(100%);
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+  height: 5px;
+}
+
+/* Estilo del track del scrollbar (la parte que "contiene" al thumb) */
+::-webkit-scrollbar-track {
+  background: #000000; /* Color de fondo del track del scrollbar */
+}
+
+/* Estilo del thumb del scrollbar (la parte que se mueve/arrastra) */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255); /* Color del thumb del scrollbar */
+  border-radius: 2px; /* Borde redondeado del thumb */
+  border: 1px solid #f0f0f0e4; /* Borde opcional para el thumb */
+}
+
+
+#certification-image{
+  filter: invert(100%) grayscale(100%);
+}
+.custom-cursor {
+
+  background: linear-gradient(to top right, #9d04ae70, #08fff33a);
+
   }
+
   
+  .navbar-toggler-icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  }
 
 .swiper-slide {
   width: 33%;
@@ -178,6 +204,36 @@ z-index: -1000;
 }
 
 @keyframes gooey4 {
+  from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+#gooey5 {
+  height: 32vw;
+  width: 32vw;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #9d04ae70, #08fff33a);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: -1000;
+
+  left: 50%;
+  filter: blur(20px);
+  animation-name: gooey5;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey5 {
   from {
       filter: blur(20px);
       transform: translate(10%, -10%) skew(0);

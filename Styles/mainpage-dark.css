@@ -619,7 +619,6 @@
   
   .accordion {
     width: 80%; /* Ajusta este valor según prefieras */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     border-radius: 10px; /* Bordes redondeados */
     overflow: hidden; /* Asegura que los bordes internos también estén redondeados */
     transition: 0.5s ease-in;
