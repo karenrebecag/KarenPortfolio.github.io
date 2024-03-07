@@ -1,5 +1,3 @@
-
-
 #page4 {
     height: 50vh;
     width: 100%;
@@ -13,7 +11,15 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-image: linear-gradient(to right, #7F6BCF,#B774E0);
+    filter: blur(35px);
+    background-color: #8713d5;
+    background-image: radial-gradient(at 85% 51%, rgb(229, 229, 209) 0px, transparent 50%),
+      radial-gradient(at 74% 68%, rgb(171, 0, 228) 0px, transparent 50%),
+      radial-gradient(at 64% 79%, hsla(284,72%,73%,1) 0px, transparent 50%),
+      radial-gradient(at 75% 16%, hsla(283,60%,72%,1) 0px, transparent 50%),
+      radial-gradient(at 90% 65%, rgb(99, 23, 162) 0px, transparent 50%),
+      radial-gradient(at 91% 83%, rgb(57, 3, 79) 0px, transparent 50%),
+      radial-gradient(at 72% 91%, rgb(102, 0, 255) 0px, transparent 50%);
     transform: scale(0); /* Inicia desde cero para que no sea visible inicialmente */
     transition: transform 0.5s ease; /* Transición suave de la transformación */
     z-index: 10000;
@@ -48,7 +54,7 @@
 }
 
 .swiper-slide {
-    width: 30%;
+    width: 33%;
     border-left: 1px solid #f0f0f0;
 }
 

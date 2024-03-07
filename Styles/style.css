@@ -1,6 +1,58 @@
 /* This style's sheet is connected to all the escential files for Karen Rebeca Ortiz's Portfolio.Es  It's indispensable for it's main purpose
 and correct functionality------*/
 
+
+
+#logo-header{
+ font-size: 1.2vw;
+ font-family: poppins;
+ font-weight: 500; 
+ position: relative; 
+ top: 1vw;
+ color: black;
+}
+.button-container-header {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+        
+}
+
+.button-header {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  color: #000000;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button-header:hover {
+  transform: translateY(-3px);
+}
+.button-header span {
+  font-size: 1.5em;
+  margin: 0 50px; /* Ajusta este valor según necesites para aumentar el espacio */
+  font-family: 'Poppins', sans-serif; /* Asegúrate de que el nombre de la fuente esté correctamente escrito y la fuente esté importada o disponible */
+  font-weight: 400;
+  color: #000000;
+  display: inline-block; /* Esto asegura que el margin se aplique correctamente */
+}
+
+.icon-header {
+  font-size: 20px;
+}
 /* Enterprises  */
 h6{
   font-family: raleway;
@@ -94,7 +146,6 @@ transform: scale(1.05);
   justify-content: center;
   padding: 17px 17px;
   gap: 20px;
-  box-shadow: 10px 0px 2px rgba(0, 0, 0, 0.035);
  
 }
 
@@ -226,6 +277,9 @@ p{
   padding: 0 30em 0 30em;
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
 /* Estilos para el menú colapsable */
 .navbar-nav .dropdown-menu {
@@ -334,7 +388,6 @@ p{
   align-items: start;
   gap: 5px;
   border-radius: 25px;
-  width: 30em;
   transition: transform 400ms;
   transform-style: preserve-3d;
   perspective: 500px;
@@ -519,14 +572,13 @@ section {
 }
 /* Main Header style*/
 header{
-  position: fixed;
-  background-color: white;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
   opacity: 1;
   width: 100%;
-  height: 2.5em;
+  height: 2.3em;
   z-index: 1;
   position: fixed;
-  width: 100%;
   top: 0;
   transition: transform 0.3s ease-in-out;
  
@@ -545,6 +597,8 @@ header{
   justify-content: space-between; 
   display: inline;
   width: 100%;
+
+  
   
 }
 
@@ -555,7 +609,7 @@ header{
 
 /*  Toggle Breakdown  */
 .dropdown-toggle{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   border-radius: 12px 12px 0 0;
   transition: all 0.3s ease; /* Transición suave para efectos de hover */
@@ -601,7 +655,7 @@ header{
 
 .dropdown-item:hover {
   filter: blur(0); /* Remueve el desenfoque del elemento sobre el que se pasa el ratón */
-  background-color: #1A1F24; /* Cambio de color de fondo al pasar el ratón */
+  background-color: #1a1f245f; /* Cambio de color de fondo al pasar el ratón */
   border-radius: 4px; /* Bordes redondeados para el elemento seleccionado */
   
 }

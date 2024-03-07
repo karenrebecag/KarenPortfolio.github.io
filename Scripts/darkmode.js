@@ -10,11 +10,15 @@ document.addEventListener('DOMContentLoaded', function() {
       setTimeout(() => {
         if (darkMode) {
           // Cambia al tema oscuro
-          document.getElementById('theme-stylesheet').setAttribute('href', '/Styles/dark.css');
+          document.getElementById('mainpage-stylesheet').setAttribute('href', '/Styles/mainpage-dark.css');
+          document.getElementById('styles-stylesheet').setAttribute('href', '/Styles/dark.css');
+          document.getElementById('indexhow-stylesheet').setAttribute('href', '/Styles/indexhow-dark.css');
           localStorage.setItem('theme', 'dark');
         } else {
           // Cambia al tema claro
-          document.getElementById('theme-stylesheet').setAttribute('href', '/Styles/styles.css');
+          document.getElementById('mainpage-stylesheet').setAttribute('href', '/Styles/mainpage.css');
+          document.getElementById('styles-stylesheet').setAttribute('href', '/Styles/styles.css');
+          document.getElementById('indexhow-stylesheet').setAttribute('href', '/Styles/indexhow.css');
           localStorage.setItem('theme', 'light');
         }
   
@@ -29,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (savedTheme === 'dark') {
       themeSwitch.checked = true;
       changeTheme(true);
+    } else if (savedTheme === 'light') {
+      themeSwitch.checked = false;
+      changeTheme(false);
     }
   
     // Evento que escucha el cambio en el switch y actualiza el tema

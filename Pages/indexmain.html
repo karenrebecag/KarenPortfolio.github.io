@@ -20,10 +20,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!--Swiper JS-->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 
   
 <!-- CSS Links ---------------------------------------------------------------------------------------------------------------->
@@ -35,8 +33,9 @@
   <link rel="stylesheet"  href="/Styles/extra.css">
 
 <!-- Enlace a la hoja de estilo predeterminada (modo claro) -->
-<link rel="stylesheet" id="theme-stylesheet" href="/Styles/style.css">
-<link rel="stylesheet" id="mainpage-stylesheet" href="/Styles/mainpage.css">
+<link id="mainpage-stylesheet" rel="stylesheet" href="/Styles/mainpage.css">
+<link id="styles-stylesheet" rel="stylesheet" href="/Styles/styles.css">
+<link id="indexhow-stylesheet" rel="stylesheet" href="/Styles/indexhow.css">
 
 
 
@@ -52,7 +51,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
 
-    <script src="/Pages/scriptEffects.js"></script>
+    <script src="/Scripts/scriptEffects.js"></script>
 
     
 
@@ -215,11 +214,26 @@ div{
   
 
       @media (max-width: 768px) {
+        #logo-header {
+    font-size: 1.8em; /* Ajusta esto según el tamaño deseado */
+  }
+  .bubble, #glow-input, #how_button, #cube-loader {
+    display: none;
+  }
+}
 
-      }
-      #typewriter{
-        display: none;
-      }
+.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  width: 100%;
+  max-width: none;
+}
+
+p {
+  margin: 0%;
+}
+
+
+
+
 
     @media (max-width: 430px) {
       .mini_pic{
@@ -257,11 +271,13 @@ div{
 <body>
 
 
-<main data-scroll-container>
-  
-<header id="miHeader" data-scroll-section>
 
-  <nav class="navbar navbar-expand-md navbar-light" >
+  
+<header id="miHeader" >
+
+
+  
+  <nav class="navbar navbar-expand-md " >
   <!--Navbar Toggler-->
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -276,61 +292,65 @@ div{
     
        <!-- Center Column for Main Logo -->
        <div class="col-md-4 d-flex justify-content-center">
-        <a class="navbar-brand" href="/Pages/indexmain.html">
-          <h1 id="logo-header">Karen Ortiz</h1>        </a>
+        <a style="text-decoration: none;" href="/Pages/indexmain.html">
+          <h1 id="logo-header">Karen Ortiz</h1>        
+        </a>
       </div>
   
+      <div class="col-md-4 d-flex justify-content-center py-3">
 
-        <!-- Left Column for NavBar Items -->
-        <div class="col-md-4 d-flex align-items-center justify-content-end">
-          <ul class="navbar-nav mr-auto">
-            <!-- Get my Cv -->
-            <li class="nav-item mx-2">
-              <a href="https://bc039413-b629-4485-81f6-45112da50757.usrfiles.com/ugd/bc0394_199aaf04412a41fda293ff8be9502807.pdf" target="_blank">
-                <button id="downloadCvButton" class="button-io">
-                  <span>Get my CV here &#x1F5DE;</span>
-                </button>
-              </a>
-            </li>
-            <!-- General -->
-            <li class="nav-item mx-2">
-              <a class="nav-link nav-sp karen-ortiz-footer2 hov" id="generalNavLink" href="indexmain.html#about">General</a>
-            </li>
-            <!-- Projects -->
-            <li class="nav-item dropdown mx-2">
-              <a class="nav-link dropdown-toggle" href="indexp.html" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Projects
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-                <li><a class="dropdown-item" href="indexp.html">ZOEK & Webcrafters</a></li>
-                <li><a class="dropdown-item " href="indexuin.html">UINCLUB</a></li>
-                <li><a class="dropdown-item " href="indexcico.html">CicoSpace</a></li>
-                <li><a class="dropdown-item " href="indexmu.html">Science Museum</a></li>
-                <li><a class="dropdown-item " href="indexhy.html">Hypatia Magazine</a></li>
+        <div  class="button-container-header">
+          <a style="text-decoration: none;" href="/Pages/indexmain.html">
+          <button class="button-header">
+            <h6>Home</h6>
+          </button>
+          </a>
+
+          <a style="text-decoration: none;" href="/Pages/indexme.html">
+          <button class="button-header">
+            <h6>About</h6>
+          </button>
+          </a>
+        
+          <a style="text-decoration: none;" href="/Pages/indexhow.html#contact">
+          <button class="button-header">
+            <h6>Contact</h6>
+          </button>
+          </a>
+
+          <button class="button-header">
+                <h6>Portfolio</h6>
+
+        <li style="text-decoration: none;"  class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="indexp.html" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
+              <ul  class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                <li ><a class="dropdown-item " href="/Pages/indexp.html">ZOEK & Webcrafters</a></li>
+                <li><a class="dropdown-item " href="/Pages/indexuin.html">UINCLUB</a></li>
+                <li><a class="dropdown-item " href="/Pages/indexcico.html">CicoSpace</a></li>
+                <li><a class="dropdown-item " href="/Pages/indexmu.html">Science Museum</a></li>
+                <li><a class="dropdown-item " href="/Pages/indexhy.html">Hypatia Magazine</a></li>
               </ul>
-            </li>
-            <!-- About -->
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="indexme.html">About</a>
-            </li>
-            <!-- Contact -->
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="indexhow.html#contact">Contact</a>
-            </li>
-          </ul>
+        </li>
+
+          </button>
         </div>
+        
+
+
+      </div>
+      
+      
     
  
+
+        
         <!-- Right Column for Social Links -->
         <div class="col-md-4 d-flex justify-content-center align-items-center">
           <!-- Social Links -->
           <div class="card_header_social mx-5" >
 
-            <img class="mini_pic" data-aos="fade-left" style="
-            height: 3em;
-            border-radius: 50%;" 
-            src="https://static.wixstatic.com/media/bc0394_b0089a7153dd4536a9245cf5b3658f3c~mv2.png">
-
+            
             <a class="socialContainer_header_social containerOne_header_social" href="https://www.instagram.com/karenrebeca.og/?hl=es" target="_blank">
               <svg class="socialSvg_header_social twitterSvg_header_social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
                 <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
@@ -396,8 +416,8 @@ div{
 </video>
 
 <!--Main Section Banner---------------------------------------------------------------------------------------------------------------->
-<section data-scroll-section  style="margin-top: 2%;"  data-aos="fade-up" id="top" class="main-banner-fadeout" >
-<div data-scroll class="container-fluid main-banner ">
+<section id="scroll-section" data-scroll-container  style="margin-top: 2%;"  data-aos="fade-up" id="top" class="main-banner-fadeout" >
+<div data-scroll-section class="container-fluid main-banner ">
 
 
 
@@ -417,10 +437,12 @@ div{
   <div id="gooey3"></div>
 
 </div>
-</section>
+
+</div>
+
 
 <!-- Video Background -->
-<section  data-scroll-section>
+<div  data-scroll-section>
 <div data-scroll data-depth="0.10"  class="container text-center">
   <div class="row">
     <div class="banner col">
@@ -432,6 +454,9 @@ div{
     </div>
    </div>
  </div>
+
+</div>
+
 
 </section>
 
@@ -730,9 +755,9 @@ div{
 <div class="row">
   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex ">
     <!-- Contenido de la primera columna -->
-    <div style="position: relative ;left: 8em;" >
-    <h1 class="degradado">It's All About Style.</h1>
-    <p style="font-size: 1.3em;">As a Front-End Developer, my passion and dedication extend beyond simply writing code; they reach every pixel and every interaction that creates an unforgettable experience for the user. My focus has always been on designing and implementing solutions that are not only functional but also visually appealing, skillfully blending art and technology to create websites and applications that speak for themselves.
+    <div  class="mx-5">
+    <h1  class="degradado mx-5">It's All About Style.</h1>
+    <p  style="font-size: 1.3em;" class="mx-5">As a Front-End Developer, my passion and dedication extend beyond simply writing code; they reach every pixel and every interaction that creates an unforgettable experience for the user. My focus has always been on designing and implementing solutions that are not only functional but also visually appealing, skillfully blending art and technology to create websites and applications that speak for themselves.
 
       Since the beginning of my career, I have understood the importance of working closely with teams from all areas related to web design, including UX/UI Designers, Customer Experience (CX) specialists, and of course, the development team. This multidisciplinary collaboration has allowed me to delve into every aspect of the development process, ensuring that every design decision is made with a deep understanding of its technical implications and its impact on the user experience.
       
@@ -747,7 +772,7 @@ div{
     </div>
   </div>
 
-  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex ">
+  <div id="bubbles" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex ">
     <!-- Contenido de la segunda columna -->
     <div style="position: relative ;left: 30em;">
     <div class="bubble">
@@ -843,8 +868,8 @@ div{
   <div data-aos="zoom-out-up" class="row" style="margin-bottom: -8em;">
 
     <div class="col-md-6 ">
-      <h1 class="degradado py-5" >What about Visuals?</h1>
-      <p style="font-size: 1.3em;" >My day-to-day is a fusion of creativity and technology. I adeptly handle a wide range of tools and technologies that allow me to bring my ideas from initial concept to seamless implementation. My arsenal includes fundamental languages like HTML5, CSS3, and JavaScript, as well as cutting-edge frameworks and preprocessors such as Bootstrap, Tailwind CSS, SCSS, React.js, and Astro. These tools are my brushes and canvases, with which I paint web experiences that are not only visually appealing but also intuitive and accessible.
+      <h1 class="degradado py-5 mx-5" >What about Visuals?</h1>
+      <p style="font-size: 1.3em;" class="mx-5"  >My day-to-day is a fusion of creativity and technology. I adeptly handle a wide range of tools and technologies that allow me to bring my ideas from initial concept to seamless implementation. My arsenal includes fundamental languages like HTML5, CSS3, and JavaScript, as well as cutting-edge frameworks and preprocessors such as Bootstrap, Tailwind CSS, SCSS, React.js, and Astro. These tools are my brushes and canvases, with which I paint web experiences that are not only visually appealing but also intuitive and accessible.
 
         Onver my creative proces, my ability to design user experiences (UX) and user interfaces (UI). I use Figma to bring my design visions to life, allowing me to collaborate in real-time with teams of any size. Dreamweaver, Sketch, and other tools like Jitter and Animate are essential for prototyping and animating my ideas, ensuring that every transition and interaction is as smooth as imagined. For more complex visual effects, I turn to After Effects, where my creativity knows few bounds.
         
@@ -1018,7 +1043,7 @@ div{
   
 
 
-    <div class="col-md-6 p">
+    <div class="col-md-6 ">
       <h1 class="degradado py-5" >More skills, better results.</h1>
       <p style="font-size: 1.3em;" class="py-5">As a developer and data scientist, my world revolves around data exploration and analysis to uncover hidden patterns and gain valuable insights that can transform strategies and decisions. My technical focus is based on a deep knowledge of Python and Node.js for backend development, complemented by PHP and Laravel for building robust web applications. I use MySQL and Apache Server for relational database management and web hosting, while MongoDB is my choice for projects requiring a flexible and scalable NoSQL database.
 
@@ -1049,42 +1074,36 @@ div{
 
 <!--Contact Strip -->
 <section data-scroll-section data-aos="fade-up" id="blueDiv" style="margin-top: 2%;">
-<!-- Sección Izq / Texto-->
-<div data-scroll class="container contenedorPrincipal">
-  <div class="row">
-    <!-- Contenedor Principal Azul -->
-    <div class="col-xs-12 col-sm-12 col-md-12 blue-div d-flex align-items-center">
-      <!-- Subcolumna para el Texto -->
-      <div class="col-xl-7 col-lg-7 col-md-5 col-sm-12 col-xs-12 mx-5 px-5">
-        <h2 class="brilliant-solutions degradado">Brilliant Solutions &#x1F600;.</h2>
-        <p class="brilliant-solutions-text" style="color: white;">Send me a message if I can support you with anything, or write to me in the WhatsApp chat of this page.</p>
-      </div>
+  <div data-scroll class="container contenedorPrincipal">
+    <div class="row justify-content-center">
+      <!-- Contenedor Principal Azul -->
+      <div class="col-8 blue-div d-flex align-items-center">
+        <!-- Subcolumna para el Texto -->
+        <div class="mx-5 px-5">
+          <h2 class="brilliant-solutions degradado">Brilliant Solutions &#x1F600;.</h2>
+          <p class="brilliant-solutions-text" style="color: white;">Send me a message if I can support you with anything, or write to me in the WhatsApp chat of this page.</p>
+        </div>
 
-      <!-- Subcolumna para el Input, dentro de un contenedor más grande con clase blue-hov (si se desea) -->
-      <div class="col-xl-5 col-lg-5 col-md-7 col-sm-12 col-xs-12 d-flex justify-content-start align-items-start mx-5">
-        <div class="input__container "> <!-- Agrega aquí la clase blue-hov si es necesario -->
-          <div class="shadow__input"></div>
-          <button class="input__button__shadow">
-            <svg fill="white" height="25" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 495.003 495.003" xml:space="preserve">
-              <g id="XMLID_51_">
-                <path id="XMLID_53_" d="M164.711,456.687c0,2.966,1.647,5.686,4.266,7.072c2.617,1.385,5.799,1.207,8.245-0.468l55.09-37.616
-                  l-67.6-32.22V456.687z"/>
-                <path id="XMLID_52_" d="M492.431,32.443c-1.513-1.395-3.466-2.125-5.44-2.125c-1.19,0-2.377,0.264-3.5,0.816L7.905,264.422
-                  c-4.861,2.389-7.937,7.353-7.904,12.783c0.033,5.423,3.161,10.353,8.057,12.689l125.342,59.724l250.62-205.99L164.455,364.414
-                  l156.145,74.4c1.918,0.919,4.012,1.376,6.084,1.376c1.768,0,3.519-0.322,5.186-0.977c3.637-1.438,6.527-4.318,7.97-7.956
-                  L494.436,41.257C495.66,38.188,494.862,34.679,492.431,32.443z"/>
-              </g>
-            </svg>
-          </button>
-          <input type="email" name="email" class="input__search" placeholder="Type your email here and i'll contact you">
+        <!-- Subcolumna para el Input -->
+        <div id="glow-input" class="d-flex justify-content-start align-items-start mx-5">
+          <div class="input__container">
+            <div class="shadow__input"></div>
+            <button class="input__button__shadow">
+              <svg fill="white" height="25" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 495.003 495.003" xml:space="preserve">
+                <g id="XMLID_51_">
+                  <path id="XMLID_53_" d="M164.711,456.687c0,2.966,1.647,5.686,4.266,7.072c2.617,1.385,5.799,1.207,8.245-0.468l55.09-37.616 l-67.6-32.22V456.687z"/>
+                  <path id="XMLID_52_" d="M492.431,32.443c-1.513-1.395-3.466-2.125-5.44-2.125c-1.19,0-2.377,0.264-3.5,0.816L7.905,264.422 c-4.861,2.389-7.937,7.353-7.904,12.783c0.033,5.423,3.161,10.353,8.057,12.689l125.342,59.724l250.62-205.99L164.455,364.414 l156.145,74.4c1.918,0.919,4.012,1.376,6.084,1.376c1.768,0,3.519-0.322,5.186-0.977c3.637-1.438,6.527-4.318,7.97-7.956 L494.436,41.257C495.66,38.188,494.862,34.679,492.431,32.443z"/>
+                </g>
+              </svg>
+            </button>
+            <input type="email" name="email" class="input__search" placeholder="Type your email here.">
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-  
 </section>
+
 
 
 <!--Reviews -->
@@ -1225,13 +1244,14 @@ div{
      
         </section>
 
-
+<!-- Slider main container -->
 
         <!--Helpful Answers---------------------------------------------------------------------------------------------------------------->
         <section data-scroll-section data-aos="fade-up" id="HelpfulAnswers" style="margin-bottom: 10vh;">
           <div data-scroll class="container">
             <div class="row">
-              <div class="col-12 py-5 ">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 py-5 ">
+                
 
                 <h1 class="text-center">Helpful Answers</h1>
                 <p class="text-center">Start building fast, beautiful and modern looking websites in no time</p>
@@ -1287,6 +1307,10 @@ div{
 <!--Footer---------------------------------------------------------------------------------------------------------------->
 <footer data-scroll-section class="foot mx-5 general_padding"> 
 <section data-scroll>
+  <div style="top: 500em;" id="gooey5"></div>
+
+ 
+
   
 <!--logo-->
     <div class="container text-start">
@@ -1374,6 +1398,7 @@ div{
           <img id="videoElement" src="https://static.wixstatic.com/media/bc0394_34c638f1286d4574895a6185059d2a38~mv2.gif" alt="hedgy" class="hedgy">            
         </div>
       </div>
+      
 
       <div class="row">
         <div class="col d-flex justify-content-center">
@@ -1385,6 +1410,7 @@ div{
   <div class="row mt-3 mx-auto justify-content-center">
     <div class="col-auto">
       <a href="/Pages/indexhow.html" style="text-decoration: none;">
+
         <button id="how_button" class="button-io" style="font-size: medium; width: 280px; padding: 0 10px 0 10px; margin-bottom: 2em;">
           <span>How did I make this webpage? &#x1F680;</span>
         </button>
@@ -1393,9 +1419,9 @@ div{
   </div>
   
   </section>
+  
 </footer>
 
-</main>
 
 <!--Iniciate AOS-->
 <script>
@@ -1409,7 +1435,7 @@ const plusButton = document.getElementById('plusButton');
 // Agrega un controlador de eventos de clic al elemento SVG
 plusButton.addEventListener('click', function() {
 // Redirige a la página indexmain.html#Reviews
-window.location.href = 'indexmain.html#Reviews';
+window.location.href = '/Pages/indexmain.html#Reviews';
 });
 
 </script>
@@ -1424,20 +1450,16 @@ window.location.href = 'indexmain.html#Reviews';
 
 
 <!----Swiper---->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-  var mySwiper = new Swiper('.mySwiper', {
+var mySwiper = new Swiper('.mySwiper', {
     // Parámetros opcionales
     direction: 'horizontal', // Es la dirección por defecto, pero está bien ser explícito
     loop: true, // Para que el slider sea infinito
     slidesPerView: 'auto', // Muestra varios slides a la vez según el ancho del slider
-    spaceBetween: 30, // Espacio entre slides
+    spaceBetween: 2, // Espacio entre slides
 });
-
-
 </script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
 
 
 
@@ -1445,9 +1467,9 @@ window.location.href = 'indexmain.html#Reviews';
 <script src="/Scripts/cursor.js"></script>    
 
 
-
 <div class="custom-cursor" id="customCursor" style="color: white;"> < > </div>
 
 
 </body>
+</main>
 </html>
