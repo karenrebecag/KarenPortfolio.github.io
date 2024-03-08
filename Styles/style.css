@@ -1,7 +1,12 @@
 /* This style's sheet is connected to all the escential files for Karen Rebeca Ortiz's Portfolio.Es  It's indispensable for it's main purpose
 and correct functionality------*/
 
-
+body {
+  transition: background-color 0.5s ease;
+}
+header {
+  transition: background-color 0.5s ease;
+}
 
 #logo-header{
  font-size: 1.2vw;
@@ -577,7 +582,7 @@ header{
   opacity: 1;
   width: 100%;
   height: 2.3em;
-  z-index: 1;
+  z-index: 100;
   position: fixed;
   top: 0;
   transition: transform 0.3s ease-in-out;

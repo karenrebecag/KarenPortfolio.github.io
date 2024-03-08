@@ -1,0 +1,493 @@
+body {
+  transition: background-color 0.5s ease;
+}
+header {
+  transition: background-color 0.5s ease;
+}
+#main-banner-portfolio {
+    margin-top: 5vh; /* Ajustado para un mejor espaciado superior */
+
+      margin-top: 15vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 500px; /* Adjust height as necessary */
+
+    
+
+  }
+  
+  #tittle-portfolio {
+    font-size: 6vw; /* Usa vw para ajustarse al ancho de la pantalla */
+    line-height: 0.8; /* Mejora la legibilidad */
+    font-weight: 500;
+    font-family: poppins;
+    padding: 20px; /* Agrega un padding de 20px en todos los lados */
+
+  }
+
+  .section-centered {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%; /* Ajusta este valor según sea necesario */
+}
+
+  
+  .banner-picture {
+    width: 95%; /* Más ancho para pantallas pequeñas */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 50px 50px 0 0; /* Ajuste para verlo bien en pantallas pequeñas */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.253);
+
+  }
+  
+
+  
+
+
+
+  .button-portfolio {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 1.5vh; /* Ajusta el tamaño de fuente relativo al tamaño base del navegador */
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    padding: 0.5em 1em; /* Espaciado interno para que el contenido determine el tamaño */
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+  }
+  
+  .button-portfolio:hover {
+    animation: anim 8s linear infinite;
+  }
+  
+  @keyframes anim {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+  .button-portfolio:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #8403f4, #bb41f4, #9c55ff, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+  }
+  
+  .button-portfolio:hover::before {
+    filter: blur(20px);
+  }
+  
+  .button-portfolio:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  }
+  
+  #moving-div{
+    background-color: #0a0a0a;
+  }
+
+#moving-text {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#moving-text::-webkit-scrollbar {
+  display: none;
+}
+
+.con {
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#moving-text h1 {
+  font-size: 9vw;
+  font-family: poppins;
+  font-weight: 400;
+  background-image: linear-gradient(to right,#3460BA, #B18EC2, #7E8CD6, #7F6BCF,#B774E0);
+  -webkit-background-clip: text; /* Para navegadores WebKit (Chrome, Safari, etc.) */
+  background-clip: text; /* Para navegadores estándar */
+  color: transparent; /* Oculta el color del texto */
+  /* background-color: lightblue; */
+  display: inline-block;
+}
+
+#gola {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fcfcfc;
+  margin: 3vw 2vw;
+}
+
+@keyframes move {
+  from {
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+
+
+/* Services*/
+
+#Services{
+  background-color: #ffffff;
+  cursor: none;
+}
+
+/* Asegura que la fila se extienda al 100% de la altura de su contenedor */
+#Services .container .row {
+  height: 100%;
+  align-items: center; /* Alinea los elementos de la fila al fondo */
+}
+
+/* Extiende las columnas para que ocupen todo el alto disponible y alinea sus contenidos al fondo */
+#Services .container .col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinea los skillTag al fondo */
+  height: 100%;
+}
+
+
+.text-portfolio-tittle{
+  font-size: 3vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-weight: 600;
+  position: relative;
+  right: 0.4em;
+  font-family: poppins;
+  padding: 20px; /* Agrega un padding de 20px en todos los lados */
+}
+.text-portfolio-text{
+  font-size: 1vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-weight: 200;
+  position: relative;
+  right: 1em;
+  font-family: poppins;
+  padding: 20px; /* Agrega un padding de 20px en todos los lados */
+}
+
+.elem {
+  height: 150px;
+  width: 100%;
+  position: relative;
+padding: 0 20px 0 20px;
+  border-bottom: 1px solid #38383864;
+  overflow: hidden;
+  display: flex;
+    margin: 1rem auto; /* Ajusta según sea necesario */
+
+  align-items: center;
+
+}
+@keyframes growAnimation {
+  from {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  to {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  
+}
+.elem h2, .elem p {
+  opacity: 0.5; /* Establece una opacidad inicial más baja */
+  transition: opacity 0.3s ease; /* Transición suave para el cambio de opacidad */
+}
+
+.elem:hover h2, .elem:hover p {
+  opacity: 1; /* Opacidad completa al hacer hover */
+}
+.elem h2.animate {
+  animation: growAnimation 1s ease forwards;
+}
+
+
+.elem h2 {
+  animation: growAnimation 1s ease forwards;
+  transform: scaleY(0); /* Inicia con el texto "colapsado" */
+}
+
+
+
+.text-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  /* Ajusta los siguientes estilos según sea necesario para el diseño */
+}
+
+.elem p {
+  font-size: 0.7vw; /* Tamaño relativo al ancho de la ventana */
+  color: rgb(10, 10, 10); /* Asume un texto blanco, cambia según tu diseño */
+  text-align: end;
+}
+
+.elem .overlay {
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #d5d5d549;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all ease 0.25s;
+}
+
+.elem:hover .overlay {
+  top: 0;
+}
+
+
+
+#fixed-image {
+  height: 30vw;
+  width: 24vw;
+  /* background-color: red; */
+  border-radius: 15px;
+  position: fixed;
+  z-index: 99;
+  left: 50%;
+  top: 25%;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Estilo base para el cursor personalizado */
+.custom-cursor2 {
+  pointer-events: none;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ca81de7a;
+  filter: blur(20px);
+  transform: scale(0); /* Inicia desde cero para que no sea visible inicialmente */
+  transition: transform 0.5s ease; /* Transición suave de la transformación */
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+  font-size: 12px;
+  opacity: 0; /* Inicia con opacidad 0 para transiciones suaves */
+
+}
+
+/* Clase para animar el cursor a su tamaño normal */
+.cursor-grow {
+  transform: scale(1); /* Escala normal */
+  opacity: 1; /* Hace el cursor totalmente visible */
+}
+
+/* Clase para ocultar el cursor suavemente */
+.cursor-shrink {
+  transform: scale(0); /* Reduce el cursor a cero */
+  opacity: 0; /* Hace el cursor completamente transparente */
+}
+#imageDisplay {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0; /* Inicia invisible */
+  max-width: 100%; /* Asegúrate de que la imagen se ajuste al contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.elem:hover + #imageDisplay {
+  opacity: 1; /* Se hace visible al hacer hover */
+}
+
+#img-section{
+  background-color: #fcfbfb;
+
+}
+
+#img2-portfolio{
+  max-height: 80%;
+  max-width: 100vw;
+  padding: 10%;
+  border-radius: 10px;
+  object-fit: contain;
+
+
+}
+
+#zoek{
+  background-color: #ffffff;
+
+}
+
+.container .row .col-sm-4 {
+  background-color: #f5f5f5;
+}
+
+.container .row .col-sm-4 img{
+  margin: 1em;
+  padding: 0;
+  max-width: 90%;
+  height: auto;
+}
+
+
+#bottom-section{
+  background-color: #ffffff;
+}
+.lets-discuss {
+  font-size: 6vw; /* Responsive font size based on the width of the screen */
+  font-family: 'Poppins', sans-serif; /* Ensure the font family is correct */
+  font-weight: 600;
+  line-height: 110px;
+  text-align: center; /* Center the text */
+  color: #FFF; /* Text color, change as needed */
+  padding: 0 2em; /* Add padding to maintain spacing on smaller screens */
+  margin: 0; /* Remove default margin */
+}
+
+.bottom-container {
+  background-image: linear-gradient(to right,#3460BA, #B18EC2, #7E8CD6, #7F6BCF,#B774E0);
+  width: 95%; /* Set the width to 90% of the parent element */
+  height: auto; /* Make height automatic to contain its children */
+  margin: 0 auto; /* Center the container */
+  border-radius: 0 0 150px 150px; /* Round the bottom corners */
+  padding: 2em; /* Add some responsive padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+  .bottom-container {
+    padding: 1em; /* Smaller padding for small screens */
+  }
+
+  .lets-discuss {
+    font-size: 5vw; /* Smaller font size for small screens */
+    padding: 0 1em; /* Adjust padding to be smaller */
+  }
+}
+
+/* Adjust font size for very small screens */
+@media (max-width: 480px) {
+  .lets-discuss {
+    font-size: 4.5vw; /* Even smaller font size for very small screens */
+  }
+}
+
+#gooey6 {
+  height: 70vw;
+  width: 70vw;
+  position: absolute;
+  border-radius: 0 0 50% 50%;
+  background: linear-gradient(to top right, #b462bd70, #08fff33a);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: -1000;
+top: 440%;
+  left: 15%;
+  filter: blur(20px);
+  animation-name: gooey6;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey6 {
+  from {
+      filter: blur(20px);
+      transform: translate(1%, -1%) skew(0);
+  }
+  to {
+      filter: blur(30px);
+      transform: translate(-1%, 1%) skew(-2deg);
+  }
+}@media (max-width: 768px) {
+  .bottom-container {
+    padding: 1em; /* Adjust the padding as needed for smaller screens */
+  }
+}
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
