@@ -1,0 +1,6 @@
+tailwind.config.js
+.vscode/
+node_modules/
+package-lock.json
+package.json
+settings.json
