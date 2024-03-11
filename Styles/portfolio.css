@@ -205,8 +205,26 @@ padding: 0 20px 0 20px;
   align-items: center;
 
 }
+
+
 @keyframes growAnimation {
-  from {
+  from {.elem .image-preview {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 200px; /* Ajusta este valor para cambiar el tamaño de la imagen */
+    border-radius: 10px; /* Ajusta este valor para los bordes redondeados */
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    top: 0; /* Ajusta la posición vertical */
+    left: 100%; /* Ajusta la posición horizontal */
+    margin-left: 10px; /* Espacio entre el elemento y la imagen */
+  }
+  
+  .elem:hover .image-preview {
+    display: block;
+    opacity: 1;
+  }
     transform: scaleY(0);
     transform-origin: bottom;
   }
@@ -271,7 +289,6 @@ padding: 0 20px 0 20px;
 #fixed-image {
   height: 30vw;
   width: 24vw;
-  /* background-color: red; */
   border-radius: 15px;
   position: fixed;
   z-index: 99;
@@ -374,8 +391,7 @@ padding: 0 20px 0 20px;
 }
 
 .bottom-container {
-  background-image: linear-gradient(to right,#3460BA, #B18EC2, #7E8CD6, #7F6BCF,#B774E0);
-  width: 95%; /* Set the width to 90% of the parent element */
+background-color: #1c1c1c;  width: 95%; /* Set the width to 90% of the parent element */
   height: auto; /* Make height automatic to contain its children */
   margin: 0 auto; /* Center the container */
   border-radius: 0 0 150px 150px; /* Round the bottom corners */
@@ -490,4 +506,7 @@ top: 440%;
 .cta:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.general_padding{
+  padding: 0 20vw 0 20vw;
 }

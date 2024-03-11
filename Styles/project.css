@@ -1,0 +1,19 @@
+#job-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #F4F4F4;
+}
+
+#job-project h1{
+    text-align: start; 
+    align-items: start;
+    color: #323234;
+    font-family: poppins;
+    text-align: start;
+    position: relative;
+    justify-content: start;
+}

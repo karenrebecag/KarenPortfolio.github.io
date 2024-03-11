@@ -1,27 +1,39 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Asegúrate de que el DOM esté completamente cargado antes de asignar los manejadores de eventos
-  
-    const elems = document.querySelectorAll('.elem'); // Selecciona todos los elementos con la clase .elem
-    const imageDisplay = document.querySelector('#imageDisplay img'); // Selecciona el img dentro del contenedor #imageDisplay
-  
-    if (!imageDisplay) {
-      console.error('No se encontró el contenedor de la imagen.');
-      return;
-    }
-  
-    elems.forEach(elem => {
-      elem.addEventListener('mouseover', function() {
-        // Al hacer hover, cambia la fuente de la imagen al data-image del elemento
-        const imageSource = this.getAttribute('data-image');
-        imageDisplay.src = imageSource;
-        imageDisplay.style.opacity = 1; // Hace visible la imagen
-      });
-  
-      elem.addEventListener('mouseout', function() {
-        // Al dejar de hacer hover, oculta la imagen
-        imageDisplay.style.opacity = 0;
-        setTimeout(() => imageDisplay.src = '', 500); // Espera a que la transición termine para eliminar la fuente de la imagen
-      });
+  var elems = document.querySelectorAll('.elem');
+
+  elems.forEach(function(elem) {
+    elem.addEventListener('mouseenter', function() {
+      // Creamos la imagen solo una vez al entrar al elemento
+      var imgSrc = this.getAttribute('data-image');
+      var imgPreview = document.createElement('img');
+      imgPreview.setAttribute('src', imgSrc);
+      imgPreview.classList.add('image-preview');
+      imgPreview.style.position = 'absolute';
+      imgPreview.style.zIndex = '1000';
+      imgPreview.style.width = '130px'; // Aumentamos el tamaño un 30%
+      imgPreview.style.height = 'auto';
+      imgPreview.style.pointerEvents = 'none';
+      imgPreview.style.borderRadius = '10px'; // Bordes redondeados
+      this.appendChild(imgPreview);
+    });
+
+    elem.addEventListener('mousemove', function(e) {
+      var imgPreview = this.querySelector('.image-preview');
+      if (imgPreview) {
+        // Calculamos la posición relativa del cursor dentro del elemento
+        var rect = this.getBoundingClientRect();
+        var posX = e.clientX - rect.left;
+        var posY = e.clientY - rect.top;
+        imgPreview.style.left = `${posX - imgPreview.offsetWidth / 2}px`; // Centramos la imagen respecto al cursor
+        imgPreview.style.top = `${posY - imgPreview.offsetHeight / 2}px`;
+      }
+    });
+
+    elem.addEventListener('mouseleave', function() {
+      var imgPreview = this.querySelector('.image-preview');
+      if (imgPreview) {
+        this.removeChild(imgPreview);
+      }
     });
   });
-  
+});

@@ -1060,3 +1060,228 @@ color: white;
     display: none;
   }
 }
+
+/* About Tittle */
+
+#about-tittle{
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 5vw;
+  color: #000000;
+  text-align: end;
+  position: relative;
+}
+
+#about-text{
+
+  font-family: poppins;
+  font-weight: 100;
+  font-size: 1vw;
+  color: #000000;
+  text-align: start; 
+  padding-left: 20%;
+  position: relative;
+
+}
+
+#about-image-banner {
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.388);
+  position: relative;
+  height: 60vh;
+  top: 6vh;
+  z-index: 1;
+  overflow: hidden; /* Asegura que nada se desborde del contenedor */
+}
+
+#about-image-banner img {
+  width: 100%; /* Hace que la imagen sea tan ancha como su contenedor */
+  height: auto; /* Ajusta la altura automáticamente para mantener las proporciones */
+  display: block; /* Evita que la imagen tenga espacio extra debajo */
+}
+
+#name-tag{
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.388);
+  position: absolute;
+  height:  20vh;
+  width: 10wh;
+  top: 6vh;
+  z-index: 1;
+  background-color: fff;
+}
+
+#about-tools{
+  background-color: #eaeaea;
+}
+
+
+#moving-div2{
+  background-color: #eaeaea;
+}
+
+#moving-text2 {
+overflow-x: auto;
+white-space: nowrap;
+}
+
+#moving-text2::-webkit-scrollbar {
+display: none;
+}
+
+.con2 {
+white-space: nowrap;
+display: inline-block;
+animation-name: move;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+#moving-text2 h1 {
+font-size: 9vw;
+font-family: poppins;
+font-weight: 400;
+background-color: rgb(255, 255, 255);
+-webkit-background-clip: text; /* Para navegadores WebKit (Chrome, Safari, etc.) */
+background-clip: text; /* Para navegadores estándar */
+color: transparent; /* Oculta el color del texto */
+/* background-color: lightblue; */
+display: inline-block;
+}
+
+#gola2 {
+height: 10px;
+width: 10px;
+border-radius: 50%;
+display: inline-block;
+background-color: #d9d1d1;
+margin: 3vw 2vw;
+}
+
+@keyframes move {
+from {
+    transform: translateX(0);
+}
+
+to {
+    transform: translateX(-100%);
+}
+}
+
+.square {
+  background-color: #EFEFEF;
+  border-radius: 20px;
+  padding: 10%;
+  height: 42vh; /* Ajusta a la altura deseada */
+  width: 100%; /* Ocupa todo el ancho de la columna */
+  transition: transform 0.3s ease-in-out; /* Suaviza la transición de la escala */
+}
+
+.square2{
+  background-color: #4B49E5;
+  border-radius: 20px;
+  padding: 10%;
+  height: 42vh; /* Ajusta a la altura deseada */
+  width: 100%; /* Ocupa todo el ancho de la columna */
+  transition: transform 0.3s ease-in-out; /* Suaviza la transición de la escala */
+
+}
+
+.square:hover {
+  transform: scale(1.02); /* Escala el cuadrado al pasar el ratón por encima */
+}
+.square2:hover {
+  transform: scale(1.02); /* Escala el cuadrado al pasar el ratón por encima */
+}
+
+#main-banner-about{
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.253);
+}
+#image-subbanner-about{
+}
+
+#about-tools{
+  background-color: #E4E4E4;
+}
+
+.row-item {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 1vh;
+  height: 10vh;
+  margin-bottom: 10px; /* Espacio entre elementos */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave de colores y texto */
+}
+
+.row-item:hover {
+  background-color: #4B46E5;
+  color: white;
+}
+
+.row-item:hover h1 {
+  color: white; /* Cambio de color del texto h1 en hover */
+}
+
+.row-item:hover svg path {
+  stroke: #03AE11;
+}
+
+.number-col {
+  color: #03AE11;
+  transition: color 0.3s; /* Transición suave del color de número */
+}
+
+.about-tittle-card{
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 5vw;
+  font-size: min(max(16px, 5vw), 32px); /* Limita el tamaño entre 16px y 32px */
+  color: #000000;
+  text-align: end;
+  margin-right: 30vw;
+  text-align: right; /* Asegúrate de usar 'right' en lugar de 'end' si deseas alineación a la derecha */
+
+}
+
+
+.about-text-card:hover{
+
+
+  color: #ffffff;
+
+
+}
+.about-tittle-number-tiny{
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 5vw;
+  font-size: min(max(16px, 5vw), 32px); /* Limita el tamaño entre 16px y 32px */
+  color: #03AE11;
+  text-align: right; /* Asegúrate de usar 'right' en lugar de 'end' si deseas alineación a la derecha */
+
+}
+.about-tittle-number-tiny:hover{
+
+  color: #fff;
+
+}
+
+.row-item:hover h1 {
+  color: white; /* Cambia el color de h1 a blanco en hover */
+}
+
+
+
+.row-item:hover .number-col {
+  color: white;
+
+}
+
+#base-about{
+  background-color: #EFEFEF;
+  height: 20vw;
+}

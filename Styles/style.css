@@ -1217,6 +1217,19 @@ margin-bottom: 2px black;
 
 }
 
+/* estilo.css */
+
+.barra-de-progreso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: #4CAF50; /* Cambia el color según prefieras */
+  z-index: 9999;
+}
+
+
 
 
 
