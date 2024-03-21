@@ -183,14 +183,15 @@ header {
   font-family: poppins;
   padding: 20px; /* Agrega un padding de 20px en todos los lados */
 }
-.text-portfolio-text{
-  font-size: 1vw; /* Usa vw para ajustarse al ancho de la pantalla */
+.text-portfolio-text {
+  font-size: clamp(1.7vw, 2vw, 2.2vw); /* mínimo: 1vw, preferido: 1vw, máximo: 2.5vw */
   font-weight: 200;
   position: relative;
   right: 1em;
   font-family: poppins;
   padding: 20px; /* Agrega un padding de 20px en todos los lados */
 }
+
 
 .elem {
   height: 150px;
@@ -509,4 +510,48 @@ top: 440%;
 }
 .general_padding{
   padding: 0 20vw 0 20vw;
+}
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  pointer-event: none;
+  z-index: 0;
+  transform: translateZ(0);
+  
+  &:before {
+    content: "";
+    top: -10rem;
+    left: -10rem;
+    width: calc(100% + 20rem);
+    height: calc(100% + 20rem);
+    z-index: 9999;
+    position: fixed;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+    opacity: 0.15;
+    pointer-events: none;
+    -webkit-animation: noise 1s steps(2) infinite;
+    animation: noise 1s steps(2) infinite;
+  }
+
+  @-webkit-keyframes noise {
+    to { transform: translate3d(-7rem,0,0) }
+  }
+
+  @keyframes noise {
+    0% { transform: translate3d(0,9rem,0) }
+    10% { transform: translate3d(-1rem,-4rem,0) }
+    20% { transform: translate3d(-8rem,2rem,0) }
+    30% { transform: translate3d(9rem,-9rem,0) }
+    40% { transform: translate3d(-2rem,7rem,0) }
+    50% { transform: translate3d(-9rem,-4rem,0) }
+    60% { transform: translate3d(2rem,6rem,0) }
+    70% { transform: translate3d(7rem,-8rem,0) }
+    80% { transform: translate3d(-9rem,1rem,0) }
+    90% { transform: translate3d(6rem,-5rem,0) }
+    to { transform: translate3d(-7rem,0,0) }
+  }
 }

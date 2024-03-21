@@ -16,6 +16,12 @@ header {
  top: 1vw;
  color: black;
 }
+@media (max-width: 1281px) {
+  #logo-header{
+    font-size: 2.5vw;
+  }
+}
+
 .button-container-header {
   display: flex;
   background-color: rgb(255, 255, 255);
@@ -228,36 +234,58 @@ transform: scale(1.05);
 
 }
 
-h1{
-font-family: 'Raleway', sans-serif;
- font-size: 2.4em;
+h1, .h1-2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.4em;
 }
 
-p{
+p, .p-2 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.4em;
-  margin: 0 10em 2em 10em;
-  
- }
- .h1-2{
-  font-family: 'Raleway', sans-serif;
-   font-size: 2.4em;
-   padding: 0%;
-  }
-  
-  .p-2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.4em;
-    padding: 0%;  } 
- b{
-  color: #A648CB;
- }
+  margin: 0 10%;
+  padding: 0%;
+}
 
- .h6{
+b {
+  color: #A648CB;
+}
+
+.h6 {
   font-family: 'Raleway', sans-serif;
   font-size: 0.5em;
- 
- }
+}
+
+/* Media queries para ajustes responsivos */
+@media (max-width: 768px) {
+  h1, .h1-2 {
+    font-size: 2em; /* Ligeramente más pequeño para tablets y teléfonos en posición horizontal */
+  }
+
+  p, .p-2 {
+    font-size: 1.2em;
+    margin: 0 5%;
+  }
+
+  .h6 {
+    font-size: 0.4em; /* Ajuste para elementos más pequeños */
+  }
+}
+
+@media (max-width: 480px) {
+  h1, .h1-2 {
+    font-size: 1.6em; /* Más pequeño para teléfonos en posición vertical */
+  }
+
+  p, .p-2 {
+    font-size: 1em;
+    margin: 0 2%;
+  }
+
+  .h6 {
+    font-size: 0.3em; /* Ajuste para pantallas muy pequeñas */
+  }
+}
+
 
 .margin-1{
   margin: 0 4em 0 4em;
@@ -571,7 +599,11 @@ section {
 .logo-header-main:hover {
   transform: scale(1.05) 
 }
-
+.logo-header-main:nth-child(1):hover {
+text-shadow: 0 0 10px white,
+0 0 10px white,
+0 0 10px white;
+}
 .logo-header-main:not(:hover) {
   transform: scale(1) 
 }

@@ -5,7 +5,10 @@
     justify-content: center;
     padding: 20px;
     margin: 20px;
-    background-color: #F4F4F4;
+    background-color: #f4f4f40d;
+    backdrop-filter: blur(50px); /* Desenfoque */
+    border-radius: 40px;
+
 }
 
 #job-project h1{

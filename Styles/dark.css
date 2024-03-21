@@ -412,3 +412,54 @@ header {
   transform: translateY(10px);
   transition: all 100ms ease; 
 }
+h1, .h1-2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.4em;
+}
+
+p, .p-2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+  margin: 0 10%;
+  padding: 0%;
+}
+
+b {
+  color: #A648CB;
+}
+
+.h6 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.5em;
+}
+
+/* Media queries para ajustes responsivos */
+@media (max-width: 768px) {
+  h1, .h1-2 {
+    font-size: 2em; /* Ligeramente más pequeño para tablets y teléfonos en posición horizontal */
+  }
+
+  p, .p-2 {
+    font-size: 1.2em;
+    margin: 0 5%;
+  }
+
+  .h6 {
+    font-size: 0.4em; /* Ajuste para elementos más pequeños */
+  }
+}
+
+@media (max-width: 480px) {
+  h1, .h1-2 {
+    font-size: 1.6em; /* Más pequeño para teléfonos en posición vertical */
+  }
+
+  p, .p-2 {
+    font-size: 1em;
+    margin: 0 2%;
+  }
+
+  .h6 {
+    font-size: 0.3em; /* Ajuste para pantallas muy pequeñas */
+  }
+}

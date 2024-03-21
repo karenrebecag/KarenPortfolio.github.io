@@ -1,137 +1,199 @@
 
 #contact-banner{
-    background-color:#ffffffae;
-    padding: 0 15% 0 15%;
-    margin-top: 5vh;
-    height: 70vh;
+  background-color:#ffffff86;
+  padding: 0 15% 0 15%;
+  margin-top: 5vh;
+  height: 70vh;
 
 }
 
 
-#form-contact{
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
-    height: 60vh;
-    padding: 2%;
 
+#form-contact {
+background-color: rgba(222, 222, 222, 0.073); /* Transparencia */
+border-radius: 15px;
+box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
+height: 35vw;
+padding: 2%;
+backdrop-filter: blur(30px); /* Desenfoque */
 }
+
 #tittle-contact {
-    font-size: 4vw; /* Usa vw para ajustarse al ancho de la pantalla */
-    line-height: 0.8; /* Mejora la legibilidad */
-    font-weight: 500;
-    font-family: poppins;
+  font-size: 4vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  line-height: 0.8; /* Mejora la legibilidad */
+  font-weight: 500;
+  font-family: poppins;
 
-  }
-  #paragraph-tittle-contact{
-    font-size: 1vw; /* Usa vw para ajustarse al ancho de la pantalla */
-    line-height: 2; /* Mejora la legibilidad */
-    font-weight: 500;
-    font-family: poppins;
-  }
+}
+#paragraph-tittle-contact{
+  font-size: 1vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  line-height: 2; /* Mejora la legibilidad */
+  font-weight: 500;
+  font-family: poppins;
+}
 
-  #paragraph-contact{
-    font-size: 0.7vw; /* Usa vw para ajustarse al ancho de la pantalla */
-    line-height: 2; /* Mejora la legibilidad */
-    font-weight: 200;
-    font-family: poppins;
+#paragraph-contact{
+  line-height: 1.8; /* Mejora la legibilidad */
+  font-weight: 200;
+  align-items: start;
+  font-family: poppins;
+}
+@media (max-width: 1050px) {
+  #form-contact {
+    height: 50vw;
+    padding: 2%;
   }
-
   #contact-form-tittle{
-    font-size: 1.5vw; /* Usa vw para ajustarse al ancho de la pantalla */
-    line-height: 2; /* Mejora la legibilidad */
-    font-weight: 500;
-    font-family: poppins;
-  }
-  #contact-form-paragraph{
-    font-size: 0.7vw; /* Usa vw para ajustarse al ancho de la pantalla */
-    line-height: 2; /* Mejora la legibilidad */
-    font-weight: 300;
-    font-family: poppins;
-    margin-top: -2vh;
+    font-size: 2vw; 
   }
   .input{
-    border-radius: 15px;
-    font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
-    line-height: 2; /* Mejora la legibilidad */
-    font-weight: 200;
-    font-family: poppins;  
-    border: 1px solid #e4e4e4;
+height: 10em;
+
+  }
+
+  #contact-banner{
+    height: 100vw;
+    margin-top: 10vw;
+  }
+  #tittle-contact {
+    font-size: 5vw;
+  }
+  #paragraph-tittle-contact{
+    font-size: 2vw;
+  
+  }
+  @media (max-width: 992px) {
+    #contact-banner{
+      background-color: transparent;
+      height: 70vw;
+      margin-top: 50vw;
+    }
+  }
+  
+  @media (max-width: 820px) {
+    #contact-banner{
+      height: 70vw;
+      margin-top: 40vw;
+    }
+    #tittle-contact {
+      font-size: 6vw;
+    }
+
+    #paragraph-contact{
+      font-size: 2vw;
+    }
+  }
+}
+
+#contact-form-tittle{
+  font-size: 1.5vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  line-height: 2; /* Mejora la legibilidad */
+  font-weight: 500;
+  font-family: poppins;
+}
+#contact-form-paragraph{
+  font-size: 0.7vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  line-height: 2; /* Mejora la legibilidad */
+  font-weight: 300;
+  font-family: poppins;
+  margin-top: -2vh;
+}
+.input{
+  border-radius: 10px;
+  font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  line-height: 2; /* Mejora la legibilidad */
+  font-weight: 200;
+  font-family: poppins;  
+  color: white;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #d1d1d1;
 }
 .input2{
-    border-radius: 0 15px 15px 0;
-    font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
-    line-height: 2; /* Mejora la legibilidad */
-    font-weight: 200;
-    font-family: poppins;  
-    border: 1px solid #e4e4e4;
+  border-radius: 0 15px 15px 0;
+  font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  line-height: 2; /* Mejora la legibilidad */
+  font-weight: 200;
+  font-family: poppins;  
+  color: white;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #d1d1d1;
 }
 
 .form-select{
-    border-radius: 15px 0  0 15px;
-    font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
-    line-height: 2; /* Mejora la legibilidad */
-    font-weight: 200;
-    font-family: poppins;  
-    border: 1px solid #e4e4e4;
+  border-radius: 15px 0  0 15px;
+  font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  line-height: 2; /* Mejora la legibilidad */
+  font-weight: 200;
+  font-family: poppins;  
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border: 1px solid #d1d1d1;
 }
 .input-container3 {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .input-container3 svg {
-    position: absolute;
-    left: 10px; /* Ajusta según necesidad para alinear el SVG dentro del input */
-    height: 20px; /* Ajusta el tamaño del SVG según necesidad */
-    width: 20px; /* Ajusta el tamaño del SVG según necesidad */
-    fill: #ffffff; /* O cualquier color que prefieras */
-    stroke: rgb(209, 209, 209);
-  }
-  
-  .input-container3 input {
-    padding-left: 40px; /* Ajusta según el tamaño de tu SVG para evitar solapamientos */
-    min-width: 100%;
-  }
-  
-  .input3 {
-    border-radius: 15px;
-    font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
-    line-height: 2; /* Mejora la legibilidad */
-    font-weight: 200;
-    font-family: 'Poppins', sans-serif; /* Asegúrate de usar el nombre correcto de la fuente y añade un fallback */
-    border: 1px solid #e4e4e4;
-    outline: none; /* Quita el contorno al enfocar */
-  }
-  .terms-text-form{
-    font-size: 0.7vw; /* Usa vw para ajustarse al ancho de la pantalla */
-    line-height: 2; /* Mejora la legibilidad */
-    font-weight: 400;
-    font-family: poppins;
-    padding: 0 4% 0 4%;
-    
-  }
-  .href-terms{
-    text-decoration: none; 
-    color: rgb(0, 0, 0);
-  }
-
-  #map-contact{
-    background-color:#fffefe;
-    padding: 0 15% 0 15%;
-    height: 70vh;
-  }
-#map{
-    height: 60vh;
-    width: 60vh;
-
-    border-radius: 15px;
-    box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
+.input-container3 svg {
+  position: absolute;
+  left: 10px; /* Ajusta según necesidad para alinear el SVG dentro del input */
+  height: 20px; /* Ajusta el tamaño del SVG según necesidad */
+  width: 20px; /* Ajusta el tamaño del SVG según necesidad */
+  fill:  rgb(255, 255, 255); /* O cualquier color que prefieras */
+  stroke: rgb(106, 106, 106);
+}
+
+.input-container3 input {
+  padding-left: 40px; /* Ajusta según el tamaño de tu SVG para evitar solapamientos */
+  min-width: 100%;
+}
+
+.input3 {
+  border-radius: 15px;
+  font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  line-height: 2; /* Mejora la legibilidad */
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif; /* Asegúrate de usar el nombre correcto de la fuente y añade un fallback */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #dadada;
+   outline: none; /* Quita el contorno al enfocar */
+}
+.terms-text-form{
+  font-size: 0.7vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  line-height: 2; /* Mejora la legibilidad */
+  font-weight: 400;
+  font-family: poppins;
+  padding: 0 4% 0 4%;
+  
+}
+.href-terms{
+  text-decoration: none; 
+  color: rgb(153, 0, 248);
+}
+iframe{
+  filter: grayscale(100%);
+}
+
+@media (max-width: 1050px) {
+
+  }
+  @media (max-width: 992px) {
+
+  }
+  
+  @media (max-width: 820px) {
+
+  }
+
+
+
+
 #faq{
-    background-color:#ffffffae;
-    padding: 0 15% 0 15%;
-    height: 70vh;
+  background-color:#ffffff4e;
+  padding: 0 15% 0 15%;
+  height: 70vh;
+  margin-top: -10em;
+
+  
 }
