@@ -50,7 +50,71 @@ body {
 }
 
 
+#gooey-nav {
+  height: 20em;
+  width: 40em;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #854cc546, #fbe1ff79);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: 1;
 
+  top: -160%;
+  left: 38%;
+  filter: blur(20px);
+  animation-name: gooey-nav;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey-nav {
+  from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+
+
+#gooey-nav-logo {
+  height: 20em;
+  width: 40em;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #cda1ff1c, #a000b91b);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: 0;
+
+  top: -160%;
+  left: -0%;
+  filter: blur(20px);
+  animation-name: gooey-nav-logo;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey-nav-logo {
+  from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
 #gooey {
   height: 32vw;
   width: 32vw;
@@ -211,7 +275,7 @@ z-index: -1000;
 
 /* Note that you only needs to edit the config to customize the button! */
     .brilliant-solutions-text{
-      font-size: 1.3em;
+      font-size: 1.4em;
     }
 .plusButton {
   /* Config start */
@@ -809,6 +873,8 @@ color: white;
  background-color: #000000 ; 
  height: 186px; 
  border-radius: 80px 80px 0 0;
+ text-align: start;
+ justify-content: start;
  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 
 }
@@ -1085,6 +1151,19 @@ color: white;
 
 }
 
+
+#about-text2{
+
+  font-family: poppins;
+  font-weight: 100;
+  font-size: 1.4em;
+  color: #000000;
+  text-align: start; 
+  padding-left: 20%;
+  position: relative;
+  right: 15vw;
+
+}
 #about-image-banner {
   border-radius: 50px 50px 0 0;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.388);
@@ -1251,6 +1330,8 @@ margin-bottom: 5%;  }
 
 }
 
+
+
 .about-text-card:hover{
 
 
@@ -1258,11 +1339,53 @@ margin-bottom: 5%;  }
 
 
 }
+
+.about-tittle-card2
+{
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 1.6em;
+  color: #000000;
+  text-align: end;
+  margin-right: 30vw;
+  text-align: right; /* Asegúrate de usar 'right' en lugar de 'end' si deseas alineación a la derecha */
+
+}
+.about-text-card2:hover{
+
+
+  color: #ffffff;
+
+
+}
+@media (max-width: 1281px) {
+  .about-tittle-card2 {
+    font-size: 1.2em;
+
+    
+  }
+  .about-tittle-number-tiny{
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 767px) {
+  .about-tittle-card2 {
+    font-size: 1em;
+  }
+  .about-tittle-number-tiny{
+    font-size: 1.5em;
+  }
+  #arrow{
+    position: relative; 
+    left: 5vw;
+    width: 2.5vw;
+  }
+}
+
 .about-tittle-number-tiny{
   font-family: poppins;
   font-weight: 600;
-  font-size: 5vw;
-  font-size: min(max(16px, 5vw), 32px); /* Limita el tamaño entre 16px y 32px */
+  font-size: 1.4em;
   color: #03AE11;
   text-align: right; /* Asegúrate de usar 'right' en lugar de 'end' si deseas alineación a la derecha */
 
@@ -1283,6 +1406,12 @@ margin-bottom: 5%;  }
   color: white;
 
 }
+#arrow{
+  position: relative; 
+  left: 15vw;
+  width: 3vw;
+}
+
 
 #base-about{
   background-color: #EFEFEF;
@@ -1354,4 +1483,199 @@ margin-bottom: 5%;  }
   height: 4px;
   background-image: linear-gradient(to right,#3460BA, #B18EC2, #7E8CD6, #7F6BCF,#B774E0);
   width: 0%;
+}
+.main-area-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -201;
+}
+@keyframes animate-circles {
+  0% {
+  opacity: 0.2;
+  border-radius: 40%;
+  transform: translateY(0) rotate(0deg);
+  }
+  100% {
+  opacity: 0.6;
+  border-radius: 50%;
+  transform: translateY(-1000px) rotate(720deg);
+  }
+}
+
+.main-area-content div {
+position: absolute;
+display: block;
+width: 20px;
+filter: blur(8px);
+height: 20px;
+background-image: linear-gradient(to right,#688dd758, #8217b456);
+bottom: -150px;
+animation: animate-circles 15s linear infinite;
+}
+.main-area-content div:nth-child(1) {
+left: 25%;
+width: 80px;
+height: 80px;
+animation-delay: 0s;
+}
+
+.main-area-content div:nth-child(2) {
+left: 10%;
+width: 20px;
+height: 20px;
+animation-delay: 2s;
+animation-duration: 12s; 
+}
+.main-area-content div:nth-child(3) {
+left: 70%;
+width: 20px;
+height: 20px;
+animation-delay: 4s;
+}
+.main-area-content div:nth-child(4) {
+left: 40%;
+width: 60px;
+height: 60px;
+animation-delay: 0s;
+animation-duration: 18s;
+}
+.main-area-content  div:nth-child(5) {
+left: 65%;
+width: 20px;
+height: 20px;
+animation-delay: 0s;
+}
+.main-area-content  div:nth-child(6) {
+left: 75%;
+width: 110px;
+height: 110px;
+animation-delay: 3s;
+}
+.main-area-content  div:nth-child(7) {
+left: 35%;
+width: 150px;
+height: 150px;
+animation-delay: 5s;
+}
+.main-area-content div:nth-child(8) {
+left: 50%;
+width: 25px;
+height: 25px;
+animation-delay: 15s;
+animation-duration: 45s;
+}
+.main-area-content div:nth-child(9) {
+left: 20%;
+width: 15px;
+height: 15px;
+animation-delay: 2s;
+animation-duration: 35s;
+}
+.main-area-content div:nth-child(10) {
+left: 85%;
+width: 150px;
+height: 150px;
+animation-delay: 0s;
+animation-duration: 11s;
+}
+
+#main-pic-banner {
+  transition: opacity 0.5s ease;
+  filter:grayscale(100%);
+  width:40em;  
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
+  border-radius: 100%;
+}
+.button-header.active {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+background-color: #000000;
+
+}
+/* Add this style in your CSS file or within a <style> tag in the head of your HTML */
+
+/* Set the default state of the span to be invisible */
+/* Estilo inicial del span dentro de .nav-item, oculto pero de manera transicionable */
+.nav-item span {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Añade transición para opacidad y retraso en visibilidad */
+  
+}
+
+/* Set the span to be visible when its parent .nav-item is hovered over or is active */
+.nav-item:hover span,
+.nav-item.active span {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease; /* Transición suave para hacerlo visible */
+}
+
+/* Estilos para .nav-item, consolidando la declaración de transition */
+.nav-item {
+  display: flex; /* Asegura que los elementos internos se alineen en fila */
+  align-items: center; /* Centra los elementos verticalmente */
+  color: #000000; /* Color inactivo - ajusta según sea necesario */
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  height: 2em;
+  padding: 5%; /* Ajusta el padding si es necesario */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color */
+  border-radius: 50px;
+  justify-content: center; /* Centra los elementos horizontalmente si necesitas */
+  
+}
+
+/* Estilos para hover y estados activos */
+.nav-item:hover,
+.nav-item.active {
+  color: #000000; /* Color de texto cuando está activo/hover - ajusta si es necesario */
+  background-color: #ffffff55; /* Fondo cuando está activo/hover - ajusta si es necesario */
+  border-radius: 50px;
+}
+
+/* Estilo para SVG */
+.nav-item svg {
+  fill: currentColor; /* El color del SVG coincide con el color del texto */
+  align-items: center;
+  margin-right: 8px; /* Añade un espacio a la derecha del SVG para separarlo del texto */
+
+}
+
+#gooey-footer-home {
+  height: 20em;
+  width: 40em;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #2d38d446, #89219979);
+  /* background: linear-gradient(to top right,red,blue); */
+z-index: 1;
+
+  top: -160%;
+  left: 38%;
+  filter: blur(20px);
+  animation-name: gooey-footer-home;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes gooey-footer-home {
+  from {
+      filter: blur(20px);
+      transform: translate(10%, -10%) skew(0);
+  }
+
+  to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+  }
 }

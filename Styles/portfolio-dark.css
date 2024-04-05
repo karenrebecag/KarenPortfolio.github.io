@@ -187,7 +187,7 @@ body {
   padding: 20px; /* Agrega un padding de 20px en todos los lados */
 }
 .text-portfolio-text{
-  font-size: 1vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-size: 1.4em; /* Usa vw para ajustarse al ancho de la pantalla */
   font-weight: 200;
   position: relative;
   right: 1em;

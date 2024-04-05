@@ -1,1 +1,9 @@
-{}
+{
+    "scripts":  {
+        "watch:scss": "node-sass -w styles/glow.scss styles/style.css"
+    },
+    "dependencies":{
+        "node-sass": "^4.14.1"
+    }
+
+}

@@ -9,11 +9,12 @@ header {
 }
 
 #logo-header{
- font-size: 1.2vw;
+ font-size: 2.6em;
  font-family: poppins;
  font-weight: 500; 
  position: relative; 
  top: 1vw;
+ z-index: 10;
  color: black;
 }
 @media (max-width: 1281px) {
@@ -24,12 +25,18 @@ header {
 
 .button-container-header {
   display: flex;
-  background-color: rgb(255, 255, 255);
-  width: 250px;
-  height: 40px;
+  background-color: rgba(0, 0, 0, 0.034) ;
+  width: 50em;
+  height: 5em;
+  z-index: 10;
+  backdrop-filter: blur(20px);
+
+  padding: 1em;
   align-items: center;
   justify-content: space-around;
-  border-radius: 20px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 50px 0ch rgba(0, 0, 0, 0.133);
+
         
 }
 
@@ -417,9 +424,10 @@ b {
   background: rgba(255, 255, 255, 0.664);
   padding: 10px 15px;
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: end;
+  align-items: end;
   gap: 5px;
+  width: 20vw;
   border-radius: 25px;
   transition: transform 400ms;
   transform-style: preserve-3d;
@@ -1262,7 +1270,9 @@ margin-bottom: 2px black;
 }
 
 
-
+footer {
+  max-height: 100em;
+}
 
 
 

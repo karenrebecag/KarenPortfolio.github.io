@@ -20,3 +20,124 @@
     position: relative;
     justify-content: start;
 }
+
+.containerPortfolio {
+    padding: 0;
+  }
+
+  .rowPortfolio {
+    margin: 0;
+  }
+
+  .colPortfolio {
+    padding: 0;
+  }
+
+  /* Estilos personalizados para manejar el responsive */
+  @media (max-width: 768px) {
+    .colPortfolioSmall,
+    .colPortfolioLarge {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+.project-section{
+    background-color: rgba(255, 255, 255, 0.708);
+    padding: 30px
+}
+.imagePortfolio {
+    width: 100%; /* Asegura que la imagen sea responsiva y ocupe toda la columna */
+    height: auto;
+    border-radius: 50px;
+    margin-top: 4em; 
+  }
+
+  .serviceButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px;
+    text-align: left;
+  }
+
+  .serviceText {
+    padding-left: 15px; /* Espaciado para alinear con los botones */
+  }
+
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .serviceButton {
+      display: block;
+      width: 100%;
+    }
+
+    .serviceText {
+      padding-left: 0; /* Elimina el padding en pantallas pequeñas para aprovechar el espacio */
+      font-family: 'Raleway' sans-serif;
+      font-weight: 300;
+    }
+  }
+
+  #gray-background {
+    background-color: #f3f3f3;
+    padding: 2%;
+    border-radius: 20px;
+  }
+.white-pill-button {
+    padding: 13px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    text-align: start;
+    background-color: #ffffff; /* Corregido para consistencia */
+    box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif; /* Asegurando la fuente */
+    color: black;
+    display: inline-flex; /* Para alinear el SVG y el texto */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 10px; /* Espacio entre el texto y el SVG */
+}
+
+.white-pill-button svg {
+    transition: transform 0.5s ease, fill 0.5s ease; /* Suave transición para transformar y rellenar */
+    
+}
+
+.white-pill-button:hover {
+    letter-spacing: 2px;
+    background-color: hsla(0, 0%, 0%, 0.944);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgba(127, 127, 127, 0.509) 0px 7px 29px 0px;
+}
+
+.white-pill-button:hover svg {
+    stroke: white;
+    transform: rotate(-90deg); /* Rota suavemente hacia arriba */
+}
+
+.white-pill-button:hover path {
+    stroke: white;
+
+}
+
+.white-pill-button:active {
+    letter-spacing: 3px;
+    background-color: #ff1493; /* Cambiado a rosa para active */
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(207, 24, 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms; /* Transición más rápida para el estado activo */
+}
+
+.white-pill-button:active svg {
+    stroke: white;
+    transform: rotate(0deg); /* Sin rotación para el estado activo */
+}

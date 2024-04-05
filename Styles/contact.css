@@ -1,23 +1,22 @@
 
-#contact-banner{
-  background-color:#ffffff86;
+#contact-banner
+{
   padding: 0 15% 0 15%;
-  margin-top: 5vh;
-  height: 70vh;
-
+  height: 60em;
+  margin-top: 120px;
 }
 
 
 
 #form-contact {
-background-color: rgba(222, 222, 222, 0.073); /* Transparencia */
-border-radius: 15px;
-box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
-height: 35vw;
-padding: 2%;
-backdrop-filter: blur(30px); /* Desenfoque */
+  background-color: rgba(222, 222, 222, 0.073);
+  border-radius: 15px;
+  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
+  height: auto; /* Cambiado a altura automática */
+  padding: 2%;
+  backdrop-filter: blur(30px);
+  margin-bottom: 20em; /* Agregado margen inferior */
 }
-
 #tittle-contact {
   font-size: 4vw; /* Usa vw para ajustarse al ancho de la pantalla */
   line-height: 0.8; /* Mejora la legibilidad */
@@ -53,7 +52,6 @@ height: 10em;
 
   #contact-banner{
     height: 100vw;
-    margin-top: 10vw;
   }
   #tittle-contact {
     font-size: 5vw;
@@ -86,13 +84,13 @@ height: 10em;
 }
 
 #contact-form-tittle{
-  font-size: 1.5vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-size: 1.5em; /* Usa vw para ajustarse al ancho de la pantalla */
   line-height: 2; /* Mejora la legibilidad */
   font-weight: 500;
   font-family: poppins;
 }
 #contact-form-paragraph{
-  font-size: 0.7vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-size: 1em; /* Usa vw para ajustarse al ancho de la pantalla */
   line-height: 2; /* Mejora la legibilidad */
   font-weight: 300;
   font-family: poppins;
@@ -100,7 +98,7 @@ height: 10em;
 }
 .input{
   border-radius: 10px;
-  font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-size: 1em; /* Usa vw para ajustarse al ancho de la pantalla */
   line-height: 2; /* Mejora la legibilidad */
   font-weight: 200;
   font-family: poppins;  
@@ -110,7 +108,7 @@ height: 10em;
 }
 .input2{
   border-radius: 0 15px 15px 0;
-  font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-size: 1em; /* Usa vw para ajustarse al ancho de la pantalla */
   line-height: 2; /* Mejora la legibilidad */
   font-weight: 200;
   font-family: poppins;  
@@ -121,7 +119,7 @@ height: 10em;
 
 .form-select{
   border-radius: 15px 0  0 15px;
-  font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-size: 1em; /* Usa vw para ajustarse al ancho de la pantalla */
   line-height: 2; /* Mejora la legibilidad */
   font-weight: 200;
   font-family: poppins;  
@@ -151,7 +149,7 @@ height: 10em;
 
 .input3 {
   border-radius: 15px;
-  font-size: 0.6vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-size: 1em; /* Usa vw para ajustarse al ancho de la pantalla */
   line-height: 2; /* Mejora la legibilidad */
   font-weight: 200;
   font-family: 'Poppins', sans-serif; /* Asegúrate de usar el nombre correcto de la fuente y añade un fallback */
@@ -160,7 +158,7 @@ height: 10em;
    outline: none; /* Quita el contorno al enfocar */
 }
 .terms-text-form{
-  font-size: 0.7vw; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-size: 1em; /* Usa vw para ajustarse al ancho de la pantalla */
   line-height: 2; /* Mejora la legibilidad */
   font-weight: 400;
   font-family: poppins;
@@ -171,9 +169,7 @@ height: 10em;
   text-decoration: none; 
   color: rgb(153, 0, 248);
 }
-iframe{
-  filter: grayscale(100%);
-}
+
 
 @media (max-width: 1050px) {
 
@@ -185,15 +181,8 @@ iframe{
   @media (max-width: 820px) {
 
   }
-
-
-
-
-#faq{
-  background-color:#ffffff4e;
-  padding: 0 15% 0 15%;
-  height: 70vh;
-  margin-top: -10em;
-
   
-}
+
+
+
+

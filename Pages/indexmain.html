@@ -75,14 +75,14 @@
 
 /* Estilo del track del scrollbar (la parte que "contiene" al thumb) */
 ::-webkit-scrollbar-track {
-    background: #ebdfdf; /* Color de fondo del track del scrollbar */
+    background: #EEEFEE; /* Color de fondo del track del scrollbar */
 }
 
 /* Estilo del thumb del scrollbar (la parte que se mueve/arrastra) */
 ::-webkit-scrollbar-thumb {
-    background-color: black; /* Color del thumb del scrollbar */
+    background-color: #EEEFEE; /* Color del thumb del scrollbar */
     border-radius: 4px; /* Borde redondeado del thumb */
-    border: 3px solid #f0f0f0; /* Borde opcional para el thumb */
+    border: 3px solid #EEEFEE; /* Borde opcional para el thumb */
 }
 
     </style>
@@ -267,7 +267,24 @@ p {
 
 <!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)-->
 
-<body >
+<body>
+
+  <div class="main-area">
+    <div class="main-area-content">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  </div>
+
+
   <div class="grain"></div>
 
   <div class="header">
@@ -317,24 +334,35 @@ p {
           </button>
           </a>
         
-          <a style="text-decoration: none;" href="/Pages/indexp.html">
-            <button class="button-header">
-              <h6>Portfolio</h6>
-            </button>
-            </a>
-
-          <a style="text-decoration: none;" href="/Pages/indexcontact.html">
+          <a style="text-decoration: none;" href="/Pages/indexhow.html#contact">
           <button class="button-header">
             <h6>Contact</h6>
           </button>
           </a>
 
+          <button class="button-header">
+                <h6>Portfolio</h6>
+
+        <li style="text-decoration: none;"  class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="indexp.html" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
+
+        </li>
+
+          </button>
         </div>
         
 
 
       </div>
       
+      
+      
+      <div id="gooey-nav"></div>
+
+      <div id="gooey-nav-logo"></div>
+
+
       
     
  
@@ -411,15 +439,15 @@ p {
 </video>
 
 <!--Main Section Banner---------------------------------------------------------------------------------------------------------------->
-<section id="scroll-section" data-scroll-container  style="margin-top: 2%; "  data-aos="fade-up" id="top" class="main-banner-fadeout" >
+<section id="main-banner-section" style="margin-top: 2%; "  data-aos="fade-up" id="top" class="main-banner-fadeout" >
 <div data-scroll-section class="container-fluid main-banner ">
 
 
 
 <div class="row">
   <div data-depth="0.2" class="col-12 d-flex justify-content-center">
-    <img data-scroll data-scroll-speed="2" width="450" style="  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
-    border-radius: 100%;" class=" karen-ortiz-footer"  src="https://static.wixstatic.com/media/bc0394_8744966d3971432ca187a38276218858~mv2.png" alt="Foto de karen">
+    <img id="main-pic-banner" data-scroll data-scroll-speed="2" width="450" style="  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
+    border-radius: 100%;" class=" karen-ortiz-footer"  src="https://static.wixstatic.com/media/bc0394_2c111843e52c4e02be6ab5d621369b62~mv2.jpg" alt="Foto de karen">
   </div>
 </div>
 <div id="gooey2"></div>
@@ -476,6 +504,7 @@ p {
 
 
     </div>
+    
     <div class="col-12  d-flex justify-content-center py-3" > 
       <div style="color: white; font-size: 0.8em; display: flex; align-items: center; margin-bottom: 1em;">
         <span data-scroll>Trusted by ambitious teams.</span>
@@ -1217,7 +1246,7 @@ p {
         <!-- Subcolumna para el Texto -->
         <div class="mx-5 px-5">
           <h2 class="brilliant-solutions degradado">Brilliant Solutions &#x1F600;.</h2>
-          <p class="brilliant-solutions-text" style="color: white;">Send me a message if I can support you with anything, or write to me in the WhatsApp chat of this page.</p>
+          <p class="brilliant-solutions-text" style="color: white;">Leave your email and i'll connect with you.</p>
         </div>
 
         <!-- Subcolumna para el Input -->
@@ -1256,8 +1285,7 @@ p {
 <!--Footer---------------------------------------------------------------------------------------------------------------->
 <footer  class="foot mx-5 general_padding"> 
 <section data-scroll>
-  <div style="top: 450em;" id="gooey5"></div>
-
+  <div id="gooey-footer-home"></div>
  
 
   
@@ -1309,7 +1337,6 @@ p {
             <div class="row align-items-start">
               <div class="col-12">
                 <div class="social-icons">
-                  <a href="https://www.webcraftersdesigns.com/" target="_blank"><img src="https://static.wixstatic.com/media/bc0394_599d382fa41a46d9851b1635cd22a820~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bc0394_599d382fa41a46d9851b1635cd22a820~mv2.png" alt="webcrafters" style="padding:25%;"></a>
                   <a href="https://www.instagram.com/karenrebeca.og/?hl=es" target="_blank"><img src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" alt="instagram" style="padding:25%"></a>
                   <a href="https://www.linkedin.com/in/karen-rebeca-ort%C3%ADz-b5a860282/" target="_blank"><img src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6ea5b4a88f0b4f91945b40499aa0af00.png" alt="linkedin" style="padding:25%"></a>
                   <a href="https://github.com/karenrebecag" target="_blank"><img src="https://static.wixstatic.com/media/11062b_138b4018ea8244fcb5137cb0e98361f3~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_138b4018ea8244fcb5137cb0e98361f3~mv2.png" alt="github" style="padding:25%"></a>

@@ -16,9 +16,9 @@ header {
 
 /* Estilo del thumb del scrollbar (la parte que se mueve/arrastra) */
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 255); /* Color del thumb del scrollbar */
+  background-color: rgb(0, 0, 0); /* Color del thumb del scrollbar */
   border-radius: 2px; /* Borde redondeado del thumb */
-  border: 1px solid #f0f0f0e4; /* Borde opcional para el thumb */
+  border: 1px solid #000000e4; /* Borde opcional para el thumb */
 }
 
 
@@ -45,13 +45,15 @@ header {
 }
 .button-container-header {
   display: flex;
-  background-color: rgb(0, 0, 0);
-  width: 250px;
-  height: 40px;
+  background-color: rgba(0, 0, 0, 0.034) ;
+  width: 30em;
+  height: 5em;
+  padding: 1em;
   align-items: center;
   justify-content: space-around;
-  border-radius: 20px;
-        
+  border-radius: 50px;
+  box-shadow: 5px 5px 50px 0ch rgba(0, 0, 0, 0.133);
+
 }
 
 .button-header {
@@ -87,13 +89,19 @@ header {
 }
 
 #logo-header{
-  font-size: 1.2vw;
+  font-size: 2.6em;
   font-family: poppins;
   font-weight: 500; 
+  z-index: 10;
   position: relative; 
   top: 1vw;
   color: rgb(255, 255, 255);
  }
+ @media (max-width: 1281px) {
+  #logo-header{
+    font-size: 2.5vw;
+  }
+}
 #gooey {
   height: 32vw;
   width: 32vw;
@@ -463,3 +471,6 @@ b {
     font-size: 0.3em; /* Ajuste para pantallas muy pequeñas */
   }
 }
+
+
+

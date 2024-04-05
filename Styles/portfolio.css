@@ -184,7 +184,7 @@ header {
   padding: 20px; /* Agrega un padding de 20px en todos los lados */
 }
 .text-portfolio-text {
-  font-size: clamp(1.7vw, 2vw, 2.2vw); /* mínimo: 1vw, preferido: 1vw, máximo: 2.5vw */
+  font-size:1.4em;
   font-weight: 200;
   position: relative;
   right: 1em;
@@ -553,5 +553,32 @@ top: 440%;
     80% { transform: translate3d(-9rem,1rem,0) }
     90% { transform: translate3d(6rem,-5rem,0) }
     to { transform: translate3d(-7rem,0,0) }
+  }
+}
+
+.containerPortfolio {
+  padding: 0;
+}
+
+.rowPortfolio {
+  margin: 0;
+}
+
+.colPortfolio {
+  padding: 0;
+}
+.whitebox {
+  background-color: white;
+  border-radius: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+/* Estilos personalizados para manejar el responsive */
+@media (max-width: 768px) {
+  .colPortfolioSmall,
+  .colPortfolioLarge {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
