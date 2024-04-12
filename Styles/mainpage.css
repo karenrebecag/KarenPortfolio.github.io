@@ -1590,13 +1590,7 @@ animation-duration: 11s;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
   border-radius: 100%;
 }
-.button-header.active {
-  height: 4em;
-  width: 4em;
-  border-radius: 50%;
-background-color: #000000;
 
-}
 /* Add this style in your CSS file or within a <style> tag in the head of your HTML */
 
 /* Set the default state of the span to be invisible */
@@ -1623,7 +1617,7 @@ background-color: #000000;
   color: #000000; /* Color inactivo - ajusta según sea necesario */
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-  font-size: 1em;
+  font-size: 0.6em;
   height: 2em;
   padding: 5%; /* Ajusta el padding si es necesario */
   transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color */

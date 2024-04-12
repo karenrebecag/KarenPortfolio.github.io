@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (currentCharIndex < fullText.length) {
           element.textContent += fullText.charAt(currentCharIndex);
           currentCharIndex++;
-          setTimeout(typeWriterEffect, 20); // Ajusta la velocidad de escritura aquí
+          setTimeout(typeWriterEffect, 50); // Ajusta la velocidad de escritura aquí
         }
       };
   

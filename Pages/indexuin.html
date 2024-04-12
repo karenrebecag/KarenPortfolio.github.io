@@ -22,6 +22,8 @@
 <link href="/Styles/style.css" rel="stylesheet">
 <link href="/Styles/responsive.css" rel="stylesheet">
 <link href="/Styles/extra.css" rel="stylesheet">
+<link href="/Styles/portfolio.css" rel="stylesheet">
+
 <link href="/Styles/mainpage.css" rel="stylesheet">
 <link href="/Styles/toggle.css" rel="stylesheet">
 <link href="/Styles/project.css" rel="stylesheet">
@@ -32,6 +34,7 @@
 <!-- Enlace a la hoja de estilo predeterminada (modo claro) -->
 <link rel="stylesheet" href="/Styles/style.css" id="theme-style">
 <link rel="stylesheet" href="/Styles/mainpage.css" id="mainpage-style">
+<link rel="stylesheet" href="/Styles/project.css" id="project-style">
 
 
   <!-- Google Fonts ---------------------------------------------------------------------------------------------------------------->
@@ -147,24 +150,7 @@
       #downloadCvButton{
         display: none;
       }}
-      @media (max-width: 768px) {
-  .bubble, #glow-input, #how_button, #cube-loader {
-    display: none;
-  }
-}
 
-.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-  width: 100%;
-  max-width: none;
-}
-
-p {
-  margin: 0%;
-}
-
-.owl-carousel {
-  max-width: 100%;
-}
 
     </style>
 </head>
@@ -180,7 +166,7 @@ p {
 
 
   
-  <nav class="navbar navbar-expand-md navbar-light" >
+  <nav class="navbar navbar-expand-md " >
   <!--Navbar Toggler-->
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -221,28 +207,23 @@ p {
           </button>
           </a>
 
-          <button class="button-header">
-                <h6>Portfolio</h6>
-
-        <li style="text-decoration: none;"  class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="indexp.html" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-
-              <ul  class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-                <li ><a class="dropdown-item " href="/Pages/indexp.html">ZOEK & Webcrafters</a></li>
-                <li><a class="dropdown-item " href="/Pages/indexuin.html">UINCLUB</a></li>
-                <li><a class="dropdown-item " href="/Pages/indexcico.html">CicoSpace</a></li>
-                <li><a class="dropdown-item " href="/Pages/indexmu.html">Science Museum</a></li>
-                <li><a class="dropdown-item " href="/Pages/indexhy.html">Hypatia Magazine</a></li>
-              </ul>
-        </li>
-
-          </button>
+          <a style="text-decoration: none;" href="/Pages/indexp.html">
+            <button class="button-header">
+              <h6>Portfolio</h6>
+            </button>
+            </a>
         </div>
         
 
 
       </div>
       
+      
+      
+
+      <div id="gooey-nav-logo"></div>
+
+
       
     
  
@@ -312,6 +293,11 @@ p {
 
   </nav>
 </header>
+  
+<div id="gooey-nav-logo"></div>
+<div id="gooey2"></div>
+<div id="gooey3"></div>
+<div id="gooey4"></div>
 
                 
                                           
@@ -320,16 +306,16 @@ p {
                                                 <source src="https://video.wixstatic.com/video/11062b_7e61ffd6dbb040ee8b0e4dc604e8fd4e/1080p/mp4/file.mp4" type="video/mp4">
                                               </video>
                                               
-
+    <!--Banner-->
     <section data-aos="fade-up" class="project-section" >
       <div class="container containerPortfolio" style="margin-top: 15em;">
         <div class="row rowPortfolio" style="justify-content: center; max-width: 100%;">
           <!-- Primer container macro -->
           <div class="col-md-6 colPortfolio">
-            <div class="row rowPortfolio">
+            <div class="row py-5 rowPortfolio">
               <!-- Tres cuadros pequeños en la parte superior -->
-              <div class="col-4 colPortfolio colPortfolioSmall">
-                <div class="square" style="max-height: 10em;background-color: rgba(255, 255, 255, 0.275); backdrop-filter: blur(40px);">
+              <div class="col-3 mx-auto colPortfolio colPortfolioSmall">
+                <div class="square bg-color-project" style="max-height: 10em ; backdrop-filter: blur(40px);">
                   <div class="row">
                     <div class="col-12 text-start ">
                       <h1 style="text-align: start; font-size: 1.5em; font-family: poppins; font-weight: 500;" class="number-animation" data-target-number="2023" >2023</h1>
@@ -340,16 +326,16 @@ p {
                   </div>
                 </div>
               </div>
-              <div class="col-4 colPortfolio colPortfolioSmall">
-                <div class="square" style="max-height: 10em;background-color: rgba(255, 255, 255, 0.275); backdrop-filter: blur(40px);">
+              <div class="col-3 mx-auto colPortfolio colPortfolioSmall">
+                <div class="square bg-color-project" style="max-height: 10em;; backdrop-filter: blur(40px);">
                   <div class="row"><div class="col-12 text-start "><h1 style="text-align: start; font-size: 1.5em;" class="number-animation" data-target-number="1" id="about-tittle">1</h1></div></div>
                   <div class="row"><h1 class="col-12 text-end "><h1 style="text-align: start; font-size: 1.3em;" >
                     Awards Winning</h1>
                   </div>
                 </div>
               </div>
-              <div class="col-4 colPortfolio colPortfolioSmall">
-                <div class="square" style="max-height: 10em;background-color: rgba(255, 255, 255, 0.275); backdrop-filter: blur(40px);">
+              <div class="col-3 mx-auto colPortfolio colPortfolioSmall">
+                <div class="square bg-color-project" style="max-height: 10em;; backdrop-filter: blur(40px);">
                   <div class="row"><div class="col-12 text-start "><h1 style="text-align: start; font-size: 1.5em;" class="number-animation" data-target-number="10" id="about-tittle">10</h1></div></div>
                   <div class="row"><h1 class="col-12 text-end "><h1 style="text-align: start; font-size: 1.3em;" >
                     Professional Employee</h1>
@@ -359,31 +345,33 @@ p {
             </div>
             <div class="row rowPortfolio">
               <!-- Un cuadro grande en la parte inferior -->
-              <div class="col-12 colPortfolio colPortfolioLarge">                                                       
-                 <div class="square" style="max-height: 10em;background-color: rgba(255, 255, 255, 0);  ">
+              <div class="col-12 py-5 colPortfolio colPortfolioLarge">                                                       
+                 <div   style="max-height: 10em;  ">
                 <div class="row">
                     <div class="col-12 text-start">
-                      <h1 id="about-tittle" style="text-align: start;position: relative; right: 0.5em;" class="typewriter-portfolio">Where
+                      <h1 id="about-tittle" style="text-align: start;position: relative; font-size: 5em;" class="typewriter-portfolio">Where
                         Creativity
                         Takes Flight!</h1> 
                     </div>
                   </div>
                 <div class="row">
-                  <div style="display: flex; justify-content:start; text-align:start;" >
-                    <p style="font-size: 1.5em;position: relative; right: 2em;">UINCLUB was a project that I developed for TECOTV, a television company that aimed to start an online marketplace. The project lasted a month and a half; unfortunately, it was left incomplete, as there was not enough budget to finish all the functionalities. I was in charge of the main layout and some initial animations for advertising.</p>
+                  <div >
+                      <div style="display: flex; justify-content:start; text-align:start;" class="py-5" >
+                        <p style="font-size: 1.5em;position: relative;right: 2.7em;">UINCLUB was a project that I developed for TECOTV, a television company that aimed to start an online marketplace. The project lasted a month and a half; unfortunately, it was left incomplete, as there was not enough budget to finish all the functionalities. I was in charge of the main layout and some initial animations for advertising.</p>
 
+                      </div>
                   </div>
 
                 </div>
-                <div class="row py-5">
+                <div class="row ">
                   <div style="display: flex; justify-content:start; text-align:start; position: relative; right: 5em;">
-                    <div class="square" 
+                    <div class="square bg-color-project" 
                     style="max-height: 15em; 
-                    max-width:130em; background-color: #ffffffb1; 
+                    max-width:130em;; 
                     backdrop-filter: blur(40px);">
                       <div class="row">
-                      <div class="col-6"><h1 style="text-align: start; font-size: 1.5em;margin-top: -3em;" id="about-tittle">Captivate. Engage, and Inspire.</h1></div></div>
-                      <div class="row" style="display: flex; align-items: center;">
+                      <div ><h1 style="text-align: start; font-size: 1.5em;margin-top: -3em;" id="about-tittle">Captivate. Engage, and Inspire.</h1></div></div>
+                      <div class="row" style="display: flex; align-items: center;" >
                         <p style="flex-grow: 1; text-align: start; font-size: 1.3em;">
                           We are a passionate team of designers, developers, and dreamers dedicated to transforming ideas into visually stunning realities.
                         </p>
@@ -404,7 +392,7 @@ p {
             <div class="row rowPortfolio ">
               <!-- Dos cuadros en la parte superior -->
               <div class="col-6 colPortfolio colPortfolioSmall">
-                <div class="square" style="max-height: 30em;background-color: rgba(255, 255, 255, 0.504); backdrop-filter: blur(40px);">
+                <div id="responsive-text" class="square bg-color-project" style="max-height: 30em; backdrop-filter: blur(40px);">
                   <div class="row">
                     <div class="col-12 text-start ">
                       <h1 class="number-animation" data-target-number="200" style="font-weight: 500; font-family: poppins; font-size: 6em;">200</h1>
@@ -423,6 +411,7 @@ p {
 passionate about diving measurable
 results and ensurng our clients success</h1>
 
+<a href="indexuin.html#testimonials">
 <button class="white-pill-button">
   Testimonials
   <svg width="15px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -433,26 +422,27 @@ results and ensurng our clients success</h1>
       </g>
   </svg>
 </button>
+</a>
                   </div>
 
                 </div>
               </div>
               <div class="col-6 colPortfolio colPortfolioSmall">
-                <div class="square" style="max-height: 30em;background-color: rgba(255, 255, 255, 0.504); backdrop-filter: blur(40px);">
+                <div class="square bg-color-project" style="max-height: 30em; backdrop-filter: blur(40px);">
                   <div class="row"><div class="col-12 text-start "><h1 style="text-align: start; font-size: 1.5em;" id="about-tittle">Creativity Unleashed</h1></div></div>
                   <div class="row"><h1 class="col-12 text-end "><h1 style="text-align: start; font-size: 1.3em;" >
                     Our team chiclented assoners trives on
 pushna the boundanes of crectivity
 engunna that vour eraect stands out no.
-makes on imacct</h1>
+makes on impact</h1>
 
 <div style="display: flex; align-items: center;">
-  <div style="position: relative; width: 50px; height: 50px;" class="py-5">
-    <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -12em; z-index: 1; border: 1px solid white;" alt="profile pic">
-    <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -9em; z-index: 2; border: 1px solid white;" alt="profile pic">
-    <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -6em; z-index: 3; border: 1px solid white;" alt="profile pic">
-    <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -3em; z-index: 4; border: 1px solid white;" alt="profile pic">
-    <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: 0em; z-index: 5; border: 1px solid white;" alt="profile pic">
+  <div  class="py-5 rounded-box-images">
+    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -12em; z-index: 1;" class="rounded-images" alt="profile pic">
+    <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611734.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -9em; z-index: 2;" class="rounded-images" alt="profile pic">
+    <img src="https://img.freepik.com/premium-psd/3d-render-avatar-character_23-2150611787.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -6em; z-index: 3;" class="rounded-images" alt="profile pic">
+    <img src="https://img.freepik.com/premium-psd/3d-render-avatar-character_23-2150611783.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -3em; z-index: 4;" class="rounded-images" alt="profile pic">
+    <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611722.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: 0em; z-index: 5;" class="rounded-images" alt="profile pic">
   </div>
   <!-- Espacio entre el div de imágenes y el texto -->
   <div style="margin-left: 15em;" class="py-5">
@@ -468,7 +458,7 @@ makes on imacct</h1>
             <div class="row rowPortfolio">
               <!-- Un cuadro grande en la parte inferior -->
               <div class="col-12 colPortfolio colPortfolioLarge ">
-                <img class="imagePortfolio"  style="height: 45em;" src="https://static.wixstatic.com/media/bc0394_20fd16ae907e473c9885d3b99fb14955~mv2.png" loading="eager" alt="white background">
+                <img class="imagePortfolio"  style="height: 45em; object-fit: cover; " src="https://static.wixstatic.com/media/bc0394_20fd16ae907e473c9885d3b99fb14955~mv2.png" loading="eager" alt="white background">
               </div>
             </div>
           </div>
@@ -476,15 +466,16 @@ makes on imacct</h1>
       </div>
     </section>
 
-
-    <section data-aos="fade-up" class="project-section py-5 px-5" >
+    <!--About Us-->
+    <section data-aos="fade-up" class="project-section2 py-5 px-5">
       <div class="container py-5 px-5">
         <div class="row">
           <!-- Columna izquierda con título, texto y botón -->
           <div class="col-md-6">
             <h2>About Us</h2>
-            <p style="font-size:1.5em;" class="py-5">Our mission is to empower businesses and individuals to stand out in the digital landscape through compelling designs that leave a lasting impression.</p>
-            <a href="#" class="button-io"">Learn more</a>
+            <p style="font-size:1.5em;position: relative; right: 4em;" class="py-5">Our mission is to empower businesses and individuals to stand out in the digital landscape through compelling designs that leave a lasting impression.</p>
+              <a href="http://www.uinclub.com.mx" class="button-io" target="_blank">Check UinClub</a>
+
           </div>
           <!-- Columna derecha con texto grande -->
           <div class="col-md-6">
@@ -493,20 +484,21 @@ makes on imacct</h1>
         </div>
       </div>
     </section>
-
+    <!--Skills-->
     <section data-aos="fade-up" class=" project-section">
       <div class="container">
         <div class="row">
           <!-- Columna con la imagen -->
           <div class="col-md-6">
-            <img style="height: 40em;" src="https://static.wixstatic.com/media/bc0394_efda5dfb3517435cbb209a1926ecde17~mv2.png" loading="lazy" alt="Imagen descriptiva" class="imagePortfolio">
+            <img style="height: 40em; object-fit: cover; " src="https://static.wixstatic.com/media/bc0394_efda5dfb3517435cbb209a1926ecde17~mv2.png" loading="lazy" alt="Imagen descriptiva" class="imagePortfolio">
           </div>
     
           <!-- Columna con los servicios -->
           <div class="col-md-6">
             <!-- Fila de servicio de diseño web -->
-            <div class="row mb-2 py-5" id="gray-background">
-              <div class="col-5" >
+            <div class="row mb-2 py-5 hov" id="gray-background">
+              <div class="col-4" >
+                <a href="indexuin.html#work">
                 <button class="white-pill-button">
                   Web Design
                   <svg width="15px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -516,15 +508,20 @@ makes on imacct</h1>
                           <path d="M8.34315 14H14M14 14V8.34315M14 14L5.63604 5.63604M3.17216 10.2432C2.60828 13.0904 3.42957 16.1575 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C16.1575 3.42957 13.0904 2.60828 10.2432 3.17216" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </g>
                   </svg>
-              </button>
+                </button>
+                </a>
               </div>
-              <p class="col-7 serviceText">
-                Our talented web designers will work closely with you to create a modern, user-friendly, and responsive website that reflects your values.
-              </p>
+
+              <div class="col-8">
+                <p class="serviceText"">
+                  Our talented web designers will work closely with you to create a modern, user-friendly, and responsive website that reflects your values.
+                </p>
+              </div>
             </div>
             <!-- Fila de servicio de diseño gráfico -->
-            <div class="row mb-2 py-5" id="gray-background">
-              <div class="col-5">
+            <div class="row mb-2 py-5 hov" id="gray-background">
+              <div class="col-4">
+                <a href="indexuin.html#work">
                 <button class="white-pill-button">
                   Graphic Design
                   <svg width="15px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -534,14 +531,18 @@ makes on imacct</h1>
                           <path d="M8.34315 14H14M14 14V8.34315M14 14L5.63604 5.63604M3.17216 10.2432C2.60828 13.0904 3.42957 16.1575 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C16.1575 3.42957 13.0904 2.60828 10.2432 3.17216" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </g>
                   </svg>
-              </button>              </div>
-              <p class="col-7 serviceText">
-                Graphic design is a dynamic and creative discipline that involves the artful combination of visual elements to convey a message or tell story.
-              </p>
+              </button>
+                </a>              </div>
+              <div class="col-8">
+                <p class="serviceText">
+                  Graphic design is a dynamic and creative discipline that involves the artful combination of visual elements to convey a message or tell story.
+                </p>
+              </div>
             </div>
             <!-- Fila de servicio de gráficos en movimiento -->
-            <div class="row mb-2 py-5" id="gray-background">
-              <div class="col-5">
+            <div class="row mb-2 py-5 hov" id="gray-background">
+              <div class="col-4">
+                <a href="indexuin.html#work">
                 <button class="white-pill-button">
                   Motion Graphics
                   <svg width="15px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -551,14 +552,18 @@ makes on imacct</h1>
                           <path d="M8.34315 14H14M14 14V8.34315M14 14L5.63604 5.63604M3.17216 10.2432C2.60828 13.0904 3.42957 16.1575 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C16.1575 3.42957 13.0904 2.60828 10.2432 3.17216" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </g>
                   </svg>
-              </button>              </div>
-              <p class="col-7 serviceText">
-                Motion graphics bring visual elements to life through movement, creating a dynamic and engaging visual experience.
-              </p>
+              </button>
+                </a>              </div>
+              <div class="col-8">
+                <p class="serviceText">
+                  Motion graphics bring visual elements to life through movement, creating a dynamic and engaging visual experience.
+                </p>
+              </div>
             </div>
             <!-- Fila de servicio de ilustración -->
-            <div class="row mb-2 py-5"  id="gray-background">
-              <div class="col-5">
+            <div class="row mb-5 py-5 hov"  id="gray-background">
+              <div class="col-4">
+                <a href="indexuin.html#work">
                 <button class="white-pill-button">
                   Illustration
                   <svg width="15px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -568,17 +573,21 @@ makes on imacct</h1>
                           <path d="M8.34315 14H14M14 14V8.34315M14 14L5.63604 5.63604M3.17216 10.2432C2.60828 13.0904 3.42957 16.1575 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C16.1575 3.42957 13.0904 2.60828 10.2432 3.17216" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                       </g>
                   </svg>
-              </button>              </div>
-              <p class="col-7 serviceText">
-                Illustration is the art of creating visual representations that enhance or clarify a concept, story, or idea.
-              </p>
+              </button>
+                </a>              </div>
+              <div class="col-8">
+                <p class="serviceText">
+                  Illustration is the art of creating visual representations that enhance or clarify a concept, story, or idea.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section data-aos="fade-up" class="project-section">
+    
+    <!--Our passion for digital...-->
+    <section data-aos="fade-up" class="project-section2">
       <div class="container">
         <div class="col-12">
           <p id="about-tittle" style="font-size: 4.5em;font-weight: 400;text-align: start;font-family: 'Raleway' sans-serif;" class="py-5">Our passion for digfital innovation drives us to redefine industry standards.</p>
@@ -586,6 +595,7 @@ makes on imacct</h1>
       </div>
     </section>
     
+    <!--Project Success-->
     <section data-aos="fade-up" class="project-section">
       <div class="container">
         <div class="row">
@@ -628,12 +638,12 @@ makes on imacct</h1>
                 makes on imacct</h1>
 
                 <div style="display: flex; align-items: center;">
-                <div style="position: relative; width: 50px; height: 50px;" class="py-5">
-                <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -12em; z-index: 1; border: 1px solid white;" alt="profile pic">
-                <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -9em; z-index: 2; border: 1px solid white;" alt="profile pic">
-                <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -6em; z-index: 3; border: 1px solid white;" alt="profile pic">
-                <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -3em; z-index: 4; border: 1px solid white;" alt="profile pic">
-                <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: 0em; z-index: 5; border: 1px solid white;" alt="profile pic">
+                <div style="position: relative; width: 50px; height: 50px;" class="py-5 rounded-box-images">
+                  <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -12em; z-index: 1;" class="rounded-images" alt="profile pic">
+                  <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611734.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -9em; z-index: 2;" class="rounded-images" alt="profile pic">
+                  <img src="https://img.freepik.com/premium-psd/3d-render-avatar-character_23-2150611787.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -6em; z-index: 3;" class="rounded-images" alt="profile pic">
+                  <img src="https://img.freepik.com/premium-psd/3d-render-avatar-character_23-2150611783.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -3em; z-index: 4;" class="rounded-images" alt="profile pic">
+                  <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611722.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: 0em; z-index: 5;" class="rounded-images" alt="profile pic">
                 </div>
               </div>
             </div>
@@ -661,12 +671,13 @@ makes on imacct</h1>
       </div>
     </section>
 
-    <section data-aos="fade-up" class="project-section">
+    <!--Our Work-->
+    <section data-aos="fade-up" class="project-section2" id="work">
       <div class="container">
         <div class="row">
           <div class="col-6">
             <h4 id="about-tittle" style="font-size: 1.5em; text-align: start;">Our Work</h4>
-            <p>Our mission is to empower businesses and individuals to
+            <p style="position: relative; right: 4.5em;">Our mission is to empower businesses and individuals to
               stand out in the digital landscape through compelling
               designs that leave a lasting impression</p>
           </div>
@@ -679,13 +690,15 @@ makes on imacct</h1>
       </div>
     </section>
 
-
+    <!--Images Section-->
     <section data-aos="fade-up" class="project-section">
       <div class="container">
         <div class="row">
           <!-- Columna izquierda con imagen -->
           <div class="col-md-6">
-            <img class="imagePortfolio py-4" src="https://static.wixstatic.com/media/bc0394_d0182bf733924d5bbc81b8ab171fb003~mv2.png" style="border-radius: 20px;" alt="Mockup 1">
+            <video width="80%" id="main-video2" class="embed-responsive-item" muted autoplay loop style="border-radius: 20px; ">
+              <source src="https://video.wixstatic.com/video/bc0394_7a6ce60770a94ecd96164f45e9305178/1080p/mp4/file.mp4" type="video/mp4">
+            </video>
             <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
             <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
 
@@ -693,7 +706,7 @@ makes on imacct</h1>
           </div>
           <!-- Columna derecha con imagen y margen superior -->
           <div class="col-md-6 mt-5 mt-md-0">
-            <img class="imagePortfolio py-4" src="https://static.wixstatic.com/media/bc0394_d0182bf733924d5bbc81b8ab171fb003~mv2.png" style="border-radius: 20px; margin-top: 20em;" alt="Mockup 2">
+            <img class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_ac3cf8b3d4964ac182aa1521ac481b31~mv2.jpg" style="width: 80%;border-radius: 20px; margin-top: 20em;" alt="Mockup 2">
             <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
             <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
 
@@ -703,7 +716,7 @@ makes on imacct</h1>
         <div class="row">
           <!-- Columna izquierda con imagen -->
           <div class="col-md-6">
-            <img class="imagePortfolio py-4" src="https://static.wixstatic.com/media/bc0394_d0182bf733924d5bbc81b8ab171fb003~mv2.png" style="border-radius: 20px;" alt="Mockup 1">
+            <img class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_6fb13d21ba1d40b9ae8379a130246765~mv2.png" style="width: 80%;border-radius: 20px;" alt="Mockup 3">
             <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
             <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
 
@@ -711,7 +724,7 @@ makes on imacct</h1>
           </div>
           <!-- Columna derecha con imagen y margen superior -->
           <div class="col-md-6 mt-5 mt-md-0">
-            <img class="imagePortfolio py-4" src="https://static.wixstatic.com/media/bc0394_d0182bf733924d5bbc81b8ab171fb003~mv2.png" style="border-radius: 20px; margin-top: 25em;" alt="Mockup 2">
+            <img class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_0136118f33984c918a34c2664ca228ee~mv2.jpg" style="    width: 80%;border-radius: 20px; margin-top: 25em;" alt="Mockup 4">
             <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
             <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
 
@@ -719,20 +732,22 @@ makes on imacct</h1>
         </div>
       </div>
     </section>
-    
 
-    <section data-aos="fade-up" class="project-section">
+    
+    
+    <!--What Clients Say-->
+    <section data-aos="fade-up" class="project-section2" id="testimonials">
       <div class="container">
         <div class="row">
           <div class="col-6">
             <h4 id="about-tittle" style="font-size: 1.5em; text-align: start;">Testimonials:</h4>
             <div style="display: flex; align-items: center;">
-              <div style="position: relative; width: 50px; height: 50px;" class="py-5">
-              <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -12em; z-index: 1; border: 1px solid white;" alt="profile pic">
-              <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -9em; z-index: 2; border: 1px solid white;" alt="profile pic">
-              <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -6em; z-index: 3; border: 1px solid white;" alt="profile pic">
-              <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: -3em; z-index: 4; border: 1px solid white;" alt="profile pic">
-              <img src="https://www.shutterstock.com/image-vector/hispanic-girl-messy-bun-hairstyle-260nw-2337155901.jpg" style="border-radius: 50px; width: 3vw; position: absolute; right: 0em; z-index: 5; border: 1px solid white;" alt="profile pic">
+              <div style="position: relative; width: 50px; height: 50px;" class="py-5 rounded-box-images">
+                <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -12em; z-index: 1;" class="rounded-images" alt="profile pic">
+                <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611734.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -9em; z-index: 2;" class="rounded-images" alt="profile pic">
+                <img src="https://img.freepik.com/premium-psd/3d-render-avatar-character_23-2150611787.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -6em; z-index: 3;" class="rounded-images" alt="profile pic">
+                <img src="https://img.freepik.com/premium-psd/3d-render-avatar-character_23-2150611783.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -3em; z-index: 4;" class="rounded-images" alt="profile pic">
+                <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611722.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: 0em; z-index: 5;" class="rounded-images" alt="profile pic">
               </div>
             </div>
           </div>
@@ -745,142 +760,85 @@ makes on imacct</h1>
       </div>
     </section>
 
-    <!--Reviews -->
-
-    <section data-scroll-section data-aos="fade-up" id="reviews" " >
-
-
-
-      <div data-scroll class="project-section">
-        <div id="page4">
-          <div class="col-12 ">
+    
+    <!--Reviews-->
+    <section data-aos="fade-up" class="project-section">
+      <div class="container">
+        <div class="row">
+          <!-- First Column -->
+          <div class="col-md-3 mx-auto py-5" id="gray-background" >
+            <div class="row">
+              <!-- Content for the first row in the first column -->
+              <div class="col-12 py-5 ">
+                  <h4 id="about-tittle" style="text-align: start; font-size: 3em;"> Project success</h4>
+                  <p> Our team of dedicated experts is passionate
+                    about driving measurable results and
+                    ensuring our cients success</p>
+                </div>
+            </div>
+            <div class="row">
+              <!-- Content for the second row in the first column -->
+              <div class="col-12 py-5">
+                <h1 class="number-animation degradado" data-target-number="200" style="text-align: center;font-size: 10em;font-family: poppins; font-weight: 500;">100</h1>
+              </div>
+            </div>
           </div>
-          <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                  <!-- Tus slides van aquí -->
-                  <div class="swiper-slide">
-                    
-                    <div class="card-person mx-auto" >
- 
-                      <div class="card-inner-person" style="text-align: center;">
-                        <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen Rebeca has proven to be an excellent worker, committed and responsible. She has always expressed concern about improving, training and updating her knowledge. That's why i suggest this recomendation with confidence that will be up to te task."</h4>
-                        <p class="degradado" style="font-size: 1.6em;">Ignacio Calderón</p>
-                        <p style="font-size: 1em;">USA & México Human Resources Director at ZOEK Marketing</p>
-                        <img style="border-radius: 50%; width: 45%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_94b3479d32b64d348809cad7934b3868~mv2.png" alt="">
 
-                      </div>
-                    </div>
+          <!-- Second Column -->
+          <div class="col-md-3 mx-auto py-5" id="gray-background" >
+            <div class="row">
+              <!-- Content for the first row in the second column -->
+              <div class="col-12 py-5">
+                <h1 class="number-animation degradado py-5" data-target-number="72" style="text-align: center;font-size: 10em;font-family: poppins; font-weight: 500;">72</h1>
+                <p style="text-align: center;" id="about-tittle">Tools.</p>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Content for the second row in the second column -->
+              <div class="col-12 py-5">
+                <h1 id="about-tittle" style="font-size: 1.5em; text-align: start;">Creativity Unleashed.</h1>
+                <h1 class="col-12 text-end "><h1 style="text-align: start; font-size: 0.8em;" >
+                Our team chiclented assoners trives on
+                pushna the boundanes of crectivity
+                engunna that vour eraect stands out no.
+                makes on imacct</h1>
 
-                  </div>
-                  <div class="swiper-slide">
-                    
-                    <div class="card-person mx-auto">
-                      <div class="circle-person"></div>
-                      <div class="circle-person"></div>
-                      <div class="card-inner-person" style="text-align: center;">
-                        <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_94b3479d32b64d348809cad7934b3868~mv2.png" alt="">
-                        <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen Rebeca has proven to be an excellent worker, committed and responsible. She has always expressed concern about improving, training and updating her knowledge. That's why i suggest this recomendation with confidence that will be up to te task."</h4>
-                        <p class="degradado" style="font-size: 1.6em;">Ignacio Calderón</p>
-                        <p style="font-size: 1em;">USA & México Human Resources Director at ZOEK Marketing</p>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    
-                    <div class="card-person mx-auto">
-                      <div class="circle-person"></div>
-                      <div class="circle-person"></div>
-                      <div class="card-inner-person" style="text-align: center;">
-                        <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_0ae1889f4ded4481a281bd53c4ea6160~mv2.png" alt="">
-                        <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen has stood out for her excellent work, discipline and perseverance. She's always on board to learn new things. Versatile and organized. It really makes easier to work with her."</h4>
-                        <p class="degradado" style="font-size: 1.6em;">Dr. Honnor Da Silva</p>
-                        <p style="font-size: 1em;">TECO TV's Director</p>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="swiper-slide">
-                    
-                    <div class="card-person mx-auto">
-                      <div class="circle-person"></div>
-                      <div class="circle-person"></div>
-                      <div class="card-inner-person" style="text-align: center;">
-                        <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_cb9580bfb88f44ad89c3a481b9a787c0~mv2.png" alt="">
-                        <h4 style="font-family: Raleway; font-size: 1.2em;">"Karen Rebeca has demostrated notable commitment in the course, standing out for the development of high-quiality projects that reflect solid knowledge in the frontend field!"</h4>
-                        <p class="degradado" style="font-size: 1.6em;">Ana Villanueva</p>
-                        <p style="font-size: 1em;">Tecnolochicas Pro Dev Teacher</p>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    
-                    <div class="card-person mx-auto">
-                      <div class="circle-person"></div>
-                      <div class="circle-person"></div>
-                      <div class="card-inner-person" style="text-align: center;">
-                        <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_3b192bf49db44e89aab2c43e011f5c72~mv2.png" alt="">
-                        <h4 style="font-family: Raleway; font-size: 1.2em;">"Amazing web designer, very creative and compromised. Thanks!"</h4>
-                        <p class="degradado" style="font-size: 1.6em;">Aaron Knipp</p>
-                        <p style="font-size: 1em;">Cicospace CEO & Founder</p>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    
-                    <div class="card-person mx-auto">
-                      <div class="circle-person"></div>
-                      <div class="circle-person"></div>
-                      <div class="card-inner-person" style="text-align: center;">
-                        <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_1cae80af4ec9414a83bf192989ec848a~mv2.png" alt="">
-                        <h4 style="font-family: Raleway; font-size: 1.2em;">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
-                        <p class="degradado" style="font-size: 1.6em;">René Chavez</p>
-                        <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    
-                    <div class="card-person mx-auto">
-                      <div class="circle-person"></div>
-                      <div class="circle-person"></div>
-                      <div class="card-inner-person" style="text-align: center;">
-                        <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_1cae80af4ec9414a83bf192989ec848a~mv2.png" alt="">
-                        <h4 style="font-family: Raleway; font-size: 1.2em;">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
-                        <p class="degradado" style="font-size: 1.6em;">René Chavez</p>
-                        <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    
-                    <div class="card-person mx-auto">
-                      <div class="circle-person"></div>
-                      <div class="circle-person"></div>
-                      <div class="card-inner-person" style="text-align: center;">
-                        <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_1cae80af4ec9414a83bf192989ec848a~mv2.png" alt="">
-                        <h4 style="font-family: Raleway; font-size: 1.2em;">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
-                        <p class="degradado" style="font-size: 1.6em;">René Chavez</p>
-                        <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
-                      </div>
-                    </div>
-
-                  </div>
-¡              </div>
+                <div style="display: flex; align-items: center;">
+                <div style="position: relative; width: 50px; height: 50px;" class="py-5 rounded-box-images">
+                  <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -12em; z-index: 1;" class="rounded-images" alt="profile pic">
+                  <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611734.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -9em; z-index: 2;" class="rounded-images" alt="profile pic">
+                  <img src="https://img.freepik.com/premium-psd/3d-render-avatar-character_23-2150611787.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -6em; z-index: 3;" class="rounded-images" alt="profile pic">
+                  <img src="https://img.freepik.com/premium-psd/3d-render-avatar-character_23-2150611783.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -3em; z-index: 4;" class="rounded-images" alt="profile pic">
+                  <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611722.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: 0em; z-index: 5;" class="rounded-images" alt="profile pic">
+                </div>
+              </div>
+            </div>
+            </div>
           </div>
+          <!-- Third Column -->
+          <div class="col-md-3 mx-auto py-5" id="gray-background" >
+            <div class="row">
+              <!-- Content for the first row in the first column -->
+              <div class="col-12 py-5">
+                  <h4 id="about-tittle" style="text-align: start; font-size: 3em;"> Project success</h4>
+                  <p> Our team of dedicated experts is passionate
+                    about driving measurable results and
+                    ensuring our cients success</p>
+                </div>
+            </div>
+            <div class="row">
+              <!-- Content for the second row in the first column -->
+              <div class="col-12 py-5">
+                <h1 class="number-animation degradado" data-target-number="200" style="text-align: center;font-size: 10em;font-family: poppins; font-weight: 500;">100</h1>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-
-
- 
     </section>
+ 
 
-
+<!--Havea project in mind? -->
     <section data-scroll class="project-section">
       <div class="container">
         <div class="row">
@@ -980,32 +938,7 @@ Problem
 </div>
 
 
-  <section>
-    <div class="container-fluid py-5 " >
-      <div class="row justify-content-center ">
-        <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex py-">
-          <span class="skillTag">Photoshop & Illustrator &#x1F5A5;</span> 
-        </div>
-        <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
-          <span class="skillTag">Figma &#x270F;</span> 
-        </div>
-        <div class="col-sm-3 col-lg-1 text-center d-flex">
-          <span class="skillTag">UX/UI &#x1F3A8;</span>
 
-        </div>
-        <div class="col-sm-3 col-lg-1 text-center d-flex">
-          <span class="skillTag">Animate &#x1F9B4;</span> 
-        </div>
-        <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
-          <span class="skillTag">VS Code &#x1F4D0;</span>
-        </div>
-        <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
-          <span class="skillTag">HTML, CSS, JS, React, Magento &#x1F3D7;</span>
-        </div>
-  
-      </div>
-    </div>
-  </section>
   
   <section id="about" >
     <div data-aos="fade-up " class="row" >
@@ -1086,12 +1019,7 @@ Problem
   </main>
   
 
-<div data-aos="fade-up" class="col-xs d-flex justify-content-center align-items-center py-3 ">
-  <a href="http://www.uinclub.com.mx" class="button-io" target="_blank">Check UinClub</a>
-</div>
-<br>
-<br>
-</section>
+
 
                                               <div class="separador"></div> <!--purple hr--->
 
@@ -1318,7 +1246,7 @@ function closeModal() {
 </body>
 
 <!--Dark Mode-->
-<script src="/Scripts/darkmode2.js"></script>
+<script src="/Scripts/darkmode5.js"></script>
 
   
   

@@ -1,11 +1,4 @@
 
-#contact-banner{
-    padding: 0 15% 0 15%;
-    margin-top: 5vh;
-    height: 70vh;
-
-}
-
 
 #form-contact {
   background-color: rgba(222, 222, 222, 0.073); /* Transparencia */
@@ -77,9 +70,9 @@
     line-height: 2; /* Mejora la legibilidad */
     font-weight: 200;
     font-family: poppins;  
-    background-color: rgb(13, 13, 13);
-    color: white;
-    border: 1px solid #121212;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid #6b6b6b;
 }
 .input-container3 {
     position: relative;
@@ -144,4 +137,70 @@
     background-color:#0000004e;
     padding: 0 15% 0 15%;
     height: 70vh;
+}
+
+
+.button-portfolio {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 1.5vh; /* Ajusta el tamaño de fuente relativo al tamaño base del navegador */
+  font-family: inherit;
+  cursor: pointer;
+  color: #fff;
+  padding: 0.5em 1em; /* Espaciado interno para que el contenido determine el tamaño */
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.button-portfolio:hover {
+  animation: anim 8s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.button-portfolio:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #8403f4, #bb41f4, #9c55ff, #03a9f4);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+.button-portfolio:hover::before {
+  filter: blur(20px);
+}
+
+.button-portfolio:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+.form-control{
+  border-radius: 15px;
+  font-size: 1.2em;
+}
+label{
+  font-family: poppins;
+  font-weight: 400;
+  margin-bottom: 0.3em;
+  font-size: 0.4;
+}
+.form-glass-background{
+  background-color: rgba(255, 255, 255, 0.087);
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
 }

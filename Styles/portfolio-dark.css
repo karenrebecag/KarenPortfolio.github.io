@@ -48,7 +48,9 @@ body {
   
 
   
-
+h2{
+  color: white;
+}
 
 
   .button-portfolio {
@@ -542,3 +544,4 @@ top: 440%;
       to { transform: translate3d(-7rem,0,0) }
     }
   }
+

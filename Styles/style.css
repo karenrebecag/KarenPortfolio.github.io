@@ -25,17 +25,18 @@ header {
 
 .button-container-header {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.034) ;
-  width: 50em;
-  height: 5em;
+  background-color: rgba(255, 255, 255, 0.807) ;
+  width: 65em;
+  gap: 20px;
+  height: 10em;
+  padding: 0 5% 0 5%;
   z-index: 10;
   backdrop-filter: blur(20px);
-
-  padding: 1em;
+  font-size: 0.4em;
   align-items: center;
   justify-content: space-around;
   border-radius: 50px;
-  box-shadow: 5px 5px 50px 0ch rgba(0, 0, 0, 0.133);
+  box-shadow: 5px 5px 50px 0ch rgba(0, 0, 0, 0.006);
 
         
 }
@@ -304,7 +305,7 @@ b {
 }
 
 .hov:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   transition: transform 0.3s ease; /* Añade suavidad a la transformación */
   background-color: rgb(255, 255, 255);
   border-radius: 10px;

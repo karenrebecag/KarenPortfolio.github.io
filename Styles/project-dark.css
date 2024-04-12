@@ -5,7 +5,7 @@
     justify-content: center;
     padding: 20px;
     margin: 20px;
-    background-color: #f4f4f40d;
+    background-color: #ffffff00;
     backdrop-filter: blur(50px); /* Desenfoque */
     border-radius: 40px;
 
@@ -31,6 +31,7 @@
 
   .colPortfolio {
     padding: 0;
+    
   }
 
   /* Estilos personalizados para manejar el responsive */
@@ -42,11 +43,11 @@
     }
   }
 .project-section{
-    background-color: rgba(255, 255, 255, 0.708);
+    background-color: rgba(3, 3, 3, 0.31);
     padding: 30px
 }
 .project-section2{
-  background-color: rgba(255, 255, 255, 0.436);
+  background-color: rgba(21, 21, 21, 0.856);
   padding: 30px
 }
 .imagePortfolio {
@@ -84,23 +85,18 @@
   }
 
   #gray-background {
-    background-color: #f3f3f3;
+    background-color: #07070762;
     padding: 2%;
     border-radius: 20px;
+    
   }
-
-  #gray-background .row {
-    display: flex;
-    align-items: center; /* Asegura que los elementos hijos se alineen verticalmente en el centro */
-  }
-  
 .white-pill-button {
     padding: 13px 20px;
     border-radius: 20px;
     cursor: pointer;
     border: 0;
     text-align: start;
-    background-color: #ffffff; /* Corregido para consistencia */
+    background-color: #111111; /* Corregido para consistencia */
     box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -109,7 +105,7 @@
     text-decoration: none;
     font-weight: 400;
     font-family: 'Poppins', sans-serif; /* Asegurando la fuente */
-    color: black;
+    color: rgb(255, 255, 255);
     display: inline-flex; /* Para alinear el SVG y el texto */
     align-items: center; /* Centra el contenido verticalmente */
     justify-content: center; /* Centra el contenido horizontalmente */
@@ -123,16 +119,19 @@
 
 .white-pill-button:hover {
     letter-spacing: 2px;
-    background-color: hsla(0, 0%, 0%, 0.944);
+    background-color: hsla(301, 100%, 85%, 0.944);
     color: hsl(0, 0%, 100%);
-    box-shadow: rgba(127, 127, 127, 0.509) 0px 7px 29px 0px;
+    box-shadow: rgba(243, 243, 243, 0.027) 0px 7px 29px 0px;
 }
 
 .white-pill-button:hover svg {
     stroke: white;
     transform: rotate(-90deg); /* Rota suavemente hacia arriba */
 }
+.white-pill-button path {
+    stroke: white;
 
+}
 .white-pill-button:hover path {
     stroke: white;
 
@@ -151,8 +150,10 @@
     stroke: white;
     transform: rotate(0deg); /* Sin rotación para el estado activo */
 }
+
 .bg-color-project {
-  background-color: rgba(255, 255, 255, 0.504);
+    background-color: rgba(11, 11, 11, 0.323);
+    backdrop-filter: blur (20px);
 
 }
 .rounded-box-images{
@@ -165,7 +166,7 @@
   border-radius: 50px; 
   width: 3vw; 
   position: absolute; 
-  border: 1px solid white;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 @media (max-width: 768px) {
   #responsive-text {
@@ -174,19 +175,4 @@
   .rounded-images{
     width: 8vw; 
   }
-  .responsive-padding{
-    margin-bottom: 30em;
-  }
-  #gooey{
-    display: none;
-  }
-  #gooey2{
-    display: none;
-  }
-  #gooey3{
-    display: none;
-  }
-    #gooey4{
-      display: none;
-    }
-  }
+}
