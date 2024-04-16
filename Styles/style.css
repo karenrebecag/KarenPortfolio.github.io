@@ -1,6 +1,8 @@
 /* This style's sheet is connected to all the escential files for Karen Rebeca Ortiz's Portfolio.Es  It's indispensable for it's main purpose
 and correct functionality------*/
-
+#body{
+  background-color: white;
+}
 body {
   transition: background-color 0.5s ease;
 }
@@ -25,18 +27,14 @@ header {
 
 .button-container-header {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.807) ;
-  width: 65em;
+  background-color: rgb(255, 255, 255) ;
+  width: 90em;
   gap: 20px;
   height: 10em;
-  padding: 0 5% 0 5%;
   z-index: 10;
-  backdrop-filter: blur(20px);
   font-size: 0.4em;
   align-items: center;
   justify-content: space-around;
-  border-radius: 50px;
-  box-shadow: 5px 5px 50px 0ch rgba(0, 0, 0, 0.006);
 
         
 }
@@ -44,7 +42,7 @@ header {
 .button-header {
   outline: 0 !important;
   border: 0 !important;
-  width: 40px;
+  width: 70px;
   height: 40px;
   border-radius: 50%;
   background-color: transparent;
@@ -52,22 +50,23 @@ header {
   align-items: center;
   justify-content: center;
   opacity: 0.9;
-  color: #000000;
+  color: rgb(0, 0, 0);
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 }
 
 .button-header:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 .button-header span {
-  font-size: 1.5em;
-  margin: 0 50px; /* Ajusta este valor según necesites para aumentar el espacio */
-  font-family: 'Poppins', sans-serif; /* Asegúrate de que el nombre de la fuente esté correctamente escrito y la fuente esté importada o disponible */
-  font-weight: 400;
-  color: #000000;
-  display: inline-block; /* Esto asegura que el margin se aplique correctamente */
+  font-size: 1em;
+  margin: 0 50px;
+  font-family: 'poppins';
+  font-weight: normal; /* Modificado de 100 a normal para menos bold */
+  color: #00000051;
+  display: inline-block;
 }
+
 
 .icon-header {
   font-size: 20px;
@@ -77,6 +76,16 @@ h6{
   font-family: raleway;
   margin-top: 1em;
   font-style: inherit;
+}
+.nav-full{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 3em; /* Añade esta línea para el espaciado izquierdo */
+    margin-right: 3em; /* Añade esta línea para el espaciado derecho */
+    font-style: inherit;
+
 }
 .enterprises-img{
    border-radius: 10px;
@@ -158,7 +167,7 @@ transform: scale(1.05);
 .card_header_social {
   width: fit-content;
   height: fit-content;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(250, 250, 250);
   border-radius: 3em 3em 0 0;
   display: flex;
   align-items: center;
@@ -235,6 +244,7 @@ transform: scale(1.05);
     opacity: 1;
   }
 }
+
 
 
 .img_shadow{
@@ -633,7 +643,6 @@ header{
   background-color: rgb(255, 255, 255);
   font-size: 0.9em;
   font-family: 'Raleway', sans-serif;
-  justify-content: space-between;
 
 
 
@@ -1294,3 +1303,28 @@ footer {
 /* contact animation / img7 */
 }
 
+.general-left-padding{
+  padding-left: 5%;
+}
+@media (max-width: 1400px) {
+  .general-left-padding{
+    padding-left: 7%;
+  }
+}
+@media (max-width: 1281px) {
+  .general-left-padding{
+    padding-left: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .general-left-padding{
+    padding-left: 12%;
+  }
+}
+
+@media (max-width: 480px) {
+  .general-left-padding{
+    padding-left: 15%;
+  }
+}

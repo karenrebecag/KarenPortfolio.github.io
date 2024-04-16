@@ -22,13 +22,15 @@
     <!--Swiper JS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
-
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   
 <!-- CSS Links ---------------------------------------------------------------------------------------------------------------->
     <link href="/Styles/style.css" rel="stylesheet">
     <link href="/Styles/responsive.css" rel="stylesheet">
     <link href=/Styles/mainpage.css" rel="stylesheet">
   <link href="/Styles/toggle.css" rel="stylesheet">
+  <link href="/Styles/navbar.css" rel="stylesheet">
 
   <link rel="stylesheet"  href="/Styles/extra.css">
 
@@ -267,7 +269,7 @@ p {
 
 <!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)-->
 
-<body>
+<body >
 
   <div class="main-area">
     <div class="main-area-content">
@@ -296,9 +298,6 @@ p {
 
   
   <header id="miHeader" >
-
-
-  
     <nav class="navbar navbar-expand-md " >
     <!--Navbar Toggler-->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -324,25 +323,25 @@ p {
           <div  class="button-container-header">
             <a style="text-decoration: none;" href="/Pages/indexmain.html">
             <button class="button-header">
-              <h6>Home</h6>
+              <h6 class="nav-full">Home</h6>
             </button>
             </a>
   
             <a style="text-decoration: none;" href="/Pages/indexme.html">
             <button class="button-header">
-              <h6>About</h6>
+              <h6 class="nav-full">About</h6>
             </button>
             </a>
           
             <a style="text-decoration: none;" href="/Pages/indexcontact.html">
             <button class="button-header">
-              <h6>Contact</h6>
+              <h6 class="nav-full">Contact</h6>
             </button>
             </a>
   
             <a style="text-decoration: none;" href="/Pages/indexp.html">
               <button class="button-header">
-                <h6>Portfolio</h6>
+                <h6 class="nav-full">Portfolio</h6>
               </button>
               </a>
           </div>
@@ -354,7 +353,6 @@ p {
         
         
   
-        <div id="gooey-nav-logo"></div>
   
   
         
@@ -413,18 +411,21 @@ p {
               </label>
   
   
-              </div>
+            </div>
           </div>
       
         </div>
       </div>
       
   
-  
         
     </div>
   
     </nav>
+
+  
+
+    
   </header>
 
 <!--Video de Fondo general-->
@@ -1437,6 +1438,16 @@ var mySwiper = new Swiper('.mySwiper', {
 <!--Cursor-->
 <script src="/Scripts/cursor.js"></script>    
 
+
+
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+      integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+      crossorigin="anonymous"
+    ></script>
+<!--Navbar-->
+<script src="/Scripts/navbar.js"></script>
 
 <div class="custom-cursor" id="customCursor" style="color: white;"> < > </div>
 

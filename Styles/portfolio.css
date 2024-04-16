@@ -197,14 +197,17 @@ header {
   height: 150px;
   width: 100%;
   position: relative;
-padding: 0 20px 0 20px;
+  padding: 0 20px;
   border-bottom: 1px solid #38383864;
   overflow: hidden;
   display: flex;
-    margin: 1rem auto; /* Ajusta según sea necesario */
-
+  margin: 1rem auto; /* Ajusta según sea necesario */
   align-items: center;
+  transition: all 0.3s ease; /* Transición suave para todos los cambios */
+}
 
+.elem:hover{
+  padding: 1%;
 }
 
 
@@ -285,6 +288,11 @@ padding: 0 20px 0 20px;
   top: 0;
 }
 
+@media (max-width: 768px) {
+  .light-text{
+    display: none;
+  }
+}
 
 
 #fixed-image {

@@ -1,3 +1,38 @@
+<?php
+$servername = "localhost";
+$username = "";
+$password = "";
+$dbname = "mydatabase";
+
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Recibir datos del formulario
+$firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
+$email = $_POST['email'];
+$country = $_POST['country'];
+$phoneNumber = $_POST['phoneNumber'];
+$message = $_POST['message'];
+
+// Insertar datos en la base de datos
+$sql = "INSERT INTO contacts (firstName, lastName, email, country, phoneNumber, message)
+VALUES ('$firstName', '$lastName', '$email', '$country', '$phoneNumber', '$message')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -378,8 +413,8 @@ p {
                           </div>
                       </div>
                       
-                      <form >
-                        <!-- Name -->
+                      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+                      <!-- Name -->
                     <div class="row mb-3">
                         <div class="col">
                           <label>Name:</label>
@@ -649,7 +684,7 @@ p {
                       
                     </div>
 
-                      </form>
+                  </form>
                             <!-- Terms text row -->
                     <div class="row">
                       <div class="col-12 text-center">
@@ -827,29 +862,6 @@ p {
     
 </footer>
   
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDW4c0FgxqmP7rrf-YvGpn2HZ2H_5EjQks",
-    authDomain: "portfolio-9b6f6.firebaseapp.com",
-    projectId: "portfolio-9b6f6",
-    storageBucket: "portfolio-9b6f6.appspot.com",
-    messagingSenderId: "378269172681",
-    appId: "1:378269172681:web:eea425836c910dd5885e18",
-    measurementId: "G-RYVTQ0QBWJ"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
 
 <!--Additional Links (WA, Script)---------------------------------------------------------------------------------------------------------------->
   <div>
