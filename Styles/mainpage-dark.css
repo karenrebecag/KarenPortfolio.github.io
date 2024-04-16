@@ -1351,3 +1351,17 @@ filter: invert(100%);
 }
 
 
+.alert {
+  text-align: center;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px; 
+  opacity: 0;   
+  transition: opacity 0.5s ease-in-out; 
+  position: fixed; 
+  top: 19em;      
+  left: 50%;       
+  transform: translateX(-50%);
+  z-index: 1000;  
+}
