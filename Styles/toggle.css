@@ -41,7 +41,7 @@
     left: var(--slider-offset,0.3em);
     top: 50%;
     transform: translateY(-50%);
-    background: linear-gradient(40deg,hsl(290, 40%, 94%),hsl(292, 100%, 77%) 70%);
+    background: linear-gradient(40deg,hsl(45, 40%, 94%),hsl(39, 100%, 52%) 70%);
     ;
    transition: .4s;
   }

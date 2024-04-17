@@ -19,11 +19,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <!-- Bootstrap Icons ---------------------------------------------------------------------------------------------------------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-<!-- CSS Links ---------------------------------------------------------------------------------------------------------------->
+
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+      <!-- CSS Links ---------------------------------------------------------------------------------------------------------------->
     <link href="/Styles/style.css" rel="stylesheet">
     <link href="/Styles/indexhow.css" rel="stylesheet">
     <link href="/Styles/toggle.css" rel="stylesheet">
     <link href="/Styles/mainpage-dark.css" rel="stylesheet">
+    <link href="/Styles/portfolio.css" rel="stylesheet">
+
+
 
 
 <!-- Enlace a la hoja de estilo predeterminada (modo claro) -->
@@ -182,11 +188,11 @@ p {
 <!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)----->
 
 <!--NavBar-->
-<header id="miHeader" data-scroll-section>
+<header id="miHeader" >
 
 
   
-  <nav class="navbar navbar-expand-md navbar-light" >
+  <nav class="navbar navbar-expand-md " >
   <!--Navbar Toggler-->
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -211,44 +217,38 @@ p {
         <div  class="button-container-header">
           <a style="text-decoration: none;" href="/Pages/indexmain.html">
           <button class="button-header">
-            <h6>Home</h6>
+            <h6 class="nav-full">Home</h6>
           </button>
           </a>
 
           <a style="text-decoration: none;" href="/Pages/indexme.html">
           <button class="button-header">
-            <h6>About</h6>
+            <h6 class="nav-full">About</h6>
           </button>
           </a>
         
-          <a style="text-decoration: none;" href="/Pages/indexhow.html#contact">
+          <a style="text-decoration: none;" href="/Pages/indexcontact.html">
           <button class="button-header">
-            <h6>Contact</h6>
+            <h6 class="nav-full">Contact</h6>
           </button>
           </a>
 
-          <button class="button-header">
-                <h6>Portfolio</h6>
-
-        <li style="text-decoration: none;"  class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="indexp.html" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-
-              <ul  class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-                <li ><a class="dropdown-item " href="/Pages/indexp.html">ZOEK & Webcrafters</a></li>
-                <li><a class="dropdown-item " href="/Pages/indexuin.html">UINCLUB</a></li>
-                <li><a class="dropdown-item " href="/Pages/indexcico.html">CicoSpace</a></li>
-                <li><a class="dropdown-item " href="/Pages/indexmu.html">Science Museum</a></li>
-                <li><a class="dropdown-item " href="/Pages/indexhy.html">Hypatia Magazine</a></li>
-              </ul>
-        </li>
-
-          </button>
+          <a style="text-decoration: none;" href="/Pages/indexp.html">
+            <button class="button-header">
+              <h6 class="nav-full">Portfolio</h6>
+            </button>
+            </a>
         </div>
         
 
 
       </div>
       
+      
+      
+
+
+
       
     
  
@@ -298,6 +298,9 @@ p {
                     <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
                 </svg>
             </a>
+            <i class="ph ph-paint-roller" style="font-size: 2em;"></i>
+            <i class="ph ph-caret-right" style="font-size: 1.5em;"></i>
+
 
             <label class="switch">
               <input type="checkbox" id="theme-switch">
@@ -305,13 +308,12 @@ p {
             </label>
 
 
-            </div>
+          </div>
         </div>
     
       </div>
     </div>
     
-
 
       
   </div>
@@ -342,112 +344,62 @@ p {
 
 
 <!-- How Did i Build this WebPage?-->
-<section id="about" style="margin-top: 15em;" >
-  <div data-aos="fade-up " class="row py-5" >
-    <div class="col-12 d-flex justify-content-center">
-      <h1 class="degradado">How did i build this webpage?</h1>
+<div class="container section-centered general_padding " style="margin-top: 12em;" >
+  <div class="row ">
+    <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 d-flex justify-content-start">
+      <h1 class="degradado-bold" style="font-size: 8em;">HOW DID I MADE THIS WEBPAGE?</h1>
     </div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center text-center">
-          <p>
-            This webpage tooked me some time around 100 hours of work. I loved how it looks.  <b>  I invite you to check this webpage's files and hope yoy find it interesting. </b> 
-          </p>
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex flex-column"> <!-- Modificado para usar flex-column -->
+      <h1  style="font-size: 1.5em;">
+            
+            
+        This webpage tooked me some time around 100 hours of work. I loved how it looks.  <b>  I invite you to check this webpage's files and hope you find it interesting. </b> 
+      <div class="row order-2"> <!-- Cambio en el orden -->
+
+      </div>
+
+      <div class="row order-1"> <!-- Cambio en el orden -->
+        <div class="col-12 d-flex justify-content-center">
+
+          
+         
         </div>
       </div>
+
     </div>
+
   </div>
-</section>
+
+  <div class="row py-5">
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center">
+        <span class="skillTag" style="margin: 15px;">Available for working</span>
+        <span class="skillTag"style="margin: 15px;">Book a Call</span>
+        <span class="skillTag" style="margin: 15px;">Book a Call</span>
+    </div>
+</div>
+
+      
+  </div>
+</div>
+
 <div id="gooey2"></div>
 <div id="gooey3"></div>
   
-<!-- Buttons-->
 
-      <section>
-
-        <div class="container py-5">
-          <div class="row">
-            <!-- Columna 1 -->
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-              <a href="https://github.com/karenrebecag/UXportfolio.github.io" target="_blank">
-
-                <button id="button1">
-                  <svg width="60" height="60" viewBox="0 0 20 20">
-                    <image href="https://static.wixstatic.com/shapes/bc0394_2de15fe6abdb483d9a173b06a4d33eb9.svg" width="20" height="20" />
-                  </svg>  
-                  <span>Code</span>
-                </button>
-              </a>
-            </div>
-          <!-- Columna 2 -->
-          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-            <a href="https://www.figma.com/file/EawiN7wreZUW0XQnopxnef/Untitled?type=design&node-id=17%3A85&mode=design&t=ew0x0mVRQZMh9yMb-1" target="_blank">
-              <button id="button2">
-                <svg width="60" height="60" viewBox="0 0 20 20">
-                  <image href="https://static.wixstatic.com/shapes/bc0394_47ec0dfd0e8e40be9e17f5ee25cc27b2.svg" width="20" height="20" />
-                </svg>  
-                <span>Prototype</span>
-              </button>
-            </a>
-          </div>
-          <!-- Columna 3 -->
-          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-            <a href="https://drive.google.com/drive/folders/1SaB0WteS2SNTQDYFJu3gWXmmXZyf6YaZ?usp=sharing" target="_blank" >
-              <button id="button3">
-                <svg width="80" height="80" viewBox="0 0 20 20">
-                  <image href="https://static.wixstatic.com/shapes/bc0394_12c0e1ce0e3c493bb05639e755a07bf4.svg" width="20" height="20" />
-                </svg>  
-                <span>Design</span>
-              </button>
-            </a>      
-          </div>
-        </div>
-      </div>
-    
-    </section>
 
 
 <!-- SkillTags-->
-<section>
-  <div class="container-fluid py-5 " style="margin-top: 3em;">
-    <div class="row justify-content-center ">
-      <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
-        <span class="skillTag">Project Managment &#x1F469;</span> <!-- 👩🏻‍💼 -->
-      </div>
-      <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
-        <span class="skillTag">HTML, CSS, Tailwind, Bootstrap, Vanilla JS  &#x1F3A8;</span> <!-- 🎨 -->
-      </div>
-      <div class="col-sm-3 col-lg-1 text-center d-flex">
-        <span class="skillTag">Figma &#x270F;</span> <!-- ✏️ -->
-      </div>
-      <div class="col-sm-3 col-lg-1 text-center d-flex">
-        <span class="skillTag">Photoshop & Illustrator &#x1F5A5;</span> <!-- 🖥️ -->
-      </div>
-      <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
-        <span class="skillTag">Jitter & After Effects &#x1F9B4;</span> <!-- 🦴-->
-      </div>
-
-      <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
-        <span class="skillTag">VS Code &#x1F4D0;</span> <!-- 📐 -->
-      </div>
-
-
-      <div class="col-sm-3 col-lg-1 mx-1 text-center d-flex">
-        <span class="skillTag">Owl Caroussel, AOS Animaitons &#x1F3D7;</span> <!-- 🏗️ -->
-      </div>
 
 
 
-
-
-<section id="how">
+<section id="how" class="general_padding">
   <div data-aos="fade-up" class="container-fluid py-5 mx-5">
     <div class="row">
 
 
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 mx-5">
-        <h1 class="degradado mx-5">About Style</h1>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
+        <h1 class="degradado-bold mx-5">About Style</h1>
         <p class="mx-5"><b>My favorite part about styling is the CSS one.</b>
         First, I started choosing a color palette. I imagined one based on violet color, because I love that color and it would look amazing and elegant with just variations and white.
         <b>All my images are made by AI for the backgrounds, used Dall-E and Photoshop to add my designs and make it look more elegant and sophisticated.</b>
@@ -457,175 +409,19 @@ p {
         </p>
       </div>
       
-                <div class="col-xl-4"></div>
 
-            <div class="col-sm-6 col-md-6 col-lg-1 col-xl-2 py-5 d-flex mx-auto" >
-              <div  class="col-lg-2 d-flex justify-content-end">
-                <div class="about-me-image">
-                    <div class="card">
-                      <div class="paleta">
-                        <div class="circle">
-                          <div class="component">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="22"
-                              height="22"
-                              fill="currentColor"
-                              class="bi bi-palette"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
-                              ></path>
-                              <path
-                                d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"
-                              ></path>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="cores cor1">
-                          <div class="div1"><span class="func"></span></div>
-                          <div class="div2">
-                            <div class="component">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="22"
-                                height="22"
-                                fill="currentColor"
-                                class="bi bi-palette"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
-                                ></path>
-                                <path
-                                  d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"
-                                ></path>
-                              </svg>
-                            </div>
-                          </div>
-                          <div class="nome">CEA9D9</div>
-                        </div>
-                        <div class="cores cor2">
-                          <div class="div3"></div>
-                          <div class="div4">
-                            <div class="component">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="22"
-                                height="22"
-                                fill="currentColor"
-                                class="bi bi-palette"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
-                                ></path>
-                                <path
-                                  d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"
-                                ></path>
-                              </svg>
-                            </div>
-                          </div>
-                          <div class="nome">D789D9</div>
-                        </div>
-                        <div class="cores cor3">
-                          <div class="div5"></div>
-                          <div class="div6">
-                            <div class="component">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="22"
-                                height="22"
-                                fill="currentColor"
-                                class="bi bi-palette"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
-                                ></path>
-                                <path
-                                  d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"
-                                ></path>
-                              </svg>
-                            </div>
-                          </div>
-                          <div class="nome">A836D9</div>
-                        </div>
-                        <div class="cores cor4">
-                          <div class="div7"></div>
-                          <div class="div8">
-                            <div class="component">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="22"
-                                height="22"
-                                fill="currentColor"
-                                class="bi bi-palette"
-                                viewBox="0 0 16 16"
-                              >
-                                <path
-                                  d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
-                                ></path>
-                                <path
-                                  d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"
-                                ></path>
-                              </svg>
-                            </div>
-                          </div>
-                          <div class="nome">8F0BA0</div>
-                        </div>
-                      </div>
-                    </div>
-        
-  
-        
-                </div>
-        
-              </div>
-            
-            </div>
-          </div>
-        </div>
+    </div>
 
 </section>
 
-<section id="terminal">
-  <div data-aos="fade-up" class="container-fluid py-5">
+<section id="terminal" class="general_padding">
+  <div data-aos="fade-up" class="container py-5 mx-5">
     <div class="row">
-      <div class="col-sm-10 col-md-2 col-lg-2 col-xl-4 py-5 d-flex justify-content-end" >
-              <div class="container2">
-                <div class="terminal_toolbar">
-                  <div class="butt2">
-                    <button class="btn2 btn2-color"></button>
-                    <button class="btn2"></button>
-                    <button class="btn2"></button>
-                  </div>
-                  <p class="user">Karen_Ortiz@admin: ~</p>
-                  <div class="add_tab">+</div>
-                </div>
-                <div class="terminal_body">
-                  <div class="terminal_prompt">
-                    <span class="terminal_user">Karen_Ortiz@admin:</span>
-                    <span class="terminal_location">~</span>
-                    <span class="terminal_bling">$</span>
-                    <span class="terminal_cursor"></span>
-                  </div>
-                  <div class="terminal_output">
-                    <pre class="output_text">Hey! Thanks for Visiting my WebPage! :)</pre>
-                  </div>
-                  <div class="terminal_input">
-                    <input placeholder="It's Just CSS..." class="input_text" type="text" />
-                  </div>
-                </div>
-              </div>
-      
-            </div>
 
-            <div class="col-md-10 col-lg-10 col-xl-6">
+            <div class="col-md-12 col-lg-12 col-xl-12">
 
-              <h1 class="degradado" ">Nerdy Stuff</h1>
-              <p>
+              <h1 class="degradado-bold mx-5" ">Nerdy Stuff</h1>
+              <p class="mx-5">
                 <b>As i said before, this was just a small project at the beggining, so started using a lot of GIF files for the animations, because i didn't planned to use a lot of javascript, but when the webpage became bigger it started to become slower because of the GIFs, so i had to replicate a lot of the animations with JS.</b>
       
                 There's a library that saved my life for this project, i didn't know about it but GPT4 recommended it to me. It's called "Animations on Screen (AOS), it's an Angular based library wich allowed me to animate my fade in and fade out scroll animations just by importing the library and adding every id to my project."
@@ -640,8 +436,8 @@ p {
                 All my files are storaged on WIX hahah, why? because WIX UI is nice and cheap, also while i was working on ZOEK i learned to use it very well, so every < scr > is connected to wix. But please, this is not a Wix built page, i made it all by my own. You can check all my code for free on my GitHub! please check it out :)</b>
               </p>
             </div>
-          </div>
-        </div>
+     </div>
+  </div>
 
 </section>
 

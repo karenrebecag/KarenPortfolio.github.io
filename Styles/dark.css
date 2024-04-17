@@ -493,3 +493,17 @@ b {
 
 
 
+@media (max-width: 768px) {
+  #blueDiv{
+    display: none;
+  }
+  .circle-person{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .general-left-padding{
+    padding-left: 15%;
+  }
+}

@@ -27,22 +27,25 @@ header {
 
 .button-container-header {
   display: flex;
-  background-color: rgb(255, 255, 255) ;
+  background-color: rgba(255, 255, 255, 0) ;
   width: 90em;
   gap: 20px;
   height: 10em;
+  padding: 0 5% 0 5%;
   z-index: 10;
+  backdrop-filter: blur(20px);
   font-size: 0.4em;
   align-items: center;
   justify-content: space-around;
+  border-radius: 50px;
+  box-shadow: 5px 5px 50px 0ch rgba(0, 0, 0, 0.006);
 
         
 }
-
 .button-header {
   outline: 0 !important;
   border: 0 !important;
-  width: 70px;
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: transparent;
@@ -50,41 +53,35 @@ header {
   align-items: center;
   justify-content: center;
   opacity: 0.9;
-  color: rgb(0, 0, 0);
+  color: #000000;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 }
 
 .button-header:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 .button-header span {
-  font-size: 1em;
-  margin: 0 50px;
-  font-family: 'poppins';
-  font-weight: normal; /* Modificado de 100 a normal para menos bold */
-  color: #00000051;
-  display: inline-block;
+  font-size: 1.5em;
+  margin: 0 50px; /* Ajusta este valor según necesites para aumentar el espacio */
+  font-family: 'Poppins', sans-serif; /* Asegúrate de que el nombre de la fuente esté correctamente escrito y la fuente esté importada o disponible */
+  font-weight: 400;
+  color: #000000;
+  display: inline-block; /* Esto asegura que el margin se aplique correctamente */
 }
-
-
-.icon-header {
-  font-size: 20px;
-}
-/* Enterprises  */
 h6{
   font-family: raleway;
   margin-top: 1em;
   font-style: inherit;
 }
 .nav-full{
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.5em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 3em; /* Añade esta línea para el espaciado izquierdo */
-    margin-right: 3em; /* Añade esta línea para el espaciado derecho */
-    font-style: inherit;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 3em; /* Añade esta línea para el espaciado izquierdo */
+  margin-right: 3em; /* Añade esta línea para el espaciado derecho */
+  font-style: inherit;
 
 }
 .enterprises-img{
@@ -145,20 +142,6 @@ transform: scale(1.05);
 }
 
 
-/* Header pic */
-
-.mini_pic{
-  border-radius: 50%;
-  background-color: rgb(20, 20, 20);
-  border: none;
-  font-weight: 600;
-  display: flex;
-  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
-  cursor: pointer;
-  transition-duration: 0.3s;
-  overflow: hidden;
-  position: relative;
-}
 
 .uppercase-text {
   text-transform: uppercase;
@@ -326,35 +309,6 @@ b {
 
 .general_padding{
   padding: 0 30em 0 30em;
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-/* Estilos para el menú colapsable */
-.navbar-nav .dropdown-menu {
-  border-radius: 0.5rem; /* Bordes redondeados para el menú */
-}
-
-/* Cambia el fondo y color del texto de los elementos del menú al hacer hover */
-.navbar-nav .dropdown-menu .dropdown-item:hover,
-.navbar-nav .dropdown-menu .dropdown-item:focus {
-  background-color: rgba(249, 177, 245, 0.245); /* Fondo rosa */
-  color: hsl(0, 0%, 47%); /* Letras grises */
-  font-size: 1.08em; /* Texto ligeramente más grande */
-}
-
-/* Cambios en la animación del dropdown para que aparezca más rápido */
-.dropdown-menu {
-  transition: visibility 0.1s linear, opacity 0.1s linear; /* Aparición más rápida */
-}
-
-/* Para mostrar el menú colapsable al pasar el mouse */
-.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-  display: block; /* Muestra el menú */
-  opacity: 1;
-  visibility: visible;
 }
 
 
@@ -641,7 +595,9 @@ header{
 }
 .navbar {
   background-color: rgb(255, 255, 255);
-  font-size: 0.9em;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: 300;
   font-family: 'Raleway', sans-serif;
 
 
@@ -666,6 +622,7 @@ header{
 .dropdown-toggle{
   background-color: rgba(0, 0, 0, 0);
   color: white;
+  stroke: white;
   border-radius: 12px 12px 0 0;
   transition: all 0.3s ease; /* Transición suave para efectos de hover */
 
@@ -1318,9 +1275,16 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .general-left-padding{
-    padding-left: 12%;
+  #blueDiv{
+    display: none;
   }
+  .circle-person{
+    display: none;
+  }
+  #bubbles{
+    display: none;
+  }
+  
 }
 
 @media (max-width: 480px) {

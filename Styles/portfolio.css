@@ -386,7 +386,7 @@ header {
 
 
 #bottom-section{
-  background-color: #ffffff;
+  background-color: #EBEBEB;
 }
 .lets-discuss {
   font-size: 6vw; /* Responsive font size based on the width of the screen */
@@ -401,7 +401,8 @@ header {
 
 .bottom-container {
 background-color: #1c1c1c;  width: 95%; /* Set the width to 90% of the parent element */
-  height: auto; /* Make height automatic to contain its children */
+  
+height: auto; /* Make height automatic to contain its children */
   margin: 0 auto; /* Center the container */
   border-radius: 0 0 150px 150px; /* Round the bottom corners */
   padding: 2em; /* Add some responsive padding */

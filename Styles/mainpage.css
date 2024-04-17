@@ -348,6 +348,19 @@ z-index: -1000;
   background-clip: text; /* Para navegadores estándar */
   color: transparent; /* Oculta el color del texto */
 }
+.degradado-bold {
+  font-size: 4.5em; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-weight: 500;
+  line-height: 0.8; /* Mejora la legibilidad */
+  font-family: poppins;
+  background-image: linear-gradient(to right,#3460BA, #B18EC2, #7E8CD6, #7F6BCF,#B774E0);
+  -webkit-background-clip: text; /* Para navegadores WebKit (Chrome, Safari, etc.) */
+  background-clip: text; /* Para navegadores estándar */
+  color: transparent; /* Oculta el color del texto */
+}
+
+
+
 
 .data-logo{
   fill:none;
@@ -370,11 +383,11 @@ z-index: -1000;
 
 
 .cardProjects {
-    width: 300px;
-    background: rgb(255, 255, 255);
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.809);
     color: black;
     box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.103);
-
     position: relative;
     border-radius:1em;
     padding: 2em;
@@ -424,13 +437,15 @@ z-index: -1000;
   }
   
   .cardProjects .card-imageProjects svg {
-    width: 4em;
-    height: 4em;
+    width: 2em;
+    height: 2em;
+    opacity: calc(90%);
     transition: transform 0.4s ease;
   }
   
   .cardProjects:hover {
     cursor: pointer;
+    padding: 1%;
     transform: scale(0.97);
     background-color: hsla(0, 0%, 0%, 0.918);
   }   
@@ -441,8 +456,9 @@ z-index: -1000;
   
   .cardProjects:hover  svg {
     transform: scale(1.10);
-    fill: white;
-    stroke: rgb(255, 255, 255);
+    transform: rotate(+90deg);
+    fill: rgb(0, 0, 0);
+    stroke: rgb(0, 0, 0);
   }
   .cardProjects:hover  path {
     fill: white;
@@ -514,7 +530,7 @@ color: white;
 
 .name {
   font-size: 17px;
-  font-weight: 100;
+  font-weight: 300;
   font-family: 'Poppins', sans-serif;
   position: relative;
   top: 1em;
@@ -542,8 +558,8 @@ color: white;
     max-height: 260px;
   }
 
-  .infotop, .name {
-    font-size: calc(3vw + 10px); /* Aumenta el tamaño de fuente para mayor legibilidad */
+  .infotop {
+   font-size: 1.2em;
   }
 }
 
@@ -597,37 +613,6 @@ color: white;
     transform: scale(1.02);
   }
   
-  .circle-person {
-    width: 100px;
-    height: 100px;
-    background: repeating-linear-gradient(48deg, #3123ae43 0%, #b774e034 100%);
-    border-radius: 35% 30% 75% 30% / 49% 30% 70% 51%;
-    position: absolute;
-    animation: move-up6 2s ease-in infinite alternate-reverse;
-  }
-  
-  .circle-person:nth-child(1) {
-    top: -25px;
-    left: -25px;
-  }
-  
-  .circle-person:nth-child(2) {
-    bottom: -25px;
-    right: -25px;
-    animation-name: move-down1;
-  }
-  
-  @keyframes move-up6 {
-    to {
-      transform: translateY(-20px);
-    }
-  }
-  
-  @keyframes move-down1 {
-    to {
-      transform: translateY(20px);
-    }
-  }
   
 
 /*   Bubbles */
@@ -1126,6 +1111,10 @@ color: white;
   .bubble, #glow-input, #how_button, #cube-loader, .card_header_social {
     display: none;
   }
+  #gooey-footer-home, #gooey, #gooey2, #gooey3, #gooey4, #gooey5, #gooey-footer-home, #gooey-nav-logo, #gooey-nav {
+    display: none;
+  }
+  
 }
 
 /* About Tittle */
@@ -1197,7 +1186,7 @@ color: white;
 
 
 #moving-div2{
-  background-color: #eaeaea;
+  background-color: #000000;
 }
 
 #moving-text2 {
@@ -1372,6 +1361,7 @@ margin-bottom: 5%;  }
   .about-tittle-card2 {
     font-size: 1em;
   }
+  
   .about-tittle-number-tiny{
     font-size: 1.5em;
   }
@@ -1380,6 +1370,7 @@ margin-bottom: 5%;  }
     left: 5vw;
     width: 2.5vw;
   }
+
 }
 
 .about-tittle-number-tiny{
@@ -1585,10 +1576,10 @@ animation-duration: 11s;
 
 #main-pic-banner {
   transition: opacity 0.5s ease;
-  filter:grayscale(100%);
-  width:40em;  
+  filter:grayscale(0%);
+  width:30em;  
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
-  border-radius: 100%;
+ 
 }
 
 /* Add this style in your CSS file or within a <style> tag in the head of your HTML */
