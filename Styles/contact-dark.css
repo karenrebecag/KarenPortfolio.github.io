@@ -245,7 +245,7 @@ label{
   font-size: 0.4;
 }
 .form-glass-background{
-  background-color: rgba(255, 255, 255, 0.087);
+  background-color: rgba(255, 255, 255, 0.015);
   border-radius: 20px;
   backdrop-filter: blur(50px);
 }

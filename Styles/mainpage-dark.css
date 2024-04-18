@@ -1362,3 +1362,55 @@ filter: invert(100%);
   z-index: 1000;  
 }
 
+
+.containerIndicator {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.buttonIndicator {
+  background: none;
+  border: none;
+  text-align: end;
+  border-radius: 8px;
+  padding: .5em 1.5em;
+  font-size: 1.2em;
+  align-items: center;
+  font-family: poppins;
+  font-weight: 300;
+  color: #e4a6fb;
+}
+
+.arrowIndicator {
+  fill: #dbc2f1;
+  position: absolute;
+  align-items: center;
+  pointer-events: none;
+  width: 15px;
+  transform: translateY(-10%); /* Centra los SVG verticalmente */
+  right: 0;
+  top: 25%;
+  opacity: 0; /* Estado inicial invisible */
+  animation: moveArrow 1.5s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+}
+
+.secondIndicator {
+  animation-delay: 50ms; /* Retrasos para dar efecto escalonado */
+}
+
+.thirdIndicator {
+  animation-delay: 100ms;
+}
+
+@keyframes moveArrow {
+  0%, 100% {
+    opacity: 0;
+    right: 0px;
+  }
+  50% {
+    opacity: 1;
+    right: -10px;
+  }
+}
+
