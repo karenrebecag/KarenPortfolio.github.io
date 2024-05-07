@@ -152,6 +152,8 @@ p {
 <!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)----->
 <!--Body---------------------------------------------------------------------------------------------------------------->
 <body>
+  <div class="grain"></div>
+
 
 <!--NavBar-->
 <header id="miHeader" >
@@ -561,6 +563,42 @@ p {
 
 </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+      // Función que maneja la expansión o colapso del menú basado en el tamaño del viewport
+      function toggleNavbarOnHover() {
+          // Solo ejecuta la lógica si el viewport es menor de 767px
+          if ($(window).width() < 767) {
+              // Expande el menú cuando el mouse entra al header
+              $('#miHeader').mouseenter(function() {
+                  if (!$('#navbar-toggler').hasClass('show')) {
+                      $('.navbar-toggler').click(); // Simula un click para expandir el menú
+                  }
+              });
+  
+              // Colapsa el menú cuando el mouse sale del header
+              $('#miHeader').mouseleave(function() {
+                  if ($('#navbar-toggler').hasClass('show')) {
+                      $('.navbar-toggler').click(); // Simula un click para colapsar el menú
+                  }
+              });
+          } else {
+              // Remueve los eventos si el viewport es mayor de 767px
+              $('#miHeader').off('mouseenter mouseleave');
+          }
+      }
+  
+      // Llama a la función al cargar la página
+      toggleNavbarOnHover();
+  
+      // Asegúrate de llamar a la función en eventos de redimensionamiento de la ventana también
+      $(window).resize(function() {
+          toggleNavbarOnHover();
+      });
+  });
+  </script>
+  
 
 </body>
 </html>

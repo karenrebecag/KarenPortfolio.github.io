@@ -401,43 +401,37 @@ p {
                       
                       <form id="contactform">
                         <div class="alert">Thanks for your Message!</div>
-                        <!-- Name -->
-                    <div class="row mb-3">
-                        <div class="col">
-                          <label>Name:</label>
-                          <input type="text" class="form-control" placeholder="Enter name here" requiered id="firstName" name="firstName">
-                        </div>
-                        <div class="col">
-                          <label>Last Name:</label>
-                          <input type="text" class="form-control" placeholder="Enter last name here" id="lastName" name="lastName">
-                        </div>
-                    </div>
-                    <!-- Email field row -->
-                    <div class="row mb-3">
-                      <div class="col-12">
-                        <label>Email:</label>
-                        <div class="input-group">
-                          <span class="input-group-text">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                              <g stroke-width="0"></g>
-                              <g stroke-linecap="round" stroke-linejoin="round"></g>
-                              <g>
-                                <path d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="#d1d1d1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                              </g>
-                            </svg>
-                          </span>
-                          
-                          <input type="email" class="form-control" placeholder="emailme@example.com" id="email" name="email" required >
-                        </div>
-                      </div>
-                    </div>
+                        <div class="container-form">
+                          <!-- Name fields -->
+                          <div class="row g-3"> <!-- g-3 provides spacing between grid columns -->
+                              <div class="col-12 col-md-6">
+                                  <label for="firstName">Name:</label>
+                                  <input type="text" class="form-control" placeholder="Enter name here" required id="firstName" name="firstName">
+                              </div>
+                              <div class="col-12 col-md-6">
+                                  <label for="lastName">Last Name:</label>
+                                  <input type="text" class="form-control" placeholder="Enter last name here" id="lastName" name="lastName">
+                              </div>
+                          </div>
+                  
+                          <!-- Email field -->
+                          <div class="row g-3">
+                              <div class="col-12">
+                                  <label for="email">Email:</label>
+                                  <div class="input-group">
+                                      <span class="input-group-text">@</span> <!-- Placeholder for SVG icon -->
+                                      <input type="email" class="form-control" placeholder="emailme@example.com" id="email" name="email" required>
+                                  </div>
+                              </div>
+                          </div>
           
-                    <!-- Ladas -->
-                    <div class="row mb-3">
-                      <div class="col-4">
-                          <label>Country:</label>
-                          <select style="font-size: 1.1em;" class="form-select" id="country" name="country" required>
-                              <option value="" selected>Choose Country</option>
+                                <!-- Phone number fields -->
+                                <div class="row g-3">
+                                  <div class="col-12 col-md-4">
+                                      <label for="country">Country:</label>
+                                      <select class="form-select" id="country" name="country" required>
+                                          <option value="" selected>Choose Country</option>
+                                          <!-- Country options here -->
                                           <option value="+93">Afghanistan +93</option>
                                           <option value="+355">Albania +355</option>
                                           <option value="+213">Algeria +213</option>
@@ -651,25 +645,27 @@ p {
                                                           
                                 </select>
                               </div>
-                              <div class="col-8">
-                                <label>Phone number:</label>
-                                <input style="border-radius: 0 15px 15px 0;" type="tel" class="form-control" id="phoneNumber" name="phoneNumber" requiered placeholder="Phone number">
+                              <div class="col-12 col-md-8">
+                                <label for="phoneNumber">Phone number:</label>
+                                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required placeholder="Phone number">
                             </div>
                     </div>
-                    <!-- Message textarea row -->
-                    <div class="row mb-3">
-                      <div class="col-12">
-                        <label>Message:</label>
-                        <textarea class="form-control" id="message" name="message" required placeholder="How can I help?" rows="4"></textarea>
-                      </div>
-                    </div>
+
+                          <!-- Message textarea -->
+                          <div class="row g-3">
+                            <div class="col-12">
+                                <label for="message">Message:</label>
+                                <textarea class="form-control" id="message" name="message" required placeholder="How can I help?" rows="4"></textarea>
+                            </div>
+                        </div>
                     <!-- Submit button row -->
-                    <div class="row mb-3">
-                      <div class="col-12 py-3" >
-                        <button class="button-portfolio" type="submit" style="width: 100%; display: block;">Submit</button>
+                    <div class="row g-3">
+                      <div class="col-12 py-5">
+                          <button type="submit" class="button-portfolio " class="btn btn-primary" style="width: 100%;">Submit</button>
                       </div>
-                      
                     </div>
+              </div>
+
 
                       </form>
                             <!-- Terms text row -->
@@ -689,30 +685,30 @@ p {
 
 
               
-              <div class="row py-5" >
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 " style="text-align: center;">
-                  <h3  id="paragraph-tittle-contact" >Customer Support</h3>
-                  <p id="paragraph-contact">Our support team is available
-                    around the clock to address any
+              <div class="row py-5">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  support-text" style="text-align: center;">
+                  <h3  id="paragraph-tittle-contact " >Customer Support</h3>
+                  <p id="paragraph-contact">Let me know any
                     concerns or queries you may
                     have.</p>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  " style="text-align: center;">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4  support-text" style="text-align: center;">
                   <h3  id="paragraph-tittle-contact">Feedback & Suggestions</h3>
-                  <p id="paragraph-contact">We value your feedback and are
+                  <p id="paragraph-contact">I value your feedback and i'm
                     continuously working to improve
-                    Snappy. Your input is crucial in
-                    shaping the future of Snappy.</p>
+                    my work. Your input is crucial in
+                    shaping the future of my style and work.</p>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 " style="text-align: center;">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 support-text" style="text-align: center;">
                   <h3  id="paragraph-tittle-contact">Media Inquiries</h3>
                   <p id="paragraph-contact">For media-related questions or
-                    press inquiries, please contact us
-                    at media@snappyapp.com.</p>
+                    press inquiries, please contact me
+                    at karen.ortizg@yahoo.com</p>
                 </div>
               </div>
+
             </div>
 
         </div>
@@ -888,6 +884,42 @@ p {
 <script src="/Scripts/number.js"></script>
     
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+      // Función que maneja la expansión o colapso del menú basado en el tamaño del viewport
+      function toggleNavbarOnHover() {
+          // Solo ejecuta la lógica si el viewport es menor de 767px
+          if ($(window).width() < 767) {
+              // Expande el menú cuando el mouse entra al header
+              $('#miHeader').mouseenter(function() {
+                  if (!$('#navbar-toggler').hasClass('show')) {
+                      $('.navbar-toggler').click(); // Simula un click para expandir el menú
+                  }
+              });
+  
+              // Colapsa el menú cuando el mouse sale del header
+              $('#miHeader').mouseleave(function() {
+                  if ($('#navbar-toggler').hasClass('show')) {
+                      $('.navbar-toggler').click(); // Simula un click para colapsar el menú
+                  }
+              });
+          } else {
+              // Remueve los eventos si el viewport es mayor de 767px
+              $('#miHeader').off('mouseenter mouseleave');
+          }
+      }
+  
+      // Llama a la función al cargar la página
+      toggleNavbarOnHover();
+  
+      // Asegúrate de llamar a la función en eventos de redimensionamiento de la ventana también
+      $(window).resize(function() {
+          toggleNavbarOnHover();
+      });
+  });
+  </script>
+  
 </body>
 </html>
 

@@ -506,4 +506,8 @@ b {
   .general-left-padding{
     padding-left: 15%;
   }
+  #videoElement, #search-footer{
+    display: none;
+  }
+  
 }

@@ -175,6 +175,7 @@ p {
 <!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)----->
 <!--Body---------------------------------------------------------------------------------------------------------------->
 <body>
+  <div class="grain"></div>
 
 <!--NavBar-->
 <header id="miHeader" >
@@ -498,19 +499,23 @@ p {
                                               <div class="separador"></div> <!--purple hr--->
 
 <!--Footer---------------------------------------------------------------------------------------------------------------->
-<footer class="foot" style="margin-top: 10em;"> 
-  <section>
+<footer  class="foot mx-5 general_padding"> 
+  <section data-scroll>
+    <div id="gooey-footer-home"></div>
+   
+  
     
   <!--logo-->
-  <div class="container text-start">
-    <div class="row align-items-start">
-        <div  data-aos="fade-up " class="col-2" style="position: relative; left: -4px;">
-          <a class="navbar-brand" href="/Pages/indexmain.html">
-            <h1 id="logo-header">Karen Ortiz</h1>        </a>        
-        </div>
-    </div>
-</div>
-      
+      <div class="container text-start">
+          <div class="row align-items-start">
+              <div  data-aos="fade-up " class="col-2" style="position: relative; left: -4px;">
+                  <a class="navbar-brand" href="/Pages/indexmain.html">
+                    <h1 id="logo-header">Karen Ortiz</h1>        </a>  
+              </div>
+          </div>
+      </div>
+            
+  
   <!--left footer's columns-->
         <div class="container text-start">
      <div class="row align-items-start">
@@ -523,16 +528,16 @@ p {
               <h6>   Over this webpage's chat</h6>
         </div>
   
-     <div class="col search-col my-4">
+     <div id="search-footer" class="col search-col my-4">
               <p></p>
               <p></p>
               <h6>Search:</h6>
-              <a href="indexmain.html#top" style="font-style: inherit;" class="foot_buttons">Top</a><br>
-              <a href="indexmain.html#about" style="font-style: inherit;" class="foot_buttons">About</a><br>
-              <a href="indexmain.html#tools" class=" foot_buttons">Tools</a><br>
-              <a href="indexp.html" class=" foot_buttons">Portfolio</a><br>
-              <a href="indexmain.html#reviews" class=" foot_buttons">Reviews</a><br>
-              <a href="indexhow.html#contact" class=" foot_buttons">Contact</a><br>
+              <a href="/Pages/indexmain.html#top" style="font-style: inherit;" class="foot_buttons">Top</a><br>
+              <a href="/Pages/indexmain.html#about" style="font-style: inherit;" class="foot_buttons">About</a><br>
+              <a href="/Pages/indexmain.html#tools" class=" foot_buttons">Tools</a><br>
+              <a href="/Pages/indexp.html" class=" foot_buttons">Portfolio</a><br>
+              <a href="/Pages/indexmain.html#reviews" class=" foot_buttons">Reviews</a><br>
+              <a href="/Pages/indexhow.html#contact" class=" foot_buttons">Contact</a><br>
               
       </div>
             
@@ -576,6 +581,7 @@ p {
                         <div class="col"></div>
       
   
+                        <hr style="color: white;"><!--Section Separator -->
   <!--hedgehog-->
     <section id="hegehog-gif"> 
       <div class="container">
@@ -584,7 +590,8 @@ p {
             <img id="videoElement" src="https://static.wixstatic.com/media/bc0394_34c638f1286d4574895a6185059d2a38~mv2.gif" alt="hedgy" class="hedgy">            
           </div>
         </div>
-
+        
+  
         <div class="row">
           <div class="col d-flex justify-content-center">
             © 2023 Karen Ortiz /  Designed and programmed by me:)
@@ -594,8 +601,9 @@ p {
     
     <div class="row mt-3 mx-auto justify-content-center">
       <div class="col-auto">
-        <a href="indexhow.html" style="text-decoration: none;">
-          <button id="how_button" class="button-io" style="font-size: medium; width: 280px; padding: 0 10px 0 10px;">
+        <a href="/Pages/indexhow.html" style="text-decoration: none;">
+  
+          <button id="how_button" class="button-io" style="font-size: medium; width: 280px; padding: 0 10px 0 10px; margin-bottom: 2em;">
             <span>How did I make this webpage? &#x1F680;</span>
           </button>
         </a>
@@ -603,6 +611,7 @@ p {
     </div>
     
     </section>
+    
   </footer>
 
 <!--additionals js links-->                                    
@@ -681,6 +690,42 @@ observer.observe(video);
 <!--Dark Mode-->
 <script src="/Scripts/darkmode2.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+      // Función que maneja la expansión o colapso del menú basado en el tamaño del viewport
+      function toggleNavbarOnHover() {
+          // Solo ejecuta la lógica si el viewport es menor de 767px
+          if ($(window).width() < 767) {
+              // Expande el menú cuando el mouse entra al header
+              $('#miHeader').mouseenter(function() {
+                  if (!$('#navbar-toggler').hasClass('show')) {
+                      $('.navbar-toggler').click(); // Simula un click para expandir el menú
+                  }
+              });
+  
+              // Colapsa el menú cuando el mouse sale del header
+              $('#miHeader').mouseleave(function() {
+                  if ($('#navbar-toggler').hasClass('show')) {
+                      $('.navbar-toggler').click(); // Simula un click para colapsar el menú
+                  }
+              });
+          } else {
+              // Remueve los eventos si el viewport es mayor de 767px
+              $('#miHeader').off('mouseenter mouseleave');
+          }
+      }
+  
+      // Llama a la función al cargar la página
+      toggleNavbarOnHover();
+  
+      // Asegúrate de llamar a la función en eventos de redimensionamiento de la ventana también
+      $(window).resize(function() {
+          toggleNavbarOnHover();
+      });
+  });
+  </script>
+  
 </body>
 </html>
 

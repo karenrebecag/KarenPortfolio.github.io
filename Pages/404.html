@@ -36,6 +36,7 @@
 <link id="mainpage-stylesheet" rel="stylesheet" href="/Styles/mainpage.css">
 <link id="styles-stylesheet" rel="stylesheet" href="/Styles/styles.css">
 <link id="indexhow-stylesheet" rel="stylesheet" href="/Styles/indexhow.css">
+<link id="dino-stylesheet" rel="stylesheet" href="/Styles/dino-light.css">
 
 
 <!-- Google Fonts ---------------------------------------------------------------------------------------------------------------->
@@ -58,133 +59,15 @@
 
 
 
-    <!--Scrollbar-->
-    <style>
-      /* Estilo del scrollbar completo */
-::-webkit-scrollbar {
-    width: 12px; /* Ancho del scrollbar */
-    height: 5px;
-}
-
-/* Estilo del track del scrollbar (la parte que "contiene" al thumb) */
-::-webkit-scrollbar-track {
-    background: #ebdfdf; /* Color de fondo del track del scrollbar */
-}
-
-/* Estilo del thumb del scrollbar (la parte que se mueve/arrastra) */
-::-webkit-scrollbar-thumb {
-    background-color: black; /* Color del thumb del scrollbar */
-    border-radius: 4px; /* Borde redondeado del thumb */
-    border: 3px solid #f0f0f0; /* Borde opcional para el thumb */
-}
-
-    </style>
 
 
-<style>
-    @media (max-width: 1400px) {
-
-.container{
-  max-width: 100%;
-}
-
-
-.general_padding{
-        padding: 0 0 0 0;
-    }
-.logo-header-main{
-  display: none;
-}}
-@media (max-width: 992px) {
-
-
-#miHeader{
-  min-width: 100%;
-}
-.navbar-nav {
-    flex-direction: row; /* Asegura que los elementos se alineen horizontalmente */
-    justify-content: flex-start; /* Alinea los elementos al final del contenedor */
-    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
-  }
-
-  .nav-item {
-    margin-right: 5px; /* Espaciado entre los elementos nav-item */
-  }
-
-  .navbar-collapse {
-    flex-basis: auto; /* Asegura que el contenedor de collapse se ajuste al contenido */
-  }
-
-  .card_header_social {
-    display: flex; /* Asegura que los elementos sociales también se alineen horizontalmente */
-    justify-content: flex-end; /* Alinea los elementos sociales al final */
-    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
-    margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
-  }
-
-}
-
-      @media (max-width: 820px) {
-  .navbar-collapse {
-    display: flex;
-    flex-direction: column; /* Alinea los contenedores en vertical */
-    align-items: start; /* Centra los contenedores horizontalmente */
-  }
-
-  .navbar-nav {
-    flex-direction: row; /* Asegura que los nav-items estén en línea */
-    justify-content: flex-start; /* Centra los nav-items horizontalmente */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
-    width: 100%; /* Los nav-items ocuparán todo el ancho */
-  }
-
-  .nav-item {
-    margin: 5px; /* Espaciado alrededor de cada nav-item */
-  }
-
-  .card_header_social {
-    display: flex;
-    justify-content: center; /* Centra los elementos sociales horizontalmente */
-    width: 100%; /* Los elementos sociales ocuparán todo el ancho */
-    margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
-
-  }
-}
-
-
-
-  @media (max-width: 820px) {
-      #downloadCvButton{
-        display: none;
-      }}
-
-      @media (max-width: 768px) {
-  .bubble, #glow-input, #how_button, #cube-loader {
-    display: none;
-  }
-}
-
-.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-  width: 100%;
-  max-width: none;
-}
-
-p {
-  margin: 0%;
-}
-
-.owl-carousel {
-  max-width: 100%;
-}
-
-
-    </style>
-
+<script src="/Scripts/index.js" defer type="module"></script>
 </head>
 
 <!--Body---------------------------------------------------------------------------------------------------------------->
 <body>
+  <div class="grain"></div>
+
 <!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)----->
 
 <!--NavBar-->
@@ -360,34 +243,53 @@ p {
                                             
 
 
-<!-- How Did i Build this WebPage?-->
+<!--404 Text-->
 <div class="container section-centered general_padding " style="margin-top: 12em;" >
   <div class="row ">
 
     <div class="col-12 d-flex justify-content-center">
-      <h1 id="about-tittle" style="font-size: 8em;text-align: center;">ERROR 404</h1>
+      <h1 id="about-tittle" style="font-size: 12em;text-align: center;font-weight: 800;">OOPS!</h1><br>
     </div>
 
-    <div class="col-12 d-flex flex-column"> <!-- Modificado para usar flex-column -->
-      <h1  style="font-size: 1.5em;text-align: center;">Looks like the page you're looking for doesn't exist!</h1>
 
+    <div class="col-12 d-flex justify-content-center py-2">
+      <h1 id="about-tittle" style="font-size: 3em;text-align: center;font-weight: 600;">404. Page not Found!</h1>
     </div>
 
+
+    <div class="col-12 d-flex flex-column py-1"> 
+      <h1  style="font-size: 1.5em;text-align: center;">The page you are looking for might have been removed, had its name changed or is temporarly unavaiable.</h1>
+    </div>
+
+    <div class="col-12" style="text-align: center;">
+      <a href="/Pages/indexmain.html">
+        <button class="button-portfolio" style="margin-top: 2em;">GO BACK HOME</button>
+      </a>
+    </div>
+  
+    <div class="col-12 d-flex flex-column py-5">
+      <h1  style="font-size: 1.5em;text-align: center;">or play a while...</h1>
+    </div>
+
+    
 
 
   </div>
 
 </div>
 
-
-
-      
+<div style="margin-bottom: 20vh;" class="container py-5">
+  <div class="row">
+    <div class="col-12 mx-auto">
+      <canvas id="game"></canvas>
+    </div>
   </div>
 </div>
 
 <div id="gooey2"></div>
 <div id="gooey3"></div>
   
+
 
 
 
@@ -533,7 +435,7 @@ p {
 <script src="/Scripts/main.js"></script>
 <script src="/Scripts/mainjsport.js"></script>
 <script src="/Scripts/header.js"></script>
-<script src="/Scripts/darkmode.js"></script>
+<script src="/Scripts/darkmode7.js"></script>
 
 
 <!--Initialize AOS-->
@@ -566,7 +468,44 @@ p {
 
 
 
-</div>                                         
+</div>  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+      // Función que maneja la expansión o colapso del menú basado en el tamaño del viewport
+      function toggleNavbarOnHover() {
+          // Solo ejecuta la lógica si el viewport es menor de 767px
+          if ($(window).width() < 767) {
+              // Expande el menú cuando el mouse entra al header
+              $('#miHeader').mouseenter(function() {
+                  if (!$('#navbar-toggler').hasClass('show')) {
+                      $('.navbar-toggler').click(); // Simula un click para expandir el menú
+                  }
+              });
+  
+              // Colapsa el menú cuando el mouse sale del header
+              $('#miHeader').mouseleave(function() {
+                  if ($('#navbar-toggler').hasClass('show')) {
+                      $('.navbar-toggler').click(); // Simula un click para colapsar el menú
+                  }
+              });
+          } else {
+              // Remueve los eventos si el viewport es mayor de 767px
+              $('#miHeader').off('mouseenter mouseleave');
+          }
+      }
+  
+      // Llama a la función al cargar la página
+      toggleNavbarOnHover();
+  
+      // Asegúrate de llamar a la función en eventos de redimensionamiento de la ventana también
+      $(window).resize(function() {
+          toggleNavbarOnHover();
+      });
+  });
+  </script>
+  
 </body>
 </html>
 

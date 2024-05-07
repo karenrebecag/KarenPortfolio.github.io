@@ -398,7 +398,7 @@ p {
           
 
       <div col class="col-4" style="text-align: center;">
-        <img id="about-image-banner" src="https://static.wixstatic.com/media/bc0394_e3a63821baa446a8b6b87fddf9523244~mv2.jpg" style="width:100%; height:auto;object-fit: cover;" alt="profile pic">
+        <img id="about-image-banner" src="https://static.wixstatic.com/media/bc0394_21e87fb141e5441da856503bf4278fcd~mv2.jpg" style="width:100%; height:auto;object-fit: cover;" alt="profile pic">
       </div>
 
   
@@ -718,7 +718,7 @@ p {
   
 
         <div class="col-4 d-flex justify-content-start">
-          <h1 id="tittle-portfolio">DIGITALIZE IDEAS.</h1>
+          <h1 id="tittle-portfolio">UNLEASH YOUR CREATIVITY, WITH FUNDAMENTALS</h1>
         </div>
 
       </div>
@@ -1302,6 +1302,42 @@ p {
     
 
   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          // Función que maneja la expansión o colapso del menú basado en el tamaño del viewport
+          function toggleNavbarOnHover() {
+              // Solo ejecuta la lógica si el viewport es menor de 767px
+              if ($(window).width() < 767) {
+                  // Expande el menú cuando el mouse entra al header
+                  $('#miHeader').mouseenter(function() {
+                      if (!$('#navbar-toggler').hasClass('show')) {
+                          $('.navbar-toggler').click(); // Simula un click para expandir el menú
+                      }
+                  });
+      
+                  // Colapsa el menú cuando el mouse sale del header
+                  $('#miHeader').mouseleave(function() {
+                      if ($('#navbar-toggler').hasClass('show')) {
+                          $('.navbar-toggler').click(); // Simula un click para colapsar el menú
+                      }
+                  });
+              } else {
+                  // Remueve los eventos si el viewport es mayor de 767px
+                  $('#miHeader').off('mouseenter mouseleave');
+              }
+          }
+      
+          // Llama a la función al cargar la página
+          toggleNavbarOnHover();
+      
+          // Asegúrate de llamar a la función en eventos de redimensionamiento de la ventana también
+          $(window).resize(function() {
+              toggleNavbarOnHover();
+          });
+      });
+      </script>
+      
 
   </body>
 </html>

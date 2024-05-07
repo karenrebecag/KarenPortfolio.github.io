@@ -1,0 +1,24 @@
+
+
+#game {
+  width: 60em; /* Ancho fijo del canvas */
+  border-radius: 20px; /* Borde redondeado */
+  display: block; /* Necesario para aplicar dimensiones correctamente en el canvas */
+  margin: 0 auto; /* Centra el canvas horizontalmente dentro de su contenedor */
+
+}
+@media (max-width: 768px) {
+  #game {
+    width: 40em; /* Ancho fijo del canvas */
+  }
+ 
+}
+canvas {
+  border: transparent
+  
+}
+
+
+.separator {
+  color: grey;
+}

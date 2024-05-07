@@ -1284,6 +1284,9 @@ footer {
   #bubbles{
     display: none;
   }
+  #videoElement, #search-footer{
+    display: none;
+  }
   
 }
 

@@ -808,12 +808,6 @@ margin-bottom: 5%;  }
 
 }
 
-.square:hover {
-  transform: scale(1.02); /* Escala el cuadrado al pasar el ratón por encima */
-}
-.square2:hover {
-  transform: scale(1.02); /* Escala el cuadrado al pasar el ratón por encima */
-}
 
 #main-banner-about{
   background-color: #000000;

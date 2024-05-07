@@ -403,10 +403,8 @@ p {
     <div class="row py-5">
       <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4  d-flex justify-content-center">
         <span class="skillTag" style="width: 0.2vw;;    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
-;        background-color: rgba(255, 255, 255, 0.098); text-align: center;">Project Managment </span>
-        <span class="skillTag" style="width: 0.2vw;     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
-;        background-color: rgba(255, 255, 255, 0.098); text-align: center;"">Project Managment </span> 
-
+;        background-color: rgba(255, 255, 255, 0.098); text-align: center;">Avaiable for working</span>
+        
       </div>
 
 
@@ -956,6 +954,42 @@ p {
     
     
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+      // Función que maneja la expansión o colapso del menú basado en el tamaño del viewport
+      function toggleNavbarOnHover() {
+          // Solo ejecuta la lógica si el viewport es menor de 767px
+          if ($(window).width() < 767) {
+              // Expande el menú cuando el mouse entra al header
+              $('#miHeader').mouseenter(function() {
+                  if (!$('#navbar-toggler').hasClass('show')) {
+                      $('.navbar-toggler').click(); // Simula un click para expandir el menú
+                  }
+              });
+  
+              // Colapsa el menú cuando el mouse sale del header
+              $('#miHeader').mouseleave(function() {
+                  if ($('#navbar-toggler').hasClass('show')) {
+                      $('.navbar-toggler').click(); // Simula un click para colapsar el menú
+                  }
+              });
+          } else {
+              // Remueve los eventos si el viewport es mayor de 767px
+              $('#miHeader').off('mouseenter mouseleave');
+          }
+      }
+  
+      // Llama a la función al cargar la página
+      toggleNavbarOnHover();
+  
+      // Asegúrate de llamar a la función en eventos de redimensionamiento de la ventana también
+      $(window).resize(function() {
+          toggleNavbarOnHover();
+      });
+  });
+  </script>
+  
 </body>
 </html>
 
