@@ -497,8 +497,17 @@ b {
   #blueDiv{
     display: none;
   }
-  .circle-person{
+  #logo-header{
+    font-size: 2em;
+  }
+  .circle-person, .cube-loader{
     display: none;
+  }
+  #introduction{
+    margin-top: -15em;
+  }
+  #backend_stuff{
+    padding: 8%;
   }
 }
 

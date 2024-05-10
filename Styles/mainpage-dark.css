@@ -1411,3 +1411,12 @@ filter: invert(100%);
   }
 }
 
+#review_text{
+  font-size: 1.2em;
+}
+@media (max-width: 767px) {
+
+  #review_text{
+    font-size: 1em;
+  }
+}

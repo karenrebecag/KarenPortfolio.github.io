@@ -262,6 +262,11 @@ b {
     font-size: 2em; /* Ligeramente más pequeño para tablets y teléfonos en posición horizontal */
   }
 
+#logo-header{
+  font-size: 2em;
+}
+
+
   p, .p-2 {
     font-size: 1.2em;
     margin: 0 5%;
@@ -311,7 +316,9 @@ b {
   padding: 0 30em 0 30em;
 }
 
-
+#tools{
+  padding:0 12% 0 12%;
+}
 
                               /*>>Index.html // Main Page (Header, Footer & "General, Blog, Tools, Reviews, Contact" anchors */
 /*   Extra        */
@@ -1278,8 +1285,14 @@ footer {
   #blueDiv{
     display: none;
   }
-  .circle-person{
+  .circle-person, .cube-loader{
     display: none;
+  }
+  #introduction{
+    margin-top: -15em;
+  }
+  #backend_stuff{
+    padding: 8%;
   }
   #bubbles{
     display: none;
@@ -1287,7 +1300,9 @@ footer {
   #videoElement, #search-footer{
     display: none;
   }
-  
+  #tools{
+    padding: 0%;
+  }
 }
 
 @media (max-width: 480px) {

@@ -41,14 +41,41 @@
 
 
 
+/* Estilos generales para swiper */
 .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
-    width: 33%;
-    border-left: 1px solid #f0f0f000;
+  width: 33%;
+
 }
 
+/* Ajustes para pantallas menores a 768px */
+@media (max-width: 768px) {
+  .swiper-slide {
+      width: 50%; /* Dos elementos visibles */
+      padding: 0 15px; /* Añadir algo de padding para separar más los slides */
+  }
 
+  .swiper-slide .card-person {
+      transform: scale(1); /* Reducir el tamaño de los contenedores de las tarjetas */
+  }
+
+  .swiper-slide h4, .swiper-slide p {
+      font-size: 0.9em; /* Reducir el tamaño del texto */
+  }
+
+  .swiper {
+      padding-left: 20px; /* Aumentar el espacio a la izquierda para centrar mejor los slides */
+      padding-right: 20px; /* Aumentar el espacio a la derecha para centrar mejor los slides */
+  }
+
+  .swiper .swiper-pagination-bullet {
+      margin: 0 5px; /* Aumentar el espacio entre los bullets de paginación si se utiliza */
+  }
+  .card-person:hover {
+    transform: scale(1.01);
+  }
+}

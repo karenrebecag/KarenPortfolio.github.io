@@ -611,8 +611,6 @@ color: white;
   .card-person:hover {
     transform: scale(1.02);
   }
-  
-  
 
 /*   Bubbles */
 
@@ -1113,7 +1111,7 @@ color: white;
   #gooey-footer-home, #gooey, #gooey2, #gooey3, #gooey4, #gooey5, #gooey-footer-home, #gooey-nav-logo, #gooey-nav {
     display: none;
   }
-  
+
 }
 
 /* About Tittle */
@@ -1355,6 +1353,7 @@ margin-bottom: 5%;  }
   .about-tittle-card2 {
     font-size: 1em;
   }
+
   #arrow{
     display: none;
   }
@@ -1811,3 +1810,12 @@ z-index: 1;
   }
 }
 
+#review_text{
+  font-size: 1.2em;
+}
+@media (max-width: 767px) {
+
+  #review_text{
+    font-size: 1em;
+  }
+}
