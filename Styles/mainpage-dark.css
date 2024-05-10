@@ -905,6 +905,9 @@ margin-bottom: 5%;  }
   .about-tittle-card2 {
     font-size: 1em;
   }
+  #arrow{
+    display: none;
+  }
   .about-tittle-number-tiny{
     font-size: 1.5em;
   }
