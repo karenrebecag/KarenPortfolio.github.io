@@ -574,7 +574,9 @@ color: white;
   .infotop {
     font-size: 1em
   }
-
+  #main-pic-banner {
+    width:20%;  
+}
   .name{
     font-size: 1.2em;
   }

@@ -21,12 +21,13 @@ header {
   border: 1px solid #000000e4; /* Borde opcional para el thumb */
 }
 #introduction{
-  margin-top: -15em;
+  margin-top: -7em;
 }
 
 .general_margin5{
   margin-bottom: 20vw;
 }
+
 
 #certification-image{
   filter: invert(100%) grayscale(100%);
@@ -503,7 +504,7 @@ b {
     font-size: 0.3em; /* Ajuste para pantallas muy pequeñas */
   }
   #introduction{
-    height: 20em;
+    height: 15em;
   }
   .text-home{
     font-size: 1em;

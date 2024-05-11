@@ -17,7 +17,7 @@ header {
     margin-bottom: 20vw;
   }
 #introduction{
-  margin-top: -15em;
+  margin-top: -7em;
 }
   .general_margin{
     margin-bottom: 12em; 
@@ -303,6 +303,9 @@ b {
   h1, .h1-2 {
     font-size: 1.6em; /* Más pequeño para teléfonos en posición vertical */
   }
+  .img_review{
+    display:none;
+  }
 
   
 
@@ -323,7 +326,7 @@ b {
     font-size: 0.3em; /* Ajuste para pantallas muy pequeñas */
   }
   #introduction{
-    height: 20em;
+    height: 15em;
   }
   .text-home{
     font-size: 1em;
