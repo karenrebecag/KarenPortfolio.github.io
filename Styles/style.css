@@ -9,6 +9,21 @@ body {
 header {
   transition: background-color 0.5s ease;
 }
+.text-home{
+  font-size: 1.3em;
+  }
+
+  .general_margin5{
+    margin-bottom: 20vw;
+  }
+#introduction{
+  margin-top: -15em;
+}
+  .general_margin{
+    margin-bottom: 12em; 
+    margin-top: 7em;
+  }
+  
 
 #logo-header{
  font-size: 2.6em;
@@ -19,6 +34,7 @@ header {
  z-index: 10;
  color: black;
 }
+
 @media (max-width: 1281px) {
   #logo-header{
     font-size: 2.5vw;
@@ -73,6 +89,12 @@ h6{
   font-family: raleway;
   margin-top: 1em;
   font-style: inherit;
+}
+.but_backend{
+  font-family: poppins;
+  font-size: 4.5em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.765);
 }
 .nav-full{
   font-family: 'Poppins', sans-serif;
@@ -282,6 +304,16 @@ b {
     font-size: 1.6em; /* Más pequeño para teléfonos en posición vertical */
   }
 
+  
+
+  .main-area-content{
+    display: none;
+  }
+
+  .but_backend{
+    font-size: 2em;
+  }
+
   p, .p-2 {
     font-size: 1em;
     margin: 0 2%;
@@ -290,6 +322,39 @@ b {
   .h6 {
     font-size: 0.3em; /* Ajuste para pantallas muy pequeñas */
   }
+  #introduction{
+    height: 20em;
+  }
+  .text-home{
+    font-size: 1em;
+    }
+  #bubbles{
+    display: none;
+  }
+  .general_padding{
+    padding: 0 30em 0 30em;
+  }
+  
+  #tools{
+    padding:0 12% 0 12%;
+  }
+  .general_margin{
+    margin-bottom: 0em; 
+    margin-top: -6em;
+  }
+  .general_margin2{
+    margin-bottom: 0em; 
+    margin-top: -7em;
+  }
+  .general_margin3{
+    margin-bottom: 2em; 
+    margin-top: -5em;
+  }
+  .general_margin4{
+    margin-bottom: 0em; 
+    margin-top: -5em;
+  }
+
 }
 
 
@@ -312,13 +377,8 @@ b {
 
 }
 
-.general_padding{
-  padding: 0 30em 0 30em;
-}
 
-#tools{
-  padding:0 12% 0 12%;
-}
+
 
                               /*>>Index.html // Main Page (Header, Footer & "General, Blog, Tools, Reviews, Contact" anchors */
 /*   Extra        */
@@ -1231,6 +1291,8 @@ margin-bottom: 2px black;
 
 }
 
+
+
 /* estilo.css */
 
 .barra-de-progreso {
@@ -1247,7 +1309,6 @@ margin-bottom: 2px black;
 footer {
   max-height: 100em;
 }
-
 
 
 /* Responsive Extra */
@@ -1274,11 +1335,13 @@ footer {
   .general-left-padding{
     padding-left: 7%;
   }
+  
 }
 @media (max-width: 1281px) {
   .general-left-padding{
     padding-left: 8%;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -1294,9 +1357,7 @@ footer {
   #backend_stuff{
     padding: 8%;
   }
-  #bubbles{
-    display: none;
-  }
+
   #videoElement, #search-footer{
     display: none;
   }
@@ -1308,5 +1369,14 @@ footer {
 @media (max-width: 480px) {
   .general-left-padding{
     padding-left: 15%;
+  }
+  .main-banner-fadeout {
+    height: 55em;
+  }
+  .responsive_reviews{
+    display: none;
+  }
+  .review_paragraph{
+    align-items: center;
   }
 }

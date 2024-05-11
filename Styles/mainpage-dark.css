@@ -105,10 +105,7 @@ html{
   }
   
   
-  /* Projects Cards */
-  #Reviews {
-    background-color: black;
-  }
+
   .cardProjects {
       width: 250px;
       height: 250px;
@@ -205,103 +202,116 @@ html{
     
   
   /* Tools Tags */ 
+.e-card {
+  margin: 70px auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  position: relative;
+  width: 80vw; /* Hace el ancho de la tarjeta relativo al ancho del viewport */
+  height: 80vw; /* Hace el alto de la tarjeta relativo al ancho del viewport */
+  max-width: 280px; /* Máximo ancho para asegurar que no se vea demasiado grande en pantallas anchas */
+  max-height: 280px; /* Máximo alto para mantener la proporción */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease; /* Transición suave para efectos de escala */
+}
+
+/* Estilos para el efecto de onda */
+.wave {
+  position: absolute;
+  width: 100%; /* Se ajusta al 100% del ancho de su contenedor */
+  height: 100%; /* Se ajusta al 100% del alto de su contenedor */
+  opacity: 0.9;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(2); /* Centra el fondo en la tarjeta y lo escala */
+  background: linear-gradient(744deg, #000000, #000000fe, #0F2740);
+  border-radius: 40%;
+  animation: wave 55s infinite linear; /* Aplica animación infinita */
+}
+
+/* Estilos para iconos y texto */
+.icon {
+  width: 3em;
+  margin-top: -1em;
+  padding-bottom: 1em;
+}
+
+.infotop, .name {
+  text-align: center;
+  font-size: calc(1vw + 2px); /* Ajuste dinámico del tamaño de fuente */
+  position: absolute;
+  top: 2em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.5s ease; /* Transición suave para efectos de escala */
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  top: 1em;
+  color: white;
+  background: linear-gradient(744deg, #275EB5, #C777E3);
+  margin-bottom: 0.5em;
+}
+
+/* Estilos para interacción con el mouse */
+.e-card:hover {
+  transform: scale(1.02); /* Escala la tarjeta ligeramente */
+}
+
+.name:hover {
+  transform: scale(1.09); /* Escala el nombre independientemente */
+}
+
+/* Media queries para ajustar la responsividad en diferentes tamaños de pantalla */
+@media (max-width: 768px) {
   .e-card {
-    margin: 70px auto;
-    background: transparent;
-    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
-    position: relative;
-    width: 80vw; /* Hace el ancho de la tarjeta relativo al ancho del viewport */
-    height: 80vw; /* Hace el alto de la tarjeta relativo al ancho del viewport */
-    max-width: 280px; /* Máximo ancho para asegurar que no se vea demasiado grande en pantallas anchas */
-    max-height: 280px; /* Máximo alto para mantener la proporción */
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.5s ease; /* Transición suave para efectos de escala */
+    margin: 50px auto;
+    width: 90vw;
+    height: 90vw;
+    max-width: 260px;
+    max-height: 260px;
   }
-  
-  /* Estilos para el efecto de onda */
-  .wave {
-    position: absolute;
-    width: 100%; /* Se ajusta al 100% del ancho de su contenedor */
-    height: 100%; /* Se ajusta al 100% del alto de su contenedor */
-    opacity: 0.9;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(2); /* Centra el fondo en la tarjeta y lo escala */
-background-color: rgba(255, 255, 255, 0.025);   
-filter: blur(50%); 
-border-radius: 40%;
-    animation: wave 55s infinite linear; /* Aplica animación infinita */
+
+  .infotop {
+   font-size: 1.2em;
   }
-  
-  /* Estilos para iconos y texto */
-  .icon {
-    width: 3em;
-    margin-top: -1em;
-    padding-bottom: 1em;
+
+}
+
+@media (max-width: 480px) {
+  .e-card {
+    margin: 30px auto;
+    width: 95vw;
+    height: 95vw;
+    max-width: 240px;
+    max-height: 240px;
   }
-  
-  .infotop, .name {
-    text-align: center;
-    font-size: calc(1vw + 2px); /* Ajuste dinámico del tamaño de fuente */
-    position: absolute;
-    top: 2em;
-    left: 0;
-    right: 0;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    transition: transform 0.5s ease; /* Transición suave para efectos de escala */
+  .main-area-content{
+    display: none;
   }
-  
-  .name {
-    font-size: 17px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    top: 1em;
-    color: white;
-    background: linear-gradient(744deg, #275EB5, #C777E3);
-    margin-bottom: 0.5em;
+  .name{
+    font-size: 1em;
   }
-  
-  /* Estilos para interacción con el mouse */
-  .e-card:hover {
-    transform: scale(1.02); /* Escala la tarjeta ligeramente */
+  .infotop {
+    font-size: 1em
   }
-  
-  .name:hover {
-    transform: scale(1.09); /* Escala el nombre independientemente */
+
+
+  .degradado-bold{
+    font-size: 2em;
   }
-  
-  /* Media queries para ajustar la responsividad en diferentes tamaños de pantalla */
-  @media (max-width: 768px) {
-    .e-card {
-      margin: 50px auto;
-      width: 90vw;
-      height: 90vw;
-      max-width: 260px;
-      max-height: 260px;
-    }
-  
-    .infotop {
-     font-size: 1.2em;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .e-card {
-      margin: 30px auto;
-      width: 95vw;
-      height: 95vw;
-      max-width: 240px;
-      max-height: 240px;
-    }
-  
-    .infotop, .name {
-      font-size: calc(4vw + 10px); /* Ajusta el tamaño de la fuente para pantallas pequeñas */
-    }
-  }
+
+}
+
+
   
   /* Keyframes para la animación de onda */
   @keyframes wave {
@@ -483,7 +493,7 @@ border-radius: 40%;
   }
   
   .svg path {
-    d: path("M0,25 C150,110 150, -60 300,25");
+    display: path("M0,25 C150,110 150, -60 300,25");
     stroke: #db94ff;
     stroke-width: 50;
     stroke-linecap: round;
@@ -813,8 +823,6 @@ margin-bottom: 5%;  }
   background-color: #000000;
   border-radius: 20px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.253);
-}
-#image-subbanner-about{
 }
 
 #about-tools{

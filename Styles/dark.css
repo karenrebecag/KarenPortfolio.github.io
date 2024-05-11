@@ -20,7 +20,13 @@ header {
   border-radius: 2px; /* Borde redondeado del thumb */
   border: 1px solid #000000e4; /* Borde opcional para el thumb */
 }
+#introduction{
+  margin-top: -15em;
+}
 
+.general_margin5{
+  margin-bottom: 20vw;
+}
 
 #certification-image{
   filter: invert(100%) grayscale(100%);
@@ -119,6 +125,9 @@ h6{
  @media (max-width: 1281px) {
   #logo-header{
     font-size: 2.5vw;
+  }
+  #bubbles{
+    display: none;
   }
 }
 #gooey {
@@ -480,6 +489,10 @@ b {
   h1, .h1-2 {
     font-size: 1.6em; /* Más pequeño para teléfonos en posición vertical */
   }
+  
+  .but_backend{
+    font-size: 2em;
+  }
 
   p, .p-2 {
     font-size: 1em;
@@ -489,6 +502,43 @@ b {
   .h6 {
     font-size: 0.3em; /* Ajuste para pantallas muy pequeñas */
   }
+  #introduction{
+    height: 20em;
+  }
+  .text-home{
+    font-size: 1em;
+    }
+  #bubbles{
+    display: none;
+  }
+  .general_padding{
+    padding: 0 30em 0 30em;
+  }
+  #tools{
+    padding:0;
+  }
+
+  .general_margin{
+    margin-bottom: 0em; 
+    margin-top: -6em;
+  }
+  .general_margin2{
+    margin-bottom: 0em; 
+    margin-top: -7em;
+  }
+  .general_margin3{
+    margin-bottom: 2em; 
+    margin-top: -5em;
+  }
+  .general_margin4{
+    margin-bottom: 0em; 
+    margin-top: -5em;
+  }
+  .main-banner-fadeout {
+    height: 55em;
+  }
+  
+
 }
 
 
@@ -519,4 +569,19 @@ b {
     display: none;
   }
   
+}
+@media (max-width: 480px) {
+  .general-left-padding{
+    padding-left: 15%;
+  }
+  .main-banner-fadeout {
+    height: 55em;
+  }
+  .responsive_reviews{
+    display: none;
+  }
+  .review_paragraph{
+    align-items: center;
+  }
+
 }

@@ -411,7 +411,21 @@ filter: blur(50%);
   .lets-discuss {
     font-size: 4.5vw; /* Even smaller font size for very small screens */
   }
+    #tittle-portfolio {
+    font-size: 4vw; /* Usa vw para ajustarse al ancho de la pantalla */
+    padding: 20px; /* Agrega un padding de 20px en todos los lados */
+  }
+  .text-portfolio-text{
+    font-size: 1em;
+  }
+.button-portfolio{
+  font-size: 0.8em;
 }
+.skillTag{
+  display: none;
+}
+}
+
 
 #gooey6 {
   height: 70vw;

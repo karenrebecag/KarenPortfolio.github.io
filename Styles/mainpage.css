@@ -563,6 +563,7 @@ color: white;
 }
 
 @media (max-width: 480px) {
+
   .e-card {
     margin: 30px auto;
     width: 95vw;
@@ -570,10 +571,18 @@ color: white;
     max-width: 240px;
     max-height: 240px;
   }
-
-  .infotop, .name {
-    font-size: calc(4vw + 10px); /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+  .infotop {
+    font-size: 1em
   }
+
+  .name{
+    font-size: 1.2em;
+  }
+  
+  .degradado-bold{
+    font-size: 2em;
+  }
+
 }
 
 /* Keyframes para la animación de onda */
@@ -746,7 +755,7 @@ color: white;
 }
 
 .svg path {
-  d: path("M0,25 C150,110 150, -60 300,25");
+  display: path("M0,25 C150,110 150, -60 300,25");
   stroke: #db94ff;
   stroke-width: 50;
   stroke-linecap: round;
@@ -910,10 +919,6 @@ color: white;
 }
 
 /* Accordion button::after - icon adjustments */
-.accordion-button::after {
-  /* Adjust your icon image or font icon styles here */
-  /* ... */
-}
 
 /* Accordion content */
 .accordion-body {
@@ -1105,7 +1110,7 @@ color: white;
 }
 
 @media (max-width: 768px) {
-  .bubble, #glow-input, #how_button, #cube-loader, .card_header_social {
+   #glow-input, #how_button, #cube-loader, .card_header_social {
     display: none;
   }
   #gooey-footer-home, #gooey, #gooey2, #gooey3, #gooey4, #gooey5, #gooey-footer-home, #gooey-nav-logo, #gooey-nav {
@@ -1264,8 +1269,6 @@ margin-bottom: 5%;  }
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.253);
-}
-#image-subbanner-about{
 }
 
 #about-tools{
@@ -1733,6 +1736,7 @@ z-index: 1;
 		width:fit-content;
 		padding:0%;
 	}
+
 @media (max-width:300px){
 	.timeline{
 		width:100%;

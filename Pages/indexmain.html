@@ -136,12 +136,17 @@ div{
 #downloadCvButton, .main-logo{
   display: none;
 }
+#bubble{
+  display:none
+}
 
 
 
   
 }
 @media (max-width: 992px) {
+
+
 
 
 #miHeader{
@@ -196,6 +201,7 @@ div{
     flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
 
   }
+
   
 }
 
@@ -221,7 +227,7 @@ div{
     font-size: 1.8em; /* Ajusta esto según el tamaño deseado */
   }
   
-  .bubble, #glow-input, #how_button, #cube-loader {
+  #glow-input, #how_button, #cube-loader {
     display: none;
   }
 }
@@ -464,7 +470,7 @@ p {
     
     <div class="row">
       <div data-depth="0.2" class="col-12 d-flex justify-content-center">
-        <img id="main-pic-banner" data-scroll data-scroll-speed="2" width="450" style="  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
+        <img id="main-pic-banner" data-scroll data-scroll-speed="2"  style="box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.10);
         border-radius: 100%;object-fit: cover;" class=" karen-ortiz-footer"  src="https://static.wixstatic.com/media/bc0394_2c111843e52c4e02be6ab5d621369b62~mv2.jpg" alt="Foto de karen">
       </div>
     </div>
@@ -590,9 +596,7 @@ p {
           </div>
     
           <div id="backend_stuff"  class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex flex-column"> <!-- Modificado para usar flex-column -->
-            <h1  style="font-size: 1.5em;">
-                  
-                  
+            <h1  class="text-portfolio-text general_margin4">
               The art of visual communication, creatively impacting the world around us—one well-coded design at a time. Design with purpose, program with precision!</h1>
             <div class="row order-2"> <!-- Cambio en el orden -->
     
@@ -601,7 +605,7 @@ p {
             <div class="row order-1"> <!-- Cambio en el orden -->
               <div class="col-12 d-flex justify-content-center">
                 <div class="col-12 d-flex justify-content-start py-4">
-                  <a href="indexp.html">
+                  <a target="_blank" href="https://www.canva.com/design/DAF_m5FCahE/B9eLMfR1JAKpyQm0R_1CuA/edit?utm_content=DAF_m5FCahE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
                   <button class="button-portfolio">GET MY CV</button>
                   </a>
       
@@ -631,7 +635,7 @@ p {
       
       <div id="backend_stuff" data-scroll class=" col-12 d-flex justify-content-center text-start general_padding"  >
             
-        <p data-scroll style="font-size: 1.3em;">
+        <p data-scroll class="text-home">
           I am an accomplished <b> engineer, programmer, and UX/designer </b> with foundation in web programming. <b>Based in Cuernavaca, Mexico</b> 
           , I have immersed myself in the world of web development, constantly with creativity and innovation.
           My journey in the realm of web programming has been amazing for me. I specialize in front-end web development, proficient in the most common frameworks and languages to craft visually appealing and user-friendly interfaces.
@@ -861,14 +865,14 @@ p {
     <div class="separador" style="margin-top: 50px;"></div> <!--purple hr--->
     
     <!-- It's All About Style-->
-    <section id="backend_stuff" data-scroll-section data-aos="fade-up" style="margin-bottom: 12em; margin-top: 7em;" class="general_padding">
+    <section id="backend_stuff" data-scroll-section data-aos="fade-up"  class="general_padding general_margin">
     <div data-scroll class="container" >
     <div class="row">
       <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 d-flex ">
         <!-- Contenido de la primera columna -->
         <div>
         <h1  class="degradado-bold typewriter-portfolio">It's All About Style.</h1>
-        <p  style="font-size: 1.3em;" >As a Front-End Developer, my passion and dedication extend beyond simply writing code; they reach every pixel and every interaction that creates an unforgettable experience for the user. My focus has always been on designing and implementing solutions that are not only functional but also visually appealing, skillfully blending art and technology to create websites and applications that speak for themselves.
+        <p  class="text-home" >As a Front-End Developer, my passion and dedication extend beyond simply writing code; they reach every pixel and every interaction that creates an unforgettable experience for the user. My focus has always been on designing and implementing solutions that are not only functional but also visually appealing, skillfully blending art and technology to create websites and applications that speak for themselves.
     
           Since the beginning of my career, I have understood the importance of working closely with teams from all areas related to web design, including UX/UI Designers, Customer Experience (CX) specialists, and of course, the development team. This multidisciplinary collaboration has allowed me to delve into every aspect of the development process, ensuring that every design decision is made with a deep understanding of its technical implications and its impact on the user experience.
           
@@ -953,8 +957,8 @@ p {
        </div>
       <div id="backend_stuff" class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
         <!-- Contenido de la segunda columna -->
-        <h1 class="typewriter-portfolio" style="font-family: poppins;font-size: 4.5em;font-weight: 600;color: rgba(255, 255, 255, 0.765);">But... the backend?</h1>
-        <p style="color: white;font-size: 1.3em;" class="py-5">In my role as a web developer, I have expanded my experience beyond front-end to delve into the fascinating world of back-end, a natural evolution given my passion for building complete and dynamic web solutions. Working hand in hand with multidisciplinary teams has been key in this journey, allowing me to acquire skills in languages such as PHP, Python, and JavaScript applied to the back-end. This collaboration has been essential for my professional development, providing me with a comprehensive understanding of web application construction.
+        <h1 class="typewriter-portfolio but_backend" >But... the backend?</h1>
+        <p style="color: white;" class="text-home py-5">In my role as a web developer, I have expanded my experience beyond front-end to delve into the fascinating world of back-end, a natural evolution given my passion for building complete and dynamic web solutions. Working hand in hand with multidisciplinary teams has been key in this journey, allowing me to acquire skills in languages such as PHP, Python, and JavaScript applied to the back-end. This collaboration has been essential for my professional development, providing me with a comprehensive understanding of web application construction.
     
           Through the integration of back-end into my projects, I have been able to elevate the interactivity and dynamism of web pages to a new level. Learning both relational and non-relational databases has been a cornerstone in this process, enabling me to design and manage data efficiently to create personalized user experiences rich in functionality. My experience with these technologies has allowed me not only to store and manipulate data effectively but also to understand the importance of security and performance in web development.
           
@@ -974,23 +978,17 @@ p {
     <section data-scroll-section id="tools" >
     
     
-    <div data-scroll  class="container" style="margin-bottom: 8em;" >
+    <div data-scroll  class="container" >
     
       <div data-aos="zoom-out-up" class="row" style="margin-bottom: -8em;">
     
-        <div class="col-md-6 ">
-          <h1 class="degradado-bold py-5 mx-5 typewriter-portfolio" >What about Visuals?</h1>
-          <p style="font-size: 1.3em;" class="mx-5"  >My day-to-day is a fusion of creativity and technology. I adeptly handle a wide range of tools and technologies that allow me to bring my ideas from initial concept to seamless implementation. My arsenal includes fundamental languages like HTML5, CSS3, and JavaScript, as well as cutting-edge frameworks and preprocessors such as Bootstrap, Tailwind CSS, SCSS, React.js, and Astro. These tools are my brushes and canvases, with which I paint web experiences that are not only visually appealing but also intuitive and accessible.
-    
-            Onver my creative proces, my ability to design user experiences (UX) and user interfaces (UI). I use Figma to bring my design visions to life, allowing me to collaborate in real-time with teams of any size. Dreamweaver, Sketch, and other tools like Jitter and Animate are essential for prototyping and animating my ideas, ensuring that every transition and interaction is as smooth as imagined. For more complex visual effects, I turn to After Effects, where my creativity knows few bounds.
-            
+        <div class="col-md-6 general_margin2">
+          <h1 class="degradado-bold py-5  typewriter-portfolio mx-5" >What about Visuals?</h1>
+          <p  class="text-home mx-5" >My day-to-day is a fusion of creativity and technology. I adeptly handle a wide range of tools and technologies that allow me to bring my ideas from initial concept to seamless implementation. My arsenal includes fundamental languages like HTML5, CSS3, and JavaScript, as well as cutting-edge frameworks and preprocessors such as Bootstrap, Tailwind CSS, SCSS, React.js, and Astro. These tools are my brushes and canvases, with which I paint web experiences that are not only visually appealing but also intuitive and accessible.
+            Onver my creative proces, my ability to design user experiences (UX) and user interfaces (UI). I use Figma to bring my design visions to life, allowing me to collaborate in real-time with teams of any size. Dreamweaver, Sketch, and other tools like Jitter and Animate are essential for prototyping and animating my ideas, ensuring that every transition and interaction is as smooth as imagined. For more complex visual effects, I turn to After Effects, where my creativity knows few bounds.     
             I don't stop at traditional design; I also delve into the world of digital design and video editing with Photoshop, Illustrator, InDesign, Lightroom, and Final Cut Pro X, tools that extend my creative capabilities beyond the web. Figma and Canva are indispensable for quickly creating attractive designs, while Firefly illuminates my path to innovative solutions.
-            
             The No-Code revolution has been a game-changer for me. Platforms like Wix Studio, Webflow, WordPress with Elementor, Shopify, and more allow me to turn ideas into reality without a single line of code, greatly expanding my ability to deliver quick and efficient solutions to my clients.</p>
     
-    
-          
-          
         </div>
     
         <div class="col-md-6 " >
@@ -1154,9 +1152,9 @@ p {
       
     
     
-        <div id="backend_stuff" class="col-md-6 ">
+        <div id="backend_stuff" class="col-md-6 general_margin5">
           <h1 class="degradado-bold py-5" >More skills, better results.</h1>
-          <p style="font-size: 1.3em;" class="py-5">As a developer and data scientist, my world revolves around data exploration and analysis to uncover hidden patterns and gain valuable insights that can transform strategies and decisions. My technical focus is based on a deep knowledge of Python and Node.js for backend development, complemented by PHP and Laravel for building robust web applications. I use MySQL and Apache Server for relational database management and web hosting, while MongoDB is my choice for projects requiring a flexible and scalable NoSQL database.
+          <p class="py-5 text-home general_margin3">As a developer and data scientist, my world revolves around data exploration and analysis to uncover hidden patterns and gain valuable insights that can transform strategies and decisions. My technical focus is based on a deep knowledge of Python and Node.js for backend development, complemented by PHP and Laravel for building robust web applications. I use MySQL and Apache Server for relational database management and web hosting, while MongoDB is my choice for projects requiring a flexible and scalable NoSQL database.
     
             At the core of my professional practice lies my passion for data science, where Python is my lingua franca. Tools like Google Colab and Jupyter Notebooks are essential in my daily work, allowing me to write and execute code in an interactive environment that facilitates experimentation and learning. Pandas, NumPy, Seaborn, and Matplotlib are pillars in my data analysis, helping me manipulate data and visualize complex relationships with ease.
             
@@ -1208,9 +1206,9 @@ p {
                       <div class="circle-person"></div>
                       <div class="card-inner-person" style="text-align: center;">
                         <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_58aa847e0b6d4e7091a164a652f841e1~mv2.png" alt="">
-                        <h4 style="font-family: Raleway;" id="review_text"">"Very responsable woman, a lot of creativity and interest."</h4>
-                        <p class="degradado" style="font-size: 1.3em;">Carla Denisse Romero Vázquez</p>
-                        <p style="font-size: 1em;">Freelance Client</p>
+                        <h4 style="font-family: Raleway;" class="review_paragraph" id="review_text">"Very responsable woman, a lot of creativity and interest."</h4>
+                        <p class="degradado review_paragraph"  style="font-size: 1.3em;">Carla Denisse Romero Vázquez</p>
+                        <p style="font-size: 1em;" class="responsive_reviews">Freelance Client</p>
                       </div>
                     </div>
 
@@ -1222,9 +1220,9 @@ p {
                       <div class="circle-person"></div>
                       <div class="card-inner-person" style="text-align: center;">
                         <img style="object-fit: cover;border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_36d7111630a34a8cbe15ffd352776913~mv2.png" alt="">
-                        <h4 style="font-family: Raleway;" id="review_text"">"Karen Rebeca has proven to be an excellent worker, committed and responsible. She has always expressed concern about improving, training and updating her knowledge. That's why i suggest this recomendation with confidence that will be up to te task."</h4>
-                        <p class="degradado" style="font-size: 1.3em;">Ignacio Calderón</p>
-                        <p style="font-size: 1em;">USA & México Human Resources Director at ZOEK Marketing</p>
+                        <h4 style="font-family: Raleway;" class="review_paragraph" id="review_text"">"Karen Rebeca has proven to be an excellent worker, committed and responsible. She has always expressed concern about improving, training and updating her knowledge. That's why i suggest this recomendation with confidence that will be up to te task."</h4>
+                        <p class="degradado review_paragraph" style="font-size: 1.3em;">Ignacio Calderón</p>
+                        <p style="font-size: 1em;" class="responsive_reviews">USA & México Human Resources Director at ZOEK Marketing</p>
                       </div>
                     </div>
 
@@ -1236,9 +1234,9 @@ p {
                       <div class="circle-person"></div>
                       <div class="card-inner-person" style="text-align: center;">
                         <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_455009f8db5047d5bc8d12e6be823717~mv2.png" alt="">
-                        <h4 style="font-family: Raleway;" id="review_text">"Karen has stood out for her excellent work, discipline and perseverance. She's always on board to learn new things. Versatile and organized. It really makes easier to work with her."</h4>
-                        <p class="degradado" style="font-size: 1.3em;">Dr. Honnor Da Silva</p>
-                        <p style="font-size: 1em;">TECO TV's Director</p>
+                        <h4 style="font-family: Raleway;" class="" id="review_text">"Karen has stood out for her excellent work, discipline and perseverance. She's always on board to learn new things. Versatile and organized. It really makes easier to work with her."</h4>
+                        <p class="degradado review_paragraph" style="font-size: 1.3em;">Dr. Honnor Da Silva</p>
+                        <p style="font-size: 1em;" class="responsive_reviews">TECO TV's Director</p>
                       </div>
                     </div>
 
@@ -1251,9 +1249,9 @@ p {
                       <div class="circle-person"></div>
                       <div class="card-inner-person" style="text-align: center;">
                         <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_765b53f1cdcd4980a41a198c6b10ded4~mv2.png" alt="">
-                        <h4 style="font-family: Raleway;" id="review_text">"Karen Rebeca has demostrated notable commitment in the course, standing out for the development of high-quiality projects that reflect solid knowledge in the frontend field!"</h4>
-                        <p class="degradado" style="font-size: 1.3em;">Ana Villanueva</p>
-                        <p style="font-size: 1em;">Tecnolochicas Pro Dev Teacher</p>
+                        <h4 style="font-family: Raleway;" class="review_paragraph" id="review_text">"Karen Rebeca has demostrated notable commitment in the course, standing out for the development of high-quiality projects that reflect solid knowledge in the frontend field!"</h4>
+                        <p class="degradado review_paragraph" style="font-size: 1.3em;">Ana Villanueva</p>
+                        <p style="font-size: 1em;" class="responsive_reviews">Tecnolochicas Pro Dev Teacher</p>
                       </div>
                     </div>
 
@@ -1265,9 +1263,9 @@ p {
                       <div class="circle-person"></div>
                       <div class="card-inner-person" style="text-align: center;">
                         <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_4e4cf602dadf450cb60893f042dd6409~mv2.png" alt="">
-                        <h4 style="font-family: Raleway;" id="review_text">"Amazing web designer, very creative and compromised. Thanks!"</h4>
-                        <p class="degradado" style="font-size: 1.3em;">Aaron Knipp</p>
-                        <p style="font-size: 1em;">Cicospace CEO & Founder</p>
+                        <h4 style="font-family: Raleway;" class="review_paragraph" id="review_text">"Amazing web designer, very creative and compromised. Thanks!"</h4>
+                        <p class="degradado review_paragraph" style="font-size: 1.3em;">Aaron Knipp</p>
+                        <p style="font-size: 1em;" class="responsive_reviews">Cicospace CEO & Founder</p>
                       </div>
                     </div>
 
@@ -1279,9 +1277,9 @@ p {
                       <div class="circle-person"></div>
                       <div class="card-inner-person" style="text-align: center;">
                         <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_c074d01a7bdf4c93abaabd0bde2e4d98~mv2.png" alt="">
-                        <h4 style="font-family: Raleway;" id="review_text">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
-                        <p class="degradado" style="font-size: 1.3em;">René Chavez</p>
-                        <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
+                        <h4 style="font-family: Raleway;" class="review_paragraph" id="review_text">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
+                        <p class="degradado review_paragraph" style="font-size: 1.3em;">René Chavez</p>
+                        <p style="font-size: 1em;" class="responsive_reviews">Museographe & Trailer of Science Director</p>
                       </div>
                     </div>
 
@@ -1293,9 +1291,9 @@ p {
                       <div class="circle-person"></div>
                       <div class="card-inner-person" style="text-align: center;">
                         <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_1b9f7b1ed35f4ba983a0a2b66b4f327e~mv2.png" alt="">
-                        <h4 style="font-family: Raleway;"id="review_text">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
-                        <p class="degradado" style="font-size: 1.3em;">René Chavez</p>
-                        <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
+                        <h4 style="font-family: Raleway;" class="review_paragraph" id="review_text">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
+                        <p class="degradado review_paragraph" style="font-size: 1.3em;">René Chavez</p>
+                        <p style="font-size: 1em;" class="responsive_reviews">Museographe & Trailer of Science Director</p>
                       </div>
                     </div>
 
@@ -1307,14 +1305,13 @@ p {
                       <div class="circle-person"></div>
                       <div class="card-inner-person" style="text-align: center;">
                         <img style="border-radius: 50%; width: 35%; padding:1em;" src="https://static.wixstatic.com/media/bc0394_1b6f62b8a06246e5b81c0c3cd95ba1be~mv2.png" alt="">
-                        <h4 style="font-family: Raleway;" id="review_text"">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
-                        <p class="degradado" style="font-size: 1.3em;">René Chavez</p>
-                        <p style="font-size: 1em;">Museographe & Trailer of Science Director</p>
+                        <h4 style="font-family: Raleway;" class="review_paragraph" id="review_text"">"Excelent partner! Dedicated and proactive. She's always learning and has done an amazing work over here. Love to work with her!"</h4>
+                        <p class="degradado review_paragraph" style="font-size: 1.3em;">René Chavez</p>
+                        <p style="font-size: 1em;" class="responsive_reviews">Museographe & Trailer of Science Director</p>
                       </div>
                     </div>
 
                   </div>
-                  <!-- Añade más slides según sea necesario -->
               </div>
           </div>
       </div>
