@@ -444,6 +444,9 @@ height: auto; /* Make height automatic to contain its children */
 .skillTag{
   display: none;
 }
+#spaceInvadersStrip{
+  display: none;
+}
 }
 
 #gooey6 {
@@ -603,4 +606,28 @@ top: 440%;
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+canvas {
+  display: block;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out;
+  filter: invert(20%)
+}
+
+canvas:hover {
+  transform: scale(1.01);
+}
+.containerSpaceInv {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 65vh;
+background-color: rgb(255, 255, 255);
+}
+
+.canvas-wrapper {
+  padding: 20px;
+}
+#spaceInvadersStrip{
+  background-color: rgb(255, 255, 255);
 }

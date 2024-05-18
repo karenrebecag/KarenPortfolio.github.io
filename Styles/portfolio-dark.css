@@ -559,3 +559,50 @@ top: 440%;
     }
   }
 
+  canvas {
+    display: block;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+canvas:hover {
+    transform: scale(1.01);
+}
+    .containerSpaceInv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62vh;
+    }
+    
+    .canvas-wrapper {
+      padding: 20px;
+    }
+    
+  .section-centered {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%; /* Ajusta este valor según sea necesario */
+}
+.whitebox {
+  background-color: white;
+  border-radius: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+.containerPortfolio {
+  padding: 0;
+}
+
+.rowPortfolio {
+  margin: 0;
+}
+
+.colPortfolio {
+  padding: 0;
+}
+.general_padding{
+  padding: 0 20vw 0 20vw;
+}
