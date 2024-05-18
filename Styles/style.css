@@ -326,9 +326,11 @@ b {
     font-size: 0.3em; /* Ajuste para pantallas muy pequeñas */
   }
   #introduction{
+
     height: 15em;
   }
   .text-home{
+  
     font-size: 1em;
     }
   #bubbles{

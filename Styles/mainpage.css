@@ -1825,3 +1825,199 @@ z-index: 1;
     font-size: 1em;
   }
 }
+
+.project-section2{
+  background-color: rgba(255, 255, 255, 0.436);
+  padding: 30px
+}
+#gray-background {
+  background-color: #f3f3f3;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+#gray-background .row {
+  display: flex;
+  align-items: center; /* Asegura que los elementos hijos se alineen verticalmente en el centro */
+}
+#collapsible-content1 {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#collapsible-content1.collapse1 {
+  max-height: 0;
+}
+
+#collapsible-content1.expand1 {
+  max-height: 1000px; /* Ajusta este valor según el contenido */
+}
+
+.text-portfolio-text1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.gris-mockups1 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.rounded-custom1 {
+  border-radius: 10px;
+}
+
+.fade-in1 {
+  animation: fadeIn1 0.3s ease-in-out;
+}
+
+@keyframes fadeIn1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.show-element1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hide-element1 {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+
+#collapsible-content_zoek {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#collapsible-content_zoek.collapse_zoek {
+  max-height: 0;
+}
+
+#collapsible-content_zoek.expand_zoek {
+  max-height: 1000px; /* Ajusta este valor según el contenido */
+}
+
+.text-portfolio-text_zoek {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.gris-mockups_zoek {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.rounded-custom_zoek {
+  border-radius: 10px;
+}
+
+.fade-in_zoek {
+  animation: fadeIn_zoek 0.3s ease-in-out;
+}
+
+@keyframes fadeIn_zoek {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.show-element_zoek {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hide-element_zoek {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+#collapsible-content2 {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#collapsible-content2.collapse2 {
+  max-height: 0;
+}
+
+#collapsible-content2.expand2 {
+  max-height: 1500px; /* Ajusta este valor según el contenido */
+}
+
+.text-portfolio-text2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.gris-mockups2 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.rounded-custom2 {
+  border-radius: 10px;
+}
+
+.fade-in2 {
+  animation: fadeIn2 0.3s ease-in-out;
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.show-element2 {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.hide-element2 {
+  opacity: 0;
+  transform: translateY(-30px);
+  visibility: hidden;
+}
+
+.more_button {
+  min-width: 100%;
+  border: 1px solid white; /* Hace el borde blanco */
+  background-color: white;
+  height: 4em;
+  font-size: 1.5em;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.more_button:hover {
+  transform: scale(1.02);
+}

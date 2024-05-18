@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Head---------------------------------------------------------------------------------------------------------------->
+<head>
+<!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="author" content="Karen Ortiz">
+    <meta name="description" content="Karen Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Title ---------------------------------------------------------------------------------------------------------------->
+    <title>Portfolio | UX Designer & Programmer </title>
+<!-- Favicon ---------------------------------------------------------------------------------------------------------------->
+    <link rel="icon" type="image/x-icon" href="https://static.wixstatic.com/media/bc0394_1047cedca14c4ed9b1a7aa4d87f8d8a9~mv2.png">
+<!-- Bootstrap ---------------------------------------------------------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- Bootstrap Icons ---------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+      <!-- CSS Links ---------------------------------------------------------------------------------------------------------------->
+<link href="/Styles/style.css" rel="stylesheet">
+<link href="/Styles/responsive.css" rel="stylesheet">
+<link href="/Styles/extra.css" rel="stylesheet">
+<link href="/Styles/portfolio.css" rel="stylesheet">
+
+<link href="/Styles/mainpage.css" rel="stylesheet">
+<link href="/Styles/toggle.css" rel="stylesheet">
+<link href="/Styles/project.css" rel="stylesheet">
+<link href="/Styles/instagramgrid.css" rel="stylesheet">
+
+<!-- Enlace a la hoja de estilo predeterminada (modo claro) -->
+<link rel="stylesheet" href="/Styles/style.css" id="theme-style">
+<link rel="stylesheet" href="/Styles/mainpage.css" id="mainpage-style">
+<link rel="stylesheet" href="/Styles/project.css" id="project-style">
+
+<!-- Google Fonts ---------------------------------------------------------------------------------------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Josefin+Sans&family=Orbitron:wght@600&family=Poppins:wght@200&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
+
+
+<!--AOS!-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Extra JS-->
+    <script src="/Scripts/extra.js"></script>
+
+
+        <!--Scrollbar-->
+        <style>
+          /* Estilo del scrollbar completo */
+    ::-webkit-scrollbar {
+        width: 12px; /* Ancho del scrollbar */
+        height: 5px;
+    }
+    
+    /* Estilo del track del scrollbar (la parte que "contiene" al thumb) */
+    ::-webkit-scrollbar-track {
+        background: #ebdfdf; /* Color de fondo del track del scrollbar */
+    }
+    
+    /* Estilo del thumb del scrollbar (la parte que se mueve/arrastra) */
+    ::-webkit-scrollbar-thumb {
+        background-color: black; /* Color del thumb del scrollbar */
+        border-radius: 4px; /* Borde redondeado del thumb */
+        border: 3px solid #f0f0f0; /* Borde opcional para el thumb */
+    }
+    
+        </style>
+
+
+    <style>
+
+@media (max-width: 1400px) {
+
+.container{
+  max-width: 100%;
+}
+
+
+.general_padding{
+        padding: 0 0 0 0;
+    }
+.logo-header-main{
+  display: none;
+}}
+@media (max-width: 992px) {
+
+
+#miHeader{
+  min-width: 100%;
+}
+.navbar-nav {
+    flex-direction: row; /* Asegura que los elementos se alineen horizontalmente */
+    justify-content: flex-start; /* Alinea los elementos al final del contenedor */
+    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
+  }
+
+  .nav-item {
+    margin-right: 5px; /* Espaciado entre los elementos nav-item */
+  }
+
+  .navbar-collapse {
+    flex-basis: auto; /* Asegura que el contenedor de collapse se ajuste al contenido */
+  }
+
+  .card_header_social {
+    display: flex; /* Asegura que los elementos sociales también se alineen horizontalmente */
+    justify-content: flex-end; /* Alinea los elementos sociales al final */
+    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
+    margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
+  }
+
+}
+
+      @media (max-width: 820px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column; /* Alinea los contenedores en vertical */
+    align-items: start; /* Centra los contenedores horizontalmente */
+  }
+
+  .navbar-nav {
+    flex-direction: row; /* Asegura que los nav-items estén en línea */
+    justify-content: flex-start; /* Centra los nav-items horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+    width: 100%; /* Los nav-items ocuparán todo el ancho */
+  }
+
+  .nav-item {
+    margin: 5px; /* Espaciado alrededor de cada nav-item */
+  }
+
+  .card_header_social {
+    display: flex;
+    justify-content: center; /* Centra los elementos sociales horizontalmente */
+    width: 100%; /* Los elementos sociales ocuparán todo el ancho */
+    margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+
+  }
+}
+
+
+
+      @media (max-width: 820px) {
+      #downloadCvButton{
+        display: none;
+      }}
+      @media (max-width: 768px) {
+  .bubble, #glow-input, #how_button, #cube-loader {
+    display: none;
+  }
+}
+
+.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  width: 100%;
+  max-width: none;
+}
+
+p {
+  margin: 0%;
+}
+
+.owl-carousel {
+  max-width: 100%;
+}
+
+    
+        </style>
+</head>
+
+<!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)----->
+<!--Body---------------------------------------------------------------------------------------------------------------->
+<body>
+  <div class="grain"></div>
+
+
+<!--NavBar-->
+<header id="miHeader" >
+
+
+  
+  <nav class="navbar navbar-expand-md " >
+  <!--Navbar Toggler-->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar-toggler">
+
+  <!--Navbar Container-->
+
+    <div class="container-fluid">
+      <div class="row">
+    
+       <!-- Center Column for Main Logo -->
+       <div class="col-md-4 d-flex justify-content-center">
+        <a style="text-decoration: none;" href="/Pages/indexmain.html">
+          <h1 id="logo-header">Karen Ortiz</h1>        
+        </a>
+      </div>
+  
+      <div class="col-md-4 d-flex justify-content-center py-3">
+
+        <div  class="button-container-header">
+          <a style="text-decoration: none;" href="/Pages/indexmain.html">
+          <button class="button-header">
+            <h6 class="nav-full">Home</h6>
+          </button>
+          </a>
+
+          <a style="text-decoration: none;" href="/Pages/indexme.html">
+          <button class="button-header">
+            <h6 class="nav-full">About</h6>
+          </button>
+          </a>
+        
+          <a style="text-decoration: none;" href="/Pages/indexcontact.html">
+          <button class="button-header">
+            <h6 class="nav-full">Contact</h6>
+          </button>
+          </a>
+
+          <a style="text-decoration: none;" href="/Pages/indexp.html">
+            <button class="button-header">
+              <h6 class="nav-full">Portfolio</h6>
+            </button>
+            </a>
+        </div>
+        
+
+
+      </div>
+      
+      
+      
+
+
+
+      
+    
+ 
+
+        
+        <!-- Right Column for Social Links -->
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <!-- Social Links -->
+          <div class="card_header_social mx-5" >
+
+            
+            <a class="socialContainer_header_social containerOne_header_social" href="https://www.instagram.com/karenrebeca.og/?hl=es" target="_blank">
+              <svg class="socialSvg_header_social twitterSvg_header_social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+            </svg>
+            </a>
+
+            <a class="socialContainer_header_social containerTwo_header_social" href="mailto:karenrortizg@gmail.com">
+                  <svg class="socialSvg_header_social twitterSvg_header_social" fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                  viewBox="0 0 378.632 378.632" xml:space="preserve">
+                <path d="M377.406,160.981c-5.083-48.911-31.093-92.52-73.184-122.854C259.004,5.538,200.457-6.936,147.603,4.807
+                  C97.354,15.971,53.256,48.312,26.571,93.491C-0.122,138.731-7.098,192.982,7.436,242.39c7.832,26.66,21.729,51.712,40.15,72.51
+                  c18.594,20.972,41.904,37.722,67.472,48.459c23.579,9.888,48.628,14.797,73.653,14.797c34.128-0.001,68.115-9.121,97.949-27.098
+                  l-21.092-35.081c-40.578,24.451-90.887,28.029-134.652,9.66c-40.283-16.96-71.759-52.383-84.211-94.761
+                  c-11.336-38.595-5.846-81.093,15.125-116.586c20.922-35.467,55.426-60.801,94.622-69.533c41.644-9.225,87.948,0.669,123.857,26.566
+                  c32.502,23.394,52.497,56.769,56.363,93.907c2.515,23.979,0.31,42.891-6.526,56.226c-14.487,28.192-35.526,28.36-43.873,27.132
+                  c-0.283-0.041-0.476-0.082-0.65-0.117c-2.396-3.709-2.091-17.489-1.974-23.473c0.044-2.332,0.084-4.572,0.084-6.664v-112.06h-31.349
+                  c-3.998-3.278-8.225-6.251-12.674-8.921c-17.076-10.159-36.858-15.552-57.255-15.552c-29.078,0-56.408,10.597-76.896,29.824
+                  c-32.537,30.543-42.63,80.689-24.551,122.023c8.578,19.62,23.065,35.901,41.876,47.066c17.611,10.434,38.182,15.972,59.47,15.972
+                  c24.394,0,46.819-6.735,64.858-19.492c1.915-1.342,3.813-2.79,5.626-4.233c6.431,8.805,15.811,14.4,27.464,16.114
+                  c16.149,2.408,32.299-0.259,46.784-7.668c16.453-8.419,29.715-22.311,39.439-41.271C377.209,219.346,380.778,193.46,377.406,160.981
+                  z M242.33,224.538c-0.891,1.283-2.229,2.907-2.961,3.803c-0.599,0.778-1.151,1.46-1.643,2.073
+                  c-3.868,4.982-8.597,9.48-14.113,13.374c-11.26,7.943-25.152,11.964-41.257,11.964c-28.968,0-53.462-14.75-63.846-38.544
+                  c-11.258-25.69-5.071-56.854,15.035-75.692c12.7-11.95,30.538-18.784,48.911-18.784c13.028,0,25.56,3.375,36.268,9.788
+                  c6.831,4.072,12.861,9.337,17.9,15.719c0.497,0.613,1.082,1.322,1.724,2.094c0.952,1.135,2.812,3.438,3.981,5.092V224.538z"/>
+                </svg>
+            </a>
+              
+            <a class="socialContainer_header_social containerOne_header_social" href="https://www.linkedin.com/in/karen-rebeca-ortiz-gonz%C3%A1lez-b5a860282/" target="_blank">
+              <svg class="socialSvg_header_social linkdinSvg_header_social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                <path d="M48,8H16c-4.418,0-8,3.582-8,8v32c0,4.418,3.582,8,8,8h32c4.418,0,8-3.582,8-8V16C56,11.582,52.418,8,48,8z M24,47h-5V27h5 V47z M24.029,23.009C23.382,23.669,22.538,24,21.5,24c-1.026,0-1.865-0.341-2.519-1.023S18,21.458,18,20.468 c0-1.02,0.327-1.852,0.981-2.498C19.635,17.323,20.474,17,21.5,17c1.038,0,1.882,0.323,2.529,0.969 C24.676,18.615,25,19.448,25,20.468C25,21.502,24.676,22.349,24.029,23.009z M47,47h-5V35.887C42,32.788,40.214,31,38,31 c-1.067,0-2.274,0.648-2.965,1.469S34,34.331,34,35.594V47h-5V27h5v3.164h0.078c1.472-2.435,3.613-3.644,6.426-3.652 C44.5,26.5,47,29.5,47,34.754V47z"></path>
+                </svg>
+            </a>
+
+            <a class="socialContainer_header_social containerFour_header_social" href="https://github.com/karenrebecag" target="_blank">
+                    <svg class="socialSvg_header_social whatsappSvg_header_social" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+                </svg>
+            </a>
+            <div class="containerIndicator">
+              <span class="buttonIndicator">Theme</span>
+              <span class="arrowIndicator firstIndicator">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </span>
+              <span class="arrowIndicator secondIndicator">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </span>
+              <span class="arrowIndicator thirdIndicator">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </span>
+            </div>
+            
+            
+
+            <label class="switch">
+              <input type="checkbox" id="theme-switch">
+              <span class="slider"></span>
+            </label>
+
+
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+
+      
+  </div>
+
+  </nav>
+</header>
+
+
+
+<div id="gooey-nav-logo"></div>
+<div id="gooey2"></div>
+<div id="gooey3"></div>
+<div id="gooey4"></div>
+
+                
+                                          
+                                               <!-- Video de Fondo -->
+                                               <video autoplay muted loop class="background-video">
+                                                <source src="https://video.wixstatic.com/video/11062b_7e61ffd6dbb040ee8b0e4dc604e8fd4e/1080p/mp4/file.mp4" type="video/mp4">
+                                              </video>
+                                              
+  <!--Banner-->
+  <section data-aos="fade-up" class="project-section" >
+  <div class="container containerPortfolio" style="margin-top: 15em;">
+  <div class="row rowPortfolio" style="justify-content: center; max-width: 100%;">
+  <!-- Primer container macro -->
+  <div class="col-md-6 colPortfolio">
+  <div class="row py-5 rowPortfolio">
+    <!-- Tres cuadros pequeños en la parte superior -->
+
+  </div>
+  <div class="row rowPortfolio">
+    <!-- Un cuadro grande en la parte inferior -->
+    <div class="col-12 py-5 colPortfolio colPortfolioLarge">                                                       
+        <div   style="max-height: 10em;  ">
+      <div class="row">
+          <div class="col-12 text-start">
+            <h1 id="about-tittle" style="text-align: start;position: relative; font-size: 5em;" class="typewriter-portfolio">
+              HEALT ADE
+            </h1> 
+          </div>
+        </div>
+      <div class="row">
+        <div >
+            <div style="display: flex; justify-content:start; text-align:start;" class="py-5" >
+              <p style="font-size: 1.5em;">
+                Goslings Rum is a down-to-earth, happy, and charismatic brand with a friendly character. The Goslings Rum mission is to motivates people to take time to stop and smell the roses, to step away from the rat race and be happy. It is both a universal call to action and a response to the stressors of the modern world. We challenge all to relax, breathe and reclaim the meaningful moments in life.
+
+                Goslings Rum is positioned for adults looking for a well-deserved indulgence, Goslings Rum is the brand of rum that provides a reliable recipe perfected over eight generations. Unlike brands that are too sweet, too cool, and overly sophisticated, Goslings Rum is a simple respite committed to encouraging happy and memorable times for adults everywhere.                
+                
+                
+                
+                
+                
+                </p>
+
+            </div>
+        </div>
+
+      </div>
+      <div class="row ">
+        <div style="display: flex; justify-content:start; text-align:start; position: relative; right: 5em;">
+          <div class="square bg-color-project" 
+          style="max-height: 15em; 
+          max-width:130em;; 
+          backdrop-filter: blur(40px);">
+            <div class="row">
+            <div ><h1 style="text-align: start; font-size: 1.5em;margin-top: -3em;" id="about-tittle">Captivate. Engage, and Inspire.</h1></div></div>
+            <div class="row" style="display: flex; align-items: center;" >
+              <p style="flex-grow: 1; text-align: start; font-size: 1.3em;">
+                We are a passionate team of designers, developers, and dreamers dedicated to transforming ideas into visually stunning realities.
+              </p>
+              <svg style="width: 50;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14 15.6569V10M14 10H8.34315M14 10L5.63604 18.364M10.2432 20.8278C13.0904 21.3917 16.1575 20.5704 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C14.8492 2.12132 9.15076 2.12132 5.63604 5.63604C3.42957 7.84251 2.60828 10.9096 3.17216 13.7568" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- Segundo container macro -->
+  <div class="col-md-6 colPortfolio">
+  <div class="row rowPortfolio ">
+    <!-- Dos cuadros en la parte superior -->
+    <div class="col-6 colPortfolio colPortfolioSmall">
+      <div id="responsive-text" class="square bg-color-project" style="max-height: 30em; backdrop-filter: blur(40px);">
+        <div class="row">
+          <div class="col-12 text-start ">
+            <h1 class="number-animation" data-target-number="200" style="font-weight: 500; font-family: poppins; font-size: 6em;">200</h1>
+
+          </div>
+        </div>
+
+        <div class="row"><h1 id="about-tittle" class="col-12 text-end ">
+          <h1 id="about-tittle"  style="text-align: start; font-size: 1.3em;">
+          Project Success.</h1>
+        </div>
+
+        <div class="row">
+            <h1 style="text-align: start; font-size: 1.3em;" >
+          Our team of deccated experts is
+  passionate about diving measurable
+  results and ensurng our clients success</h1>
+
+  <a href="indexmu.html#testimonials">
+  <button class="white-pill-button">
+  Testimonials
+  <svg width="15px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <g id="SVGRepo_iconCarrier">
+  <path d="M8.34315 14H14M14 14V8.34315M14 14L5.63604 5.63604M3.17216 10.2432C2.60828 13.0904 3.42957 16.1575 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C16.1575 3.42957 13.0904 2.60828 10.2432 3.17216" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+  </svg>
+  </button>
+  </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-6 colPortfolio colPortfolioSmall">
+      <div class="square bg-color-project" style="max-height: 30em; backdrop-filter: blur(40px);">
+        <div class="row"><div class="col-12 text-start "><h1 style="text-align: start; font-size: 1.5em;" id="about-tittle">Creativity Unleashed</h1></div></div>
+        <div class="row"><h1 class="col-12 text-end "><h1 style="text-align: start; font-size: 1.3em;" >
+          Our team chiclented assoners trives on
+  pushna the boundanes of crectivity
+  engunna that vour eraect stands out no.
+  makes on impact</h1>
+
+  <div style="display: flex; align-items: center;">
+  <div  class="py-5 rounded-box-images">
+  <img src="https://static.wixstatic.com/media/478bf7_286bef15cb464e24b2ef787b3c230a34~mv2.png" style="right: -12em; z-index: 1;" class="rounded-images" alt="profile pic">
+  <img src="https://static.wixstatic.com/media/478bf7_4f397a5101034c9b9970da30eccb3b43~mv2.png" style="right: -9em; z-index: 2;" class="rounded-images" alt="profile pic">
+  <img src="https://static.wixstatic.com/media/478bf7_6139c5b264734325a64309c49d541b36~mv2.png" style="right: -6em; z-index: 3;" class="rounded-images" alt="profile pic">
+  <img src="https://static.wixstatic.com/media/478bf7_6ee7ce10adda47c1a13d12236acca2e3~mv2.png" style="right: -3em; z-index: 4;" class="rounded-images" alt="profile pic">
+  <img src="https://static.wixstatic.com/media/478bf7_3251c746dac34206adb563fe68056cce~mv2.png" style="right: 0em; z-index: 5;" class="rounded-images" alt="profile pic">
+  </div>
+  <!-- Espacio entre el div de imágenes y el texto -->
+  <div style="margin-left: 15em;" class="py-5">
+  <p id="about-tittle" class="number-animation" data-target-number="72" style="font-size: 2vw;position: relative; right: 1.4em;">72 </p>
+  <p>Prolessiond Emo orse</p>
+  </div>
+  </div>
+      
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="row rowPortfolio">
+    <!-- Un cuadro grande en la parte inferior -->
+    <div class="col-12 colPortfolio colPortfolioLarge ">
+      <img class="imagePortfolio "  style="height: 45em; object-fit: cover; " src="https://static.wixstatic.com/media/bc0394_64c788363c104f3c8bbe8c28efa089b4~mv2.png" loading="lazy" alt="white background">
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <!--About Us-->
+  <section data-aos="fade-up" class="project-section2 " >
+  <div class="container py-5 px-5">
+  <div class="row">
+  <!-- Columna izquierda con título, texto y botón -->
+  <div class="col-md-6">
+  <h2>More About:</h2>
+  <p style="font-size:1.5em;" class="py-5">
+    Repositioned Goslings Rum by communicating a new visual language, a compelling value proposition centered on Bermudian happiness, expanding media partnerships, and utilizing an engaging tone of voice for traditional and digital media. </p>   
+    <a href="https://www.mucienciasdemorelos.com/" class="button-io my-5" target="_blank">Check website</a>
+
+  </div>
+  <!-- Columna derecha con texto grande -->
+  <div class="col-md-6">
+  <p id="about-tittle" style="font-size: 4.5em;font-weight: 400;text-align: start;" class="py-5 typewriter-portfolio">Transforming ideas into visually stunning realities</p>
+  </div>
+  </div>
+  </div>
+  </section>
+
+
+
+  <!--Skills-->
+  <section data-aos="fade-up" class=" project-section">
+  <div class="container">
+  <div class="row">
+  <!-- Columna con la imagen -->
+  <div class="col-md-6">
+  <img style="height: 50em; object-fit: cover; " src="https://static.wixstatic.com/media/bc0394_b369310ef4c74ef09fb816f7a345c9fb~mv2.png" loading="lazy" alt="Imagen descriptiva" class="imagePortfolio">
+  </div>
+
+  <!-- Columna con los servicios -->
+  <div class="col-md-6">
+  <!-- Fila de servicio de diseño web -->
+  <div class="row mb-2 py-5 hov" id="gray-background">
+    <div class="col-4" >
+      <a href="indexmu.html#work">
+      <button class="white-pill-button">
+        Brand Positioning
+        <svg width="15px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M8.34315 14H14M14 14V8.34315M14 14L5.63604 5.63604M3.17216 10.2432C2.60828 13.0904 3.42957 16.1575 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C16.1575 3.42957 13.0904 2.60828 10.2432 3.17216" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </svg>
+      </button>
+      </a>
+    </div>
+
+    <div class="col-8">
+      <p class="serviceText"">
+        We designed the site from skratch using Wix Website Builder, as well as some embeed vanilla JS code for adding some extra functionalities
+      </p>
+    </div>
+  </div>
+  <!-- Fila de servicio de diseño gráfico -->
+  <div class="row mb-2 py-5 hov" id="gray-background">
+    <div class="col-4">
+      <a href="indexuin.html#work">
+      <button class="white-pill-button">
+        Social Media & Content Creation
+        <svg width="15px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M8.34315 14H14M14 14V8.34315M14 14L5.63604 5.63604M3.17216 10.2432C2.60828 13.0904 3.42957 16.1575 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C16.1575 3.42957 13.0904 2.60828 10.2432 3.17216" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </svg>
+    </button>
+      </a>              </div>
+    <div class="col-8">
+      <p class="serviceText">
+       I crafted several designs for Fibio and Ann, the main museum's pets. Wanted to create a combination of visual elements to convey a message or tell a story with visual elements.
+      </p>
+    </div>
+  </div>
+  <!-- Fila de servicio de gráficos en movimiento -->
+  <div class="row mb-2 py-5 hov" id="gray-background">
+    <div class="col-4">
+      <a href="indexuin.html#work">
+      <button class="white-pill-button">
+        UX / UI Design
+        <svg width="15px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M8.34315 14H14M14 14V8.34315M14 14L5.63604 5.63604M3.17216 10.2432C2.60828 13.0904 3.42957 16.1575 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C16.1575 3.42957 13.0904 2.60828 10.2432 3.17216" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </svg>
+    </button>
+      </a>              </div>
+    <div class="col-8">
+      <p class="serviceText">
+        Designed the first mockups (you can watch it at the bottom of the page). At the very beggining it had a minimal style, but with time, it became a funny website, with a lot of movement images, images and a simmple structure for children.
+      </p>
+    </div>
+  </div>
+  <!-- Fila de servicio de ilustración -->
+  <div class="row mb-5 py-5 hov"  id="gray-background">
+    <div class="col-4">
+      <a href="indexuin.html#work">
+      <button class="white-pill-button">
+        POS & Merchandise Design
+        <svg width="15px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M8.34315 14H14M14 14V8.34315M14 14L5.63604 5.63604M3.17216 10.2432C2.60828 13.0904 3.42957 16.1575 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C16.1575 3.42957 13.0904 2.60828 10.2432 3.17216" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </svg>
+    </button>
+      </a>              </div>
+    <div class="col-8">
+      <p class="serviceText">
+        Made several logos for printing, new images, some mockups for the store products and extra work in Ilustrator & Photoshop.
+      </p>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <!--Our passion for digital...-->
+  <section data-aos="fade-up" class="project-section2">
+  <div class="container">
+  <div class="col-12">
+  <p id="about-tittle" style="font-size: 4.5em;font-weight: 400;text-align: start;font-family: 'Raleway' sans-serif;" class="py-5">We are results driven organization that relies on data to measure creative performance.  </p>
+  </div>
+  </div>
+  </section>
+
+  <!--Project Success-->
+  <section data-aos="fade-up" class="project-section">
+  <div class="container">
+  <div class="row">
+  <!-- First Column -->
+  <div class="col-md-3 mx-auto " id="gray-background" >
+  <div class="row">
+    <!-- Content for the first row in the first column -->
+    <div class="col-12 py-5">
+        <img style="height: 10em; position: relative;left: 36%;" src="https://static.wixstatic.com/media/bc0394_486cbea6a7304fda9f764ba56cb0b7d2~mv2.png" alt="avocado_png">
+
+      </div>
+  </div>
+  <div class="row">
+    <!-- Content for the second row in the first column -->
+    <div class="col-12 py-5">
+        <h1 class="degradado-bold py-5" " style="text-align: center;font-size: 5em;font-family: poppins; font-weight: 500;">Instagram:</h1>
+           <!--Button-->
+           <div data-aos="fade-up" class="col-xs d-flex justify-content-center align-items-center" style="margin-top: 6%;">
+              <a href="https://www.instagram.com/healthade/?hl=es" class="button-io" target="_blank">Go</a>
+            </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- Second Column -->
+  <div class="col-md-3 mx-auto " id="gray-background" >
+    <div class="row">
+      <!-- Content for the first row in the first column -->
+      <div class="col-12 py-5">
+        <img style="height: 10em; position: relative;left: 36%;" src="https://static.wixstatic.com/media/bc0394_ea9809a72b8f40c99e746944b428bdc4~mv2.png" alt="avocado_png">
+
+        </div>
+    </div>
+    <div class="row">
+      <!-- Content for the second row in the first column -->
+      <div class="col-12 py-5">
+          <h1 class="degradado-bold py-5" " style="text-align: center;font-size: 5em;font-family: poppins; font-weight: 500;">Webpage:</h1>
+             <!--Button-->
+             <div data-aos="fade-up" class="col-xs d-flex justify-content-center align-items-center" style="margin-top: 6%;">
+                <a href="https://health-ade.com/" class="button-io" target="_blank">Go</a>
+              </div>
+        </div>
+    </div>
+    </div>
+  <!-- Third Column -->
+  <div class="col-md-3 mx-auto " id="gray-background" >
+    <div class="row">
+      <!-- Content for the first row in the first column -->
+      <div class="col-12 py-5 ">
+  <img style="height: 10em; position: relative;left: 37%;" src="https://static.wixstatic.com/media/bc0394_6078387377b948cf8323138b3f9cb178~mv2.png" alt="avocado_png">
+        </div>
+    </div>
+    <div class="row">
+      <!-- Content for the second row in the first column -->
+      <div class="col-12 py-5">
+          <h1 class="degradado-bold py-5" " style="text-align: center;font-size: 5em;font-family: poppins; font-weight: 500;">Mockup:</h1>
+             <!--Button-->
+             <div data-aos="fade-up" class="col-xs d-flex justify-content-center align-items-center" style="margin-top: 6%;">
+                <a href="" class="button-io" target="_blank">Go</a>
+              </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <!--Our Work-->
+  <section data-aos="fade-up" class="project-section2" id="work">
+  <div class="container">
+  <div class="row">
+  <div class="col-6">
+  <h4 id="about-tittle" style="font-size: 1.5em; text-align: start;">Our Work</h4>
+  <p >Our mission is to empower businesses and individuals to
+    stand out in the digital landscape through compelling
+    designs that leave a lasting impression</p>
+  </div>
+
+  <div class="col-6">
+  <p id="about-tittle" style="font-size: 4.5em;font-weight: 400;text-align: center;" class="py-5 typewriter-portfolio">Explore my Work.</p>
+  </div>
+
+  </div>
+  </div>
+  </section>
+
+  <!--Images Section-->
+  <section data-aos="fade-up" class="project-section">
+  <div class="container">
+  <div class="row">
+  <!-- Columna izquierda con imagen -->
+  <div class="col-md-6">
+    <img loading="lazy" class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_353f84d4240d49ed8b88818a66586602~mv2.png" style="object-fit: cover;width: 80%;border-radius: 20px;" alt="Mockup 3">
+
+  <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
+  <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
+
+
+  </div>
+  <!-- Columna derecha con imagen y margen superior -->
+  <div class="col-md-6 mt-5 mt-md-0">
+  <img loading="lazy" class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_8fdf6bc71dea46febf219cf72df9028b~mv2.png" style="object-fit: cover;width: 80%;border-radius: 20px; margin-top: 20em;" alt="Mockup 2">
+  <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
+  <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
+
+  </div>
+  </div>
+
+  <div class="row">
+  <!-- Columna izquierda con imagen -->
+  <div class="col-md-6">
+  <img loading="lazy" class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_2332d592ee9a4444914e44ec0d67ad62~mv2.png" style="object-fit: cover;width: 80%;border-radius: 20px;" alt="Mockup 3">
+  <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
+  <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
+
+
+  </div>
+  <!-- Columna derecha con imagen y margen superior -->
+  <div class="col-md-6 mt-5 mt-md-0">
+  <img loading="lazy" class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_c9bb6c56c4bc453ca34bfe73d2fb56bf~mv2.png" style="object-fit: cover;width: 80%;border-radius: 20px; margin-top: 25em;" alt="Mockup 4">
+  <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
+  <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
+
+  </div>
+  </div>
+
+  <div class="row ">
+  <!-- Columna izquierda con imagen -->
+  <div class="col-md-6">
+  <img loading="lazy" class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_dd57749b82144d3bb5d6935fab3ca99d~mv2.png" style="object-fit: cover;width: 80%;border-radius: 20px;" alt="Mockup 3">
+  <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
+  <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
+
+
+  </div>
+  <!-- Columna derecha con imagen y margen superior -->
+  <div class="col-md-6 mt-5 mt-md-0">
+  <img  loading="lazy" class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_dd57749b82144d3bb5d6935fab3ca99d~mv2.png" style="object-fit: cover;width: 80%;border-radius: 20px; margin-top: 25em;" alt="Mockup 4">
+  <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
+  <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
+
+  </div>
+  </div>
+
+  <div class="row">
+  <!-- Columna izquierda con imagen -->
+  <div class="col-md-6">
+  <img loading="lazy" class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_91c4887fe8154005959b6add3e7e0c9b~mv2.jpg" style="object-fit: cover;width: 80%;border-radius: 20px;" alt="Mockup 3">
+  <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
+  <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
+
+
+  </div>
+  <!-- Columna derecha con imagen y margen superior -->
+  <div class="col-md-6 mt-5 mt-md-0">
+  <img loading="lazy" class="imagePortfolio py-4 mx-auto" src="https://static.wixstatic.com/media/bc0394_5f6d3882152c40d6afe65d4272e22e0a~mv2.png" style="object-fit: cover;width: 80%;border-radius: 20px; margin-top: 25em;" alt="Mockup 4">
+  <p id="about-tittle" style="font-size: 1.5em;font-weight: 400;text-align: start;" class=" typewriter-portfolio">Explore our Work.</p>
+  <p>Tu texto va aquí. Este row contendrá el texto que aparece debajo de las imágenes.</p>
+
+  </div>
+  </div>
+
+  </div>
+  </section>
+
+
+  
+  <!--What Clients Say-->
+  <section data-aos="fade-up" class="project-section2" id="testimonials">
+  <div class="container">
+  <div class="row">
+  <div class="col-6">
+  <h4 id="about-tittle" style="font-size: 1.5em; text-align: start;">Testimonials:</h4>
+  <div style="display: flex; align-items: center;">
+    <div style="position: relative; width: 50px; height: 50px;" class="py-5 rounded-box-images">
+      <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -12em; z-index: 1;" class="rounded-images" alt="profile pic">
+      <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611734.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -9em; z-index: 2;" class="rounded-images" alt="profile pic">
+      <img src="https://img.freepik.com/premium-psd/3d-render-avatar-character_23-2150611787.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -6em; z-index: 3;" class="rounded-images" alt="profile pic">
+      <img src="https://img.freepik.com/premium-psd/3d-render-avatar-character_23-2150611783.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: -3em; z-index: 4;" class="rounded-images" alt="profile pic">
+      <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611722.jpg?size=626&ext=jpg&ga=GA1.2.214732739.1704666133&semt=ais" style="right: 0em; z-index: 5;" class="rounded-images" alt="profile pic">
+    </div>
+  </div>
+  </div>
+
+  <div class="col-6">
+  <p id="about-tittle" style="font-size: 4.5em;font-weight: 400;text-align: center;" class="py-5 typewriter-portfolio">What did clients say?</p>
+  </div>
+
+  </div>
+  </div>
+  </section>
+
+
+  <!--Reviews-->
+  <section data-aos="fade-up" class="project-section">
+  <div class="container">
+  <div class="row">
+  <!-- First Column -->
+  <div class="col-md-3 mx-auto py-5" id="gray-background" >
+  <div class="row">
+    <!-- Content for the first row in the first column -->
+    <div class="col-12 py-5 ">
+        <h4 id="about-tittle" style="text-align: center; font-size: 3em;"> Rubén Chávez</h4>
+        <p style="text-align: center;"> Every aspect was handled with such professionalism that left me completely satisfied. The attention to detail and efficiency of the service surpassed all my expectations. </p>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- Second Column -->
+  <div class="col-md-3 mx-auto py-5" id="gray-background" >
+  <div class="row">
+    <!-- Content for the first row in the second column -->
+    <div class="col-12 py-5 ">
+      <h4 id="about-tittle" style="text-align: center; font-size: 3em;"> Mta. Paulina</h4>
+      <p style="text-align: center;"> From the very beginning, the treatment was first class, and the whole process was so straightforward and enjoyable. The results have transformed this museum and it's popularity among the town, and I will definitely use their services again in the future. A solid five stars for Karen's excellent work!</p>
+    </div>
+  </div>
+
+  </div>
+  <!-- Third Column -->
+  <div class="col-md-3 mx-auto py-5" id="gray-background" >
+  <div class="row">
+    <!-- Content for the first row in the first column -->
+    <div class="col-12 py-5 ">
+      <h4 id="about-tittle" style="text-align: center; font-size: 3em;"> Adrián Medina</h4>
+      <p  style="text-align: center;">The level of expertise and dedication the team showed during our project was truly impressive. Every problem was solved with innovation and efficiency. My experience was so positive that I wouldn't hesitate to use their services again.</p>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  </section>
+
+
+  <!--Havea project in mind? -->
+  <section data-scroll class="project-section">
+  <div class="container">
+  <div class="row">
+  <!-- Primera columna: Texto y botones -->
+  <div class="col-md-6" id="gray-background">
+  <!-- Fila para el texto -->
+  <div class="row">
+    <div class="col-12">
+      <h1 id="about-tittle" style="text-align: start;" class="typewriter-portfolio py-5">
+
+        Have a
+        project in
+        mind?</h1> 
+    </div>
+  </div>
+  <!-- Fila para los botones -->
+  <div class="row py-5">
+    <div class="col-12 py-5">
+      <button class="button-io">Contact Me</button>
+      <button class="button-io">Book a Call</button>
+    </div>
+  </div>
+  </div>
+
+  <!-- Segunda columna: Imagen -->
+  <div class="col-md-6">
+  <img class="imagePortfolio"  style="height: 55em; object-fit: cover; align-items: center;" src="https://static.wixstatic.com/media/bc0394_f0d7949e51f44098b5edd96d255f3239~mv2.png" loading="eager" alt="white background">
+  </div>
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+
+                       
+<br>
+<br>
+
+
+
+<!--Footer---------------------------------------------------------------------------------------------------------------->
+<footer  class="foot mx-5 general_padding"> 
+  <section data-scroll>
+    <div id="gooey-footer-home"></div>
+   
+  
+    
+  <!--logo-->
+      <div class="container text-start">
+          <div class="row align-items-start">
+              <div  data-aos="fade-up " class="col-2" style="position: relative; left: -4px;">
+                  <a class="navbar-brand" href="/Pages/indexmain.html">
+                    <h1 id="logo-header">Karen Ortiz</h1>        </a>  
+              </div>
+          </div>
+      </div>
+            
+  
+  <!--left footer's columns-->
+        <div class="container text-start">
+     <div class="row align-items-start">
+        <div class="col py-5">
+              <h6> <b>Address</b> </h6>
+              <h6>Cuernavaca,</h6>
+              <h6>Morelos, México </h6>
+              <h6> <b>   Contact </b> </h6>
+              <h6>   karen.ortizg@yahoo.com</h6>
+              <h6>   Over this webpage's chat</h6>
+        </div>
+  
+     <div class="col search-col my-4">
+              <p></p>
+              <p></p>
+              <h6>Search:</h6>
+              <a href="/Pages/indexmain.html#top" style="font-style: inherit;" class="foot_buttons">Top</a><br>
+              <a href="/Pages/indexmain.html#about" style="font-style: inherit;" class="foot_buttons">About</a><br>
+              <a href="/Pages/indexmain.html#tools" class=" foot_buttons">Tools</a><br>
+              <a href="/Pages/indexp.html" class=" foot_buttons">Portfolio</a><br>
+              <a href="/Pages/indexmain.html#reviews" class=" foot_buttons">Reviews</a><br>
+              <a href="/Pages/indexhow.html#contact" class=" foot_buttons">Contact</a><br>
+              
+      </div>
+            
+          <div class="col text-end karen-ortiz-footer pic_foot">
+            <img id="videoElement" src="https://static.wixstatic.com/media/bc0394_24f8010bd4b941658c505b94d842ac27~mv2.png" height="120px" width="120px" style="border-radius: 80px;">
+          </div>
+          
+      </div>
+        </div>
+  
+        <!--social icons-->
+            <div  class="container text-start soc_foot" style="margin-top: -25px;">
+              <div class="row align-items-start">
+                <div class="col-12">
+                  <div class="social-icons">
+                    <a href="https://www.instagram.com/karenrebeca.og/?hl=es" target="_blank"><img src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png" alt="instagram" style="padding:25%"></a>
+                    <a href="https://www.linkedin.com/in/karen-rebeca-ort%C3%ADz-b5a860282/" target="_blank"><img src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6ea5b4a88f0b4f91945b40499aa0af00.png" alt="linkedin" style="padding:25%"></a>
+                    <a href="https://github.com/karenrebecag" target="_blank"><img src="https://static.wixstatic.com/media/11062b_138b4018ea8244fcb5137cb0e98361f3~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_138b4018ea8244fcb5137cb0e98361f3~mv2.png" alt="github" style="padding:25%"></a>
+                    <a href="https://discord.gg/YPfNs76n" target="_blank"><img src="https://static.wixstatic.com/media/11062b_f642c87820384bd6b2a7c95d10b73a22~mv2.png/v1/fill/w_36,h_36,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_f642c87820384bd6b2a7c95d10b73a22~mv2.png"  alt="discord" style="padding:25%"></a>
+                      
+                      <div class="container text-center">
+                        <div class="row align-items-center">
+  
+                        <div class="col-12"></div>
+                    
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                        <div class="col"></div>
+                  </div>
+                        <div class="col"></div>
+                </div>
+                        <div class="col"></div>
+              
+                        <div class="col"></div>
+                        <div class="col"></div>
+                  
+                        <div class="col"></div>
+                        <div class="col"></div>
+              
+                        <div class="col"></div>
+      
+  
+                        <hr style="color: white;"><!--Section Separator -->
+  <!--hedgehog-->
+    <section id="hegehog-gif"> 
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <img id="videoElement" src="https://static.wixstatic.com/media/bc0394_34c638f1286d4574895a6185059d2a38~mv2.gif" alt="hedgy" class="hedgy">            
+          </div>
+        </div>
+        
+  
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            © 2023 Karen Ortiz /  Designed and programmed by me:)
+          </div>
+        </div>
+      </div>
+    
+    <div class="row mt-3 mx-auto justify-content-center">
+      <div class="col-auto">
+        <a href="/Pages/indexhow.html" style="text-decoration: none;">
+  
+          <button id="how_button" class="button-io" style="font-size: medium; width: 280px; padding: 0 10px 0 10px; margin-bottom: 2em;">
+            <span>How did I make this webpage? &#x1F680;</span>
+          </button>
+        </a>
+      </div>
+    </div>
+    
+    </section>
+    
+  </footer>
+  
+
+<!--Additional Links (WA, Script)---------------------------------------------------------------------------------------------------------------->
+
+
+<!--additionals js links-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+<!--AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!--linked script-->
+<script src="main.js"></script>
+<script src="mainjsport.js"></script>
+<script src="header.js"></script>
+</div>
+<!--Observer script-->
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    var video = document.getElementById('myVideo');
+    video.playbackRate = 2.5;
+  });
+  // Crear la instancia de IntersectionObserver
+  let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          // Comprobar si el video está en el viewport
+          if(entry.isIntersecting) {
+              entry.target.play();
+          } else {
+              entry.target.pause();
+          }
+      });
+  }, { threshold: 0.5 }); // El threshold indica qué porcentaje del video debe estar en pantalla
+
+  // Iniciar la observación del video
+  let video = document.getElementById('videoElement');
+  observer.observe(video);
+ 
+</script>
+
+<!--Typewriter and Numbers-->
+<script src="/Scripts/number.js"></script>
+
+
+                    <!--Dark Mode-->
+<script src="/Scripts/darkmode5.js"></script>
+             
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function() {
+            // Función que maneja la expansión o colapso del menú basado en el tamaño del viewport
+            function toggleNavbarOnHover() {
+                // Solo ejecuta la lógica si el viewport es menor de 767px
+                if ($(window).width() < 767) {
+                    // Expande el menú cuando el mouse entra al header
+                    $('#miHeader').mouseenter(function() {
+                        if (!$('#navbar-toggler').hasClass('show')) {
+                            $('.navbar-toggler').click(); // Simula un click para expandir el menú
+                        }
+                    });
+        
+                    // Colapsa el menú cuando el mouse sale del header
+                    $('#miHeader').mouseleave(function() {
+                        if ($('#navbar-toggler').hasClass('show')) {
+                            $('.navbar-toggler').click(); // Simula un click para colapsar el menú
+                        }
+                    });
+                } else {
+                    // Remueve los eventos si el viewport es mayor de 767px
+                    $('#miHeader').off('mouseenter mouseleave');
+                }
+            }
+        
+            // Llama a la función al cargar la página
+            toggleNavbarOnHover();
+        
+            // Asegúrate de llamar a la función en eventos de redimensionamiento de la ventana también
+            $(window).resize(function() {
+                toggleNavbarOnHover();
+            });
+        });
+        </script>
+                 
+
+</body>
+</html>
+
+
+
+
+
