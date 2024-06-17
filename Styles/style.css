@@ -39,6 +39,9 @@ header {
   #logo-header{
     font-size: 2.5vw;
   }
+ div .style_container{
+justify-content: center;
+  }
 }
 
 .button-container-header {
@@ -303,11 +306,21 @@ b {
   h1, .h1-2 {
     font-size: 1.6em; /* Más pequeño para teléfonos en posición vertical */
   }
+  .trusted_by{
+    font-size: 3vw;
+  }
   .img_review{
     display:none;
   }
-
-  
+.main-banner {
+  margin-top: 20vw;
+}
+.button-portfolio{
+  margin-top: -10vw;
+}
+.text-portfolio-text{
+  display: none;
+}
 
   .main-area-content{
     display: none;
@@ -1383,5 +1396,11 @@ footer {
   }
   .review_paragraph{
     align-items: center;
+  }
+  #background-video{
+    display: none;
+  }
+  .slide-infinite img {
+    margin-right: 4em;
   }
 }

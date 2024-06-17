@@ -294,6 +294,12 @@ html{
     max-width: 240px;
     max-height: 240px;
   }
+  #credits{
+    margin-top: 3em;
+  }
+  .search-col{
+    display: none
+  }
   .main-area-content{
     display: none;
   }
@@ -906,10 +912,10 @@ margin-bottom: 5%;  }
 
     
   }
-  .bubble{
+  div .bubble{
     display: none;
   }
-  #bubbles{
+  div #bubbles{
     display: none;
   }
   .about-tittle-number-tiny{

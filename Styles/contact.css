@@ -1,4 +1,9 @@
-
+body {
+  transition: background-color 0.5s ease;
+}
+header {
+  transition: background-color 0.5s ease;
+}
 
 
 #form-contact {
@@ -103,6 +108,15 @@ height: 10em;
 
       padding-left: 30%;
       padding-right: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  #formsection{
+    margin-top: 50vw;
+  }
+  .search-col{
+    display: none
   }
 }
 }

@@ -24,15 +24,10 @@
     <!-- ICONS -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- CSS Links ---------------------------------------------------------------------------------------------------------------->
-<link href="/Styles/style.css" rel="stylesheet">
-<link href="/Styles/responsive.css" rel="stylesheet">
 <link href="/Styles/extra.css" rel="stylesheet">
 <link href="/Styles/portfolio.css" rel="stylesheet">
 
-<link href="/Styles/mainpage.css" rel="stylesheet">
 <link href="/Styles/toggle.css" rel="stylesheet">
-<link href="/Styles/project.css" rel="stylesheet">
-<link href="/Styles/instagramgrid.css" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
@@ -80,120 +75,183 @@
 }
 
     </style>
-    <style>
-  @media (max-width: 1400px) {
-
-.container{
-  max-width: 100%;
-}
-
-
-.general_padding{
-        padding: 0 0 0 0;
-    }
-.logo-header-main{
-  display: none;
-}}
-@media (max-width: 992px) {
-
-
-#miHeader{
-  min-width: 100%;
-}
-.navbar-nav {
-    flex-direction: row; /* Asegura que los elementos se alineen horizontalmente */
-    justify-content: flex-start; /* Alinea los elementos al final del contenedor */
-    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
-  }
-
-  .nav-item {
-    margin-right: 5px; /* Espaciado entre los elementos nav-item */
-  }
-
-  .navbar-collapse {
-    flex-basis: auto; /* Asegura que el contenedor de collapse se ajuste al contenido */
-  }
-
-  .card_header_social {
-    display: flex; /* Asegura que los elementos sociales también se alineen horizontalmente */
-    justify-content: flex-end; /* Alinea los elementos sociales al final */
-    width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
-    margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
-  }
-
-}
-
-      @media (max-width: 820px) {
-  .navbar-collapse {
-    display: flex;
-    flex-direction: column; /* Alinea los contenedores en vertical */
-    align-items: start; /* Centra los contenedores horizontalmente */
-  }
-
-  .navbar-nav {
-    flex-direction: row; /* Asegura que los nav-items estén en línea */
-    justify-content: flex-start; /* Centra los nav-items horizontalmente */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
-    width: 100%; /* Los nav-items ocuparán todo el ancho */
-  }
-
-  .nav-item {
-    margin: 5px; /* Espaciado alrededor de cada nav-item */
-  }
-
-  .card_header_social {
-    display: flex;
-    justify-content: center; /* Centra los elementos sociales horizontalmente */
-    width: 100%; /* Los elementos sociales ocuparán todo el ancho */
-    margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
-
-  }
-
-}
-
-
-
-
-@media (max-width: 820px) {
-      #downloadCvButton{
-        display: none;
-      }}
-  
-      @media (max-width: 768px) {
-  .bubble, #glow-input, #how_button, #cube-loader {
-    display: none;
-  }
-}
-
-.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-  width: 100%;
-  max-width: none;
-}
-
-p {
-  margin: 0%;
-}
-
-
-
-
-
-    
-    @media (max-width: 430px) {
-    
-    
-      .nav-item{
-        position: relative;
-        left: -54em;
-      }
-
-      .fade-in{
-      display: none;
-      }
-    }
-    
-    </style>
+        <style>
+          @media (max-width: 1400px) {
+          .e-card{
+            width: 80%;
+          
+          }
+          .cardProjects{
+            height: 90%;
+            width: 80%;
+          }
+          .container{
+            max-width: 100%;
+          }
+          .navbar{
+            max-width: 100%;
+          }
+          div{
+            max-width: 100%;
+          }
+          .general_padding{
+                  padding: 0 0 0 0;
+              }
+          .logo-header-main{
+            display: none;
+          }
+          
+          
+            
+          }
+          
+          @media (max-width: 1050px) {
+          .e-card{
+            width: 80%;
+          
+          }
+          .cardProjects{
+            height: 90%;
+            width: 700%;
+          }
+          .container{
+            max-width: 100%;
+          }
+          
+          #downloadCvButton, .main-logo{
+            display: none;
+          }
+          #bubble{
+            display:none
+          }
+          
+          
+          
+            
+          }
+          @media (max-width: 992px) {
+          
+          
+          
+          
+          #miHeader{
+            min-width: 100%;
+          }
+          .navbar-nav {
+              flex-direction: row; /* Asegura que los elementos se alineen horizontalmente */
+              justify-content: flex-start; /* Alinea los elementos al final del contenedor */
+              width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
+            }
+          
+            .nav-item {
+              margin-right: 5px; /* Espaciado entre los elementos nav-item */
+            }
+          
+            .navbar-collapse {
+              flex-basis: auto; /* Asegura que el contenedor de collapse se ajuste al contenido */
+            }
+          
+            .card_header_social {
+              display: flex; /* Asegura que los elementos sociales también se alineen horizontalmente */
+              justify-content: flex-end; /* Alinea los elementos sociales al final */
+              width: 100%; /* Opcional: asegura que el contenedor ocupe todo el ancho disponible */
+              margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
+            }
+          
+          }
+          
+                @media (max-width: 820px) {
+            .navbar-collapse {
+              display: flex;
+              flex-direction: column; /* Alinea los contenedores en vertical */
+              align-items: start; /* Centra los contenedores horizontalmente */
+            }
+          
+            .navbar-nav {
+              flex-direction: row; /* Asegura que los nav-items estén en línea */
+              justify-content: flex-start; /* Centra los nav-items horizontalmente */
+              flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+              width: 100%; /* Los nav-items ocuparán todo el ancho */
+            }
+          
+            .nav-item {
+              margin: 5px; /* Espaciado alrededor de cada nav-item */
+            }
+          
+            .card_header_social {
+              display: flex;
+              justify-content: center; /* Centra los elementos sociales horizontalmente */
+              width: 100%; /* Los elementos sociales ocuparán todo el ancho */
+              margin-top: 15px; /* Espacio entre los nav-items y los elementos sociales */
+              flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+          
+            }
+          
+            
+          }
+          
+          
+                #downloadCvButton{
+                  display: none;
+                }
+                .video_background{
+                    display: none;
+                }
+          
+                .brilliant-solutions{
+                  font-size: 2em;
+                }
+                .brilliant-solutions-text{
+                  font-size: 1.em;
+                }
+          
+            
+          
+                @media (max-width: 768px) {
+                  #logo-header {
+              font-size: 1.8em; /* Ajusta esto según el tamaño deseado */
+            }
+            
+            #glow-input, #how_button, #cube-loader {
+              display: none;
+            }
+          }
+          
+          .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+            width: 100%;
+            max-width: none;
+          }
+          
+          p {
+            margin: 0%;
+          }
+          
+          
+          
+          
+          
+              @media (max-width: 430px) {
+                .mini_pic{
+                  display: none;
+                }
+          
+          
+          
+                }
+                p{
+                  margin: 0%;
+                  font-size: 12px;
+                }
+          
+              
+              .message-input{
+                position: absolute;
+                left: 13em;
+                width: 100%;
+                
+              } 
+            
+                  </style>
 </head>
 
 <!--Hi Curious! If you wanna know more about this projects and my work, just send me a message or check my github:)----->
@@ -384,7 +442,7 @@ p {
                         <!-- Get in Touch -->                                                    
                           <div class="row">
                                 <div class="col-12 mx-auto">
-                                  <h1 id="about-tittle" style="text-align: center;position: relative; font-size: 5em;" class="typewriter-portfolio">
+                                  <h1 id="about-tittle" style="text-align: center;position: relative; font-size: 8vw;" class="typewriter-portfolio">
                                     Get in Touch.</h1> 
                                 </div>
                           </div>
@@ -393,7 +451,7 @@ p {
                                 <div style="display: flex; justify-content:start; text-align:start;" class="py-5" >
                                     <!-- You can Reach Us Anytime -->
                                     <div class="col-12 mx-auto">
-                                      <p id="contact-form-paragraph" style="text-align: center; font-size: 2.5em;" class="degradado">You can reach me anytime</p>
+                                      <p id="contact-form-paragraph" style="text-align: center; font-size: 4vw;" class="degradado">You can reach me anytime</p>
                                     </div>
                                 </div>
                           </div>
@@ -672,7 +730,7 @@ p {
                     <div class="row">
                       <div class="col-12 text-center">
                         <p class="terms-text-form" style="font-size: 1.2em;">
-                          By contacting us, you agree to our <a class="href-terms" href="termsofservice.html">Terms of service</a> and <a class="href-terms" href="termsofservice.html#policy">Privacy Policy</a>
+                          By contacting me, you agree to my <a class="href-terms" href="termsofservice.html">Terms of service</a> <br> and <a class="href-terms" href="termsofservice.html#policy">Privacy Policy</a>
                         </p>
                       </div>
                     </div>
@@ -824,7 +882,7 @@ p {
         
   
         <div class="row">
-          <div class="col d-flex justify-content-center">
+          <div id="credits" class="col d-flex justify-content-center">
             © 2023 Karen Ortiz /  Designed and programmed by me:)
           </div>
         </div>

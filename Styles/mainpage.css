@@ -563,6 +563,11 @@ color: white;
 }
 
 @media (max-width: 480px) {
+#credits{
+  margin-top: 3em;
+}
+
+
 
   .e-card {
     margin: 30px auto;
@@ -571,6 +576,11 @@ color: white;
     max-width: 240px;
     max-height: 240px;
   }
+
+  .search-col{
+    display: none
+  }
+  
   .infotop {
     font-size: 1em
   }
@@ -1359,10 +1369,10 @@ margin-bottom: 5%;  }
 
     
   }
-  .bubble{
+  div .bubble{
     display: none;
   }
-  #bubbles{
+  div #bubbles{
     display: none;
   }
   .about-tittle-number-tiny{

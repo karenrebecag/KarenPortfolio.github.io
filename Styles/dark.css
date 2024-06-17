@@ -490,6 +490,22 @@ b {
   h1, .h1-2 {
     font-size: 1.6em; /* Más pequeño para teléfonos en posición vertical */
   }
+  .trusted_by{
+    font-size: 3vw;
+  }
+  .main-banner {
+    margin-top: 20vw;
+  }
+  .button-portfolio{
+    margin-top: -10vw;
+  }
+  .text-portfolio-text{
+    display: none;
+  }
+  .slide-infinite img {
+    margin-right: 4em;
+  }
+
   
   .but_backend{
     font-size: 2em;

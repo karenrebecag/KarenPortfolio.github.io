@@ -636,3 +636,34 @@ background-color: rgb(255, 255, 255);
 #spaceInvadersStrip{
   background-color: rgb(255, 255, 255);
 }
+
+@media (max-width: 480px) {
+  #tittle-portfolio {
+    font-size: 10vw;
+  }
+  .button-portfolio{
+    font-size: 3vw;
+  }
+.text-portfolio-tittle{
+  font-size: 6vw;
+}
+.text-portfolio-text{
+  font-size: 4vw;
+}
+.text-portfolio-text1{
+  font-size: 3vw;
+}
+.lets-discuss{
+  font-size: 4vw;
+}
+.cta span{
+  font-size:3vw;
+}
+div #gola {
+  display: none;
+}
+
+.spaceInvadersDiv{
+  display: none;
+}
+}
