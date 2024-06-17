@@ -12,7 +12,7 @@ canvas.height = 600;
 const background = new Image();
 background.src = "/images/space.png";
 
-let playerBulletController = new BulletController(canvas, 10, "purple", true);
+let playerBulletController = new BulletController(canvas, 10, "white", true);
 let enemyBulletController = new BulletController(canvas, 4, "white", false);
 let scoreController = new ScoreController();
 let enemyController = new EnemyController(canvas, enemyBulletController, playerBulletController, scoreController);
@@ -97,7 +97,7 @@ function resetGame() {
     isGameOver = false;
     didWin = false;
 
-    playerBulletController = new BulletController(canvas, 10, "red", true);
+    playerBulletController = new BulletController(canvas, 10, "purple", true);
     enemyBulletController = new BulletController(canvas, 4, "white", false);
 
     if (!didWin) {

@@ -395,6 +395,11 @@ filter: blur(50%);
 
 
 /* Adjust padding for smaller screens */
+@media (max-width: 1400px){
+  #gooey, #gooey2, #gooey3 , #gooey4, #gooey5{
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .bottom-container {
     padding: 1em; /* Smaller padding for small screens */
@@ -422,6 +427,9 @@ filter: blur(50%);
   font-size: 0.8em;
 }
 .skillTag{
+  display: none;
+}
+.spaceInvadersDiv{
   display: none;
 }
 }
@@ -459,6 +467,7 @@ top: 440%;
   .bottom-container {
     padding: 1em; /* Adjust the padding as needed for smaller screens */
   }
+
 }
 
 .cta {

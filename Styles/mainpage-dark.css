@@ -808,6 +808,7 @@ to {
 margin-bottom: 5%;  }
 }
 
+
 .square2{
   background-color: #4B49E5;
   border-radius: 20px;
@@ -904,6 +905,12 @@ margin-bottom: 5%;  }
     font-size: 1.2em;
 
     
+  }
+  .bubble{
+    display: none;
+  }
+  #bubbles{
+    display: none;
   }
   .about-tittle-number-tiny{
     font-size: 1.5em;
@@ -1626,4 +1633,33 @@ filter: invert(100%);
 
 .more_button:hover {
   transform: scale(1.02);
+}
+#collapsible-content_zoek2 {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#collapsible-content_zoek2.collapse_zoek {
+  max-height: 0;
+}
+
+#collapsible-content_zoek2.expand_zoek {
+  max-height: 1000px; /* Ajusta este valor según el contenido */
+}
+
+#collapsible-content_spaceInvaders {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#collapsible-content_spaceInvaders.collapse_spaceInvaders {
+  max-height: 0;
+}
+
+#collapsible-content_spaceInvaders.expand_spaceInvaders {
+  max-height: 1000px; /* Ajusta este valor según el contenido */
+}
+
+button.more_button {
+  width: 100%; /* Hace que el botón ocupe todo el ancho del contenedor */
 }

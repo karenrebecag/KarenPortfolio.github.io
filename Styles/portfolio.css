@@ -427,6 +427,11 @@ height: auto; /* Make height automatic to contain its children */
 }
 
 /* Adjust font size for very small screens */
+@media (max-width: 1400px){
+  #gooey, #gooey2, #gooey3 , #gooey4, #gooey5{
+    display: none;
+  }
+}
 @media (max-width: 480px) {
   .lets-discuss {
     font-size: 4.5vw; /* Even smaller font size for very small screens */

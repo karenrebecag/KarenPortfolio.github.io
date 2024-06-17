@@ -584,7 +584,15 @@ color: white;
   .degradado-bold{
     font-size: 2em;
   }
-
+  #collapsible-content_zoek.expand_zoek {
+    min-height: 1600px; 
+  }
+  #collapsible-content1.expand1 {
+    min-height: 2300px; 
+  }
+  #collapsible-content2.expand2 {
+    min-height: 3100px;
+  }
 }
 
 /* Keyframes para la animación de onda */
@@ -1255,6 +1263,7 @@ to {
 margin-bottom: 5%;  }
 }
 
+
 .square2{
   background-color: #4B49E5;
   border-radius: 20px;
@@ -1350,6 +1359,12 @@ margin-bottom: 5%;  }
 
     
   }
+  .bubble{
+    display: none;
+  }
+  #bubbles{
+    display: none;
+  }
   .about-tittle-number-tiny{
     font-size: 1.5em;
   }
@@ -1358,6 +1373,7 @@ margin-bottom: 5%;  }
   .about-tittle-card2 {
     font-size: 1em;
   }
+  
 
   #arrow{
     display: none;
@@ -1675,6 +1691,8 @@ z-index: 1;
 	background-color:#efefef;
 	color:#000000;
 	padding:30px 20px;
+  justify-content: start;
+  text-align: left;
 
 }
 .timeline ul{
@@ -1682,10 +1700,19 @@ z-index: 1;
 	border-left:1px solid #000000;
 	padding:10px 5px;
 }
+
+.timeline p {
+  justify-content: start;
+  align-items: start;
+  text-align: left;
+
+}
 .timeline ul li{
 	padding:20px 20px;
 	position:relative;
 	cursor:pointer;
+  text-align: left;
+
 	transition:.5s;
 }
 .timeline ul li span{
@@ -1694,7 +1721,7 @@ z-index: 1;
   border-radius:25px;
 	padding:2px 5px;
 	font-size:15px;
-	text-align:center;
+	text-align:start;
 }
 .timeline ul li .content h3{
 	color:#000000;
@@ -1738,6 +1765,9 @@ z-index: 1;
 		width:fit-content;
 		padding:0%;
 	}
+  .timeline ul li span{
+    text-align:start;
+  }
 
 @media (max-width:300px){
 	.timeline{
@@ -1908,6 +1938,7 @@ z-index: 1;
   max-height: 1000px; /* Ajusta este valor según el contenido */
 }
 
+
 .text-portfolio-text_zoek {
   font-size: 1.5rem;
   margin-bottom: 20px;
@@ -2020,4 +2051,32 @@ z-index: 1;
 
 .more_button:hover {
   transform: scale(1.02);
+}
+#collapsible-content_zoek2 {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#collapsible-content_zoek2.collapse_zoek {
+  max-height: 0;
+}
+
+#collapsible-content_zoek2.expand_zoek {
+  max-height: 1000px; /* Ajusta este valor según el contenido */
+}
+#collapsible-content_spaceInvaders {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+#collapsible-content_spaceInvaders.collapse_spaceInvaders {
+  max-height: 0;
+}
+
+#collapsible-content_spaceInvaders.expand_spaceInvaders {
+  max-height: 1000px; /* Ajusta este valor según el contenido */
+}
+
+button.more_button {
+  width: 100%; /* Hace que el botón ocupe todo el ancho del contenedor */
 }
