@@ -64,6 +64,9 @@ height: 10em;
       height: 70vw;
       margin-top: 50vw;
     }
+    section #opacity-enter{
+      margin-top: 20em;
+    }
   }
   
   @media (max-width: 820px) {
@@ -92,6 +95,9 @@ height: 10em;
         padding-left: 20%;
         padding-right: 20%;
     }
+    section #opacity-enter{
+      margin-top: 65em;
+    }
 }
 @media (max-width: 575px) {
       .support-text, .main-area-content{
@@ -104,11 +110,15 @@ height: 10em;
       padding-left: 0;
       padding-right: 0;
   }
+  .search-col{
+    display: none;
+  }
   .container-form {
 
       padding-left: 30%;
       padding-right: 30%;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -118,6 +128,7 @@ height: 10em;
   .search-col{
     display: none
   }
+
 }
 }
 

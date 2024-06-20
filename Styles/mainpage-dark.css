@@ -249,7 +249,9 @@ html{
   font-family: 'Poppins', sans-serif;
   transition: transform 0.5s ease; /* Transición suave para efectos de escala */
 }
-
+#backend_stuff{
+  padding: 0 15% 0 15%;
+}
 .name {
   font-size: 17px;
   font-weight: 300;
@@ -278,6 +280,13 @@ html{
     height: 90vw;
     max-width: 260px;
     max-height: 260px;
+  }
+  #backend_stuff{
+    padding: 0 5% 0 5%;
+  }
+  #backend_stuff2{
+    padding: 0 5% 0 5%;
+
   }
 
   .infotop {
@@ -683,7 +692,7 @@ html{
 #about-tittle{
   font-family: poppins;
   font-weight: 600;
-  font-size: 5vw;
+  font-size: 5em;
   color: #ffffffd0;
   text-align: end;
   position: relative;

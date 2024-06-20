@@ -62,6 +62,9 @@ height: 10em;
       height: 70vw;
       margin-top: 50vw;
     }
+    section #opacity-enter{
+      margin-top: 20em;
+    }
   }
   
   @media (max-width: 820px) {
@@ -85,6 +88,9 @@ height: 10em;
         margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
+    }
+    section #opacity-enter{
+      margin-top: 65em;
     }
     .container-form {
         padding-left: 20%;

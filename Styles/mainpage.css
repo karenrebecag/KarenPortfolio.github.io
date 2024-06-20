@@ -339,6 +339,10 @@ z-index: -1000;
   transform: rotate(180deg);
 }
 
+
+#backend_stuff{
+  padding: 0 15% 0 15%;
+}
 /* Degradado Letras */
 .degradado {
   font-size: clamp(3vw, 3.5vw, 4vw); /* mínimo: 1vw, preferido: 1vw, máximo: 2.5vw */
@@ -349,7 +353,7 @@ z-index: -1000;
   color: transparent; /* Oculta el color del texto */
 }
 .degradado-bold {
-  font-size: 4.5em; /* Usa vw para ajustarse al ancho de la pantalla */
+  font-size: 5em; /* Usa vw para ajustarse al ancho de la pantalla */
   font-weight: 500;
   line-height: 0.8; /* Mejora la legibilidad */
   font-family: poppins;
@@ -559,6 +563,13 @@ color: white;
 
   .infotop {
    font-size: 1.2em;
+  }
+  #backend_stuff{
+    padding: 0 5% 0 5%;
+  }
+  #backend_stuff2{
+    padding: 0 5% 0 5%;
+
   }
 }
 

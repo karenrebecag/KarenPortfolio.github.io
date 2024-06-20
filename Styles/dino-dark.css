@@ -1,26 +1,94 @@
 
 
 #game {
-    width: 60em; /* Ancho fijo del canvas */
-    border-radius: 20px; /* Borde redondeado */
-    display: block; /* Necesario para aplicar dimensiones correctamente en el canvas */
-    margin: 0 auto; /* Centra el canvas horizontalmente dentro de su contenedor */
-  
+  width: 60em; /* Ancho fijo del canvas */
+  border-radius: 20px; /* Borde redondeado */
+  display: block; /* Necesario para aplicar dimensiones correctamente en el canvas */
+  margin: 0 auto; /* Centra el canvas horizontalmente dentro de su contenedor */
+
+}
+@media (max-width: 768px) {
+  #game {
+    width: 40em; /* Ancho fijo del canvas */
   }
-  @media (max-width: 768px) {
-    #game {
-      width: 40em; /* Ancho fijo del canvas */
-    }
-   
+ 
+}
+@media (max-width: 480px) {
+  #game {
+    width: 20em; /* Ancho fijo del canvas */
+  }
+ 
+}
+.responsive-title {
+  text-align: center;
+  font-weight: 800;
+}
+
+#oops-title {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 12em;
+  color: #ffffffd0;
+  text-align: end;
+  position: relative;
+  text-shadow: 5px 5px 30px rgba(255, 255, 255, 0.581);
+}
+
+#error-message {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+#removal-message, #play-message {
+  font-size: 1.5em;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  #oops-title {
+    font-size: 6em;
   }
 
-  
-  canvas {
-    border: transparent
-    
+  #error-message {
+    font-size: 2em;
   }
-  
-  
-  .separator {
-    color: grey;
+
+  #removal-message, #play-message {
+    font-size: 1.2em;
   }
+
+  .button-portfolio {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #oops-title {
+    font-size: 3em;
+  }
+
+  #error-message {
+    font-size: 1.5em;
+  }
+
+  #removal-message, #play-message {
+    font-size: 1em;
+  }
+
+  .button-portfolio {
+    font-size: 0.8em;
+    padding: 8px 16px;
+  }
+}
+
+canvas {
+  border: transparent
+  
+}
+
+
+.separator {
+  color: grey;
+}

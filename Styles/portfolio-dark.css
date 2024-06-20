@@ -405,10 +405,15 @@ filter: blur(50%);
     padding: 1em; /* Smaller padding for small screens */
   }
 
+  div #gola{
+    display: none;
+  }
+
   .lets-discuss {
     font-size: 5vw; /* Smaller font size for small screens */
     padding: 0 1em; /* Adjust padding to be smaller */
   }
+  
 }
 
 /* Adjust font size for very small screens */
